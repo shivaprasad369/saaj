@@ -11,9 +11,9 @@ import Navbar from "./Navbar";
 
 export default function Home() {
 
-  const [img, setImg] = useState("http://localhost:3000/static/media/slide1.3eb299e3ab97891c5a26.jpeg");
+  const [img, setImg] = useState("https://test-saajs.vercel.app/static/media/slide1.3eb299e3ab97891c5a26.jpeg");
   const handleSetImage = (image) => {
-    setImg("http://localhost:3000" + image);
+    setImg("https://test-saajs.vercel.app" + image);
     console.log(image)
   
   };
