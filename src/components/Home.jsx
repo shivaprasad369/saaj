@@ -11,9 +11,9 @@ import Navbar from "./Navbar";
 
 export default function Home() {
 
-  const [img, setImg] = useState("http://localhost:3001/static/media/slide1.3eb299e3ab97891c5a26.jpeg");
+  const [img, setImg] = useState("http://localhost:3000/static/media/slide1.3eb299e3ab97891c5a26.jpeg");
   const handleSetImage = (image) => {
-    setImg("http://localhost:3001" + image);
+    setImg("http://localhost:3000" + image);
     console.log(image)
   
   };
