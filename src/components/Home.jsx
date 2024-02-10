@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, {useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -8,30 +8,34 @@ import slide2 from "./assets/slide2.jpeg";
 import slide3 from "./assets/slide3.avif";
 import slide4 from "./assets/slide4.jpg";
 import Navbar from "./Navbar";
-
+import data from "../constants/images";
 export default function Home() {
-
-  const [img, setImg] = useState("https://test-saajs.vercel.app/static/media/slide1.3eb299e3ab97891c5a26.jpeg");
-  const handleSetImage = (image) => {
-    setImg("https://test-saajs.vercel.app" + image);
-    console.log(image)
+  const [imageIndex,setImageIndex]=useState(1)
+  const handleSetImage = (ind) => {
+   setImageIndex(ind)
   
   };
-  console.log(img);
+ 
   return (
     <div
     id='home'
-      className={`bg- bg-no-repeat bg-cover text-black max-md:h-[0%]`}
-      style={{ backgroundImage: `url(${img})` }}
+      className={``}
+      style={{ backgroundImage: `` }}
     >
+      {data?.length && data.map((data,index)=>(
+
+      <img src={data.img} alt="homepage" key={data.index} className={` ${data.index===imageIndex ?'block':'hidden'} absolute bg- bg-no-repeat bg-cover w-[100%] md:h-screen  text-black max-md:h-[100%] max-md:w-[100%]`}/>
+      ))
+
+    }
       <Navbar />
-      <div className="flex justify-between text-inherit max-[446px]:justify-center max-[792px]:text-sm items-center flex-wrap md:p-4 max-md:text-sm ">
+      <div className="flex justify-between relative text-inherit max-[446px]:justify-center max-[792px]:text-sm items-center flex-wrap md:p-4 max-md:text-sm ">
         <div className="flex flex-col bg-[#0f020240] md:gap-3 items-center justify-center py-[4rem] px-[2rem] object-contain ">
           <ol
             type="1"
             className=" flex flex-col  text-white max-[462px]:text-[0.8rem]  max-[702px]:text-[10px] md:gap-10 font-semibold object-cover  max-[792px]:text-sm "
           >
-            <li onClick={() => handleSetImage(slide1)}>
+            <li onClick={() => handleSetImage(1)}>
               <a href="#" className={"active:text-orange-300"}>
                 <div className="flex flex-col hover:w-[130%] py-4 hover:bg-[#0a0a0a35] md:px-[3rem] hover:text-[#2b2626]  text-inherit">
                   <h1 className="md:text-xl">1. Destination wedding</h1>
@@ -40,21 +44,21 @@ export default function Home() {
                 </div>
               </a>
             </li>
-            <li onClick={() => handleSetImage(slide2)}>
+            <li onClick={() => handleSetImage(2)}>
               <div className="flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] py-4 md:px-[3rem] hover:text-[#2b2626] text-gray-900 text-inherit">
                 <h1 className="md:text-xl">2. Destination wedding</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
-            <li onClick={() => handleSetImage(slide3)}>
+            <li onClick={() => handleSetImage(3)}>
               <div className="flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] py-4 md:px-[3rem]  hover:text-[#2b2626]  text-gray-950 text-inherit">
                 <h1 className="md:text-xl">3. Destination wedding</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
-            <li onClick={() => handleSetImage(slide4)}>
+            <li onClick={() => handleSetImage(4)}>
               <div className="flex flex-col hover:w-[130%] hover:bg-[#0a0a0a35] py-4 md:px-[3rem] w-full  hover:text-[#2b2626]  text-gray-900 text-inherit">
                 <h1 className="md:text-xl">4. Destination wedding</h1>
                 <div className="border-b-2" />{" "}

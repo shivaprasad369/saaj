@@ -7,16 +7,16 @@ export default function Specialization() {
     <motion.div
     id="specialization"
     viewport={{once:true,amount:"all"}}
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 1, y: -50 }}
       whileInView={{
         opacity: 1,
         y: 0,
         transition: { delay: 0.3, ease: easeInOut, type: "spring " },
       }}
-      className="pt-5 flex-wrap justify-center items-center text-center gap-4 "
+      className="md:pt-5 md:mt-[2rem] flex-wrap justify-center items-center text-center gap-4 max-md:pt-[3rem]"
     >
       <motion.h1
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 1, y: -50 }}
         viewport={{once:true,amount:'all'}}
         whileInView={{
           opacity: 1,
@@ -28,7 +28,7 @@ export default function Specialization() {
         Our Specialization
       </motion.h1>
       <div className="grid md:grid-rows-2 md:grid-flow-col max-md:grid-cols-1 gap-2 pt-3">
-        <motion.div  initial={{ opacity: 0, scale:1}}
+        <motion.div  initial={{ opacity: 1, scale:1}}
         viewport={{once:true,amount:'all'}}
       whileInView={{
         opacity: 1,
@@ -49,7 +49,7 @@ export default function Specialization() {
             <h1>One stop solution</h1>
           </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, scale:1}}
+        <motion.div initial={{ opacity: 1, scale:1}}
         viewport={{once:true,amount:'all'}}
       whileInView={{
         opacity: 1,
@@ -69,7 +69,7 @@ export default function Specialization() {
             <h1>One stop solution</h1>
           </div>
         </motion.div>
-        <motion.div  initial={{ opacity: 0, scale:1}}
+        <motion.div  initial={{ opacity: 1, scale:1}}
         viewport={{once:true,amount:'all'}}
       whileInView={{
         opacity: 1,
@@ -89,7 +89,7 @@ export default function Specialization() {
             <h1>One stop solution</h1>
           </div>
         </motion.div>
-        <motion.div  initial={{ opacity: 0, scale:1}}
+        <motion.div  initial={{ opacity: 1, scale:1}}
         viewport={{once:true,amount:'all'}}
       whileInView={{
         opacity: 1,
@@ -103,7 +103,7 @@ export default function Specialization() {
             <h1>One stop solution</h1>
           </div>
         </motion.div>
-        <motion.div  initial={{ opacity: 0, scale:1}}
+        <motion.div  initial={{ opacity: 1, scale:1}}
         viewport={{once:true,amount:'all'}}
       whileInView={{
         opacity: 1,

@@ -22,7 +22,7 @@ export default function Client() {
           }}
           className=" md:w-[100%] pt-[2rem] "
         >
-          <img src={img} alt="card" className="max-[746px]:h-[80%] md:h-[110%]"/>
+          <img src={img} alt="card" className=" md:h-[110%]"/>
         </motion.div>
         <motion.div
           viewport={{once:true}}

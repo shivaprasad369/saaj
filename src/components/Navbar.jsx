@@ -21,8 +21,8 @@ export default function Navbar() {
 
  
   return (
-    <div className="w-[100%]">
-      <div className="flex md:fixed z-10 bg-[#07070735] w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-6 ">
+    <div className="w-[100%] ">
+      <div className="flex md:fixed realtive z-10 bg-[#07070735] w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-6 ">
         <div>
           <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/>
         </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="flex gap-[3rem] max-md:block min-[946px]:hidden text-xl list-none max-[952px]:block"
+            className=" gap-[3rem] max-[900px]:block hidden text-xl list-none "
             onClick={ toggleDrawer("right", true)}
           >
             <ImMenu className="text-white text-[2rem]"/>
