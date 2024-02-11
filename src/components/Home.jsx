@@ -27,7 +27,7 @@ export default function Home({handleSetImage}) {
     } */}
       <Navbar />
       <div className="flex justify-between relative text-inherit max-[446px]:justify-center max-[792px]:text-sm items-center flex-wrap md:p-4 max-md:text-sm ">
-        <div className="flex flex-col bg-[#0f020240] md:gap-2 items-center justify-center  px-[3rem] object-contain mt-[5rem]">
+        <div className="flex flex-col bg-[#0f020240] md:gap-2 items-center justify-center  px-[3rem] object-contain md:mt-[5rem]">
           <ol
             type="1"
             className=" flex flex-col  text-white max-[462px]:text-[0.8rem] py-1 md:py-9 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
