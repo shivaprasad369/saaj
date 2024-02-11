@@ -22,7 +22,7 @@ export default function Navbar() {
  
   return (
     <div className="w-[100%] ">
-      <div className="flex fixed overflow-hidden z-10 bg-[#07070735] w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
+      <div className="flex relative overflow-hidden z-10 bg-[#07070735] w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
         <div>
           <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/>
         </div>
