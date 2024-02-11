@@ -6,6 +6,7 @@ import Client from "./components/Client";
 import Gallary from "./components/Gallary";
 import Footer from "./components/Footer";
 import Cover from "./components/Cover";
+import Main from './components/Main';
 
 function App() {
   return (
