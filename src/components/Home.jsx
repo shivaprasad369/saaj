@@ -52,11 +52,11 @@ export default function Home() {
         <div className="flex flex-col bg-[#0f020240] md:gap-2 items-center justify-center  px-[3rem] object-contain md:mt-[5rem]">
           <ol
             type="1"
-            className=" flex flex-col  text-white max-[462px]:text-[0.8rem] py-1 md:py-9 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
+            className=" flex flex-col  text-white max-[462px]:text-[0.8rem] mt-[2rem] py-10 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
           >
             <li onClick={() => handleSetImage(0)} className="">
               <a href="#" className={"active:text-orange-300"}>
-                <div className="flex flex-col md:py-2 hover:w-[130%] hover:bg-[#0a0a0a35] md:px-[3rem] hover:text-[#d4bfbf] text-inherit">
+                <div className="flex flex-col md:py-2 hover:w-[130%] hover:bg-[#0a0a0a35]  md:px-[3rem] hover:text-[#d4bfbf] text-inherit">
                   <h1 className="md:text-xl">1. Destination wedding</h1>
                   <div className="border-b-2" />{" "}
                   <p>Import trace for requested module</p>
