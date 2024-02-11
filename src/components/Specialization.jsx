@@ -13,7 +13,7 @@ export default function Specialization() {
         
         transition: { delay: 0.3, ease: easeInOut, type: "spring " },
       }}
-      className="md:pt-5 relative md:mt-[2rem] flex-wrap justify-center items-center text-center gap-4 max-md:pt-[3rem]"
+      className="md:pt-5 relative md:mt-[4rem] flex-wrap justify-center items-center text-center gap-4 max-md:pt-[3rem]"
     >
       <motion.h1
         initial={{ opacity: 1, y: -50 }}
