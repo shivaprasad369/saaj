@@ -44,7 +44,7 @@ export default function Client() {
             <h1 className="text-[2rem] font-bold pt-[2rem] pb-[1rem] text-red-400">
               What our client says?
             </h1>
-            <p className="text-gray-600 sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-2">
+            <p className="text-gray-600 sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               natus doloremque itaque mollitia laudantium architecto tempore ad,
               temporibus aspernatur obcaecati harum iusto ipsum porro! Illo

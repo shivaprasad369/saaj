@@ -6,18 +6,40 @@ import { FaTwitter } from "react-icons/fa";
 
 import Navbar from "./Navbar";
 import data from "../constants/images";
-export default function Home({handleSetImage}) {
-  // const [imageIndex,setImageIndex]=useState(1)
+const images=["https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
+"https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
+"https://images.unsplash.com/photo-1542042161784-26ab9e041e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+"https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"]
+export default function Home() {
+  const [imageIndex,setImageIndex]=useState(1)
   // const handleSetImage = (ind) => {
   //  setImageIndex(ind)
   
   // };
+  // const [backgroundIndex, setBackgroundIndex] = useState(0);
+ const handleSetImage = (ind) => {
+   setImageIndex(ind)
+  
+  };
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setBackgroundIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+  //   }, 5000);
+
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
  
   return (
     <div
     id='home'
-      // className={`bg-[url()]`}
-      // style={{backgroundImage:url()}}
+      
+      style={{  backgroundImage: `url(${images[imageIndex]})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "screen",
+      width: "100%",}}
     >
       {/* {data?.length && data.map((data,index)=>(
 
@@ -32,7 +54,7 @@ export default function Home({handleSetImage}) {
             type="1"
             className=" flex flex-col  text-white max-[462px]:text-[0.8rem] py-1 md:py-9 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
           >
-            <li onClick={() => handleSetImage(1)} className="">
+            <li onClick={() => handleSetImage(0)} className="">
               <a href="#" className={"active:text-orange-300"}>
                 <div className="flex flex-col md:py-2 hover:w-[130%] hover:bg-[#0a0a0a35] md:px-[3rem] hover:text-[#d4bfbf] text-inherit">
                   <h1 className="md:text-xl">1. Destination wedding</h1>
@@ -41,21 +63,21 @@ export default function Home({handleSetImage}) {
                 </div>
               </a>
             </li>
-            <li onClick={() => handleSetImage(2)}>
+            <li onClick={() => handleSetImage(1)}>
               <div className="flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] hover:text-[#d4bfbf] text-gray-900 text-inherit">
                 <h1 className="md:text-xl">2. Destination wedding</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
-            <li onClick={() => handleSetImage(3)}>
+            <li onClick={() => handleSetImage(2)}>
               <div className="flex flex-col hover:w-[130%]   hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit">
                 <h1 className="md:text-xl">3. Destination wedding</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
-            <li onClick={() => handleSetImage(4)}>
+            <li onClick={() => handleSetImage(3)}>
               <div className="flex flex-col hover:w-[130%]   hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] w-full  hover:text-[#d4bfbf]  text-gray-900 text-inherit">
                 <h1 className="md:text-xl">4. Destination wedding</h1>
                 <div className="border-b-2" />{" "}
