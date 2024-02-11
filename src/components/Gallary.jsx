@@ -7,7 +7,7 @@ import Cards from "./Card";
 
 export default function Gallary() {
   return (
-    <div id="gallary" className="justify-center items-center pt-[4rem]">
+    <div id="gallary" className="justify-center items-center pt-[4rem] relative max-w:[100%]">
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         viewport={{once:true}}
@@ -26,7 +26,7 @@ export default function Gallary() {
             <motion.div
             viewport={{once:true}}
               initial={{ opacity: 0, y: 0 }}
-              whileHover={{ scale: 1.1, type: "spring" }}
+              whileHover={{ scale: 1, type: "spring" }}
               whileInView={{
                 opacity: 1,
                 transition: {

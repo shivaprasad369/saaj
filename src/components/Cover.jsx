@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Home from './Home';
+import data from '../constants/images';
 export default function Cover() {
+  const [imageIndex,setImageIndex]=useState(1)
+  const handleSetImage = (ind) => {
+   setImageIndex(ind)
+  
+  };
   return (
     <>
-    <Home/>
+       {data?.length && data.map((data,index)=>(
+
+<img src={data.img} alt="homepage" key={data.index} className={` ${data.index===imageIndex ?'block':'hidden'} absolute bg-no-repeat bg-cover w-[100%]  max-[1364px]:h-[75%] max-md:h-[65%] max-[420px]:h-[100%] min-[439px]:max-[730px]:h-[60%] min-[769px]:max-[910px]:h-[80%] max-[914px]:h-[75%]  text-black `}/>
+))
+
+}
+    <Home handleSetImage={handleSetImage}/>
     </>
   )
 }

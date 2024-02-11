@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import data from "../constants/images";
 
 import { easeIn, easeInOut, motion, spring } from "framer-motion";
+import { Skeleton } from "@mui/material";
 
 export default function Services() {
  
@@ -16,7 +17,7 @@ export default function Services() {
         setIndex(1);
       }
       handleNextImage();
-    }, 2000);
+    }, 3000);
     return () => {
       clearTimeout(timer);
     };
@@ -52,17 +53,17 @@ export default function Services() {
         <motion.div 
         layout
           viewport={{once:true}}
-          initial={{opacity:0,x:50}}
-          whileInView={{opacity:1,x:0,transition:{ease:easeIn}}}
+          initial={{opacity:0}}
+          whileInView={{opacity:1,transition:{ease:easeIn}}}
         className=" bg-gray-100 md:p-1 w-auto ">
           <motion.div
           className="items-center justify-center text-center">
-            {data.map((data) => (
+            {data ? data.map((data) => (
               <motion.div
              
               className="object-contain">
                 <motion.img
-                animate={{transition:{ease:easeIn,type:"spring"}}}
+                animate={{transition:{ease:easeIn}}}
                   src={data.img}
               
                   className={`${
@@ -75,7 +76,8 @@ export default function Services() {
                   </h1>
                 </div>
               </motion.div>
-            ))}
+            )) : <Skeleton animation="wave" height={600} width="100%" />}
+            {!data &&<Skeleton animation="wave" height={'100%'} width="100%" />}
           </motion.div>
         </motion.div>
       </div>

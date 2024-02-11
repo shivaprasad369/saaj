@@ -1,4 +1,4 @@
-import img1 from '../components/assets/slide1.jpeg'
+
 import img2 from '../components/assets/slide2.jpeg'
 import img3 from '../components/assets/slide3.avif'
 import img4 from '../components/assets/slide4.jpg'

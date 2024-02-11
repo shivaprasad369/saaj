@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 import React from "react";
 export default function Cards() {
   return (
-    <Card s className="max-md:w-[100%]">
+    <Card s className="max-md:w-[100%] relative">
       <CardActionArea>
         <CardMedia  component={"img"} height={"250"} image={"http://localhost:3000/static/media/slide1.3eb299e3ab97891c5a26.jpeg"} />
         <CardContent>

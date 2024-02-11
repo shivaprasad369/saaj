@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="text-center gap-3 flex flex-col md:mt-[4rem] md:ml-[2rem]">
           <h1 className="font-bold ">Get Update</h1>
-          <TextField label="Enter a email" color="secondary" focused />
+          <TextField label="Enter a email" className="text-black border-black" focused />
           <Button variant="outlined"sx={{color:'white',fontWeight:600}}>Send Enquire</Button>
           <div className="flex flex-row mt-7">
             <p className="flex gap-3"><span className="pr-3 ">Follow Us on</span><FaFacebook /> <LuInstagram /> <IoLogoTwitter /> <FaLinkedinIn /></p>

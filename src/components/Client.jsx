@@ -5,8 +5,8 @@ import { Avatar } from "@mui/material";
 
 export default function Client() {
   return (
-    <div id="client">
-      <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e6dada35] md:h-[20rem] h-full w-screen px-2 ">
+    <div id="client max-w:[100%]">
+      <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e6dada35] md:h-[20rem] h-full px-2 ">
         <motion.div
           initial={{ opacity: 0, x: -50}}
           viewport={{once:true}}

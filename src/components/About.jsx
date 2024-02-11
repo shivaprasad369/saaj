@@ -5,7 +5,7 @@ import w2 from "./assets/image/about1.png";
 import { Button } from "@mui/material";
 export default function About() {
   return (
-    <div id="about" className="relative bg-white flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] ">
+    <div id="about" className="z-100 relative bg-white flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] ">
       
       <div className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
