@@ -8,7 +8,7 @@ import logo from './assets/image/logo.png'
 import { Button, TextField } from "@mui/material";
 export default function Footer() {
   return (
-    <div id="contact" className="bg-orange-400 flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
+    <div id="contact" className="bg-slate-400 text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
       <div className="flex md:justify-between justify-center items-center max-md:flex-col px-8">
         <div className="text-left gap-4 ">
           <h1 className="text-center font-bold">Get In Touch</h1>
@@ -50,8 +50,14 @@ export default function Footer() {
         </div>
         <div className="text-center gap-3 flex flex-col md:mt-[4rem] md:ml-[2rem]">
           <h1 className="font-bold ">Get Update</h1>
-          <TextField label="Enter a email" className="text-black border-black" focused />
-          <Button variant="outlined"sx={{color:'white',fontWeight:600}}>Send Enquire</Button>
+          <TextField
+          id="standard-read-only-input"
+          label="Enter a email address"
+          defaultValue="ABC@gmail.com"
+          
+          variant="standard"
+        />
+          <Button variant="contained">Contact Us.</Button>
           <div className="flex flex-row mt-7">
             <p className="flex gap-3"><span className="pr-3 ">Follow Us on</span><FaFacebook /> <LuInstagram /> <IoLogoTwitter /> <FaLinkedinIn /></p>
           </div>

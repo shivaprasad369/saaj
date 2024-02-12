@@ -89,11 +89,11 @@ export default function Home() {
         {/* max-[762px]:ml-[12rem] max-[640px]:ml-[6rem] max-[536px]:ml-[3rem]  min-[476px]:text-right */}
         <div className="flex flex-col md:pt-[200px] md:pr-3 ">
           <div className="gap-2  ">
-            <div className="font-semibold uppercase max-[792px]:text-xl ">
-              <h5 className="text-sm text-right font-bold max-[792px]:mb-3">
+            <div className="font-semibold uppercase max-[792px]:text-xl font-600]">
+              <h5 className="text-sm text-right font-bold max-[792px]:mb-3  text-white">
                 destination
               </h5>
-              <h1 className="text-[6rem] max-[976px]:text-[2.7rem]  max-[702px]:text-[3rem] max-[583px]:text-[2rem]  ">
+              <h1 className="text-white overflow-hidden text-[6rem] max-[976px]:text-[2.7rem]  max-[702px]:text-[3rem] max-[583px]:text-[2rem]  ">
                 JODHPUR
               </h1>
             </div>
