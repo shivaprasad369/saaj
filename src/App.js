@@ -10,7 +10,7 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <>
+    <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     <Cover/>
     <div>
      <About/>
@@ -21,7 +21,7 @@ function App() {
     <Gallary/>
     <Footer/>
  {/* <Main/> */}
-    </>
+    </div>
   );
 }
 
