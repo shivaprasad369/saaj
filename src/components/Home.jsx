@@ -1,15 +1,11 @@
-import React, {useEffect, useState } from "react";
+import React,  {useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 import Navbar from "./Navbar";
-import data from "../constants/images";
-const images=["https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
-"https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
-"https://images.unsplash.com/photo-1542042161784-26ab9e041e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
-"https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"]
+
 
 const data1=[{
   id:1,
@@ -42,7 +38,7 @@ export default function Home() {
     subTitle:'Wedding Planners',
     img:'https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D'
   })
-  const [imageIndex,setImageIndex]=useState(1)
+  
   // const handleSetImage = (ind) => {
   //  setImageIndex(ind)
   
@@ -87,13 +83,13 @@ export default function Home() {
             className=" flex flex-col  text-white max-[462px]:text-[0.8rem] mt-[2rem] py-10 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
           >
             <li onClick={() => handleSetImage(0)} className="">
-              <a href="#" className={"active:text-orange-300"}>
+            
                 <div className={`flex flex-col md:py-2 ${hero.id===1 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } md:px-[3rem] text-inherit`}>
                   <h1 className="md:text-xl">1. Wedding Planners</h1>
                   <div className="border-b-2" />{" "}
                   <p>Import trace for requested module</p>
                 </div>
-              </a>
+            
             </li>
             <li onClick={() => handleSetImage(1)}>
               <div className={`flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  ${hero.id===2 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:text-[#d4bfbf] text-gray-900 text-inherit`}>

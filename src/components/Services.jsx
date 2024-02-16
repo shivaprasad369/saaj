@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import data from "../constants/images";
 
-import { easeIn, easeInOut, motion, spring } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import { Skeleton } from "@mui/material";
 
 export default function Services() {
