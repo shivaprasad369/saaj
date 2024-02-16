@@ -10,6 +10,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function TemporaryDrawer({state,toggleDrawer}) {
   
@@ -27,12 +28,12 @@ export default function TemporaryDrawer({state,toggleDrawer}) {
       <List>
         {['about', 'Services', 'gallary',"why Saaj?."].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton href={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"#"+text }` }>
+            <Link to={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"#"+text }` }>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} sx={{textTransform:'capitalize'}} />
-            </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
