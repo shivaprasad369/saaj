@@ -28,7 +28,7 @@ export default function TemporaryDrawer({state,toggleDrawer}) {
       <List>
         {['about', 'Services', 'gallary',"why Saaj?."].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <Link to={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"#"+text }` }>
+            <Link to={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"#"+text }` } className='flex p-3'>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>

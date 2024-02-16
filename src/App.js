@@ -11,6 +11,7 @@ import Services from './components/Services/Services';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
     <Route path='/services' element={<Services/>}/>
     </Routes>
     <Footer/>
+
     {/* <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     <Cover/>
     <Why/>

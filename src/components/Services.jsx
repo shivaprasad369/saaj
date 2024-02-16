@@ -3,7 +3,6 @@ import data from "../constants/images";
 
 import { easeIn, easeInOut, motion } from "framer-motion";
 import { Skeleton } from "@mui/material";
-
 export default function Services() {
   const [index, setIndex] = useState(0);
   const handleNextImage = () => {
@@ -26,7 +25,7 @@ export default function Services() {
       id="services"
       className="p-2 relative justify-center items-center bg-[#f4f4f7]"
     >
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
+      <div className="grid relative md:grid-cols-2 grid-cols-1 gap-2">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -50 }}
@@ -57,7 +56,7 @@ export default function Services() {
           whileInView={{ opacity: 1, transition: { ease: easeIn } }}
           className=" bg-gray-100 md:p-1 w-auto "
         >
-          <motion.div className="items-center justify-center text-center">
+          <motion.div className=" relative items-center justify-center text-center">
             {data ? (
               data.map((data) => (
                 <motion.div className="object-contain">
@@ -66,13 +65,19 @@ export default function Services() {
                     src={data.img}
                     className={`${
                       data?.index === index ? "block" : "hidden"
-                    } md:w-[100%] rounded-md max-md:w-full`}
+                    } md:w-[100%]  h-[17rem] rounded-md max-md:w-full`}
                   />
-                  <div className="">
-                    <h1 className="text-xl font-bold md:pt-2 text-center">
-                      {data?.index === index && data.data}
-                    </h1>
-                  </div>
+
+                  <h1
+                    style={{ fontFamily: '"DM Serif Display", serif' }}
+                    className={`text-xl absolute ${
+                      data.index === 3
+                        ? " left-[15%] text-center"
+                        : " left-[30%] items-center justify-center"
+                    } top-5  font-bold  text-center items-center justify-center`}
+                  >
+                    {data?.index === index && data.data}
+                  </h1>
                 </motion.div>
               ))
             ) : (

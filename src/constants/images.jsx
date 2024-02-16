@@ -7,25 +7,25 @@ import img5 from '../components/assets/image/nSlide1.webp'
     index:1,
     img:img5,
     image:'slide1.jpeg',
-    data:'destination wedding'
+    data:'Wedding Planners'
 },
 {
     index:2,
     img:img2,
     image:'slide2.jpeg',
-    data:'destination wedding'
+    data:'Decor and Design'
 },
 {
     index:3,
     img:img3,
     image:'slide3.avif',
-    data:'destination wedding'
+    data:'Vendor and Artist Management'
 },
 {
     index:4,
     img:img4,
     image:"slide4.jpg",
-    data:'destination wedding'
+    data:'Corporates Events'
 },
 {
     index:5,
