@@ -33,7 +33,7 @@ export default function Navbar() {
           >
             <Link to="/">HOME</Link>
             <a href="#about">About us.</a>
-            <a href="/services">services</a>
+            <Link to="/services">services</Link>
             <a href="#gallary">Gallary</a>
             <Link to="/why">why saaj</Link>
           </div>
