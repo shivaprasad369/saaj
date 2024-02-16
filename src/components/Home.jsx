@@ -45,7 +45,7 @@ export default function Home() {
   // };
   // const [backgroundIndex, setBackgroundIndex] = useState(0);
  const handleSetImage = (ind) => {
-   setImageIndex(ind)
+  
   setHero(data1[ind])
   console.log(hero)
   };
