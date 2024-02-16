@@ -16,8 +16,8 @@ export default function How() {
           transition={{ duration: 0.5 }}
           className="flex bg-slate-100 flex-col mb-[2rem] md:flex-row md:items-center md:justify-between rounded-lg border-none border-gray-300 shadow-md"
         >
-          <div className="p-6 md:w-2/3">
-            <h3 className="mb-2 text-3xl font-medium text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
+          <div className="p-6 md:w-2/3 overflow-hidden">
+            <h3 className="mb-2 overflow-hidden text-3xl font-medium text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
               {" "}
               <span>1.</span> Events Planning and Design
             </h3>
@@ -27,7 +27,7 @@ export default function How() {
               an event that reflects your dreams and desires
             </p>
           </div>
-          <div className="p-6 md:w-1/2">
+          <div className="p-6 md:w-1/2 w-full">
             <img src={img1} alt="card" className="h-full w-full object-cover" />
           </div>
         </motion.div>
@@ -38,11 +38,11 @@ export default function How() {
           transition={{ duration: 0.5 }}
           className="flex  bg-slate-100 flex-col mb-[2rem] md:flex-row md:items-center md:justify-between rounded-lg border-none p-2 border-gray-300 shadow-md"
         >
-          <div className="p-6 md:w-1/2 max-md:hidden">
+          <div className="p-6 md:w-1/2 w-full max-md:hidden">
             <img src={img1} alt="card" className="h-full w-full object-cover" />
           </div>
           <div className="p-6 md:w-2/3">
-            <h3 className="mb-2 text-3xl font-medium text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
+            <h3 className="mb-2 overflow-hidden text-3xl font-medium text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
               {" "}
               <span>2.</span>Preparation
             </h3>
@@ -52,7 +52,7 @@ export default function How() {
               the effort to make every detail perfect for your special day
             </p>
           </div>
-          <div className="p-6 md:w-1/2 md:hidden">
+          <div className="p-6 md:w-1/2 w-full md:hidden">
             <img src={img1} alt="card" className="h-full w-full object-cover" />
           </div>
         </motion.div>
@@ -64,7 +64,7 @@ export default function How() {
           className="flex bg-slate-100 flex-col mb-[2rem] md:flex-row md:items-center md:justify-between rounded-lg border-none p-2 border-gray-300 shadow-md"
         >
           <div className="p-6 md:w-2/3">
-            <h3 className="mb-2 text-3xl text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
+            <h3 className="mb-2 text-3xl overflow-hidden text-gray-900" style={{fontFamily:'"Parisienne", cursive',fontWeight:800}}>
               {" "}
               <span>3.</span>Execution
             </h3>
@@ -74,7 +74,7 @@ export default function How() {
               to life, ensuring every moment is as magical as you imagined
             </p>
           </div>
-          <div className="p-6 md:w-1/2">
+          <div className="p-6 md:w-1/2 w-[100%]">
             <img src={img1} alt="card" className="h-full w-full object-cover" />
           </div>
         </motion.div>

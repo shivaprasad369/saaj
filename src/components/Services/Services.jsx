@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../assets/event.avif";
 import { easeIn, motion } from "framer-motion";
+import { Button } from "@mui/material";
 
 export default function Services() {
+const [more1,setMore1]=useState(false)
+const [more2,setMore2]=useState(false)
+const [more3,setMore3]=useState(false)
+const [more4,setMore4]=useState(false)
   return (
     <div className="">
       <div className="text-center mt-[2rem]">
@@ -28,7 +33,7 @@ export default function Services() {
                 delay: 0.5,
               },
             }}
-            className=" md:w-[90%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[100%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
@@ -58,7 +63,7 @@ export default function Services() {
               >
                 wedding planner
               </h1>
-              <p className="text-gray-600 md:text-[1rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-gray-600 md:text-[1rem] sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 Saaj Wedding stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -67,13 +72,9 @@ export default function Services() {
               </p>
               <div></div>
               <p className="text-gray-600 md:text-[1rem]  pb-[2rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                At Saaj Wedding, our passion is to transform your dreams into
-                reality, ensuring that every detail is a reflection of your
-                unique love story. Entrust your special day to Saaj Wedding,
-                where our seasoned expertise meets heartfelt dedication,
-                promising you a celebration that transcends expectations and
-                becomes an everlasting chapter in your love story.
+              {more1 && 'At Saaj Wedding, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Wedding, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.'}
               </p>
+              <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button>
             </div>
           </motion.div>
         </div>
@@ -115,16 +116,16 @@ export default function Services() {
                 delay: 0.7,
               },
             }}
-            className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+            className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[1rem] "
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[2.5rem] leading-15 font-bold pt-[2rem] pb-[1rem] capitalize"
+                className="text-[2.3rem]  font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 vendors and artist management
               </h1>
-              <p className="text-gray-600 md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-gray-600 md:text-[1rem]  sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 vendors and artist management : At Saaj Wedding, we understand
                 that the success of any celebration lies in seamless vendor and
                 artist management. Choosing the right vendors and artists is
@@ -134,16 +135,17 @@ export default function Services() {
                 vision and expectations.
               </p>
               <div className="p-2"></div>
-              <p className="text-gray-600 md:text-[1rem]  pb-[2rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                From photographers capturing your cherished moments to caterers
+              <p className="text-gray-600 md:text-[1rem]  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              {more2 && <>From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
                 creating a symphony of talents that makes your wedding
                 extraordinary. With Saaj Wedding, you can relax knowing that we
                 handle all the details, allowing you to enjoy a flawless
                 celebration filled with the expertise and creativity of the best
-                in the business.
+                in the business.</>}
               </p>
+              <Button onClick={()=>setMore2((more2)=>!more2)} variant="outlined">{more2 ? 'Know less': 'Show more'}</Button>
             </div>
           </motion.div>
           <motion.div
@@ -210,7 +212,7 @@ export default function Services() {
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[3rem] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
+                className="text-[2.5rem] leading-17 font-bold pt-[1rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 decor and design
@@ -225,12 +227,13 @@ export default function Services() {
               </p>
               <div className="p-2"></div>
               <p className="text-gray-600 pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                Our goal is to turn your venue into a dreamy space that brings
+               {more3 && <> Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
                 celebrating with you. With Saaj Wedding, you can count on a
                 perfect mix of creativity and elegance, making your special day
-                as beautiful as your love story.
+                as beautiful as your love story.</>}
               </p>
+              <Button onClick={()=>setMore3((more3)=>!more3)} variant="outlined">{more3 ? 'Know less': 'Show more'}</Button>
             </div>
           </motion.div>
         </div>
@@ -276,7 +279,7 @@ export default function Services() {
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[3rem] leading-17 font-bold pt-[2rem] pb-[1rem]  capitalize"
+                className="text-[2.5rem] leading-17 font-bold pt-[2rem] pb-[1rem]  capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 corporate events
@@ -292,12 +295,13 @@ export default function Services() {
               </p>
               <div></div>
               <p className="text-gray-600 pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
-                From conceptualization to flawless execution, we focus on every
+              {more4 && <> From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Wedding to
                 elevate your corporate gatherings, making them not just events
-                but experiences that reflect the excellence of your brand
+                but experiences that reflect the excellence of your brand</>}
               </p>
+              <Button onClick={()=>setMore4((more4)=>!more4)} variant="outlined">{more4 ? 'Know less': 'Show more'}</Button>
             </div>
           </motion.div>
           <motion.div

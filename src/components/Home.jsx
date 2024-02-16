@@ -21,7 +21,7 @@ const data1=[{
 },
 {
   id:3,
-  title:'Bangalore',
+  title:'Dehli',
   subTitle:'⁠Vendor and Artist Management',
   img:"https://images.unsplash.com/photo-1542042161784-26ab9e041e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
 },
@@ -52,38 +52,38 @@ export default function Home() {
       width: "100%",}}
     >
       <Navbar />
-      <div className="flex justify-between relative text-inherit max-[446px]:justify-center max-[792px]:text-sm items-center flex-wrap md:p-4 max-md:text-sm ">
-        <div className="flex flex-col bg-[#0f020240] md:gap-2 items-center justify-center  px-[3rem] object-contain max-md:mt-[5rem]">
+      <div className="flex justify-between max-sm:items-center max-sm:justify-center overflow-hidden w-full h-full max-sm:text-xl text-inherit   items-center flex-wrap  max-md:text-sm ">
+        <div className="flex flex-col bg-[#0f020240] md:gap-2 px-[3rem] object-contain max-[866px]:mt-[5rem]">
           <ol
             type="1"
-            className=" flex flex-col  text-white max-[462px]:text-[0.8rem] mt-[2rem] py-10 max-[702px]:text-[10px] gap-10 font-semibold object-cover  max-[792px]:text-sm "
+            className=" flex flex-col max-sm:text-md text-white mt-[3rem] py-10 gap-10 font-semibold object-cover   "
           >
             <li onClick={() => handleSetImage(0)} className="">
             
-                <div className={`flex flex-col md:py-2 ${hero.id===1 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } md:px-[3rem] text-inherit`}>
-                  <h1 className="md:text-xl">1. Wedding Planners</h1>
+                <div className={`flex flex-col md:py-2 ${hero.id===1 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } md:px-[1rem] text-inherit`}>
+                  <h1 className="">1. Wedding Planners</h1>
                   <div className="border-b-2" />{" "}
                   <p>Import trace for requested module</p>
                 </div>
             
             </li>
             <li onClick={() => handleSetImage(1)}>
-              <div className={`flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  ${hero.id===2 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:text-[#d4bfbf] text-gray-900 text-inherit`}>
+              <div className={`flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[1rem]  ${hero.id===2 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:text-[#d4bfbf] text-gray-900 text-inherit`}>
                 <h1 className="md:text-xl">2. Decor and Design</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
             <li onClick={() => handleSetImage(2)}>
-              <div className={`flex flex-col hover:w-[130%]   ${hero.id===3 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit`}>
+              <div className={`flex flex-col hover:w-[130%]   ${hero.id===3 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[1rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit`}>
                 <h1 className="md:text-xl">3. Vendor and Artist Management</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
             <li onClick={() => handleSetImage(3)}>
-              <div className={`flex flex-col hover:w-[130%]   ${hero.id===4 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] w-full  hover:text-[#d4bfbf]  text-gray-900 text-inherit`}>
-                <h1 className="md:text-xl">4. Corporates Events</h1>
+              <div className={`flex flex-col hover:w-[130%]   ${hero.id===4 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[1rem] w-full  hover:text-[#d4bfbf]  text-gray-900 text-inherit`}>
+                <h1 className="">4. Corporates Events</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
@@ -91,20 +91,20 @@ export default function Home() {
           </ol>
         </div>
         {/* max-[762px]:ml-[12rem] max-[640px]:ml-[6rem] max-[536px]:ml-[3rem]  min-[476px]:text-right */}
-        <div className="flex  md:flex-col md:pt-[200px] md:pr-3 ">
-          <div className="gap-2  ">
-            <div className="font-semibold uppercase max-[792px]:text-xl font-600]">
-              <h5 className="text-sm text-right font-bold max-[792px]:mb-3  text-white">
+       
+          <div className=" flex flex-col text-inherit sm:pt-[6rem] max-[866px]:min-sm:text-xl  " style={{fontWeight:800,fontFamily:'"DM Serif Display", serif'}}>
+            <div className=" flex justify-end flex-col p gap-2 max-[877px]:text-md max-sm:text-center pr-4 ">
+              <h5 className="sm:ml-[1.5rem] text-white sm:text-right text-inherit overflow-hidden">
                 {hero.subTitle}
               </h5>
-              <h1 className="text-white p-2  text-[4.5rem] max-[976px]:text-[2.7rem]  max-[702px]:text-[3rem] max-[583px]:text-[2rem]  ">
+              <h1 className="text-6xl pb-3 text-inherit text-white sm:text-right sm:ml-[1.5rem] overflow-hidden">
                 {hero.title}
               </h1>
             </div>
             <div>
-              <div className="flex flex-row text-right text-white justify-end max-[600px]:text-center">
-                <div className="border-3 w-3 text-white" />
-                <ul className="flex gap-4 cursor-pointer text-xl md:pt-[80px] my-3 text-center">
+              <div className="flex flex-row  text-white max-sm:items-center max-sm:justify-center">
+                <div className="border-3  text-white " />
+                <ul className="flex gap-4 cursor-pointer text-xl sm:pt-[100px] sm:ml-[8rem] ">
                   <li>
                     <FaInstagram />
                   </li>
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   );
