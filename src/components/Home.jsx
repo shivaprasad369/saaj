@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </li>
             <li onClick={() => handleSetImage(2)}>
-              <div className={`flex flex-col hover:w-[130%]   ${hero.id===3 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[1rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit`}>
+              <div className={`flex flex-col hover:w-[130%]   ${hero.id===3 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] sm:py-2 sm:px-[1rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit`}>
                 <h1 className="md:text-xl">3. Vendor and Artist Management</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>

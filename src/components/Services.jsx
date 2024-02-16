@@ -65,15 +65,15 @@ export default function Services() {
                     src={data.img}
                     className={`${
                       data?.index === index ? "block" : "hidden"
-                    } md:w-[100%]  h-[17rem] rounded-md max-md:w-full`}
+                    } md:w-[100%]  rounded-md max-md:w-full`}
                   />
 
                   <h1
                     style={{ fontFamily: '"DM Serif Display", serif' }}
                     className={`text-xl absolute ${
                       data.index === 3
-                        ? " left-[15%] text-center"
-                        : " left-[30%] items-center justify-center"
+                        ? " left-[25%] text-center"
+                        : " left-[35%] items-center justify-center"
                     } top-5  font-bold  text-center items-center justify-center`}
                   >
                     {data?.index === index && data.data}
