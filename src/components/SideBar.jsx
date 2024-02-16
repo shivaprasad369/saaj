@@ -11,12 +11,13 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Typography } from '@mui/material';
 
-export default function TemporaryDrawer({state,setState,toggleDrawer}) {
+export default function TemporaryDrawer({state,toggleDrawer}) {
   
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
+      color={"black"}
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -24,9 +25,9 @@ export default function TemporaryDrawer({state,setState,toggleDrawer}) {
 
       <Divider />
       <List>
-        {['about', 'Services', 'gallary','contact',"why Saaj?."].map((text, index) => (
+        {['about', 'Services', 'gallary',"why Saaj?."].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton href={`${text==='why Saaj?.' ? '/why ':'#'+ text } || ${text==='Services' ? '/serices ':'#'+text } `}>
+            <ListItemButton href={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"#"+text }` }>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
