@@ -10,7 +10,38 @@ const images=["https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=50
 "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
 "https://images.unsplash.com/photo-1542042161784-26ab9e041e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
 "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"]
+
+const data1=[{
+  id:1,
+  title:'Jodhapur',
+  subTitle:'Wedding Planners',
+  img:'https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D'
+}
+,{
+  id:2,
+  title:'Mumbai',
+  subTitle:'⁠Decor and Design',
+  img:"https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"
+},
+{
+  id:3,
+  title:'Bangalore',
+  subTitle:'⁠Vendor and Artist Management',
+  img:"https://images.unsplash.com/photo-1542042161784-26ab9e041e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+},
+{
+  id:4,
+  title:'Hydrabad',
+  subTitle:'⁠Corporates Events',
+  img:"https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+}]
 export default function Home() {
+  const [hero,setHero]=useState({
+    id:1,
+    title:'Jodhapur',
+    subTitle:'Wedding Planners',
+    img:'https://images.unsplash.com/photo-1587271636175-90d58cdad458?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D'
+  })
   const [imageIndex,setImageIndex]=useState(1)
   // const handleSetImage = (ind) => {
   //  setImageIndex(ind)
@@ -19,7 +50,8 @@ export default function Home() {
   // const [backgroundIndex, setBackgroundIndex] = useState(0);
  const handleSetImage = (ind) => {
    setImageIndex(ind)
-  
+  setHero(data1[ind])
+  console.log(hero)
   };
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -35,7 +67,7 @@ export default function Home() {
     <div
     id='home'
       
-      style={{  backgroundImage: `url(${images[imageIndex]})`,
+      style={{  backgroundImage: `url(${hero.img})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       height: "screen",
@@ -56,30 +88,30 @@ export default function Home() {
           >
             <li onClick={() => handleSetImage(0)} className="">
               <a href="#" className={"active:text-orange-300"}>
-                <div className="flex flex-col md:py-2 hover:w-[130%] hover:bg-[#0a0a0a35]  md:px-[3rem] hover:text-[#d4bfbf] text-inherit">
-                  <h1 className="md:text-xl">1. Destination wedding</h1>
+                <div className={`flex flex-col md:py-2 ${hero.id===1 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } md:px-[3rem] text-inherit`}>
+                  <h1 className="md:text-xl">1. Wedding Planners</h1>
                   <div className="border-b-2" />{" "}
                   <p>Import trace for requested module</p>
                 </div>
               </a>
             </li>
             <li onClick={() => handleSetImage(1)}>
-              <div className="flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] hover:text-[#d4bfbf] text-gray-900 text-inherit">
-                <h1 className="md:text-xl">2. Destination wedding</h1>
+              <div className={`flex flex-col hover:w-[130%]  hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  ${hero.id===2 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:text-[#d4bfbf] text-gray-900 text-inherit`}>
+                <h1 className="md:text-xl">2. Decor and Design</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
             <li onClick={() => handleSetImage(2)}>
-              <div className="flex flex-col hover:w-[130%]   hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit">
-                <h1 className="md:text-xl">3. Destination wedding</h1>
+              <div className={`flex flex-col hover:w-[130%]   ${hero.id===3 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem]  hover:text-[#d4bfbf]  text-gray-950 text-inherit`}>
+                <h1 className="md:text-xl">3. Vendor and Artist Management</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
             </li>
             <li onClick={() => handleSetImage(3)}>
-              <div className="flex flex-col hover:w-[130%]   hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] w-full  hover:text-[#d4bfbf]  text-gray-900 text-inherit">
-                <h1 className="md:text-xl">4. Destination wedding</h1>
+              <div className={`flex flex-col hover:w-[130%]   ${hero.id===4 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } hover:bg-[#0a0a0a35] md:py-2 md:px-[3rem] w-full  hover:text-[#d4bfbf]  text-gray-900 text-inherit`}>
+                <h1 className="md:text-xl">4. Corporates Events</h1>
                 <div className="border-b-2" />{" "}
                 <p>Import trace for requested module</p>
               </div>
@@ -91,10 +123,10 @@ export default function Home() {
           <div className="gap-2  ">
             <div className="font-semibold uppercase max-[792px]:text-xl font-600]">
               <h5 className="text-sm text-right font-bold max-[792px]:mb-3  text-white">
-                destination
+                {hero.subTitle}
               </h5>
               <h1 className="text-white overflow-hidden text-[6rem] max-[976px]:text-[2.7rem]  max-[702px]:text-[3rem] max-[583px]:text-[2rem]  ">
-                JODHPUR
+                {hero.title}
               </h1>
             </div>
             <div>

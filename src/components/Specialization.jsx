@@ -45,8 +45,9 @@ export default function Specialization() {
             /> */}
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
-          <div>
-            <h1>One stop solution</h1>
+          <div className="flex flex-col gap-y-2">
+            <h1 className="font-bold cursor-pointer" >Professional Team </h1>
+           
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 1, scale:1}}
@@ -66,7 +67,7 @@ export default function Specialization() {
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1>One stop solution</h1>
+            <h1 className="font-bold">Commitments</h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -86,7 +87,7 @@ export default function Specialization() {
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1>One stop solution</h1>
+            <h1 className="font-bold">Budget friendly </h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -100,7 +101,7 @@ export default function Specialization() {
           <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1>One stop solution</h1>
+            <h1 className="font-bold">Flexibility</h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -114,7 +115,7 @@ export default function Specialization() {
           <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1>One stop solution</h1>
+            <h1 className="font-bold">Passionate</h1>
           </div>
         </motion.div>
       </div>

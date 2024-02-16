@@ -1,27 +1,43 @@
 import './App.css';
-import About from "./components/About";
-import Services from "./components/Services";
-import Specialization from "./components/Specialization";
-import Client from "./components/Client";
-import Gallary from "./components/Gallary";
-import Footer from "./components/Footer";
+
+
+
+import Client from "./components/Client/Client";
+
 import Cover from "./components/Cover";
-import Main from './components/Main';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Services from './components/Services/Services';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
+    <BrowserRouter>
+    <Home/>
+    <Routes>
+
+    <Route path='/' element={<Cover/>}/>
+    <Route path='/why' element={<Client/>}/>
+    <Route path='/services' element={<Services/>}/>
+    </Routes>
+    <Footer/>
+    {/* <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     <Cover/>
-    <div>
+    <Why/>
+    <How/>
+    <Footer/> */}
+    {/* <div>
      <About/>
     </div>
     <Services/>
     <Specialization/>
     <Client/>
     <Gallary/>
-    <Footer/>
+    <Footer/> */}
  {/* <Main/> */}
-    </div>
+    {/* </div> */}
+    </BrowserRouter>
   );
 }
 

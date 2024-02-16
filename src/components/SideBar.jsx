@@ -24,9 +24,9 @@ export default function TemporaryDrawer({state,setState,toggleDrawer}) {
 
       <Divider />
       <List>
-        {['about', 'services', 'gallary','contact'].map((text, index) => (
+        {['about', 'Services', 'gallary','contact',"why Saaj?."].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton href={`#${text==='why Saaj?.' ? 'client ':text}`}>
+            <ListItemButton href={`${text==='why Saaj?.' ? '/why ':'#'+ text } || ${text==='Services' ? '/serices ':'#'+text } `}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>

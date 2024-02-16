@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
-import Home from './Home';
-import data from '../constants/images';
+import React from 'react'
+
+import About from './About';
+import Services from './Services';
+import Specialization from './Specialization';
+import Client from './Client';
+import Gallary from './Gallary';
+
 export default function Cover() {
   // const [imageIndex,setImageIndex]=useState(1)
   // const handleSetImage = (ind) => {
@@ -15,7 +20,14 @@ export default function Cover() {
 ))
 
 } */}
-    <Home />
+    
+    <About/>
+ 
+    <Services/>
+    <Specialization/>
+    <Client/>
+    <Gallary/>
+    
     </>
   )
 }

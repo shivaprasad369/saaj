@@ -8,8 +8,8 @@ export default function Client() {
     <div id="client max-w:[100%]">
       <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e6dada35] md:h-[20rem] h-full px-2 ">
         <motion.div
-          initial={{ opacity: 0, x: -50}}
-          viewport={{once:true}}
+          initial={{ opacity: 0, x: -50 }}
+          viewport={{ once: true }}
           whileInView={{
             opacity: 1,
             x: 0,
@@ -22,12 +22,11 @@ export default function Client() {
           }}
           className=" md:w-[100%] pt-[2rem] "
         >
-          <img src={img} alt="card" className=" md:h-[110%]"/>
+          <img src={img} alt="card" className=" md:h-[110%]" />
         </motion.div>
         <motion.div
-          viewport={{once:true}}
-          initial={{ opacity: 0, x: 50,  }}
-
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{
             opacity: 1,
             x: 0,
@@ -45,13 +44,13 @@ export default function Client() {
               What our client says?
             </h1>
             <p className="text-gray-600 sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              natus doloremque itaque mollitia laudantium architecto tempore ad,
-              temporibus aspernatur obcaecati harum iusto ipsum porro! Illo
-              cupiditate cum earum ipsa soluta.
+              Choosing Saaj Wedding for our wedding in Jaipur was the best
+              decision. Their meticulous planning, attention to detail, and
+              personalized touch made our celebration truly magical. Highly
+              recommend!
             </p>
             <div className="px-[47%] border-black h-fit pt-5 ">
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
             </div>
             <p className="font-bold pt-2 md:pb-3">Shivaprasad</p>
           </div>

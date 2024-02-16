@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import TemporaryDrawer from "./SideBar";
 import logo from './assets/image/logo.png'
 import { ImMenu } from "react-icons/im";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [state, setState] = useState({
     right: false,
@@ -30,11 +31,11 @@ export default function Navbar() {
           <div
             className={`flex gap-[3rem] max-[952px]:hidden max-[826px]:text-[1rem] md:text-xl list-none`}
           >
-            <a href="#home">HOME</a>
+            <Link to="/">HOME</Link>
             <a href="#about">About us.</a>
-            <a href="#services">services</a>
+            <a href="/services">services</a>
             <a href="#gallary">Gallary</a>
-            <a href="#client">why saaj</a>
+            <Link to="/why">why saaj</Link>
           </div>
 
           <button
