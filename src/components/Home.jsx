@@ -53,15 +53,15 @@ export default function Home() {
     >
       <Navbar />
       <div className="flex justify-between max-sm:items-center max-sm:justify-center overflow-hidden w-full h-full max-sm:text-xl text-inherit   items-center flex-wrap  max-md:text-sm ">
-        <div className="flex flex-col bg-[#0f020240] md:gap-2 px-[3rem] object-contain max-[866px]:mt-[5rem]">
+        <div className="flex flex-col bg-[#0f020240] md:gap-2 px-[3rem] object-contain max-[866px]:mt-[1rem]">
           <ol
             type="1"
-            className=" flex flex-col max-sm:text-md text-white mt-[3rem] py-10 gap-10 font-semibold object-cover   "
+            className=" flex flex-col max-sm:text-sm text-white mt-[3rem] pb-3 md:pt-10 gap-10 font-semibold object-cover   "
           >
             <li onClick={() => handleSetImage(0)} className="">
             
                 <div className={`flex flex-col md:py-2 ${hero.id===1 ? 'bg-[#0a0a0a35] w-[130%]  text-[#d4bfbf] ' :'' } md:px-[1rem] text-inherit`}>
-                  <h1 className="">1. Wedding Planners</h1>
+                  <h1 >1. Wedding Planners</h1>
                   <div className="border-b-2" />{" "}
                   <p>Import trace for requested module</p>
                 </div>
@@ -92,19 +92,19 @@ export default function Home() {
         </div>
         {/* max-[762px]:ml-[12rem] max-[640px]:ml-[6rem] max-[536px]:ml-[3rem]  min-[476px]:text-right */}
        
-          <div className=" flex flex-col text-inherit sm:pt-[6rem] max-[866px]:min-sm:text-xl  " style={{fontWeight:800,fontFamily:'"DM Serif Display", serif'}}>
-            <div className=" flex justify-end flex-col p gap-2 max-[877px]:text-md max-sm:text-center pr-4 ">
+          <div className=" flex flex-col text-inherit  max-[866px]:min-sm:text-xl  " style={{fontWeight:800,fontFamily:'"DM Serif Display", serif'}}>
+            <div className=" flex justify-end flex-col p gap-2 max-[877px]:text-md max-[544px]:text-center pr-4 ">
               <h5 className="sm:ml-[1.5rem] text-white sm:text-right text-inherit overflow-hidden">
                 {hero.subTitle}
               </h5>
-              <h1 className="text-6xl pb-3 text-inherit text-white sm:text-right sm:ml-[1.5rem] overflow-hidden">
+              <h1 className="text-6xl min-[1000px]:text-[7rem] pb-3 text-inherit text-white sm:text-right sm:ml-[1.5rem] overflow-hidden">
                 {hero.title}
               </h1>
             </div>
             <div>
-              <div className="flex flex-row  text-white max-sm:items-center max-sm:justify-center">
-                <div className="border-3  text-white " />
-                <ul className="flex gap-4 cursor-pointer text-xl sm:pt-[100px] sm:ml-[8rem] ">
+              <div className="flex flex-row text-right text-white max-sm:items-center max-sm:justify-center">
+                <div className="border-3  text-white text-right" />
+                <ul className="flex gap-4 cursor-pointer text-right text-xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
                   <li>
                     <FaInstagram />
                   </li>
