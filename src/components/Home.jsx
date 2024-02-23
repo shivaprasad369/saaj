@@ -52,7 +52,7 @@ export default function Home() {
       width: "100%",}}
     >
       <Navbar />
-      <div className="flex justify-between max-sm:items-center max-sm:justify-center overflow-hidden w-full h-full max-sm:text-xl text-inherit   items-center flex-wrap  max-md:text-sm ">
+      <div className="flex sm:justify-between max-sm:items-center max-sm:justify-center overflow-hidden w-full sm:h-screen max-sm:text-xl text-inherit   items-center flex-wrap  max-md:text-sm ">
         <div className="flex flex-col bg-[#0f020240] md:gap-2 px-[3rem] object-contain max-[866px]:mt-[1rem]">
           <ol
             type="1"

@@ -51,32 +51,42 @@ export default function Services() {
         </motion.div>
         <motion.div
           layout
-          viewport={{ once: true }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { ease: easeIn } }}
+         
+          initial={{ opacity: 0,y:-50 }}
+          animate={{ opacity: 1, y:0, transition: { ease: easeIn,duration:1.5,type:'spring' } }}
           className=" bg-gray-100 md:p-1 w-auto "
         >
-          <motion.div className=" relative items-center justify-center text-center">
+          <motion.div
+          initial={{ bottom: "2rem" }}
+          whileInView={{ bottom: "0rem" }}
+          transition={{ duration: 3, type: "spring" }}
+           className=" relative items-center justify-center text-center">
+            
             {data ? (
               data.map((data) => (
-                <motion.div className="object-contain">
+                <motion.div  className="object-contain">
                   <motion.img
-                    animate={{ transition: { ease: easeIn } }}
+                      initial={{ bottom: "2rem" }}
+                      whileInView={{ bottom: "0rem" }}
+                      transition={{ duration: 3, type: "spring" }} 
                     src={data.img}
                     className={`${
                       data?.index === index ? "block" : "hidden"
-                    } md:w-[100%]  rounded-md max-md:w-full`}
+                    } md:w-[100%] blur-[0.1rem] rounded-md max-md:w-full`}
                   />
 
                   <h1
                     style={{ fontFamily: '"DM Serif Display", serif' }}
                     className={`text-xl absolute ${
                       data.index === 3
-                        ? " left-[25%] text-center"
-                        : " left-[35%] items-center justify-center"
-                    } top-5  font-bold  text-center items-center justify-center`}
+                        ? "  text-center"
+                        : " items-center justify-center"
+                    }   font-bold top-0  pt-[20%]  h-full  text-center justify-center items-center w-full `}
                   >
+                    <div className="relative z-10 md:text-6xl max-md:text-5xl text-[#0a0a0a]">
+
                     {data?.index === index && data.data}
+                    </div>
                   </h1>
                 </motion.div>
               ))

@@ -31,10 +31,10 @@ export default function Navbar() {
           <div
             className={`flex gap-[3rem] max-[952px]:hidden max-[826px]:text-[1rem] md:text-xl list-none`}
           >
-            <Link to="/">HOME</Link>
-            <a href="#about">About us.</a>
+            <Link to="/#home">HOME</Link>
+            <a href="/#about">About us.</a>
             <Link to="/services">services</Link>
-            <a href="#gallary">Gallary</a>
+            <a href="/#gallary">Gallary</a>
             <Link to="/why">why saaj</Link>
           </div>
 
