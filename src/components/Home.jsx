@@ -78,7 +78,7 @@ export default function Home() {
           <ol
             type="1"
             style={{ fontFamily: ` "Libre Baskerville", serif` }}
-            className="flex w-[23rem] max-[422px]:w-[20rem] font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem] pb-3 md:pt-10 gap-[3rem] object-cover   "
+            className="flex w-[25rem] max-[422px]:w-[20rem] font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem] pb-3 md:pt-10 gap-[3rem] object-cover   "
           >
             <Slider {...settings} className="  gap-20 py-10 ">
               <li
