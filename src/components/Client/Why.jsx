@@ -7,22 +7,23 @@ import {
 } from "@mui/material";
 
 import React from "react";
-import img from "../assets/slide2.jpeg";
+import img from "../assets/why1.jpg";
 import { motion } from "framer-motion";
 export default function Why() {
   return (
     <div className="w-full h-full justify-center items-center  overflow-hidden flex flex-col gap-3">
-      <div className="mt-3 gap-3 text-3xl font-bold">
-        <h1>Why Saaj?</h1>
+      <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#493915]">
+        <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} >Why Saaj?</h1>
       </div>
       <div className="flex flex-row max-md:flex-col gap-10">
         <div className="shadow-sm ">
-          <Card sx={{ maxWidth: 460 }} className="shadow-md">
+          <Card sx={{ maxWidth: 460,height:400,boxShadow:20,borderRadius:5}} className="shadow-md">
             <CardActionArea className="p-2">
-              <CardMedia
+              <CardMedia 
+              sx={{height:260,borderRadius:5}}
                 className="p-2 border rounded-md"
                 component="img"
-                height="140"
+                height={'100'}
                 image={img}
                 alt="client"
               />

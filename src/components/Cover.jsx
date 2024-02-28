@@ -5,6 +5,8 @@ import Services from './Services';
 import Specialization from './Specialization';
 import Client from './Client';
 import Gallary from './Gallary';
+import Swiper from 'swiper';
+import Slideses from './swipers';
 
 export default function Cover() {
   // const [imageIndex,setImageIndex]=useState(1)
@@ -26,6 +28,7 @@ export default function Cover() {
     <Services/>
     <Specialization/>
     <Client/>
+
     <Gallary/>
     
     </>

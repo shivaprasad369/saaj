@@ -23,19 +23,21 @@ export default function Navbar() {
  
   return (
     <div className="w-[100%] ">
-      <div className="flex fixed min-w-[100%] text-white backdrop-blur-md overflow-x-hidden inset-X-0 z-10 bg-[#07070735] w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
+      <div className="absolute flex min-w-[100%] font-Heebo text-white overflow-x-hidden inset-X-0 z-10  w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
         <div>
-          <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/>
+          {/* <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/> */}
         </div>
         <div className="flex flex-2 items-center justify-center uppercase font-bold ">
           <div
-            className={`flex gap-[3rem] max-[952px]:hidden max-[826px]:text-[1rem] md:text-xl list-none`}
+            className={`flex gap-[4rem] p-4 max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
-            <Link to="/#home">HOME</Link>
-            <a href="/#about">About us.</a>
-            <Link to="/services">services</Link>
-            <a href="/#gallary">Gallary</a>
-            <Link to="/why">why saaj</Link>
+            <Link to="/#home" className="tracking-widest">HOME</Link>
+            <a href="/about" className="tracking-widest">About us.</a>
+            <Link to="/services" className="tracking-widest">services</Link>
+            <Link to="/contact" className="tracking-widest">Contact</Link>
+
+            <a href="/#gallary" className="tracking-widest">Gallary</a>
+            <Link to="/why" className="tracking-widest">why saaj</Link>
           </div>
 
           <button

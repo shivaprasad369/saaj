@@ -23,7 +23,8 @@ export default function Specialization() {
          
           transition: { delay: 0.6, ease: easeInOut, type: "spring " },
         }}
-        className="font-bold text-[2rem] pb-[3rem]"
+        style={{ fontFamily:` "Libre Baskerville", serif`}}
+        className="font-bold text-[#2b300d] text-[2rem] pb-[3rem] tracking-widest"
       >
         Our Specialization
       </motion.h1>
@@ -46,7 +47,7 @@ export default function Specialization() {
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div className="flex flex-col gap-y-2">
-            <h1 className="font-bold cursor-pointer" >Professional Team </h1>
+            <h1 className="font-bold cursor-pointer tracking-wider" style={{fontFamily: `"Mate SC", serif`}} >Professional Team </h1>
            
           </div>
         </motion.div>
@@ -67,7 +68,7 @@ export default function Specialization() {
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1 className="font-bold">Commitments</h1>
+            <h1 className="font-bold tracking-wider" style={{fontFamily: `"Mate SC", serif`}}>Commitments</h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -87,7 +88,7 @@ export default function Specialization() {
             <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1 className="font-bold">Budget friendly </h1>
+            <h1 className="font-bold tracking-wider" style={{fontFamily: `"Mate SC", serif`}}>Budget friendly </h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -101,7 +102,7 @@ export default function Specialization() {
           <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1 className="font-bold">Flexibility</h1>
+            <h1 className="font-bold tracking-wider" style={{fontFamily: `"Mate SC", serif`}}>Flexibility</h1>
           </div>
         </motion.div>
         <motion.div  initial={{ opacity: 1, scale:1}}
@@ -115,7 +116,7 @@ export default function Specialization() {
           <LiaPrayingHandsSolid className="text-[3rem]"/>
           </div>
           <div>
-            <h1 className="font-bold">Passionate</h1>
+            <h1 className="font-bold tracking-wider" style={{fontFamily: `"Mate SC", serif`}}>Passionate</h1>
           </div>
         </motion.div>
       </div>

@@ -1,6 +1,19 @@
 import React, { useEffect, useState } from "react";
 import data from "../constants/images";
+import img2 from "../components/assets/service2(desti).jpg";
+import img3 from "../components/assets/service1(decore).jpg";
+import img4 from "../components/assets/service3(vender).jpg";
+import img5 from "../components/assets/service4(coopert).jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+import "./styles.css";
+
+// import required modules
+import { EffectCards } from "swiper/modules";
 import { easeIn, easeInOut, motion } from "framer-motion";
 import { Skeleton } from "@mui/material";
 export default function Services() {
@@ -37,11 +50,11 @@ export default function Services() {
           className=" md:pl-3 md:flex flex-col items-center 
           justify-center  "
         >
-          <h1 className="text-[20px] text-center font-bold text-red-600 uppercase">
+          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="text-3xl text-center font-bold text-[#40421a] uppercase">
             our services
           </h1>
 
-          <p className="text-gray-600 sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
+          <p style={{fontFamily: `"Mate SC", serif`}} className="text-gray-600 tracking-wider sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
             Elevate your love story with a destination wedding orchestrated by
             Saaj Wedding. Our expertise extends beyond borders, crafting dream
             weddings in Beautiful spots. Let us turn your destination dreams
@@ -51,18 +64,67 @@ export default function Services() {
         </motion.div>
         <motion.div
           layout
-         
-          initial={{ opacity: 0,y:-50 }}
-          animate={{ opacity: 1, y:0, transition: { ease: easeIn,duration:1.5,type:'spring' } }}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { ease: easeIn, duration: 1.5, type: "spring" },
+          }}
           className=" bg-gray-100 md:p-1 w-auto "
         >
           <motion.div
-          initial={{ bottom: "2rem" }}
-          whileInView={{ bottom: "0rem" }}
-          transition={{ duration: 3, type: "spring" }}
-           className=" relative items-center justify-center text-center">
-            
-            {data ? (
+            initial={{ bottom: "2rem" }}
+            whileInView={{ bottom: "0rem" }}
+            transition={{ duration: 3, type: "spring" }}
+            className=" relative overflow-hidden items-center justify-center uppercase text-center"
+          >
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper relative overflow-hidden "
+            >
+              <SwiperSlide className="flex  flex-col overflow-y-hidden">
+                <img src={img2} className="w-[100%] max-md:h-[300vh]"/>
+                <h1
+                  style={{ fontFamily:` "Libre Baskerville", serif`}}
+                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                >
+                  desctination
+                </h1>
+              </SwiperSlide>
+
+              <SwiperSlide className="flex flex-col">
+                <img src={img3} className="w-[100%] max-md:h-[300vh]" />
+                <h1
+                  style={{ fontFamily:` "Libre Baskerville", serif`}}
+                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                >
+                  Decor and Design
+                </h1>
+              </SwiperSlide>
+
+              <SwiperSlide className="flex flex-col">
+                <img src={img4} className="w-[100%] max-md:h-[300vh]"/>
+                <h1
+                  style={{ fontFamily:` "Libre Baskerville", serif`}}
+                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                >
+                  Vendor and Artist Management
+                </h1>
+              </SwiperSlide>
+
+              <SwiperSlide className="flex flex-col">
+                <img src={img5} className="w-[100%] max-md:h-[300vh]" />
+                <h1
+                  style={{ fontFamily:` "Libre Baskerville", serif`}}
+                  className={`text-xl tracking-widest pt-[2rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                >
+                  Corporates Events
+                </h1>
+              </SwiperSlide>
+            </Swiper>
+            {/* {data ? (
               data.map((data) => (
                 <motion.div  className="object-contain">
                   <motion.img
@@ -95,7 +157,7 @@ export default function Services() {
             )}
             {!data && (
               <Skeleton animation="wave" height={"100%"} width="100%" />
-            )}
+            )} */}
           </motion.div>
         </motion.div>
       </div>

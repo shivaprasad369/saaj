@@ -8,10 +8,10 @@ import logo from './assets/image/logo.png'
 import { Button, TextField } from "@mui/material";
 export default function Footer() {
   return (
-    <div id="contact" className="bg-slate-400 text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
-      <div className="flex md:justify-between justify-center items-center max-md:flex-col px-8">
+    <div id="contact" className="bg-[#725b1d] text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
+      <div style={{fontFamily: `"Mate SC", serif`}} className="flex md:justify-between justify-center items-center max-md:flex-col px-8">
         <div className="text-left gap-4 ">
-          <h1 className="text-center font-bold">Get In Touch</h1>
+          <h1 className="text-center font-bold text-2xl ">Get In Touch</h1>
           <ul className="flex flex-col">
             <li className="flex px-2 my-2">
               <FaLocationDot  className="mr-2"/> <span className="text-md">veernarayana temple, gadag-58201</span>
@@ -49,7 +49,7 @@ export default function Footer() {
           ></iframe>
         </div>
         <div className="text-center gap-3 flex flex-col md:mt-[4rem] md:ml-[2rem]">
-          <h1 className="font-bold ">Get Update</h1>
+          <h1 className="font-bold tracking-widest text-2xl ">Get Updates</h1>
           <TextField
           id="standard-read-only-input"
           label="Enter a email address"
@@ -57,15 +57,15 @@ export default function Footer() {
           
           variant="standard"
         />
-          <Button variant="contained">Contact Us.</Button>
+          <Button variant="contained">Send Enquiry</Button>
           <div className="flex flex-row mt-7">
-            <p className="flex gap-3"><span className="pr-3 ">Follow Us on</span><FaFacebook /> <LuInstagram /> <IoLogoTwitter /> <FaLinkedinIn /></p>
+            <p className="flex gap-3 text-xl"><span className="pr-3 ">Follow Us on</span><FaFacebook /> <LuInstagram /> <IoLogoTwitter /> <FaLinkedinIn /></p>
           </div>
         </div>
       </div>
       
       <div className=" pt-3  justify-center items-center flex-wrap">
-        <div className="md:ml-9 max-[378px]:hidden md:flex-row max-md:flex-col md:gap-10 gap-2 text-sm font-bold text-center">
+        <div style={{fontFamily: `"Mate SC", serif`}} className="text-xl tracking-widest md:ml-9 max-[378px]:hidden md:flex-row max-md:flex-col md:gap-10 gap-2 text-center">
         <a href="#home" className="md:px-3 ">Home</a>
           <a href="#about" className="md:px-3 px-1">About</a>
           <a href="#services" className="md:px-3 px-1">Services</a>

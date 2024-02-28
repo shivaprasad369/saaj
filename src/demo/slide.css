@@ -1,0 +1,25 @@
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 600px; /* Adjust this to your desired height */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 200px; /* Adjust this to your desired slide height */
+  background: #eee;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.slide.active {
+  position: relative;
+  transform: translateY(0);
+}

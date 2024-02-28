@@ -16,7 +16,8 @@ export default function Gallary() {
           y: 0,
           transition: { ease: easeInOut, delay: 0.2, type: "spring" },
         }}
-        className="uppercase  text-center text-[2rem] font-bold text-red-400 pb-3"
+        className="uppercase  text-center text-[2rem] tracking-widest font-bold text-[#3b4616] pb-3"
+        style={{ fontFamily:` "Libre Baskerville", serif`}}
       >
         Gallary
       </motion.h1>

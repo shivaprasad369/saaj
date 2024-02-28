@@ -16,16 +16,18 @@ export default function About() {
     >
       <div className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
-          <h1 className="uppercase text-center font-bold text-[30px]">
+          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#3f3113] tracking-widest text-center font-bold text-[30px]">
             ABout US
           </h1>
           <div className=" ">
-            <p className=" text-gray-600 md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
+            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-gray-600 md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
+             <i>
               Welcome to Saaj Wedding, where we turn your wedding dreams into
               reality amidst the enchanting backdrop of Jaipur - the Pink City.
               Immerse yourself in the regal charm and cultural richness of this
               historical city as we take you on a journey to create timeless
               memories on your special day
+              </i>
             </p>
           </div>
         </div>
@@ -69,16 +71,19 @@ export default function About() {
               opacity: 1,
               transition: { ease: easeIn, delay: 0.3 },
             }}
-            className="text-gray-600 sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+            style={{fontFamily: `"Mate SC", serif`}}
+            className="text-gray-600 tracking-wider sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
+            <i>
             Experience the magic of Jaipur with SAAJ WEDDING which are famous
             for its wedding packages, cultural richness, and regal charm
             converge to create unforgettable celebrations. Let us craft your
             dream wedding today. “Meet our passionate team at Saaj Wedding. With
             dedication and meticulous hard work, we transform dreams into
-            reality, we don't just plan weddings. ,{" "}
+            reality, we don't just plan weddings.,{" "}
             {more &&
               "we pour heart and soul into crafting each detail, ensuring your celebration is a testament to our unwavering commitment and hard work."}
+          </i>
           </motion.p>
           <div className="text-center pb-3">
             {/* <button className=" border-2 w-[8rem] text-center font-serif 
