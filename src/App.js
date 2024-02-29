@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
+import Demo from './demo/Demo';
 
 
 
@@ -20,8 +21,8 @@ function App() {
   
   return (
     <BrowserRouter>
-  
-      
+{/*   
+      <Demo/> */}
     <Home/>
     <Routes>
 

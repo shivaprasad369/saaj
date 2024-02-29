@@ -17,7 +17,7 @@ export default function Why() {
       </div>
       <div className="flex flex-row max-md:flex-col gap-10">
         <div className="shadow-sm ">
-          <Card sx={{ maxWidth: 460,height:400,boxShadow:20,borderRadius:5}} className="shadow-md">
+          <Card sx={{ maxWidth: 460,height:420,boxShadow:10,borderRadius:5,marginBottom:3}} className="shadow-md">
             <CardActionArea className="p-2">
               <CardMedia 
               sx={{height:260,borderRadius:5}}

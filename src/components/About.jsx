@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import w1 from "./assets/image/about2.png";
-import w2 from "./assets/image/about1.png";
+import w1 from "./assets/about1.png";
+import w2 from "./assets/about2.png";
 
 import { Button } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
+import png from './assets/pngegg.png'
 export default function About() {
   const [more, setMore] = useState(false);
   const handleMore = () => {
@@ -12,15 +13,15 @@ export default function About() {
   return (
     <div
       id="about"
-      className="z-100 relative bg-white flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
+      className="z-100 relative bg-white py-[2rem] pt-[3rem] flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
     >
       <div className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
-          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#3f3113] tracking-widest text-center font-bold text-[30px]">
+          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#3b2f16] tracking-widest text-center font-bold text-[30px]">
             ABout US
           </h1>
           <div className=" ">
-            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-gray-600 md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
+            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-[#705704] md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
              <i>
               Welcome to Saaj Wedding, where we turn your wedding dreams into
               reality amidst the enchanting backdrop of Jaipur - the Pink City.
@@ -32,7 +33,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <div className="text-center">
+          <div className="text-center ">
             <div className="">
               <div className="absolute z-10  items-center justify-center md:pt-[1rem] ">
                 {/* <Image
@@ -43,7 +44,9 @@ export default function About() {
                   className="rounded-t-full max-[750px]:hidden hidden"
                 /> */}
               </div>
-
+                <img src={png} alt="" className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]" />
+                <img src={png} alt="" className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]" />
+              
               <img
                 src={w1}
                 alt="wedding1"
@@ -72,7 +75,7 @@ export default function About() {
               transition: { ease: easeIn, delay: 0.3 },
             }}
             style={{fontFamily: `"Mate SC", serif`}}
-            className="text-gray-600 tracking-wider sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+            className=" tracking-wider text-[#705704] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             <i>
             Experience the magic of Jaipur with SAAJ WEDDING which are famous

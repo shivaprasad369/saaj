@@ -1,38 +1,9 @@
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-#app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .swiper {
-  width: 500px;
-  height: 470px;
-  overflow: hidden;
+  width: 400px;
+  height: 370px;
+
 
 }
 @media only screen and (max-width: 984px) {
@@ -43,9 +14,9 @@ body {
 }
 @media only screen and (max-width:756px) {
   .swiper {
-    width: 90%;
-    height: 450px;
-    overflow-y: hidden;
+    width: 80%;
+    height: 400px;
+    
   }
 }
 .swiper-slide {

@@ -6,9 +6,9 @@ export default function About() {
     <div>
       <Aboutus />
       <div>
-        <div className="flex gap-4 flex-col justify-center items-center text-center text-xl tracking-wider flex-wrap">
-          <h1 className="text-3xl uppercase tracking-widest font-semibold text-[#3f3113]" style={{ fontFamily:` "Libre Baskerville", serif`}} >About Saaj</h1>
-          <p className="border-0 w-[80%] leading-8 text-[#704e26] ">
+        <div className="flex gap-4 pt-[3rem] flex-col justify-center items-center text-center text-xl tracking-wider flex-wrap">
+          <h1 className="text-3xl uppercase tracking-widest font-semibold text-[#53431f]" style={{ fontFamily:` "Libre Baskerville", serif`}} >About Saaj</h1>
+          <p className="border-0 w-[80%] leading-8 text-[#684c2d] ">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sequi
             sapiente quaerat minus provident commodi? Iusto ad tempore,
             asperiores repellat pariatur, nihil atque doloribus temporibus

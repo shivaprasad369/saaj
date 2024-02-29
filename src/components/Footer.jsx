@@ -4,39 +4,40 @@ import { FaFacebook, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoTwitter, IoMail } from "react-icons/io5";
 import { LuInstagram } from "react-icons/lu";
-import logo from './assets/image/logo.png'
+import logo from './assets/Saaj logo png3 (1)(1).png'
 import { Button, TextField } from "@mui/material";
 export default function Footer() {
   return (
-    <div id="contact" className="bg-[#725b1d] text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
+    <div id="contact" className="bg-[#6e551d] text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
       <div style={{fontFamily: `"Mate SC", serif`}} className="flex md:justify-between justify-center items-center max-md:flex-col px-8">
         <div className="text-left gap-4 ">
           <h1 className="text-center font-bold text-2xl ">Get In Touch</h1>
           <ul className="flex flex-col">
-            <li className="flex px-2 my-2">
-              <FaLocationDot  className="mr-2"/> <span className="text-md">veernarayana temple, gadag-58201</span>
+            <li className="flex px-2 my-2 tracking-wider">
+              <FaLocationDot  className="mr-2"/> <span className="text-md">SF 228, 25 floor, Vidya Nagar,<br/>
+Hubballi, Karnataka 580021</span>
             </li>
             <li className="flex px-2 my-2">
               <FaPhoneAlt className="mr-2"/>{" "}
-              <span className="text-md">
-                +91 7878787878 <br />
-                +91 9898989898
+              <span className="text-md tracking-wider">
+              +19 797540000 <br />
+              +19 8815566156
               </span>
             </li>
             <li className="flex px-2 my-2">
               <IoMail className="mr-2" />
-              <span className="text-md">Shivu369sapare@gmail.com</span>
+              <span className="text-md tracking-wider">info@sajjevents.com.</span>
             </li>
           </ul>
         </div>
         <div className="text-center mt-[2rem] gap-3">
           <div className=" text-center pl-[34%] max-[412px]:pl-[40%] items-center">
 
-         <div className="max-md:w-[40%] md:w-[5rem]">
-          <img src={logo} alt="logo" className="max-md:w-[3rem]"/>
+         <div className=" relative md:pt-[9rem] max-md:mt-[5rem]">
+          <img src={logo} alt="logo" className="max-md:w-[9rem] max-md:top-[-7rem] absolute top-0 left-[-2.5rem]"/>
         </div>
           </div>
-         <p className="font-bold text-xl mb-4">Saaj Weeding</p>
+         
           <iframe className="max-md:w-[100%] "
           title="location"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
@@ -53,7 +54,7 @@ export default function Footer() {
           <TextField
           id="standard-read-only-input"
           label="Enter a email address"
-          defaultValue="ABC@gmail.com"
+          
           
           variant="standard"
         />
@@ -65,7 +66,7 @@ export default function Footer() {
       </div>
       
       <div className=" pt-3  justify-center items-center flex-wrap">
-        <div style={{fontFamily: `"Mate SC", serif`}} className="text-xl tracking-widest md:ml-9 max-[378px]:hidden md:flex-row max-md:flex-col md:gap-10 gap-2 text-center">
+        <div style={{fontFamily: `"Mate SC", serif`}} className="text-md tracking-widest md:ml-9 max-[378px]:hidden md:flex-row max-md:flex-col md:gap-10 gap-2 text-center">
         <a href="#home" className="md:px-3 ">Home</a>
           <a href="#about" className="md:px-3 px-1">About</a>
           <a href="#services" className="md:px-3 px-1">Services</a>
@@ -76,8 +77,8 @@ export default function Footer() {
       </div>
       <div className="border-t-2 mt-3"/>
 
-      <div className="text-center pt-2">
-        <p>Developed by Shivaprasad</p>
+      <div className="text-center pt-2 tracking-widest">
+        <p>2024 ©, All rights are reserved, Developed By <br />Unitechono software solution pvt ltd. </p>
       </div>
     </div>
   );

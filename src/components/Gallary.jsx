@@ -4,6 +4,7 @@ import data from "../constants/Gallary";
 
 import { easeInOut, motion } from "framer-motion";
 import Cards from "./Card";
+import Demo from "../demo/Demo";
 
 export default function Gallary() {
   return (
@@ -21,9 +22,9 @@ export default function Gallary() {
       >
         Gallary
       </motion.h1>
-      <div className=" md:pl-[9rem]">
-        <div className="grid md:grid-cols-2 max-[810px]:grid max-[810px]:grid-cols-1 gap-4 items-center">
-          {data.map((data, index) => (
+      <div className=" ">
+        <div className=" max-[810px]:grid max-[810px]:grid-cols-1 gap-4 items-center">
+          {/* {data.map((data, index) => (
             <motion.div
             viewport={{once:true}}
               initial={{ opacity: 0, y: 0 }}
@@ -41,7 +42,8 @@ export default function Gallary() {
             >
               <Cards data={data} key={data?.id} className={"w-full"} />
             </motion.div>
-          ))}
+          ))} */}
+          <Demo/>
         </div>
       </div>
     </div>

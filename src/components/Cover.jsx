@@ -1,9 +1,9 @@
 import React from 'react'
 
 import About from './About';
-import Services from './Services';
+import Services from './service/Services';
 import Specialization from './Specialization';
-import Client from './Client';
+import Client from './clients/Client';
 import Gallary from './Gallary';
 import Swiper from 'swiper';
 import Slideses from './swipers';

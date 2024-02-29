@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import data from "../constants/images";
-import img2 from "../components/assets/service2(desti).jpg";
-import img3 from "../components/assets/service1(decore).jpg";
-import img4 from "../components/assets/service3(vender).jpg";
-import img5 from "../components/assets/service4(coopert).jpg";
+import data from "../../constants/images";
+import img2 from "../../components/assets/service2(desti).jpg";
+import img3 from "../../components/assets/service1(decore).jpg";
+import img4 from "../../components/assets/service3(vender).jpg";
+import img5 from "../../components/assets/service4(coopert).jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-cards";
 
+import "swiper/css/effect-cards";
+import styled from 'styled-components';
 import "./styles.css";
 
 // import required modules
@@ -47,14 +47,14 @@ export default function Services() {
             x: 0,
             transition: { ease: easeInOut, delay: 0.3, type: "spring" },
           }}
-          className=" md:pl-3 md:flex flex-col items-center 
+          className=" md:pl-3 py-[2rem] md:flex flex-col items-center 
           justify-center  "
         >
-          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="text-3xl text-center font-bold text-[#40421a] uppercase">
+          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="text-3xl pb-[2rem] text-center font-bold text-[#3f3415] uppercase">
             our services
           </h1>
 
-          <p style={{fontFamily: `"Mate SC", serif`}} className="text-gray-600 tracking-wider sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
+          <p style={{fontFamily: `"Mate SC", serif`}} className="text-[#6b601e] tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
             Elevate your love story with a destination wedding orchestrated by
             Saaj Wedding. Our expertise extends beyond borders, crafting dream
             weddings in Beautiful spots. Let us turn your destination dreams
@@ -85,17 +85,17 @@ export default function Services() {
               className="mySwiper relative overflow-hidden "
             >
               <SwiperSlide className="flex  flex-col overflow-y-hidden">
-                <img src={img2} className="w-[100%] max-md:h-[300vh]"/>
+                <img src={img2} className="w-[100%] "/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   desctination
                 </h1>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img3} className="w-[100%] max-md:h-[300vh]" />
+                <img src={img3} className="w-[100%] " />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -105,20 +105,20 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img4} className="w-[100%] max-md:h-[300vh]"/>
+                <img src={img4} className="w-[100%] "/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl tracking-widest pt-[0.5rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   Vendor and Artist Management
                 </h1>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img5} className="w-[100%] max-md:h-[300vh]" />
+                <img src={img5} className="w-[100%] " />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[2rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   Corporates Events
                 </h1>
@@ -164,3 +164,54 @@ export default function Services() {
     </div>
   );
 }
+const Container=styled.div`
+// .Swiper{
+//   width: 500px;
+//   height: 470px;
+
+
+// }
+
+// @media only screen and (max-width: 984px) {
+// .Swiper{
+//     width: 370px;
+//     height: 370px;
+//   }
+// }
+// @media only screen and (max-width:756px) {
+//   .Swiper{
+//     width: 80%;
+//     height: 400px;
+    
+//   }
+// }
+// .swiper-slide {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 18px;
+//   font-size: 22px;
+//   font-weight: bold;
+//   color: #fff;
+// }
+
+// .swiper-slide:nth-child(1n) {
+//   background-color:rgb(214, 210, 203);
+// }
+
+// .swiper-slide:nth-child(2n) {
+//   background-color: rgb(214, 210, 203);
+// }
+
+// .swiper-slide:nth-child(3n) {
+//   background-color: rgb(214, 210, 203);
+// }
+
+// .swiper-slide:nth-child(4n) {
+//   background-color: rgb(214, 210, 203);
+// }
+
+// .swiper-slide:nth-child(5n) {
+//   background-color: rgb(214, 210, 203);
+// }
+`
