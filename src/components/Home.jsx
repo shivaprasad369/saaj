@@ -25,7 +25,7 @@ const data1 = [
     id: 3,
     title: "Dehli",
     subTitle: "⁠Vendor and Artist Management",
-    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366573_337237738_1388088495272872_970478343428095758_n.jpg",
+    img: "https://image.wedmegood.com/resized/800X/uploads/project/277122/1706365881_0032DVK05052.jpg",
   },
   {
     id: 4,
@@ -74,13 +74,13 @@ export default function Home() {
       }}
     >
       <Navbar />
-      <img src={img} alt="" className="absolute top-3 left-3 w-[8rem] "/>
-      <div className="flex sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
+      <img src={img} alt="" className="sm:absolute sm:top-3 max-sm:top-2 left-3 sm:w-[8rem] max-sm:w-[6rem] "/>
+      <div className="flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
         <div className="flex flex-col bg-[#0f020240]  md:gap-2 object-contain">
           <ol
             type="1"
             style={{ fontFamily: ` "Libre Baskerville", serif` }}
-            className="flex w-[25rem] max-[422px]:w-[20rem] font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem]  md:pt-10 object-cover   "
+            className="flex w-[25rem] max-sm:hidden max-[422px]:w-[20rem] h-screen font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem]  md:pt-10 object-cover   "
           >
             <Slider {...settings} className=" z-10 gap-20 md:py-10 ">
               <li
@@ -170,20 +170,20 @@ export default function Home() {
           className="pr-6 flex flex-col text-inherit  max-[866px]:min-sm:text-xl  "
           style={{   fontFamily: "Urban Jungle" }}
         >
-          <div className=" flex absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
-            <span
-             
-              className=" tracking-widest py-4 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
-            >
-            <h5 className="sm:ml-[1.5rem] text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right text-inherit overflow-hidden">
+          <div className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
+            <h5 className="sm:ml-[1.5rem] md:hidden text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right overflow-hidden">
               {hero.subTitle}
             </h5>
+            <span
+             
+              className=" tracking-widest  mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
+            >
               {hero.title}
             </span>
           </div>
           <div>
             <div className="flex flex-row text-right text-white max-sm:items-center max-sm:justify-center">
-              <ul className="sm:absolute top-[29rem] right-10  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
+              <ul className="absolute bottom-10 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
                 <div className="border-2 my-[2rem] w-40 h-0 mt-3 border-white md:block hidden"></div>
                 <li>
                   <FaInstagram />

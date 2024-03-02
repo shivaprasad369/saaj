@@ -1,6 +1,7 @@
  body{
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
   max-width:100%;
+  background-color: #E7E1D9;
 }
 /* * {
   overflow-x: hidden;

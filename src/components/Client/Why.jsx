@@ -15,7 +15,7 @@ export default function Why() {
       <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#493915]">
         <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} >Why Saaj?</h1>
       </div>
-      <div className="flex flex-row max-md:flex-col gap-10">
+      <div className="flex flex-row justify-center  max-md:flex-col gap-10">
         <div className="shadow-sm ">
           <Card sx={{ maxWidth: 460,height:420,boxShadow:10,borderRadius:5,marginBottom:3}} className="shadow-md">
             <CardActionArea className="p-2">

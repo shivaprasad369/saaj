@@ -23,7 +23,7 @@ export default function Gallary() {
         Gallary
       </motion.h1>
       <div className=" ">
-        <div className=" max-[810px]:grid max-[810px]:grid-cols-1 gap-4 items-center">
+        <div className=" gap-4 items-center">
           {/* {data.map((data, index) => (
             <motion.div
             viewport={{once:true}}

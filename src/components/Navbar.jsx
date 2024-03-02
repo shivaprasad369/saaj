@@ -29,7 +29,7 @@ export default function Navbar() {
         </div>
         <div className="flex flex-2 items-center justify-center uppercase font-bold ">
           <div
-            className={`flex gap-[3rem] p-4 max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
+            className={`flex gap-[1.5rem] p-4 max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
             <Link to="/#home" className="tracking-widest">HOME</Link>
             <a href="/about" className="tracking-widest">About us.</a>

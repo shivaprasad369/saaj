@@ -8,14 +8,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 
-import "swiper/css/effect-cards";
-import styled from 'styled-components';
+// import 'swiper/css';
+// import 'swiper/css/effect-cards';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 import "./styles.css";
+import { Autoplay } from 'swiper/modules';
 
 // import required modules
 import { EffectCards } from "swiper/modules";
 import { easeIn, easeInOut, motion } from "framer-motion";
-import { Skeleton } from "@mui/material";
+
 export default function Services() {
   const [index, setIndex] = useState(0);
   const handleNextImage = () => {
@@ -76,16 +79,20 @@ export default function Services() {
             initial={{ bottom: "2rem" }}
             whileInView={{ bottom: "0rem" }}
             transition={{ duration: 3, type: "spring" }}
-            className=" relative overflow-hidden items-center justify-center uppercase text-center"
+            className=" relative  items-center justify-center uppercase text-center"
           >
             <Swiper
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
-              className="mySwiper relative overflow-hidden "
+              className="mySwiper"
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
             >
-              <SwiperSlide className="flex  flex-col overflow-y-hidden">
-                <img src={img2} className="w-[100%] "/>
+              <SwiperSlide className="flex  flex-col ">
+                <img src={img2} className="max-[412px]:h-[250vh] "/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -95,7 +102,7 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img3} className="w-[100%] " />
+                <img src={img3} className="w-[100%] max-[412px]:h-[250vh] " />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -105,7 +112,7 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img4} className="w-[100%] "/>
+                <img src={img4} className="w-[100%] max-[412px]:h-[250vh] "/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[0.5rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -115,7 +122,7 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img5} className="w-[100%] " />
+                <img src={img5} className="w-[100%] max-[412px]:h-[250vh]" />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -164,54 +171,3 @@ export default function Services() {
     </div>
   );
 }
-const Container=styled.div`
-// .Swiper{
-//   width: 500px;
-//   height: 470px;
-
-
-// }
-
-// @media only screen and (max-width: 984px) {
-// .Swiper{
-//     width: 370px;
-//     height: 370px;
-//   }
-// }
-// @media only screen and (max-width:756px) {
-//   .Swiper{
-//     width: 80%;
-//     height: 400px;
-    
-//   }
-// }
-// .swiper-slide {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 18px;
-//   font-size: 22px;
-//   font-weight: bold;
-//   color: #fff;
-// }
-
-// .swiper-slide:nth-child(1n) {
-//   background-color:rgb(214, 210, 203);
-// }
-
-// .swiper-slide:nth-child(2n) {
-//   background-color: rgb(214, 210, 203);
-// }
-
-// .swiper-slide:nth-child(3n) {
-//   background-color: rgb(214, 210, 203);
-// }
-
-// .swiper-slide:nth-child(4n) {
-//   background-color: rgb(214, 210, 203);
-// }
-
-// .swiper-slide:nth-child(5n) {
-//   background-color: rgb(214, 210, 203);
-// }
-`

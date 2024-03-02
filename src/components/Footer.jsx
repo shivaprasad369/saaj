@@ -8,7 +8,7 @@ import logo from './assets/Saaj logo png3 (1)(1).png'
 import { Button, TextField } from "@mui/material";
 export default function Footer() {
   return (
-    <div id="contact" className="bg-[#6e551d] text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
+    <div id="contact" className="bg-[#5F3615] text-white flex-wrap mt-8 max-[730px]:py-[1rem] max-[672px]:gap-[2rem]">
       <div style={{fontFamily: `"Mate SC", serif`}} className="flex md:justify-between justify-center items-center max-md:flex-col px-8">
         <div className="text-left gap-4 ">
           <h1 className="text-center font-bold text-2xl ">Get In Touch</h1>

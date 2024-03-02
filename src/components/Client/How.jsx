@@ -26,7 +26,7 @@ export default function How() {
             </h3>
             <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
               {" "}
-              <span className="absolute md:left-[4rem] max-md:top-[-2.5rem]"><i className=" h-[10rem]  width-29"><h1 className="text-[10rem] text-[#75663e91] font-extrabold">1.</h1></i></span> 
+              <span className="absolute md:left-[4rem] max-md:top-[-2.5rem]"><i className=" h-[10rem]  width-29"><h1 className="text-[10rem] text-[#c4b48791] font-extrabold">1.</h1></i></span> 
               We sit down to plan and create, pouring our hearts into tailoring
               an event that reflects your dreams and desires
             </p>
@@ -52,7 +52,7 @@ export default function How() {
             </h3>
             <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
               {" "}
-              <span className="absolute md:left-[4rem] max-md:top-0 w-9 "><i className=" h-[10rem]  width-29"><h1 className="text-[10rem] text-[#75663e91] font-extrabold">2.</h1></i></span> 
+              <span className="absolute md:left-[4rem] max-md:top-0 w-9 md:bottom-[5rem] "><i className=" h-[10rem]  width-29"><h1 className="text-[10rem]  text-[#cabe9b91] font-extrabold">2.</h1></i></span> 
               
 
               Behind the scenes, we prepare with care and dedication, putting in
@@ -77,7 +77,7 @@ export default function How() {
             </h3>
             <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
               {" "}
-              <span className="absolute  w-9 md:left-[4rem] max-md:top-0"><i className=" h-[10rem]  width-29"><h1 className="text-[10rem] text-[#75663e91] font-extrabold">3.</h1></i></span> 
+              <span className="absolute  w-9 md:left-[4rem] max-md:top-0 md:bottom-[5rem]"><i className=" h-[10rem]  width-29"><h1 className="text-[10rem] text-[#dac89891] font-extrabold">3.</h1></i></span> 
 
               On the big day, with excitement and emotion, we bring your dreams
               to life, ensuring every moment is as magical as you imagined

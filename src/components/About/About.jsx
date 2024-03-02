@@ -22,9 +22,9 @@ export default function About() {
                 <h1 className="uppercase text-3xl font-semibold text-[#3f3113]" style={{ fontFamily:` "Libre Baskerville", serif`}} >Our Team</h1>
                 <span className="text-2xl text-[#4b3419] tracking-widest"><i>The core members at sajj weddings</i></span>
             </div>
-                <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-center  items-center gap-4 md:ml-[8rem] my-[4rem]">
-                        <div className="border-0 flex md:flex-col text-center max-md:flex-col-reverse w-fit">
-                            <div className="relative border-[1rem] w-[25rem] h-[26rem] border-[#835d2c]">
+                <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-center  items-center gap-4 md:ml-[12%] my-[4rem]">
+                        <div className="border-0 flex md:flex-col max-sm:w-[100%] text-center max-md:flex-col-reverse w-fit">
+                            <div className="relative border-[1rem] w-[25rem] h-[26rem] max-sm:w-[100%] border-[#835d2c]">
                                 <img src={member} alt="" className="absolute h-[28rem] w-[100%]   bottom-[0rem]"/>
                             </div>
                             <div className="text-center md:pt-[5rem] max-md:pb-[5rem] text-xl tracking-widest">
@@ -32,12 +32,12 @@ export default function About() {
                                 <span>His Position</span>
                             </div>
                         </div>
-                        <div className="border-0  text-center w-fit">
+                        <div className="border-0 max-sm:w-[100%] text-center w-fit">
                         <div className=" py-[2rem] pb-[5rem] text-xl tracking-widest">
                                 <h1 className="text-2xl text-[#776823]">Rohit Naik</h1>
                                 <span className="tracking-widest leading-9">His Position</span>
                             </div>
-                            <div className="relative border-[1rem] h-[26rem] border-[#835d2c] w-[25rem]">
+                            <div className="relative border-[1rem] max-sm:w-[100%] h-[26rem] border-[#835d2c] w-[25rem]">
                             <img src={member} alt="" className=" absolute h-[28rem] w-[100%]   bottom-[0rem]" />
                             </div>
                         </div>

@@ -22,11 +22,11 @@ export default function TemporaryDrawer({state,toggleDrawer}) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-        <Typography variant='h5' sx={{textAlign:'center',paddingBottom:'16px'}}>Sajj Wedding</Typography>
+        <Typography variant='h5' sx={{textAlign:'center',paddingBottom:'16px',textTransform:'uppercase',fontWeight:600,paddingTop:2 }}>Saaj Wedding</Typography>
 
       <Divider />
       <List>
-        {['about', 'Services', 'gallary',"why Saaj?."].map((text, index) => (
+        {['home','about','testinomial', 'Services', 'gallary',"why Saaj?.",'contact us'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <Link to={`${text==='why Saaj?.' ? '/why': text==='Services' ? '/services ' :"/#"+text }` } className='flex p-3'>
               <ListItemIcon>

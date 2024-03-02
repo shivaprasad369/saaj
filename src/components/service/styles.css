@@ -1,11 +1,21 @@
 
 
+
 .swiper {
-  width: 400px;
-  height: 370px;
-
-
+  width: 440px;
+  height: 420px;
 }
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
 @media only screen and (max-width: 984px) {
   .swiper {
     width: 370px;
@@ -19,15 +29,7 @@
     
   }
 }
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-}
+
 
 .swiper-slide:nth-child(1n) {
   background-color:rgb(214, 210, 203);

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import w1 from "./assets/about1.png";
-import w2 from "./assets/about2.png";
+import w2 from "./assets/Abouts2.png";
 
 import { Button } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
 import png from './assets/pngegg.png'
+import { Link } from "react-router-dom";
 export default function About() {
   const [more, setMore] = useState(false);
   const handleMore = () => {
@@ -13,11 +14,11 @@ export default function About() {
   return (
     <div
       id="about"
-      className="z-100 relative bg-white py-[2rem] pt-[3rem] flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
+      className="z-100 relative py-[2rem] pt-[3rem] flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
     >
       <div className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
-          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#3b2f16] tracking-widest text-center font-bold text-[30px]">
+          <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]">
             ABout US
           </h1>
           <div className=" ">
@@ -95,7 +96,7 @@ export default function About() {
             </button> */}
 
             <Button variant="outlined" onClick={handleMore}>
-              {!more ? "Know More.." : "Show Less..."}
+             <Link to={'/about'}> {!more ? "Know More.." : "Show Less..."}</Link>
             </Button>
           </div>
         </div>

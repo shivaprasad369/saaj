@@ -1,6 +1,12 @@
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
 import { LiaPrayingHandsSolid } from "react-icons/lia";
+import img1 from './assets/solutions.png'
+import img2 from './assets/management.png'
+import img3 from './assets/handshake.png'
+import img4 from './assets/accessible.png'
+import img5 from './assets/passionate.png'
+
 
 export default function Specialization() {
   return (
@@ -47,7 +53,8 @@ export default function Specialization() {
               className="r
               ounded-full max-md:w-[100%]"
             /> */}
-            <LiaPrayingHandsSolid className="text-[3rem]" />
+            {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
+            <img src={img1} alt="wedding1" className=" w-[3rem]" />
           </div>
           <div className="flex flex-col gap-y-2">
             <h1
@@ -75,7 +82,9 @@ export default function Specialization() {
               height={100}
               className="rounded-full max-md:w-[100%]"
             /> */}
-            <LiaPrayingHandsSolid className="text-[3rem]" />
+            {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
+            <img src={img2} alt="wedding1" className=" w-[3rem]" />
+            
           </div>
           <div>
             <h1
@@ -103,7 +112,9 @@ export default function Specialization() {
               height={100}
               className="rounded-full max-md:w-[100%]"
             /> */}
-            <LiaPrayingHandsSolid className="text-[3rem]" />
+            {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
+            <img src={img3} alt="wedding1" className=" w-[3rem]" />
+
           </div>
           <div>
             <h1
@@ -125,7 +136,9 @@ export default function Specialization() {
           className="md:row-start-2 md:row-span-2 flex flex-col items-center max-md:mb-[2rem]"
         >
           <div className=" p-[2rem] rounded-full bg-gray-200">
-            <LiaPrayingHandsSolid className="text-[3rem]" />
+            {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
+            <img src={img4} alt="wedding1" className=" w-[3rem]" />
+
           </div>
           <div>
             <h1
@@ -147,7 +160,9 @@ export default function Specialization() {
           className="md:row-start-1 md:row-span-1  flex flex-col items-center max-md:mb-[2rem]"
         >
           <div className=" p-[2rem] rounded-full bg-gray-200">
-            <LiaPrayingHandsSolid className="text-[3rem]" />
+            {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
+            <img src={img5} alt="wedding1" className=" w-[3rem]" />
+
           </div>
           <div>
             <h1
