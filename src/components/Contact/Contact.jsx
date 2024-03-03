@@ -22,7 +22,7 @@ export default function Contact() {
 
                 </form>
             </div>
-         <div className='bg-[#8f6423] font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
+         <div className='bg-[#8f6423] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
             <div className='md:flex justify-around max-md:flex-col'>
                 <div className='flex flex-col rounded-sm gap-14'>
                 <h1 className='text-3xl tracking-widest  '>Info</h1>
