@@ -94,7 +94,7 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#c5aeaeb4]"
+                      : "text-[#d3b4b4b4]"
                   }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl">1. Wedding Planners</h1>
@@ -113,7 +113,7 @@ export default function Home() {
                   className={`flex  py-8 px-[1rem]  ${
                     hero.id === 2
                       ? "bg-[#070606ab]  w-[150%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#c5aeaeb4]"
+                      : "text-[#bea4a4b4]"
                   }  text-gray-900 text-inherit`}
                 >
                   <div className="flex-col">
@@ -133,7 +133,7 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 3
                       ? "bg-[#070606ab] w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#c5aeaeb4]"
+                      : "text-[#c7a9a9b4]"
                   } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl">
@@ -153,7 +153,7 @@ export default function Home() {
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 4
                         ? "bg-[#070606ab]  text-[#d4bfbf] text-2xl "
-                        : "text-[#c5aeaeb4]"
+                        : "text-[#c4aaaab4]"
                     } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl">4. Corporates Events</h1>
