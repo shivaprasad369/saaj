@@ -15,7 +15,7 @@ export default function Client() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 1.04,
     slidesToScroll: 1,
     arrow:true
   };
@@ -26,12 +26,12 @@ export default function Client() {
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              viewport={{ once: true }}
+          
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.5,
@@ -42,13 +42,13 @@ export default function Client() {
               <img src={img} alt="card" className="  md:h-[100%] w-[100%] " />
             </motion.div>
             <motion.div
-              viewport={{ once: true }}
+          
               initial={{ opacity: 0, x: 50 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.7,
@@ -86,12 +86,12 @@ export default function Client() {
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              viewport={{ once: true }}
+             
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.5,
@@ -102,13 +102,13 @@ export default function Client() {
               <img src={img} alt="card" className=" md:h-[110%]" />
             </motion.div>
             <motion.div
-              viewport={{ once: true }}
+              
               initial={{ opacity: 0, x: 50 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.7,
@@ -146,12 +146,12 @@ export default function Client() {
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              viewport={{ once: true }}
+           
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.5,
@@ -162,13 +162,13 @@ export default function Client() {
               <img src={img} alt="card" className=" md:h-[110%]" />
             </motion.div>
             <motion.div
-              viewport={{ once: true }}
+              
               initial={{ opacity: 0, x: 50 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
                 transition: {
-                  ease: easeIn,
+                  ease: "easeIn",
                   type: "spring",
                   duration: 1,
                   delay: 0.7,

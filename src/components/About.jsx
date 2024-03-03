@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import w1 from "./assets/about1.png";
-import w2 from "./assets/Abouts2.png";
+import w1 from "./assets/demo/about1.webp";
+import w2 from "./assets/demo/about2.webp";
+
+import w11 from "./assets/demo/aabout1.jpg";
+import w22 from "./assets/demo/aabout2 .jpg";
 
 import { Button } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
@@ -14,15 +17,17 @@ export default function About() {
   return (
     <div
       id="about"
-      className="z-100 relative py-[2rem] pt-[3rem] flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
+      className="z-100 relative py-[2rem] pt-[3rem] md:px-[3rem] overflow-hidden flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
     >
-      <div className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
+      <motion.div initial={{x:-100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
           <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]">
             ABout US
           </h1>
+                <img src={png} alt="" className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]" />
+                <img src={png} alt="" className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]" />
           <div className=" ">
-            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-[#705704] md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
+            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-justify text-[#705704] md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
              <i>
               Welcome to Saaj Wedding, where we turn your wedding dreams into
               reality amidst the enchanting backdrop of Jaipur - the Pink City.
@@ -45,19 +50,20 @@ export default function About() {
                   className="rounded-t-full max-[750px]:hidden hidden"
                 /> */}
               </div>
-                <img src={png} alt="" className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]" />
-                <img src={png} alt="" className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]" />
-              
+              <div className="relative w-full h-fit sm:ml-[3rem]">
+
               <img
                 src={w1}
                 alt="wedding1"
-                className="relative sm:pt-[3rem] md:ml-2 h-auto  sm:w-[100%] max-sm:w-[100%] "
+                className="relative pt-[3rem] blur-[0.8px] md:ml-2  rounded-t-full w-[80%]  pl-[10%] md:h-[100%] max-sm:w-[100%] "
               />
+              <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-0 left-0 sm:w-[50%] w-[60%]" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="items-center m-0 md:gap-3 flex-wrap sm:w-[40%]">
+      </motion.div>
+      <motion.div initial={{x:100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="items-center m-0 md:gap-3 flex-wrap sm:w-[40%]">
         {/* <Image
             src={w2}
             height={250}
@@ -65,8 +71,11 @@ export default function About() {
             alt="wedding2"
             className="absolute z-9 max-[385px]:hidden md:w-auto w-auto "
           /> */}
-        <div className="sm:pt-[2rem]">
-          <img src={w2} alt="wedding1" className="mb-3 sm:w-full" />
+        <div className="relative w-fit h-fit sm:pt-[2rem] sm:mr-[2rem]">
+        <img src={w2} alt="wedding1" className="mb-3 blur-[0.9px] relative  w-[80%]" /> 
+        <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w11} alt="" className="absolute top-[20%] rounded-t-full w-[50%] h-[60%] right-0" />
+
+          
         </div>
 
         <div className="flex flex-col flex-wrap object-cover">
@@ -76,7 +85,7 @@ export default function About() {
               transition: { ease: easeIn, delay: 0.3 },
             }}
             style={{fontFamily: `"Mate SC", serif`}}
-            className=" tracking-wider text-[#705704] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+            className=" tracking-wider text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
           >
             <i>
             Experience the magic of Jaipur with SAAJ WEDDING which are famous
@@ -95,12 +104,12 @@ export default function About() {
               Know More
             </button> */}
 
-            <Button variant="outlined" onClick={handleMore}>
+            <motion.button whileHover={{scale:1.1, transition:{ease:'easeIn',type:'spring',duration:0.3}}} className="border-2 text-xl hover:bg-blue-600 hover:text-white rounded-sm  border-blue-600 px-[1.5rem] py-[0.5rem] text-blue-600" onClick={handleMore}>
              <Link to={'/about'}> {!more ? "Know More.." : "Show Less..."}</Link>
-            </Button>
+            </motion.button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

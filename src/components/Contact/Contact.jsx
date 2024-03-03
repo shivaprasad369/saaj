@@ -22,7 +22,9 @@ export default function Contact() {
 
                 </form>
             </div>
-            <div className='bg-[#8f6423] font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
+         <div className='bg-[#8f6423] font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
+            <div className='md:flex justify-around max-md:flex-col'>
+                <div className='flex flex-col rounded-sm gap-14'>
                 <h1 className='text-3xl tracking-widest  '>Info</h1>
                 <div className='flex gap-9 tracking-widest   '>
                 <svg xmlns="http://www.w3.org/2000/svg" width={40} viewBox="0 0 512 512"><path fill="#ffffff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
@@ -42,6 +44,18 @@ export default function Contact() {
                         <br/> Hubballi, Karnataka 580021
                     </div>
                 </div>
+                </div>
+            <iframe className="max-md:w-[100%] md:pl-[2rem] md:pt-[4rem] pt-4"
+          title="location"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
+            width="350"
+            height="400"
+            // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+            </div>
             </div>
         </div>
       </div>

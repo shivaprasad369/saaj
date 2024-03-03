@@ -37,18 +37,23 @@ export default function Services() {
   }, [index]);
 
   return (
-    <div
+    <motion.div
+    initial={{ opacity: 0, y: -50 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { ease: "easeInOut", duration:2, type: "spring" }   }}
       id="services"
-      className="p-2 relative justify-center items-center bg-[#f4f4f7]"
+      className="p-2 relative overflow-hidden justify-center md:mx-[3rem] items-center bg-[#f1f1f3]"
     >
       <div className="grid relative md:grid-cols-2 grid-cols-1 gap-2">
         <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 0, x: -50 }}
+        
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{
             opacity: 1,
             x: 0,
-            transition: { ease: easeInOut, delay: 0.3, type: "spring" },
+            transition: { ease: "easeInOut", duration:2, type: "spring" },
           }}
           className=" md:pl-3 py-[2rem] md:flex flex-col items-center 
           justify-center  "
@@ -57,7 +62,7 @@ export default function Services() {
             our services
           </h1>
 
-          <p style={{fontFamily: `"Mate SC", serif`}} className="text-[#6b601e] tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
+          <p style={{fontFamily: `"Mate SC", serif`}} className="text-[#6b601e] text-justify tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2">
             Elevate your love story with a destination wedding orchestrated by
             Saaj Wedding. Our expertise extends beyond borders, crafting dream
             weddings in Beautiful spots. Let us turn your destination dreams
@@ -66,19 +71,19 @@ export default function Services() {
           </p>
         </motion.div>
         <motion.div
-          layout
-          initial={{ opacity: 0, y: -50 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { ease: easeIn, duration: 1.5, type: "spring" },
-          }}
-          className=" bg-gray-100 md:p-1 w-auto "
+        
+          // initial={{ opacity: 0, y: -50 }}
+          // animate={{
+          //   opacity: 1,
+          //   y: 0,
+          //   transition: { ease: easeIn, duration: 1.5, type: "spring" },
+          // }}
+          className=" bg-[#f1f1f3] md:p-1 w-auto "
         >
           <motion.div
             initial={{ bottom: "2rem" }}
             whileInView={{ bottom: "0rem" }}
-            transition={{ duration: 3, type: "spring" }}
+            transition={{ duration: 2, type: "spring" }}
             className=" relative  items-center justify-center uppercase text-center"
           >
             <Swiper
@@ -92,13 +97,16 @@ export default function Services() {
               }}
             >
               <SwiperSlide className="flex  flex-col ">
-                <img src={img2} className="max-[412px]:h-[250vh] "/>
+                
+
+                <img  src={img2} className="max-[412px]:h-[250vh] "/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
                   className={`text-xl tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   desctination
                 </h1>
+                
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
@@ -168,6 +176,6 @@ export default function Services() {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

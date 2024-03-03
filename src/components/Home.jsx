@@ -5,9 +5,10 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Slider from "react-slick";
 import Navbar from "./Navbar";
-import { useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import classNames from "classnames";
 import img from './assets/Saaj logo png3 (1)(1).png'
+
 const data1 = [
   {
     id: 1,
@@ -75,12 +76,12 @@ export default function Home() {
     >
       <Navbar />
       <img src={img} alt="" className="sm:absolute sm:top-3 max-sm:top-2 left-3 sm:w-[8rem] max-sm:w-[6rem] "/>
-      <div className="flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
-        <div className="flex flex-col bg-[#0f020240]  md:gap-2 object-contain">
+      <div  className="bg-[#03010170] bg-cover flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
+        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{duration:1.5,type:'tween',ease:'easeIn'}}} className="flex flex-col z-10 bg-[#0f020240]  md:gap-2 object-contain">
           <ol
             type="1"
             style={{ fontFamily: ` "Libre Baskerville", serif` }}
-            className="flex w-[25rem] max-sm:hidden max-[422px]:w-[20rem] h-screen font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem]  md:pt-10 object-cover   "
+            className="flex w-[26rem] max-sm:hidden max-[422px]:w-[20rem] h-screen font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem]  md:pt-10 object-cover   "
           >
             <Slider {...settings} className=" z-10 gap-20 md:py-10 ">
               <li
@@ -92,12 +93,12 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 1
-                      ? "bg-[#070606ab]  w-[130%]  text-[#d4bfbf] "
-                      : ""
+                      ? "bg-[#070606ab]  w-[130%]  text-[#d4bfbf] text-2xl "
+                      : "text-[#d6bcbcb4]"
                   }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl">1. Wedding Planners</h1>
-                  <div className="border-b-2" />{" "}
+                  <div className="border-b-2 text-md" />{" "}
                   <p>Import trace for requested module</p>
                 </div>
               </li>
@@ -111,8 +112,8 @@ export default function Home() {
                 <div
                   className={`flex  py-8 px-[1rem]  ${
                     hero.id === 2
-                      ? "bg-[#070606ab]  w-[150%]  text-[#d4bfbf] "
-                      : ""
+                      ? "bg-[#070606ab]  w-[150%]  text-[#d4bfbf] text-2xl "
+                      : "text-[#e4cdcdc5]"
                   }  text-gray-900 text-inherit`}
                 >
                   <div className="flex-col">
@@ -131,8 +132,8 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 3
-                      ? "bg-[#070606ab] w-[130%]  text-[#d4bfbf] "
-                      : ""
+                      ? "bg-[#070606ab] w-[130%]  text-[#d4bfbf] text-2xl "
+                      : "text-[#e4cdcdc5]"
                   } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl">
@@ -151,8 +152,8 @@ export default function Home() {
                   <div
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 4
-                        ? "bg-[#070606ab] text-[#d4bfbf] "
-                        : ""
+                        ? "bg-[#070606ab]  text-[#d4bfbf] text-2xl "
+                        : "text-[#e4cdcdc5]"
                     } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl">4. Corporates Events</h1>
@@ -163,14 +164,14 @@ export default function Home() {
               </div>
             </Slider>
           </ol>
-        </div>
+        </motion.div>
         {/* max-[762px]:ml-[12rem] max-[640px]:ml-[6rem] max-[536px]:ml-[3rem]  min-[476px]:text-right */}
 
         <div
           className="pr-6 flex flex-col text-inherit  max-[866px]:min-sm:text-xl  "
           style={{   fontFamily: "Urban Jungle" }}
         >
-          <div className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
+          <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
             <h5 className="sm:ml-[1.5rem] md:hidden text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right overflow-hidden">
               {hero.subTitle}
             </h5>
@@ -180,10 +181,10 @@ export default function Home() {
             >
               {hero.title}
             </span>
-          </div>
+          </motion.div>
           <div>
             <div className="flex flex-row text-right text-white max-sm:items-center max-sm:justify-center">
-              <ul className="absolute bottom-10 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
+              <ul className="absolute bottom-20 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
                 <div className="border-2 my-[2rem] w-40 h-0 mt-3 border-white md:block hidden"></div>
                 <li>
                   <FaInstagram />

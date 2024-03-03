@@ -12,7 +12,7 @@ const [more4,setMore4]=useState(false)
     <div className="">
       <div className="text-center mt-[2rem]">
         <h1
-          className="text-3xl uppercase"
+          className="text-3xl uppercase text-[#975d2e]"
           style={{ fontFamily: '"DM Serif Display", serif', fontWeight: 600 }}
         >
           Our services
@@ -33,7 +33,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[100%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
@@ -58,12 +58,12 @@ const [more4,setMore4]=useState(false)
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[3rem] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
+                className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 wedding planner
               </h1>
-              <p className="text-gray-600 md:text-[1rem] sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#8f5d25] md:text-[1rem] text-justify sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 Saaj Wedding stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -71,10 +71,10 @@ const [more4,setMore4]=useState(false)
                 allows us to make it uniquely yours.
               </p>
               <div></div>
-              <p className="text-gray-600 md:text-[1rem]  pb-[2rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              {more1 && 'At Saaj Wedding, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Wedding, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.'}
+              <p className="text-[#8f5d25] text-justify md:text-[1rem]  pb-[2rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              At Saaj Wedding, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Wedding, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
               </p>
-              <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button>
+              {/* <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
         </div>
@@ -95,7 +95,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="md:hidden md:w-[90%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="md:hidden md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
@@ -120,12 +120,12 @@ const [more4,setMore4]=useState(false)
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[2.3rem]  font-bold pt-[2rem] pb-[1rem] capitalize"
+                className="text-[2.3rem] text-[#794d25] font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 vendors and artist management
               </h1>
-              <p className="text-gray-600 md:text-[1rem]  sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#9c5a33] md:text-[1rem]  sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 vendors and artist management : At Saaj Wedding, we understand
                 that the success of any celebration lies in seamless vendor and
                 artist management. Choosing the right vendors and artists is
@@ -135,17 +135,17 @@ const [more4,setMore4]=useState(false)
                 vision and expectations.
               </p>
               <div className="p-2"></div>
-              <p className="text-gray-600 md:text-[1rem]  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              {more2 && <>From photographers capturing your cherished moments to caterers
+              <p className="text-[#9c5a33] md:text-[1rem]  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
                 creating a symphony of talents that makes your wedding
                 extraordinary. With Saaj Wedding, you can relax knowing that we
                 handle all the details, allowing you to enjoy a flawless
                 celebration filled with the expertise and creativity of the best
-                in the business.</>}
+                in the business.
               </p>
-              <Button onClick={()=>setMore2((more2)=>!more2)} variant="outlined">{more2 ? 'Know less': 'Show more'}</Button>
+              {/* <Button onClick={()=>setMore2((more2)=>!more2)} variant="outlined">{more2 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
           <motion.div
@@ -187,7 +187,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[90%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
@@ -212,12 +212,12 @@ const [more4,setMore4]=useState(false)
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[2.5rem] leading-17 font-bold pt-[1rem] pb-[1rem] capitalize"
+                className="text-[2.5rem] text-[#794d25] leading-17 font-bold pt-[1rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 decor and design
               </h1>
-              <p className="text-gray-600 md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#926134] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 At Saaj Wedding, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
                 – they create the magical atmosphere that makes your day
@@ -226,14 +226,14 @@ const [more4,setMore4]=useState(false)
                 makes your love story shine.
               </p>
               <div className="p-2"></div>
-              <p className="text-gray-600 pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-               {more3 && <> Our goal is to turn your venue into a dreamy space that brings
+              <p className="text-[#926134] pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+               Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
                 celebrating with you. With Saaj Wedding, you can count on a
                 perfect mix of creativity and elegance, making your special day
-                as beautiful as your love story.</>}
+                as beautiful as your love story.
               </p>
-              <Button onClick={()=>setMore3((more3)=>!more3)} variant="outlined">{more3 ? 'Know less': 'Show more'}</Button>
+              {/* <Button onClick={()=>setMore3((more3)=>!more3)} variant="outlined">{more3 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
         </div>
@@ -254,7 +254,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="md:hidden md:w-[100%] sm:w-full sm:h-full mt-[-2rem] sm:rounded-tl-[100px]"
+            className="md:hidden md:w-[80%] sm:w-full sm:h-full mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
@@ -279,12 +279,12 @@ const [more4,setMore4]=useState(false)
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
-                className="text-[2.5rem] leading-17 font-bold pt-[2rem] pb-[1rem]  capitalize"
+                className="text-[2.5rem] leading-17 text-[#794d25] font-bold pt-[2rem] pb-[1rem]  capitalize"
                 style={{ fontFamily: '"Parisienne", cursive', fontWeight: 700 }}
               >
                 corporate events
               </h1>
-              <p className="text-gray-600 sm:text-[1.2rem] md:text-[1rem]  max-sm:text-[1rem]  whitespace-none text-md px-1">
+              <p className="text-[#8d5e31] sm:text-[1.2rem] md:text-[1rem]  max-sm:text-[1rem]  whitespace-none text-md px-1">
                 At Saaj Wedding, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
@@ -294,14 +294,14 @@ const [more4,setMore4]=useState(false)
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p className="text-gray-600 pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
-              {more4 && <> From conceptualization to flawless execution, we focus on every
+              <p className="text-[#916235] pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
+               From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Wedding to
                 elevate your corporate gatherings, making them not just events
-                but experiences that reflect the excellence of your brand</>}
+                but experiences that reflect the excellence of your brand
               </p>
-              <Button onClick={()=>setMore4((more4)=>!more4)} variant="outlined">{more4 ? 'Know less': 'Show more'}</Button>
+              {/* <Button onClick={()=>setMore4((more4)=>!more4)} variant="outlined">{more4 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
           <motion.div
@@ -317,7 +317,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[100%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="max-md:hidden md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
