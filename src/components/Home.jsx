@@ -69,7 +69,7 @@ export default function Home() {
         backgroundImage: `url(${hero.img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "90%",
+        height: "fit",
         width: "100%",
         position:'relative'
       }}
@@ -94,7 +94,7 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#d6bcbcb4]"
+                      : "text-[#c5aeaeb4]"
                   }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl">1. Wedding Planners</h1>
@@ -113,7 +113,7 @@ export default function Home() {
                   className={`flex  py-8 px-[1rem]  ${
                     hero.id === 2
                       ? "bg-[#070606ab]  w-[150%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#e4cdcdc5]"
+                      : "text-[#c5aeaeb4]"
                   }  text-gray-900 text-inherit`}
                 >
                   <div className="flex-col">
@@ -133,7 +133,7 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 3
                       ? "bg-[#070606ab] w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#e4cdcdc5]"
+                      : "text-[#c5aeaeb4]"
                   } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl">
@@ -153,7 +153,7 @@ export default function Home() {
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 4
                         ? "bg-[#070606ab]  text-[#d4bfbf] text-2xl "
-                        : "text-[#e4cdcdc5]"
+                        : "text-[#c5aeaeb4]"
                     } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl">4. Corporates Events</h1>
@@ -184,7 +184,7 @@ export default function Home() {
           </motion.div>
           <div>
             <div className="flex flex-row text-right text-white max-sm:items-center max-sm:justify-center">
-              <ul className="absolute bottom-20 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
+              <ul className="absolute bottom-10 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
                 <div className="border-2 my-[2rem] w-40 h-0 mt-3 border-white md:block hidden"></div>
                 <li>
                   <FaInstagram />
