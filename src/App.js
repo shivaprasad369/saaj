@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Demo from './demo/Demo';
+import Gallarys from './components/Gallary/Gallary';
 
 
 
@@ -31,6 +32,8 @@ function App() {
     <Route path='/about' element={<About/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/services' element={<Services/>}/>
+    <Route path='/gallary' element={<Gallarys/>}/>
+
     </Routes>
     <Footer/>
 

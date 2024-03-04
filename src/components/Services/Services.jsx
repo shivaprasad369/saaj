@@ -63,7 +63,7 @@ const [more4,setMore4]=useState(false)
               >
                 wedding planner
               </h1>
-              <p className="text-[#8f5d25] md:text-[1rem] text-justify sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#8f5d25] md:text-[1rem] tracking-wide text-justify sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 Saaj Wedding stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -125,7 +125,7 @@ const [more4,setMore4]=useState(false)
               >
                 vendors and artist management
               </h1>
-              <p className="text-[#9c5a33] md:text-[1rem]  sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#9c5a33] md:text-[1rem] tracking-wide text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 vendors and artist management : At Saaj Wedding, we understand
                 that the success of any celebration lies in seamless vendor and
                 artist management. Choosing the right vendors and artists is
@@ -135,7 +135,7 @@ const [more4,setMore4]=useState(false)
                 vision and expectations.
               </p>
               <div className="p-2"></div>
-              <p className="text-[#9c5a33] md:text-[1rem]  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#9c5a33] md:text-[1rem] tracking-wide text-justify pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
               From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
@@ -217,7 +217,7 @@ const [more4,setMore4]=useState(false)
               >
                 decor and design
               </h1>
-              <p className="text-[#926134] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#926134] md:text-[1rem] tracking-wide text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 At Saaj Wedding, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
                 – they create the magical atmosphere that makes your day
@@ -226,7 +226,7 @@ const [more4,setMore4]=useState(false)
                 makes your love story shine.
               </p>
               <div className="p-2"></div>
-              <p className="text-[#926134] pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p className="text-[#926134] pb-[2rem] tracking-wide md:text-[1rem] text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
                 celebrating with you. With Saaj Wedding, you can count on a
@@ -284,7 +284,7 @@ const [more4,setMore4]=useState(false)
               >
                 corporate events
               </h1>
-              <p className="text-[#8d5e31] sm:text-[1.2rem] md:text-[1rem]  max-sm:text-[1rem]  whitespace-none text-md px-1">
+              <p className="text-[#8d5e31] sm:text-[1.2rem] tracking-wide md:text-[1rem] text-justify max-sm:text-[1rem]  whitespace-none text-md px-1">
                 At Saaj Wedding, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
@@ -294,7 +294,7 @@ const [more4,setMore4]=useState(false)
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p className="text-[#916235] pb-[2rem] md:text-[1rem]  sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
+              <p className="text-[#916235] pb-[2rem] pt-3 tracking-wide md:text-[1rem] text-justify sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Wedding to

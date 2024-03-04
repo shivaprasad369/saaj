@@ -32,19 +32,19 @@
 
 
 .swiper-slide:nth-child(1n) {
-  background-color:rgb(214, 210, 203);
+  background-color:white;
 }
 
 .swiper-slide:nth-child(2n) {
-  background-color: rgb(214, 210, 203);
+  background-color: white;
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: rgb(214, 210, 203);
+  background-color: white;
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: rgb(214, 210, 203);
+  background-color: white;
 }
 
 .swiper-slide:nth-child(5n) {

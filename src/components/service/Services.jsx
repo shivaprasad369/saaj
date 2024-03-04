@@ -5,7 +5,10 @@ import img3 from "../../components/assets/service1(decore).jpg";
 import img4 from "../../components/assets/service3(vender).jpg";
 import img5 from "../../components/assets/service4(coopert).jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import w1 from '../assets/arch.png'
+import w2 from '../assets/hall.png'
+import w3 from '../assets/vendor.png'
+import w4 from '../assets/music.png'
 // Import Swiper styles
 
 // import 'swiper/css';
@@ -13,8 +16,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import "./styles.css";
-import { Autoplay } from 'swiper/modules';
 
+import png from '../assets/—Pngtree—watercolor floral border composition for_4869610.png'
+import png1 from '../assets/pngwing.com(1).png'
 // import required modules
 import { EffectCards } from "swiper/modules";
 import { easeIn, easeInOut, motion } from "framer-motion";
@@ -46,6 +50,9 @@ export default function Services() {
       id="services"
       className="p-2 relative overflow-hidden justify-center md:mx-[3rem] items-center bg-[#f1f1f3]"
     >
+      <img src={png} alt="" className="absolute z-0 top-0 left-0 opacity-[0.7] w-[8rem]" />
+
+      
       <div className="grid relative md:grid-cols-2 grid-cols-1 gap-2">
         <motion.div
         
@@ -78,7 +85,7 @@ export default function Services() {
           //   y: 0,
           //   transition: { ease: easeIn, duration: 1.5, type: "spring" },
           // }}
-          className=" bg-[#f1f1f3] md:p-1 w-auto "
+          className=" bg-[#f3f3f5] md:p-1 w-auto "
         >
           <motion.div
             initial={{ bottom: "2rem" }}
@@ -86,6 +93,7 @@ export default function Services() {
             transition={{ duration: 2, type: "spring" }}
             className=" relative  items-center justify-center uppercase text-center"
           >
+            <img src={png1} alt="" className="absolute z-0 opacity-[0.1] bottom-[30%] left-9  w-[15rem]  " />
             <Swiper
               effect={"cards"}
               grabCursor={true}
@@ -95,46 +103,55 @@ export default function Services() {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
+             
             >
+              
               <SwiperSlide className="flex  flex-col ">
                 
 
-                <img  src={img2} className="max-[412px]:h-[250vh] "/>
+                <img  src={img2} className="max-[412px]:h-[250vh] md:h-[55.5vh] w-[100%]"/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
+                  <img src={w1} alt="" width={40} />
                   desctination
                 </h1>
                 
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img3} className="w-[100%] max-[412px]:h-[250vh] " />
+                <img src={img3} className="w-[100%] max-[412px]:h-[250vh]  md:h-[55.5vh]" />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
-                >
+                  className={`text-xl flex gap-4 flex-wrap tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                ><img src={w2} alt="" width={40} />
                   Decor and Design
                 </h1>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img4} className="w-[100%] max-[412px]:h-[250vh] "/>
+                <img src={img4} className="w-[100%] max-[412px]:h-[250vh]  md:h-[55.5vh]"/>
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[0.5rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
-                >
-                  Vendor and Artist Management
+                  className={`text-xl flex gap-4 tracking-widest pt-[0.5rem] relative text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                ><img src={w3} alt="" width={40} className="text-center absolute left-[10%]"  />
+              
+<span className="w-[70%]">
+
+                   Vendor and Artist Management
+</span>
+              
                 </h1>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img src={img5} className="w-[100%] max-[412px]:h-[250vh]" />
+                <img src={img5} className="w-[100%] max-[412px]:h-[250vh]  md:h-[55.5vh]" />
                 <h1
                   style={{ fontFamily:` "Libre Baskerville", serif`}}
-                  className={`text-xl tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
+                  <img src={w4} alt="" width={40} />
                   Corporates Events
                 </h1>
               </SwiperSlide>

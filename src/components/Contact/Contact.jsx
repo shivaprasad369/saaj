@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 export default function Contact() {
@@ -15,14 +16,14 @@ export default function Contact() {
         <div className='md:flex max-[910px]:flex-col w-full  justify-between items-center md:py-5 md:gap-14  '>
             <div className='flex flex-col gap-3 max-md:pl-[3rem]'>
                 <form className='flex flex-col mr-[rem] max-md:mr-[4rem] gap-14 pb-5'>
-                    <input type="text" name='name' placeholder='Name' className='border-b-2 border-[#201f1f] h-[3rem] text-black md:w-[22rem] px-4' />
-                    <input type="text" name='email' placeholder='Email' className='border-b-2 border-[#201f1f] h-[3rem] text-black md:w-[22rem] px-4'/>
-                    <textarea name='message' rows="4" placeholder='Message'className='border-b-2 border-[#201f1f] h-[3rem] text-black md:w-[22rem] px-4'></textarea>
-                    <button type='button' className='border-2 h-[3rem] max-md:w-[40%] justify-center items-center text-center bg-black text-white font-bold  uppercase text-xl tracking-widest'>Send</button>
+                    <input type="text" name='name' placeholder='Name' className='border-b-2 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4' />
+                    <input type="text" name='email' placeholder='Email' className='border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4'/>
+                    <textarea name='message' rows="7" placeholder='Message'className='border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4'></textarea>
+                    <motion.button whileHover={{scale:1.1,transition:{type:'spring',duration:1.4,ease:'easeIn'}}} type='button' className='border-2 h-[3rem] rounded-md max-md:w-[40%] hover:bg-[#8d4e35] hover:text-white justify-center items-center  text-center border-[#643522] text-[#643522]  font-bold  uppercase text-xl tracking-widest'>Send</motion.button>
 
                 </form>
             </div>
-         <div className='bg-[#8f6423] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
+         <div className='bg-[#9e763b] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14' >
             <div className='md:flex justify-around max-md:flex-col'>
                 <div className='flex flex-col rounded-sm gap-14'>
                 <h1 className='text-3xl tracking-widest  '>Info</h1>

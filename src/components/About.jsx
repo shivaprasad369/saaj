@@ -55,7 +55,7 @@ export default function About() {
               <img
                 src={w1}
                 alt="wedding1"
-                className="relative pt-[3rem] blur-[0.8px] md:ml-2  rounded-t-full w-[80%]  pl-[10%] md:h-[100%] max-sm:w-[100%] "
+                className="relative pt-[3rem] blur-[0.8px] md:ml-2  rounded-t-full w-[75%]  pl-[10%] md:h-[100%] max-sm:w-[100%] "
               />
               <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-0 left-0 sm:w-[50%] w-[60%]" />
               </div>
@@ -71,21 +71,21 @@ export default function About() {
             alt="wedding2"
             className="absolute z-9 max-[385px]:hidden md:w-auto w-auto "
           /> */}
-        <div className="relative w-fit h-fit sm:pt-[2rem] sm:mr-[2rem]">
-        <img src={w2} alt="wedding1" className="mb-3 blur-[0.9px] relative  w-[80%]" /> 
-        <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w11} alt="" className="absolute top-[20%] rounded-t-full w-[50%] h-[60%] right-0" />
+        <div className="relative w-fit h-fit sm:pt-[2rem] sm:mr-[3rem]">
+        <img src={w2} alt="wedding1" className="mb-3 blur-[0.9px] relative  w-[70%]" /> 
+        <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w11} alt="" className="absolute top-[20%] rounded-t-full w-[50%] h-[60%] right-4" />
 
           
         </div>
 
-        <div className="flex flex-col flex-wrap object-cover">
+        <div className="flex flex-col flex-wrap object-cover ">
           <motion.p
             whileInView={{
               opacity: 1,
               transition: { ease: easeIn, delay: 0.3 },
             }}
             style={{fontFamily: `"Mate SC", serif`}}
-            className=" tracking-wider text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
+            className=" tracking-widermd:mr-4 text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
           >
             <i>
             Experience the magic of Jaipur with SAAJ WEDDING which are famous
@@ -104,7 +104,7 @@ export default function About() {
               Know More
             </button> */}
 
-            <motion.button whileHover={{scale:1.1, transition:{ease:'easeIn',type:'spring',duration:0.3}}} className="border-2 text-xl hover:bg-blue-600 hover:text-white rounded-sm  border-blue-600 px-[1.5rem] py-[0.5rem] text-blue-600" onClick={handleMore}>
+            <motion.button whileHover={{scale:1.1, transition:{ease:'easeIn',type:'spring',duration:0.3}}} className="border-2 text-xl hover:bg-[#5F3615] hover:border-0 hover:text-white rounded-sm  border-[#5F3615] px-[1.5rem] py-[0.5rem] text-[#5F3615]" onClick={handleMore}>
              <Link to={'/about'}> {!more ? "Know More.." : "Show Less..."}</Link>
             </motion.button>
           </div>

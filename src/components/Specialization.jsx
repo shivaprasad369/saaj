@@ -34,7 +34,7 @@ export default function Specialization() {
       >
         Our Specialization
       </motion.h1>
-      <div className="h-[100%] object-fill md:flex max-md:flex-col   justify-between gap-2 pt-3">
+      <div className="h-[100%] object-fill md:flex max-md:flex-col md:px-[2rem]  justify-between gap-2 pt-3">
         <motion.div
           initial={{ opacity: 0.9, scale: 1 }}
          
@@ -73,7 +73,7 @@ export default function Specialization() {
             scale: 1.2,
             transition: { delay: 0.6,duration:0.4, ease: "easeInOut", type: "spring " },
           }}
-          className="md:row-start-2 md:row-span-1 md:mt-[5rem] flex flex-col items-center max-md:mb-[2rem]"
+          className="md:row-start-2 md:row-span-1 md:mt-[4rem] flex flex-col items-center max-md:mb-[2rem]"
         >
           <div className=" p-[2rem] rounded-full bg-gray-200">
             {/* <Image
@@ -133,11 +133,11 @@ export default function Specialization() {
             scale: 1.2,
             transition: { delay: 0.9,duration:0.4, ease: "easeInOut", type: "spring " },
           }}
-          className="md:row-start-2 md:row-span-2 md:mt-[5rem] flex flex-col items-center max-md:mb-[2rem]"
+          className="md:row-start-2 md:row-span-2 md:mt-[4rem] flex flex-col items-center max-md:mb-[2rem]"
         >
           <div className=" p-[2rem] rounded-full bg-gray-200">
             {/* <LiaPrayingHandsSolid className="text-[3rem]" /> */}
-            <img src={img4} alt="wedding1" className=" w-[3rem]" />
+            <img src={img4} alt="wedding1" className=" w-[3rem] " />
 
           </div>
           <div>

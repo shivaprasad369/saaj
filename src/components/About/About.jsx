@@ -22,10 +22,10 @@ export default function About() {
         <div className="flex flex-col py-[4rem]">
             <div className="flex flex-col justify-center items-center text-center tracking-widest gap-3">
                 <h1 className="uppercase text-3xl font-semibold text-[#3f3113]" style={{ fontFamily:` "Libre Baskerville", serif`}} >Our Team</h1>
-                <span className="text-2xl text-[#4b3419] tracking-widest"><i>The core members at sajj weddings</i></span>
+                <span className="text-2xl text-[#4b3419] tracking-widest"><i>The core members at saaj weddings</i></span>
             </div>
                 <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-center  items-center gap-4 md:ml-[12%] my-[4rem]">
-                        <motion.div initial={{opacity:0,x:-50,rotate:90}} whileInView={{opacity:1,x:0,rotate:0,whileInView:{type:'spring',duration:1,ease:'easeIn'}}} className="border-0 flex md:flex-col max-sm:w-[100%] text-center max-md:flex-col-reverse w-fit">
+                        <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1,whileInView:{type:'spring',duration:2,ease:'easeIn'}}} className="border-0 flex md:flex-col max-sm:w-[100%] text-center max-md:flex-col-reverse w-fit">
                             <div className="relative border-[1rem] w-[25rem] h-[26rem] max-sm:w-[100%] border-[#835d2c]">
                                 <img src={member} alt="" className="absolute h-[29rem] w-[100%] bottom-[0rem]"/>
                             </div>
@@ -34,7 +34,7 @@ export default function About() {
                                 <span>His Position</span>
                             </div>
                         </motion.div>
-                        <motion.div initial={{opacity:0,x:50,rotate:90}} whileInView={{opacity:1,x:0,rotate:0,whileInView:{type:'spring',delay:0.6,duration:1,ease:'easeIn'}}} className="border-0 max-sm:w-[100%] text-center w-fit">
+                        <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1,whileInView:{type:'spring',delay:0.6,duration:2,ease:'easeIn'}}} className="border-0 max-sm:w-[100%] text-center w-fit">
                         <div className=" py-[2rem] pb-[5rem] text-xl tracking-widest">
                                 <h1 className="text-2xl text-[#776823]">Rohit Naik</h1>
                                 <span className="tracking-widest leading-9">His Position</span>

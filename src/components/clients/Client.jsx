@@ -4,6 +4,7 @@ import { easeIn, motion } from "framer-motion";
 import { Avatar } from "@mui/material";
 import png from "../assets/flower-black-and-white-png-41825.png";
 import "swiper/css";
+import './client.css'
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Slider from "react-slick"
@@ -15,12 +16,14 @@ export default function Client() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.04,
+    slidesToShow: 1,
+    innerWidth:90,
     slidesToScroll: 1,
+    
     arrow:true
   };
   return (
-    <div id="client max-w:[120%]">
+    <div id="client" className=" max-w:[100%] gap-3 mx-[3rem]">
      <Slider {...settings}>
         <SwiperSlide>
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">

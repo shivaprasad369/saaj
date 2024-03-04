@@ -5,23 +5,24 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-
 import React from "react";
+import png from '../assets/pngwing.com(1).png'
 import img from "../assets/why1.jpg";
 import { motion } from "framer-motion";
 export default function Why() {
   return (
-    <div className="w-full h-full justify-center items-center  overflow-hidden flex flex-col gap-3">
+    <div className="w-full relative h-full justify-center items-center  overflow-hidden flex flex-col gap-3">
       <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#493915]">
         <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} >Why Saaj?</h1>
       </div>
-      <motion.div initial={{opacity:0,scale:0.4}} whileInView={{opacity:1,scale:1,transition:{type:'spring',duration:1.2,ease:'easeIn',}}} className="flex flex-row justify-center  max-md:flex-col gap-10">
+      <img src={png} alt="" className="w-[15rem] z-0 absolute left-[5rem] bottom-[20%] opacity-[0.1]"  />
+      <motion.div initial={{opacity:0,scale:0.4}} whileInView={{opacity:1,scale:1,transition:{type:'spring',duration:1.2,ease:'easeIn',}}} className="flex flex-row relative justify-center  max-md:flex-col gap-10">
         <div className="shadow-sm ">
-          <Card sx={{ maxWidth: 460,height:420,boxShadow:10,borderRadius:5,marginBottom:3}} className="shadow-md">
+          <Card sx={{ maxWidth: 460,height:420, zIndex:1,boxShadow:10,borderRadius:5,marginBottom:3}} className="shadow-md">
             <CardActionArea className="p-2">
               <CardMedia 
               sx={{height:260,borderRadius:5}}
-                className="p-2 border rounded-md"
+                className="p-2 border z-10 rounded-md"
                 component="img"
                 height={'100'}
                 image={img}
@@ -92,12 +93,13 @@ export default function Why() {
                     <path d="M256 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM276.8 383.8c1 .1 2.1 .2 3.2 .2c39.8 0 72 32.2 72 72v22.7c0 16.4 16 27.9 31.6 22.8l12.8-4.3c18-6 37.3-6.5 55.6-1.5l19.4 5.3c17.9 4.9 34.4-11.6 29.5-29.5L495.6 452c-5-18.3-4.4-37.6 1.5-55.6l4.3-12.8c5.2-15.5-6.4-31.6-22.8-31.6c-34.6 0-62.7-28.1-62.7-62.7v-32c0-16.4-16-27.9-31.6-22.8l-12.8 4.3c-18 6-37.3 6.5-55.6 1.5l-29.6-8.1c-2.9-.8-5.9-1-8.7-.7c4.2 9.7 5.8 20.8 3.7 32.3L275 298.7c-1.5 8.4-1.4 17 .5 25.3l5.3 23.9c2.8 12.7 1.1 25.2-4 35.9zM127.6 234.5c-15.5-5.2-31.6 6.4-31.6 22.8v32C96 323.9 67.9 352 33.3 352c-16.4 0-27.9 16-22.8 31.6l4.3 12.8c6 18 6.5 37.3 1.5 55.6l-5.3 19.4C6.2 489.4 22.6 505.8 40.5 501L60 495.6c18.3-5 37.6-4.5 55.6 1.5l12.8 4.3c15.5 5.2 31.6-6.4 31.6-22.8v-32c0-34.6 28.1-62.7 62.7-62.7c16.4 0 27.9-16 22.8-31.6l-4.3-12.8c-6-18-6.5-37.3-1.5-55.6l5.3-19.4c4.9-17.9-11.6-34.4-29.5-29.5L196 240.4c-18.3 5-37.6 4.4-55.6-1.5l-12.8-4.3zM384 144a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" />
                   </svg>
                     </div>
-                    <div className="flex w-2/3 flex-col justify-center p-6 hover:text-white">
+                    <div className="flex w-2/3 z-10 flex-col justify-center p-6 hover:text-white">
                       <h3 className="mb-2 text-xl font-medium hover:text-white">
                       Best price and quality
                       </h3>
                       <p className="text-gray-700 max-md:text-sm hover:text-white">Saaj Wedding is recognized for offering the best prices without compromising on the highest quality."</p>
                     </div>
+      <img src={png} alt="" className="w-[15rem] z-0 absolute right-[-2rem] bottom-[5%] opacity-[0.1]"  />
                   </motion.div>
         </div>
         <div></div>
