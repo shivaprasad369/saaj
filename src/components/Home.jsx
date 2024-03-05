@@ -8,13 +8,13 @@ import Navbar from "./Navbar";
 import { motion, useScroll } from "framer-motion";
 import classNames from "classnames";
 import img from './assets/Saaj logo png3 (1)(1).png'
-
+import './Home.css'
 const data1 = [
   {
     id: 1,
     title: "Jodhapur",
     subTitle: "Wedding Planners",
-    img: "https://image.wedmegood.com/resized/800X/uploads/project/277122/1706366152_0231DSC01460.jpg",
+    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export default function Home() {
     id: 1,
     title: "Jodhpur",
     subTitle: "Wedding Planners",
-    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1472555802_4517983b_f847_4e35_8246_36616b8e1906___11.jpg",
+    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   });
   const handleSetImage = (ind) => {
     setHero(data1[ind]);
@@ -49,14 +49,15 @@ export default function Home() {
 
   const settings = {
     focusOnSelect: true,
-    // infinite: true,
+    //  infinite: false,
 
-    slidesToShow: 3.7,
+    slidesToShow: 4,
     centerMode: true,
     vertical: true,
     slidesToScroll: 1,
-    speed: 700,
-   
+    speed: 800,
+   arrows:false,
+
 
   };
 
@@ -77,11 +78,11 @@ export default function Home() {
       <Navbar />
       <img src={img} alt="" className="sm:absolute sm:top-3 max-sm:top-2 left-3 sm:w-[8rem] max-sm:w-[6rem] "/>
       <div  className="bg-[#03010170] bg-cover flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
-        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{duration:1.5,type:'tween',ease:'easeIn'}}} className="flex flex-col z-10 bg-[#0f020240]  md:gap-2 object-contain">
+        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{duration:1.5,type:'tween',ease:'easeIn'}}} className="flex flex-col  bg-[#0f020240] z-auto  md:gap-2 object-contain">
           <ol
             type="1"
-            style={{ fontFamily: ` "Libre Baskerville", serif` }}
-            className="flex w-[26rem] max-sm:hidden max-[422px]:w-[20rem]  font-light overflow-hidden  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem]  md:pt-10 object-cover   "
+            style={{ fontFamily: "'Heebo', sans-serif" }}
+            className="flex w-[29rem] z-0 max-sm:hidden max-[422px]:w-[20rem]  font-light overflow-visible  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem] md:pt-10 object-cover   "
           >
             <Slider {...settings} className=" z-10 gap-20 md:py-10 ">
               <li
@@ -91,36 +92,38 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                  className={`flex flex-col py-8 px-[1rem] text-[#bea3a3b4] ${
+                  className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 1
-                      ? "bg-[#070606ab]  w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#b4a0a0b4] "
+                      ? "bg-[#070606ab]  w-[130%]  text-[#cebebe] text-2xl "
+                      : "text-[#a59090b4] "
                   }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl">1. Wedding Planners</h1>
-                  <div className="border-b-2 text-md" />{" "}
-                  <p>Import trace for requested module</p>
+                  <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 1 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                  <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
               <li
-                id="top"
-                className=""
+           
                 onClick={() => {
                   handleSetImage(1);
                 }}
+                className="w-[20%]  "
               >
                 <div
-                  className={`flex  py-8 px-[1rem]  ${
+                  className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 2
-                      ? "bg-[#070606ab]  w-[150%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#b4a0a0b4]"
-                  }  text-gray-900 text-inherit`}
+                      ? "bg-[#070606ab]  w-[130%]  text-[#d8cbcb] text-2xl "
+                      : "text-[#bda7a7b4]"
+                  }  md:px-[1rem] text-inherit`}
                 >
-                  <div className="flex-col">
+                
                     <h1 className="text-xl ">2. Decor and Design</h1>
-                    <div className="border-b-2" />{" "}
-                    <p>Import trace for requested module</p>
-                  </div>
+                    <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 2 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
+               
                 </div>
               </li>
               <li
@@ -130,17 +133,18 @@ export default function Home() {
                 className=""
               >
                 <div
-                  className={`flex flex-col py-8 px-[1rem]   ${
+                  className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 3
-                      ? "bg-[#070606ab] w-[130%]  text-[#d4bfbf] text-2xl "
-                      : "text-[#b4a0a0b4]"
+                      ? "bg-[#070606ab] w-[130%]  text-[#ddd0d0] text-2xl "
+                      : "text-[#bba2a2b4]"
                   } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl">
                     3. Vendor and Artist Management
                   </h1>
-                  <div className="border-b-2" />{" "}
-                  <p>Import trace for requested module</p>
+                  <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 3 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                  <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
               <div>
@@ -152,13 +156,14 @@ export default function Home() {
                   <div
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 4
-                        ? "bg-[#070606ab]  text-[#d4bfbf] text-2xl "
-                        : "text-[#b4a0a0b4]"
+                        ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
+                        : "text-[#928181b4]"
                     } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl">4. Corporates Events</h1>
-                    <div className="border-b-2" />{" "}
-                    <p>Import trace for requested module</p>
+                    <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 4 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>
               </div>
@@ -171,13 +176,13 @@ export default function Home() {
           className="pr-6 flex flex-col text-inherit  max-[866px]:min-sm:text-xl  "
           style={{   fontFamily: "Urban Jungle" }}
         >
-          <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
+          <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
             <h5 className="sm:ml-[1.5rem] md:hidden text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right overflow-hidden">
               {hero.subTitle}
             </h5>
             <span
              
-              className=" tracking-widest  mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
+              className=" tracking-widest overflow-x-hidden scroll-m-0 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
             >
               {hero.title}
             </span>

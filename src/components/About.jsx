@@ -19,7 +19,7 @@ export default function About() {
       id="about"
       className="z-100 relative py-[2rem] pt-[3rem] md:px-[3rem] overflow-hidden flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
     >
-      <motion.div initial={{x:-100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="flex flex-col sm:gap-3  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
+      <motion.div initial={{x:-100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="flex flex-col sm:gap-3 md:ml-[3rem]  sm:w-[40%] sm:pt-[5%] sm:pb-[2rem] max-sm:pb-[2rem]">
         <div>
           <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]">
             ABout US
@@ -50,12 +50,12 @@ export default function About() {
                   className="rounded-t-full max-[750px]:hidden hidden"
                 /> */}
               </div>
-              <div className="relative w-full h-fit sm:ml-[3rem]">
+              <div className="relative w-full h-fit  sm:ml-[6rem]">
 
               <img
                 src={w1}
                 alt="wedding1"
-                className="relative pt-[3rem] blur-[0.8px] md:ml-2  rounded-t-full w-[75%]  pl-[10%] md:h-[100%] max-sm:w-[100%] "
+                className="relative pt-[3rem] bg-[#FFFFFF35] overflow-hidden md:ml-2  rounded-t-full w-[77%]  pl-[7%] md:h-[100%] max-sm:w-[100%] "
               />
               <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-0 left-0 sm:w-[50%] w-[60%]" />
               </div>
@@ -63,7 +63,7 @@ export default function About() {
           </div>
         </div>
       </motion.div>
-      <motion.div initial={{x:100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="items-center m-0 md:gap-3 flex-wrap sm:w-[40%]">
+      <motion.div initial={{x:100,opacity:0} } whileInView={{x:0,opacity:1,transition:{ease:'easeIn', type:'spring',duration:2}}} className="items-center m-0 md:gap-3 flex-wrap sm:w-[40%] md:mr-[5rem]">
         {/* <Image
             src={w2}
             height={250}
@@ -72,7 +72,7 @@ export default function About() {
             className="absolute z-9 max-[385px]:hidden md:w-auto w-auto "
           /> */}
         <div className="relative w-fit h-fit sm:pt-[2rem] sm:mr-[3rem]">
-        <img src={w2} alt="wedding1" className="mb-3 blur-[0.9px] relative  w-[70%]" /> 
+        <img src={w2} alt="wedding1" className="mb-3 bg-[#FFFFFF36] relative  w-[73%]" /> 
         <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w11} alt="" className="absolute top-[20%] rounded-t-full w-[50%] h-[60%] right-4" />
 
           

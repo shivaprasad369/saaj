@@ -23,7 +23,7 @@ export default function Client() {
     arrow:true
   };
   return (
-    <div id="client" className=" max-w:[100%] gap-3 mx-[3rem]">
+    <div id="client" className=" max-w:[100%] gap-3 md:mx-[2rem]">
      <Slider {...settings}>
         <SwiperSlide>
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
@@ -40,7 +40,7 @@ export default function Client() {
                   delay: 0.5,
                 },
               }}
-              className=" md:w-[100%] pt-[2rem] md:pl-[3rem]"
+              className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]"
             >
               <img src={img} alt="card" className="  md:h-[100%] w-[100%] " />
             </motion.div>
@@ -100,9 +100,9 @@ export default function Client() {
                   delay: 0.5,
                 },
               }}
-              className=" md:w-[100%] pt-[2rem] md:pl-[3rem]"
+              className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]"
             >
-              <img src={img} alt="card" className=" md:h-[110%]" />
+              <img src={img} alt="card" className=" md:h-[100%]" />
             </motion.div>
             <motion.div
               
@@ -160,9 +160,9 @@ export default function Client() {
                   delay: 0.5,
                 },
               }}
-              className=" md:w-[100%] pt-[2rem] md:pl-[3rem]"
+              className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]"
             >
-              <img src={img} alt="card" className=" md:h-[110%]" />
+              <img src={img} alt="card" className=" md:h-[100%]" />
             </motion.div>
             <motion.div
               

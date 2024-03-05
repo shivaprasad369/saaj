@@ -9,7 +9,7 @@ const [more2,setMore2]=useState(false)
 const [more3,setMore3]=useState(false)
 const [more4,setMore4]=useState(false)
   return (
-    <div className="">
+    <div className="" id="services">
       <div className="text-center mt-[2rem]">
         <h1
           className="text-3xl uppercase text-[#975d2e]"
@@ -95,12 +95,12 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="md:hidden md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="md:hidden md:w-[80%]  mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img}
               alt="card"
-              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[100%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div

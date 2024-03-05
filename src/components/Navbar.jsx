@@ -25,7 +25,7 @@ export default function Navbar() {
  
   return (
     <div className="w-[100%] ">
-      <motion.div initial={{opacity:0,y:-50}} whileInView={{opacity:1,y:0,transition:{type:'spring',duration:1.4,ease:'easeIn'}}} className="absolute flex min-w-[100%] font-Heebo text-white overflow-x-hidden inset-X-0 z-10  w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
+      <motion.div initial={{opacity:0,y:0}} whileInView={{opacity:1,y:0,transition:{type:'spring',duration:1.4,ease:'easeIn'}}} className="absolute flex min-w-[100%] font-Heebo text-white overflow-x-hidden inset-X-0 z-10  w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
         <div>
           {/* <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/> */}
         </div>
@@ -34,12 +34,12 @@ export default function Navbar() {
             className={`flex gap-[1.5rem] p-4 font-110 font-normal max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
             <Link to="/#home" className="tracking-[0.3rem]">HOME</Link>
-            <a href="/about" className="tracking-[0.3rem]">About us</a>
-            <Link to="/services" className="tracking-[0.3rem]">services</Link>
-            <Link to="/contact" className="tracking-[0.3rem]">Contact</Link>
+            <a href="/about/#about" className="tracking-[0.3rem]">About us</a>
+            <a href="/services/#services" className="tracking-[0.3rem]">services</a>
+            <a href="/why/#why" className="tracking-[0.3rem]">why saaj</a>
 
             <a href="/gallary" className="tracking-[0.3rem]">Gallary</a>
-            <Link to="/why" className="tracking-[0.3rem]">why saaj</Link>
+            <a href="/contact" className="tracking-[0.3rem]">Contact</a>
           </div>
 
           <button

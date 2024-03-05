@@ -15,7 +15,285 @@ export default function Why() {
       <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#493915]">
         <h1 style={{ fontFamily:` "Libre Baskerville", serif`}} >Why Saaj?</h1>
       </div>
-      <img src={png} alt="" className="w-[15rem] z-0 absolute left-[5rem] bottom-[20%] opacity-[0.1]"  />
+      <svg
+              xmlns="http://www.w3.org/2000/svg"
+            
+              viewBox="0,0,256,256"
+             
+              className="w-[10rem] z-0 absolute left-[5.6rem] bottom-[20%] opacity-[0.3] "
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style={{mixBlendMode: "normal"}}
+              >
+                <g transform="scale(5.33333,5.33333)">
+                  <circle
+                    cx="36"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+            
+              viewBox="0,0,256,256"
+             
+              className="w-[14rem] z-0 absolute right-[5.6rem] bottom-[-8%] opacity-[0.3] "
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style={{mixBlendMode: "normal"}}
+              >
+                <g transform="scale(5.33333,5.33333)">
+                  <circle
+                    cx="36"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
+      {/* <img src={png} alt="" className="w-[15rem] z-0 absolute left-[5rem] bottom-[20%] opacity-[0.1]"  /> */}
       <motion.div initial={{opacity:0,scale:0.4}} whileInView={{opacity:1,scale:1,transition:{type:'spring',duration:1.2,ease:'easeIn',}}} className="flex flex-row relative justify-center  max-md:flex-col gap-10">
         <div className="shadow-sm ">
           <Card sx={{ maxWidth: 460,height:420, zIndex:1,boxShadow:10,borderRadius:5,marginBottom:3}} className="shadow-md">
@@ -47,7 +325,7 @@ export default function Why() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex h-48 overflow-hidden hover:bg-[#a07741c5] hover:text-white w-full max-w-md items-center justify-center rounded-lg border border-gray-300 bg-white shadow-md"
+                    className="flex h-48 overflow-hidden hover:bg-[#a07741c5] hover:text-white w-full max-w-md items-center justify-center rounded-lg border border-gray-300 bg-white shadow-2xl"
                   >
                     <div className="flex h-full w-1/4 items-center justify-center">
                       <svg
@@ -81,7 +359,7 @@ export default function Why() {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex h-48 overflow-hidden w-full hover:bg-[#a07741c5] hover:text-white max-w-md items-center justify-center rounded-lg border border-gray-300 bg-white shadow-md"
+                    className="flex h-48 overflow-hidden w-full  hover:bg-[#a07741c5] hover:text-white max-w-md items-center justify-center rounded-lg border border-gray-300 bg-white shadow-2xl"
                   >
                     <div className="flex h-full w-1/5  items-center justify-center">
                       <svg
@@ -99,7 +377,7 @@ export default function Why() {
                       </h3>
                       <p className="text-gray-700 max-md:text-sm hover:text-white">Saaj Wedding is recognized for offering the best prices without compromising on the highest quality."</p>
                     </div>
-      <img src={png} alt="" className="w-[15rem] z-0 absolute right-[-2rem] bottom-[5%] opacity-[0.1]"  />
+      {/* <img src={png} alt="" className="w-[15rem] z-0 absolute right-[-2rem] bottom-[5%] opacity-[0.1]"  /> */}
                   </motion.div>
         </div>
         <div></div>
