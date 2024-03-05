@@ -100,7 +100,7 @@ export default function Home() {
                 >
                   <h1 className="text-xl">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 1 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    hero.id === 1 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
@@ -121,7 +121,7 @@ export default function Home() {
                 
                     <h1 className="text-xl ">2. Decor and Design</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 2 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    hero.id === 2 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -143,7 +143,7 @@ export default function Home() {
                     3. Vendor and Artist Management
                   </h1>
                   <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 3 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    hero.id === 3 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
@@ -162,7 +162,7 @@ export default function Home() {
                   >
                     <h1 className="text-xl">4. Corporates Events</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 4 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    hero.id === 4 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>
