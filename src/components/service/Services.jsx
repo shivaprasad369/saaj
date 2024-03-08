@@ -99,7 +99,7 @@ export default function Services() {
             initial={{ bottom: "2rem" }}
             whileInView={{ bottom: "0rem" }}
             transition={{ duration: 2, type: "spring" }}
-            className=" relative border-0  items-center bg-[#f3ebeb] justify-center uppercase text-center"
+            className=" container-1 relative border-0  items-center bg-[#f3ebeb] justify-center uppercase text-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

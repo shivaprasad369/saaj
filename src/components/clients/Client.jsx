@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Client() {
 
   return (
-    <div id="client" className="container max-w:[100%] gap-3 md:mx-[2rem]">
+    <div id="client" className="containers w:[100%] gap-3 md:mx-[2rem]">
       <Swiper navigation={true} modules={[Navigation]} className="">
         <SwiperSlide>
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
@@ -37,7 +37,7 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" border-black min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className=" border-black  max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center items-center relative flex-wrap font-sans justify-center object-cover ">
                 <h1
