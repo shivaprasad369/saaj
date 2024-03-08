@@ -6,7 +6,7 @@ import How from './How'
 
 export default function Client() {
   return (
-    <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
+    <div id="why" className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     
         
     <Why/>
