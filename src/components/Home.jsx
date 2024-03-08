@@ -98,11 +98,12 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
+                style={ id===0 ? {color:"white"} :{color:"#817575"} }
                   className={`flex flex-col py-8 px-[1rem] text-[#cebebe]   ${
                     hero.id === 0
-                      ? "bg-[#070606ab]  w-[100%]  text-[#cebebe] text-2xl "
-                      : "text-gray-500 text-xl"
-                  } ${id ===0 ?"text-[#d6caca] text-2xl":"text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
+                      ? "bg-[#000000ab]  w-[100%]  text-[#cebebe] text-2xl "
+                      : ""
+                  }   md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
@@ -118,11 +119,12 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
+                style={ id===1 ? {color:"white"} :{color:"#817575"} }
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
-                      : " text-gray-500 text-xl"
-                  }  ${id ===1 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
+                      : ""
+                  }   md:px-[1rem] text-inherit`}
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
@@ -139,11 +141,12 @@ export default function Home() {
                 className=""
               >
                 <div
+                style={ id===2 ? {color:"white"} :{color:"#817575"} }
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 2
                       ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-3xl "
-                      : "text-[#b9a1a1b4] text-xl"
-                  }  ${id ===2 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-950 text-inherit`}
+                      : ""
+                  }  text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
@@ -160,11 +163,12 @@ export default function Home() {
                   }}
                 >
                   <div
+                  style={ id===3 ? {color:"white"} :{color:"#817575"} }
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 3
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
-                        : "text-[#a58a8ab4]"
-                    }  ${id ===3 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-900 text-inherit`}
+                        : ""
+                    }  text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
