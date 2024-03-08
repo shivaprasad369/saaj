@@ -46,12 +46,22 @@ export default function Contact() {
                     </div>
                 </div>
                 </div>
-            <iframe className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
+            {/* <iframe className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
           title="location"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
             width="350"
             height="400"
             // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe> */}
+           <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1201073778775!2d75.79439767428919!3d26.86792486201601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db24ad0000019%3A0x85e5feb42013a2ac!2z4LK44LK-4LKc4LONIOCyteCzhuCyoeCzjeCyoeCyv-CyguCyl-CzjQ!5e0!3m2!1skn!2sin!4v1709787882710!5m2!1skn!2sin"
+            width="350"
+            height="400"
+            className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
+            style={{border:"0"}}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
