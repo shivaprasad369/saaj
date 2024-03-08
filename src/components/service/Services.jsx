@@ -93,7 +93,7 @@ export default function Services() {
           //   y: 0,
           //   transition: { ease: easeIn, duration: 1.5, type: "spring" },
           // }}
-          className=" bg-[#f3f3f5] md:p-1 w-auto "
+          className=" bg-[#f3f3f5]  w-auto "
         >
           <motion.div
             initial={{ bottom: "2rem" }}

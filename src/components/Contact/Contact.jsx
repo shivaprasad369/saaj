@@ -46,7 +46,7 @@ export default function Contact() {
                     </div>
                 </div>
                 </div>
-            <iframe className="max-md:w-[100%] md:pl-[2rem] md:pt-[4rem] pt-4"
+            <iframe className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
           title="location"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
             width="350"

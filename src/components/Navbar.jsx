@@ -24,7 +24,7 @@ export default function Navbar() {
 
  
   return (
-    <div className="w-[100%] ">
+    <div className="w-[100%] bg-[#03010170] bg-cover ">
       <motion.div initial={{opacity:0,y:0}} whileInView={{opacity:1,y:0,transition:{type:'spring',duration:1.4,ease:'easeIn'}}} className="absolute flex min-w-[100%] font-Heebo text-white overflow-x-hidden inset-X-0 z-10  w-[100%] items-center text-inherit justify-between gap-2 px-8 py-2 pt-3 ">
         <div>
           {/* <img src={logo} alt="logo" width={100} className="max-md:w-[3rem]"/> */}
@@ -38,8 +38,8 @@ export default function Navbar() {
             <a href="/services/#services" className="tracking-[0.3rem]">services</a>
             <a href="/why/#why" className="tracking-[0.3rem]">why saaj</a>
 
-            <a href="/gallary" className="tracking-[0.3rem]">Gallary</a>
-            <a href="/contact" className="tracking-[0.3rem]">Contact</a>
+            <Link to="/gallary" className="tracking-[0.3rem]">Gallary</Link>
+            <Link to="/contact" className="tracking-[0.3rem]">Contact</Link>
           </div>
 
           <button

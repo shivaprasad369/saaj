@@ -12,7 +12,7 @@ import './Home.css'
 const data1 = [
   {
     id: 1,
-    title: "Jodhapur",
+    title: "Jodhpur",
     subTitle: "Wedding Planners",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   },
@@ -73,16 +73,18 @@ export default function Home() {
         height: "fit",
         width: "100%",
         position:'relative'
+       
       }}
+      className=" max-sm:bg-[#03010170]"
     >
-      <Navbar />
-      <img src={img} alt="" className="sm:absolute sm:top-3 max-sm:top-2 left-3 sm:w-[8rem] max-sm:w-[6rem] "/>
-      <div  className="bg-[#03010170] bg-cover flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
+        <Navbar />
+        <img src={img} alt="" className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[8rem] max-sm:w-[6rem] "/>
+      <div  className="bg-[#03010170] bg-cover  flex max-sm:h-[25rem] sm:justify-between max-sm:items-center max-sm:justify-center  overflow-hidden  w-full max-sm:text-xl text-inherit items-center flex-wrap max-md:text-sm ">
         <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{duration:1.5,type:'tween',ease:'easeIn'}}} className="flex flex-col  bg-[#0f020240] z-auto  md:gap-2 object-contain">
           <ol
             type="1"
             style={{ fontFamily: "'Heebo', sans-serif" }}
-            className="flex w-[29rem] z-0 max-sm:hidden max-[422px]:w-[20rem]  font-light overflow-visible  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem] md:pt-10 object-cover   "
+            className="flex w-[28rem]  z-0 max-sm:hidden max-[422px]:w-[20rem]  font-light overflow-visible  flex-col tracking-widest max-sm:text-sm  text-white mt-[3rem] md:pt-10 object-cover   "
           >
             <Slider {...settings} className=" z-10 gap-20 md:py-10 ">
               <li
@@ -94,11 +96,11 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 1
-                      ? "bg-[#070606ab]  w-[130%]  text-[#cebebe] text-2xl "
-                      : "text-[#a59090b4] "
+                      ? "bg-[#070606ab]  w-[100%]  text-[#cebebe] text-2xl "
+                      : "text-[#a78e8eb4] "
                   }  md:px-[1rem] text-inherit`}
                 >
-                  <h1 className="text-xl">1. Wedding Planners</h1>
+                  <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
                     hero.id === 1 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
@@ -114,12 +116,12 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 2
-                      ? "bg-[#070606ab]  w-[130%]  text-[#d8cbcb] text-2xl "
-                      : "text-[#bda7a7b4]"
+                      ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
+                      : "text-[#b19a9ab4]"
                   }  md:px-[1rem] text-inherit`}
                 >
                 
-                    <h1 className="text-xl ">2. Decor and Design</h1>
+                    <h1 className="text-xl uppercase">2. Decor and Design</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
                     hero.id === 2 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
@@ -135,11 +137,11 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 3
-                      ? "bg-[#070606ab] w-[130%]  text-[#ddd0d0] text-2xl "
-                      : "text-[#bba2a2b4]"
+                      ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-2xl "
+                      : "text-[#b9a1a1b4]"
                   } text-gray-950 text-inherit`}
                 >
-                  <h1 className="text-xl">
+                  <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
                   <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
@@ -157,10 +159,10 @@ export default function Home() {
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 4
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
-                        : "text-[#928181b4]"
+                        : "text-[#a58a8ab4]"
                     } text-gray-900 text-inherit`}
                   >
-                    <h1 className="text-xl">4. Corporates Events</h1>
+                    <h1 className="text-xl uppercase">4. Corporates Events</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
                     hero.id === 4 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
@@ -182,7 +184,7 @@ export default function Home() {
             </h5>
             <span
              
-              className=" tracking-widest overflow-x-hidden scroll-m-0 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
+              className=" tracking-widest  scroll-m-0 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
             >
               {hero.title}
             </span>
