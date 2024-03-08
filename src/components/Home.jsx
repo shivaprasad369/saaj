@@ -11,13 +11,13 @@ import img from './assets/Saaj logo png3 (1)(1).png'
 import './Home.css'
 const data1 = [
   {
-    id: 1,
+    id: 0,
     title: "Jodhpur",
     subTitle: "Wedding Planners",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   },
   {
-    id: 2,
+    id: 1,
     title: "Mumbai",
     subTitle: "⁠Decor and Design",
     img: "https://image.wedmegood.com/resized/800X/uploads/project/277123/1706366948_IMG_8129.JPG",
@@ -38,7 +38,7 @@ const data1 = [
 export default function Home() {
   const [id,setId]=useState(1)
   const [hero, setHero] = useState({
-    id: 1,
+    id: 0,
     title: "Jodhpur",
     subTitle: "Wedding Planners",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
@@ -101,14 +101,14 @@ export default function Home() {
               >
                 <div
                   className={`flex flex-col py-8 px-[1rem]   ${
-                    hero.id === 1
+                    hero.id === 0
                       ? "bg-[#070606ab]  w-[100%]  text-[#cebebe] text-2xl "
                       : ""
-                  } ${id !==1 && "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
+                  } ${id !==0 && "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 1 ? 'hidden':'block'}  ${id !==1 && "text-gray-500 text-xl" }  border-gray-200`} ></span> </div>{" "}
+                    hero.id === 0 ? 'hidden':'block'}  ${id !==0 && "text-gray-500 text-xl" }  border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
@@ -121,15 +121,15 @@ export default function Home() {
               >
                 <div
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
-                    hero.id === 2
+                    hero.id === 1
                       ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
                       : " text-gray-500 text-xl"
-                  }  ${id ===2 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
+                  }  ${id ===1 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 2 ? 'hidden':'block'}  border-gray-200`} ></span> </div>{" "}
+                    hero.id === 1 ? 'hidden':'block'}  border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -142,16 +142,16 @@ export default function Home() {
               >
                 <div
                   className={`flex flex-col py-8 px-[1rem] ${
-                    hero.id === 3
+                    hero.id === 2
                       ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-3xl "
                       : "text-[#b9a1a1b4] text-xl"
-                  }  ${id ===3 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-950 text-inherit`}
+                  }  ${id ===2 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
                   <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 3 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                    hero.id === 2 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
@@ -163,14 +163,14 @@ export default function Home() {
                 >
                   <div
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
-                      hero.id === 4
+                      hero.id === 3
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
                         : "text-[#a58a8ab4]"
-                    }  ${id ===4 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-900 text-inherit`}
+                    }  ${id ===3 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 4 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                    hero.id === 3 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>
