@@ -18,25 +18,25 @@ export default function Contact() {
           </div>
         </div>
         <div className="md:flex max-[910px]:flex-col w-full  justify-between items-center md:py-5 md:gap-14  ">
-          <div className="flex flex-col gap-3 max-md:pl-[3rem]">
+          <div className="flex flex-col md:w-5/6 gap-3 max-md:pl-[3rem]">
             <form className="flex flex-col mr-[rem] max-md:mr-[4rem] gap-14 pb-5">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="border-b-2 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4"
+                className="border-b-2 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Email"
-                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4"
+                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
               />
               <textarea
                 name="message"
                 rows="7"
                 placeholder="Message"
-                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4"
+                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
               ></textarea>
               <motion.button
                 whileHover={{
@@ -51,7 +51,7 @@ export default function Contact() {
             </form>
           </div>
           <div className="bg-[#9e763b] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14">
-            <div className="md:flex justify-around max-md:flex-col">
+            <div className="md:flex  max-md:flex-col">
               <div className="flex flex-col rounded-sm gap-14">
                 <h1 className="text-3xl tracking-widest  ">Info</h1>
                 <div className="flex gap-9 tracking-widest   ">
@@ -110,7 +110,7 @@ export default function Contact() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe> */}
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d56927.89392111595!2d75.78436092886044!3d26.903705516105322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.927036299999997!2d75.8603042!4m5!1s0x396db24ad0000019%3A0x85e5feb42013a2ac!2sPN%2075%2C%20second%20floor%20Satnam%20Honda%2C%20Tonk%20Rd%2C%20near%20kamal%20%26%20Co%2C%20Jaipur%2C%20Rajasthan%20302015!3m2!1d26.8679201!2d75.79697259999999!5e0!3m2!1sen!2sin!4v1709891989758!5m2!1sen!2sin"
                 width="350"
                 height="400"
@@ -118,7 +118,7 @@ export default function Contact() {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              ></iframe> */}
               
             </div>
           </div>
