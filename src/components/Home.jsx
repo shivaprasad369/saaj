@@ -23,20 +23,20 @@ const data1 = [
     img: "https://image.wedmegood.com/resized/800X/uploads/project/277123/1706366948_IMG_8129.JPG",
   },
   {
-    id: 3,
-    title: "Dehli",
+    id: 2,
+    title: "Delhi",
     subTitle: "⁠Vendor and Artist Management",
     img: "https://image.wedmegood.com/resized/800X/uploads/project/277122/1706365881_0032DVK05052.jpg",
   },
   {
-    id: 4,
-    title: "Hydrabad",
+    id: 3,
+    title: "Hyderabad",
     subTitle: "⁠Corporates Events",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   },
 ];
 export default function Home() {
-  const [id,setId]=useState(1)
+  const [id,setId]=useState(0)
   const [hero, setHero] = useState({
     id: 0,
     title: "Jodhpur",
@@ -61,11 +61,9 @@ export default function Home() {
   const handleSetImage = (ind) => {
     setHero(data1[ind]);
     setId(data1[ind].id)
-    console.log(hero,id);
+    console.log(hero.id,id);
   };
-  useEffect(()=>{
-    
-  },[id])
+ 
 
   // Used to determine which items should be visible. this prevents the "ghosting" animation
 
@@ -100,15 +98,15 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                  className={`flex flex-col py-8 px-[1rem]   ${
+                  className={`flex flex-col py-8 px-[1rem] text-[#cebebe]   ${
                     hero.id === 0
                       ? "bg-[#070606ab]  w-[100%]  text-[#cebebe] text-2xl "
-                      : ""
-                  } ${id !==0 && "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
+                      : "text-gray-500 text-xl"
+                  } ${id ===0 ?"text-[#d6caca] text-2xl":"text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 0 ? 'hidden':'block'}  ${id !==0 && "text-gray-500 text-xl" }  border-gray-200`} ></span> </div>{" "}
+                    hero.id === 0 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
