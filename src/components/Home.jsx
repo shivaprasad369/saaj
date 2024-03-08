@@ -184,7 +184,7 @@ export default function Home() {
             </h5>
             <span
              
-              className=" tracking-widest  scroll-m-0 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
+              className=" tracking-widest max-md:pt-4 scroll-m-0 mb-[2rem] z-0 max-sm:text-[3.5rem] max-md:text-[5rem] md:text-center text-[7rem] pb-3 text-inherit font-urbanjangle text-white sm:text-right sm:ml-[2rem]  sm:mb-[5rem]"
             >
               {hero.title}
             </span>
