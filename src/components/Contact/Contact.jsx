@@ -19,7 +19,7 @@ export default function Contact() {
                     <input type="text" name='name' placeholder='Name' className='border-b-2 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4' />
                     <input type="text" name='email' placeholder='Email' className='border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4'/>
                     <textarea name='message' rows="7" placeholder='Message'className='border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-[22rem] px-4'></textarea>
-                    <motion.button whileHover={{scale:1.1,transition:{type:'spring',duration:1.4,ease:'easeIn'}}} type='button' className='border-2 h-[3rem] rounded-md max-md:w-[40%] hover:bg-[#8d4e35] hover:text-white justify-center items-center  text-center border-[#643522] text-[#643522]  font-bold  uppercase text-xl tracking-widest'>Send</motion.button>
+                    <motion.button whileHover={{scale:1.1,transition:{type:'spring',duration:0.3,ease:'easeIn'}}} type='button' className='border-2 h-[3rem] rounded-md max-md:w-[40%] hover:bg-[#8d4e35] hover:text-white justify-center items-center  text-center border-[#643522] text-[#643522]  font-bold  uppercase text-xl tracking-widest'>Send</motion.button>
 
                 </form>
             </div>
