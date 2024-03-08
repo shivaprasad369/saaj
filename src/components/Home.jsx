@@ -61,9 +61,10 @@ export default function Home() {
   const handleSetImage = (ind) => {
     setHero(data1[ind]);
     setId(data1[ind].id)
-    console.log(hero);
+    console.log(hero,id);
   };
   useEffect(()=>{
+    
   },[id])
 
   // Used to determine which items should be visible. this prevents the "ghosting" animation
