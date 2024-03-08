@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -36,16 +36,14 @@ const data1 = [
   },
 ];
 export default function Home() {
+  const [id,setId]=useState(1)
   const [hero, setHero] = useState({
     id: 1,
     title: "Jodhpur",
     subTitle: "Wedding Planners",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   });
-  const handleSetImage = (ind) => {
-    setHero(data1[ind]);
-    console.log(hero);
-  };
+  
 
   const settings = {
     focusOnSelect: true,
@@ -60,6 +58,13 @@ export default function Home() {
 
 
   };
+  const handleSetImage = (ind) => {
+    setHero(data1[ind]);
+    setId(data1[ind].id)
+    console.log(hero);
+  };
+  useEffect(()=>{
+  },[id])
 
   // Used to determine which items should be visible. this prevents the "ghosting" animation
 
@@ -97,12 +102,12 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem]   ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[100%]  text-[#cebebe] text-2xl "
-                      : "text-[#a78e8eb4] "
-                  }  md:px-[1rem] text-inherit`}
+                      : ""
+                  } ${id !==1 && "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 1 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                    hero.id === 1 ? 'hidden':'block'}  ${id !==1 && "text-gray-500 text-xl" }  border-gray-200`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
@@ -117,13 +122,13 @@ export default function Home() {
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 2
                       ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
-                      : "text-[#b19a9ab4]"
-                  }  md:px-[1rem] text-inherit`}
+                      : " text-gray-500 text-xl"
+                  }  ${id ===2 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" }  md:px-[1rem] text-inherit`}
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 2 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                    hero.id === 2 ? 'hidden':'block'}  border-gray-200`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -137,9 +142,9 @@ export default function Home() {
                 <div
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 3
-                      ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-2xl "
-                      : "text-[#b9a1a1b4]"
-                  } text-gray-950 text-inherit`}
+                      ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-3xl "
+                      : "text-[#b9a1a1b4] text-xl"
+                  }  ${id ===3 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-950 text-inherit`}
                 >
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
@@ -160,7 +165,7 @@ export default function Home() {
                       hero.id === 4
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
                         : "text-[#a58a8ab4]"
-                    } text-gray-900 text-inherit`}
+                    }  ${id ===4 ? "text-[#d8cbcb] text-2xl ": "text-gray-500 text-xl" } text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
                     <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
