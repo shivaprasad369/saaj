@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import TemporaryDrawer from "./SideBar";
 import logo from './assets/image/logo.png'
 import { ImMenu } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -33,13 +33,13 @@ export default function Navbar() {
           <div
             className={`flex gap-[1.5rem] p-4 font-110 font-normal max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
-            <Link to="/#home" className="tracking-[0.3rem]">HOME</Link>
+            <a href="/" className="tracking-[0.3rem]">HOME</a>
             <a href="/about/#about" className="tracking-[0.3rem]">About us</a>
             <a href="/services/#services" className="tracking-[0.3rem]">services</a>
             <a href="/why/#why" className="tracking-[0.3rem]">why saaj</a>
 
-            <Link to="/gallary" className="tracking-[0.3rem]">Gallary</Link>
-            <Link to="/contact" className="tracking-[0.3rem]">Contact</Link>
+            <a href="/gallary" className="tracking-[0.3rem]">Gallary</a>
+            <a href="/contact" className="tracking-[0.3rem]">Contact</a>
           </div>
 
           <button

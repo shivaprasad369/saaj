@@ -182,7 +182,7 @@ export default function Home() {
           className="pr-6 flex flex-col text-inherit  max-[866px]:min-sm:text-xl  "
           // style={{   fontFamily: "Urban Jungle" }}
         >
-          <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[12rem] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
+          <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[38%] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
             <h5 className="sm:ml-[1.5rem] md:hidden text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right overflow-hidden">
               {hero.subTitle}
             </h5>

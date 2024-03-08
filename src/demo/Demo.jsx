@@ -15,7 +15,7 @@ export default function Demo() {
         <img src={img1} alt="" className='w-[22rem]  m-[6rem] relative  ' />
       </div> */}
 
-      <motion.div initial={{opacity:0,y:-50}} whileInView={{opacity:1,y:0,transition:{type:'spring',ease:'easeInOut', duration:1}}} className="md:flex  relative z-10 max-[756px]:flex-col  max-[906px]:justify-around gap-10 md:justify-center min-[906px]:gap-[8rem] max-[756px]:min-[638px]:ml-[20%]  max-[380px]:ml-[0%] pt-[3rem]">
+      <div  className="md:flex  relative z-10 max-[756px]:flex-col  max-[906px]:justify-around gap-10 md:justify-center min-[906px]:gap-[8rem] max-[756px]:min-[638px]:ml-[20%]  max-[380px]:ml-[0%] pt-[3rem]">
 
         <img src={png} alt="" className="absolute top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"/>
         <img src={png} alt="" className="absolute bottom-[-2.5rem] right-[-2rem] w-[12rem] opacity-[0.5]"/>
@@ -79,7 +79,7 @@ export default function Demo() {
             </p>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

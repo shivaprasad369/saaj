@@ -27,7 +27,7 @@ export default function About() {
                 <img src={png} alt="" className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]" />
                 <img src={png} alt="" className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]" />
           <div className=" ">
-            <p style={{fontFamily: `"Mate SC", serif`}} className="tracking-wider text-justify text-[#705704] md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
+            <p style={{fontFamily: `'Segoe UI', sans-serif`}} className="tracking-wider text-justify text-[#705704] md:text-[1.2rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]">
              <i>
               Welcome to Saaj Wedding, where we turn your wedding dreams into
               reality amidst the enchanting backdrop of Jaipur - the Pink City.
@@ -55,7 +55,7 @@ export default function About() {
               <img
                 src={w1}
                 alt="wedding1"
-                className="relative pt-[3rem] bg-[#FFFFFF35] overflow-hidden md:ml-2  rounded-t-full w-[77%]  pl-[7%] md:h-[100%] max-sm:w-[100%] "
+                className="relative pt-[3rem]  overflow-hidden md:ml-2  rounded-t-full w-[77%]  pl-[7%] md:h-[100%] max-sm:w-[100%] "
               />
               <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-0 left-0 sm:w-[50%] w-[60%]" />
               </div>
@@ -84,7 +84,7 @@ export default function About() {
               opacity: 1,
               transition: { ease: easeIn, delay: 0.3 },
             }}
-            style={{fontFamily: `"Mate SC", serif`}}
+            style={{fontFamily: `'Segoe UI', sans-serif`}}
             className=" tracking-widermd:mr-4 text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
           >
             <i>

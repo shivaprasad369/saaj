@@ -17,11 +17,15 @@ export default function Gallarys() {
     <div className=' justify-center items-center text-center'>
    <h1 className='text-center p-3 text-2xl font-semibold text-[#64321b] uppercase'>Gallary</h1>
       <ImageList
-      sx={{ width: '100%', height: '100%',padding:4,justifyContent:'center',alignItems:'center',gap:3}}
+      sx={{ width: '100%', height: '100%',padding:4,justifyContent:'center',alignItems:'center'}}
       variant="quilted"
       cols={4}
-      rowHeight={250}
+      gap={20}
+      rowHeight={200}
+      
     >
+      
+
       {itemData.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
           <img
@@ -31,6 +35,7 @@ export default function Gallarys() {
           />
         </ImageListItem>
       ))}
+      
     </ImageList>
 
     </div>

@@ -1,22 +1,50 @@
  .slick-arrow{
-display: block;
-background: #7f6464;
+
+background: #774001;
 padding: 10px;
 width: fit-content;
-height: fit-content;
-border-radius: 100%;
+height: fit-content; 
+display:none;
 z-index: 1;
 position: absolute;
+height: max-content;
 }
+.awssld__content {
+  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+}
+ .slick-arrow:hover{
+    display: block;
+    background: #774001;
+    padding: 10px;
+    
+    width: fit-content;
+    height: fit-content;
 
+    z-index: 1;
+    position: absolute;
+    }
 .slick-next{
     right: 0px;
-    bottom: 20%;
-    width: 30;
+    bottom: 21%;
+  
+   
 }
 .slick-prev{
 left: 10px;
-    bottom: 20%;
+
     width: 30;
     z-index: 1;
+    display: none;
+
+}
+.container .swiper {
+    
+    width: 100%;
+    height: 100%;
+  
 }

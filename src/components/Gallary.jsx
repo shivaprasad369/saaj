@@ -10,13 +10,6 @@ export default function Gallary() {
   return (
     <div id="gallary" className="justify-center items-center pt-[4rem] relative max-w:[100%]">
       <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        viewport={{once:true}}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { ease: easeInOut, delay: 0.2, type: "spring" },
-        }}
         className="uppercase  text-center text-[2rem] tracking-widest font-bold text-[#3b4616] pb-3"
         style={{ fontFamily:` "Libre Baskerville", serif`}}
       >

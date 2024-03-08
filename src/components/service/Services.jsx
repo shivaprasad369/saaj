@@ -76,7 +76,7 @@ export default function Services() {
           </h1>
 
           <p
-            style={{ fontFamily: `"Mate SC", serif` }}
+            style={{fontFamily: `'Segoe UI', sans-serif`}}
             className="text-[#6b601e] text-justify tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by

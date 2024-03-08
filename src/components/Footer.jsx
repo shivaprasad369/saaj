@@ -23,7 +23,7 @@ export default function Footer() {
         className="flex flex-1 justify-around max-md:justify-center items-center max-md:flex-col px-8"
       >
         <div className="text-left gap-4 ">
-          <h1 className="text-center font-bold text-3xl max-md:pt-[1rem] max-md:text-4xl max-md:pb-4 md:pb-4  ">
+          <h1 className="max-md:text-center md:pl-2 font-bold text-3xl max-md:pt-[1rem] max-md:text-4xl max-md:pb-4 md:pb-4  ">
             Get In Touch
           </h1>
           <ul className="flex flex-col max-md:text-center">
@@ -52,27 +52,17 @@ export default function Footer() {
         </div>
 
         <div className="text-center mt-[2rem] gap-3   max-md:pb-[2rem]">
+     
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1201073778775!2d75.79439767428919!3d26.86792486201601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db24ad0000019%3A0x85e5feb42013a2ac!2z4LK44LK-4LKc4LONIOCyteCzhuCyoeCzjeCyoeCyv-CyguCyl-CzjQ!5e0!3m2!1skn!2sin!4v1709787882710!5m2!1skn!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d56927.89392111595!2d75.78436092886044!3d26.903705516105322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.927036299999997!2d75.8603042!4m5!1s0x396db24ad0000019%3A0x85e5feb42013a2ac!2sPN%2075%2C%20second%20floor%20Satnam%20Honda%2C%20Tonk%20Rd%2C%20near%20kamal%20%26%20Co%2C%20Jaipur%2C%20Rajasthan%20302015!3m2!1d26.8679201!2d75.79697259999999!5e0!3m2!1sen!2sin!4v1709891989758!5m2!1sen!2sin"
             width="350"
             height="250"
             className="max-md:w-[100%] "
-            style={{border:"0"}}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          {/* <iframe
-            className="max-md:w-[100%] "
-            title="location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
-            width="350"
-            height="250"
-            // style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> */}
+     
         </div>
         <div className="text-center  gap-3 flex flex-col   ">
           <h1 className="font-bold tracking-widest text-3xl  md:mt-[2rem]">
@@ -89,7 +79,7 @@ export default function Footer() {
             className="border-b-2 focus:border-0 border-white  bg-[#5F3615] text-white  h-[2rem] p-3 my-1 max-md:my-4"
             placeholder="Enter a email address"
           />
-          <button className="border-0 h-[2.5rem] bg-[#0f3536] border-[#0f3536] ">
+          <button className="border-0 h-[2.5rem] bg-white text-[#3f2b12] border-[#b8bdbd]  ">
             SEND ENQUIRY
           </button>
           <div className="flex flex-row mt-7">
@@ -106,7 +96,7 @@ export default function Footer() {
       <div className="  ">
         <div
           style={{ fontFamily: `"Mate SC", serif` }}
-          className="text-md tracking-widest flex flex-wrap md:ml-[30%] max-md:ml-[15%]  max-[378px]:hidden   gap-2 text-center"
+          className="text-md mt-3 tracking-widest flex flex-wrap md:ml-[30%] max-md:ml-[15%]  max-[378px]:hidden   gap-2 text-center"
         >
           <a href="#home" className="md:px-3 ">
             Home
