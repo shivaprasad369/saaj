@@ -16,7 +16,7 @@ export default function Cover() {
   
   // };
   return (
-    <>
+    <div className='bg-[#E7E1D9]'>
        {/* {data?.length && data.map((data,index)=>(
 
 <img src={data.img} alt="homepage" key={data.index} className={` ${data.index===imageIndex ?'block':'hidden'} absolute bg-no-repeat bg-cover w-[100%]  max-[1364px]:h-[75%] max-md:h-[65%] max-[420px]:h-[100%] min-[439px]:max-[730px]:h-[60%] min-[769px]:max-[910px]:h-[80%] max-[914px]:h-[75%]  text-black `}/>
@@ -33,6 +33,6 @@ export default function Cover() {
     <Gallary/>
     {/* <Gallarys/> */}
     
-    </>
+    </div>
   )
 }

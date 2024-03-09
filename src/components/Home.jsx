@@ -107,8 +107,7 @@ export default function Home() {
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
                   <div className={`border-b-2 relative ${
-                    hero.id === 0 ? 'border-white':'border-gray-500'} border-gray-500` }><span className={`border-b-[3px] h-2 w-[50%]  absolute top-[-6px] ${
-                    hero.id === 0 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    hero.id === 0 ? 'border-white':'border-gray-500'} border-gray-500` }><span className={`border-b-[3px] h-2 w-[50%]  absolute top-[-6px]  border-white`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
@@ -129,8 +128,7 @@ export default function Home() {
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
-                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 1 ? 'hidden':'block'}  border-white`} ></span> </div>{" "}
+                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]   border-white`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -152,8 +150,7 @@ export default function Home() {
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
-                  <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 2 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                  <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
@@ -172,8 +169,7 @@ export default function Home() {
                     }  text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
-                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 3 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
+                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>

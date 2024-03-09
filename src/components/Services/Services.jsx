@@ -19,7 +19,7 @@ const [more4,setMore4]=useState(false)
         </h1>
       </div>
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[85%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[80%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -38,7 +38,7 @@ const [more4,setMore4]=useState(false)
             <img
               src={img}
               alt="card"
-              className=" md:h-[120%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -59,7 +59,7 @@ const [more4,setMore4]=useState(false)
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
-                style={{ fontFamily: '"Great Vibes", cursive', fontWeight: 700 }}
+                style={{ fontFamily: '"Great Vibes"', fontWeight: 700 }}
               >
                 wedding planner
               </h1>
@@ -81,7 +81,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[85%] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[80%] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -100,7 +100,7 @@ const [more4,setMore4]=useState(false)
             <img
               src={img}
               alt="card"
-              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[100%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -173,7 +173,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[85%]  md:ml-[7%] md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[80%]  md:ml-[7%] md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -240,7 +240,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[85%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[80%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
