@@ -1,0 +1,32 @@
+.bg{
+    background-image: './footer.jpg';
+    font-family: var(--chakra-fonts-body);
+}
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    font-family: FedraSansStd-book, sans-serif;
+    margin-inline-end: 0px;
+}
+.contact{
+   
+        font-family: FedraSansStd-A-medium;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.33;
+        font-style: normal;
+        color: #cd6727;
+        margin-bottom: 0.8rem;
+   
+}
+.down{
+    font-family: FedraSansStd-A-medium;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.33;
+    font-style: normal;
+    color: #cd6727;
+    margin-bottom: 1rem;
+}

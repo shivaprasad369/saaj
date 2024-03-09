@@ -98,16 +98,17 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                style={ id===0 ? {color:"white"} :{color:"#817575"} }
-                  className={`flex flex-col py-8 px-[1rem] text-[#cebebe]   ${
+                style={ id===0 ? {color:"white"} :{color:"#b19595"} }
+                  className={`flex flex-col py-8 px-[1rem] text-[#b19595]   ${
                     hero.id === 0
                       ? "bg-[#000000ab]  w-[100%]  text-[#cebebe] text-2xl "
                       : ""
                   }   md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
-                  <div className="border-b-2 relative " ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 0 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                  <div className={`border-b-2 relative ${
+                    hero.id === 0 ? 'border-white':'border-gray-500'} border-gray-500` }><span className={`border-b-[3px] h-2 w-[50%]  absolute top-[-6px] ${
+                    hero.id === 0 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
               </li>
@@ -119,7 +120,7 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                style={ id===1 ? {color:"white"} :{color:"#817575"} }
+                style={ id===1 ? {color:"white"} :{color:"#978c8c"} }
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
@@ -128,8 +129,8 @@ export default function Home() {
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
-                    <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 1 ? 'hidden':'block'}  border-gray-200`} ></span> </div>{" "}
+                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 1 ? 'hidden':'block'}  border-white`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -141,7 +142,7 @@ export default function Home() {
                 className=""
               >
                 <div
-                style={ id===2 ? {color:"white"} :{color:"#817575"} }
+                style={ id===2 ? {color:"white"} :{color:"#978c8c"} }
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 2
                       ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-3xl "
@@ -151,8 +152,8 @@ export default function Home() {
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
-                  <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 2 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                  <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 2 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
@@ -163,7 +164,7 @@ export default function Home() {
                   }}
                 >
                   <div
-                  style={ id===3 ? {color:"white"} :{color:"#817575"} }
+                  style={ id===3 ? {color:"white"} :{color:"#978c8c"} }
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 3
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
@@ -171,8 +172,8 @@ export default function Home() {
                     }  text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
-                    <div className="border-b-2 relative" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
-                    hero.id === 3 ? 'hidden':'block'} border-gray-200`} ></span> </div>{" "}
+                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px] ${
+                    hero.id === 3 ? 'hidden':'block'} border-white`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>
@@ -201,15 +202,22 @@ export default function Home() {
             <div className="flex flex-row text-right text-white max-sm:items-center max-sm:justify-center">
               <ul className="absolute bottom-10 sm:right-10 max-sm:right-[30]  flex gap-4 cursor-pointer text-right text-2xl sm:pt-[100px] min-[1000px]:ml-[25rem] sm:ml-[3rem]  ">
                 <div className="border-2 my-[2rem] w-40 h-0 mt-3 border-white md:block hidden"></div>
+               
+               <a href="https://www.instagram.com/saaj_weddings/">
                 <li>
                   <FaInstagram />
                 </li>
+                </a>
+                <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <li>
                   <FaYoutube />
                 </li>
-                <li>
+                </a>
+                <a href="#">
+                                  <li>
                   <FaFacebookF />
                 </li>
+                </a>
                 <li>
                   <FaTwitter />
                 </li>

@@ -250,12 +250,11 @@ export default function Services() {
               grabCursor={true}
               modules={[EffectCards]}
               className="mySwiper"
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
+              autoplay={true}
+             
             >
               <SwiperSlide className="flex  flex-col ">
+              <motion.div className="flex  flex-col ">
                 <img
                   src={img2}
                   className="max-[412px]:h-[250vh] md:h-[70%] w-[100%]"
@@ -267,8 +266,8 @@ export default function Services() {
                   <img src={w1} alt="" width={40} />
                   desctination
                 </h1>
+              </motion.div>
               </SwiperSlide>
-
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img3}

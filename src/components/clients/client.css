@@ -5,8 +5,12 @@
     height: 100%;
   
 }
-
-
+.containers .swiper .swiper-button-next{
+  color:rgb(78, 33, 4)
+}
+.containers .swiper .swiper-button-prev{
+  color:rgb(78, 33, 4)
+}
 @media only screen and (max-width: 984px) {
     .containers .swiper {
       width: 100%;

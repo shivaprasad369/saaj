@@ -9,7 +9,7 @@ import Cover from "./components/Cover";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Services from './components/Services/Services';
 import Home from './components/Home';
-import Footer from './components/Footer';
+import Footer from './components/New-Footer/Footer.jsx';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Demo from './demo/Demo';
@@ -35,8 +35,8 @@ function App() {
     <Route path='/gallary' element={<Gallarys/>}/>
 
     </Routes>
-    <Footer/>
-
+    {/* <Footer/> */}
+<Footer/>
     {/* <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     <Cover/>
     <Why/>
