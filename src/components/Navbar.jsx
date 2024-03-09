@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className=" gap-[3rem] max-[946px]:block min-[946px]:hidden text-xl list-none "
+            className=" gap-[3rem] max-[946px]:block hidden max-[945px]:block text-xl list-none "
             onClick={ toggleDrawer("right", true)}
           >
             <ImMenu className="text-white text-[2rem]"/>
