@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import img from "../assets/event.avif";
+import img1 from "./service11.jpg";
+import img2 from "./service22.jpg";
+import img3 from "./service3.jpg";
+import img4 from "./service4.jpg";
+// import img from "../assets/event.avif";
 import { easeIn, motion } from "framer-motion";
 import { Button } from "@mui/material";
 
@@ -19,7 +24,7 @@ const [more4,setMore4]=useState(false)
         </h1>
       </div>
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[80%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[80%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[80%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -33,12 +38,12 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[95%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img1}
               alt="card"
-              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[120%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -98,7 +103,7 @@ const [more4,setMore4]=useState(false)
             className="md:hidden md:w-[80%]  mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img2}
               alt="card"
               className=" md:h-[100%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
@@ -161,10 +166,10 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[90%] mt-[-2rem] rounded-tl-[100px]"
+            className="max-md:hidden md:w-[100%] mt-[-2rem] rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img2}
               alt="card"
               className=" md:h-[110%] rounded-tl-[100px] rounded-br-[100px]"
             />
@@ -190,7 +195,7 @@ const [more4,setMore4]=useState(false)
             className=" md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img3}
               alt="card"
               className=" md:h-[120%] max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
@@ -257,7 +262,7 @@ const [more4,setMore4]=useState(false)
             className="md:hidden md:w-[80%] sm:w-full sm:h-full mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img4}
               alt="card"
               className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
@@ -320,7 +325,7 @@ const [more4,setMore4]=useState(false)
             className="max-md:hidden md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
-              src={img}
+              src={img4}
               alt="card"
               className=" md:h-[110%] rounded-tl-[100px] rounded-br-[100px]"
             />

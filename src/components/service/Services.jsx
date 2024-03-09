@@ -49,12 +49,12 @@ export default function Services() {
         transition: { ease: "easeInOut", duration: 2, type: "spring" },
       }}
       id="services"
-      className="p-2 relative rounded-md overflow-hidden justify-center md:mx-[3rem] items-center bg-[#f3ebeb]"
+      className="p-2 relative md:py-8 rounded-md overflow-hidden justify-center md:mx-[3rem] items-center bg-[#f3ebeb]"
     >
       <img
         src={png}
         alt=""
-        className="absolute z-0 top-0 left-0 opacity-[0.7] w-[8rem]"
+        className="absolute z-10 top-0 left-0 opacity-[0.7] w-[8rem]"
       />
 
       <div className="grid relative md:grid-cols-2 bg-[#f3ebeb] grid-cols-1 gap-2">
@@ -264,7 +264,7 @@ export default function Services() {
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w1} alt="" width={40} />
-                  desctination
+                  destination
                 </h1>
               
               </SwiperSlide>
