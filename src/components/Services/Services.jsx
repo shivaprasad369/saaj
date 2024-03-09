@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img from "../assets/event.avif";
-import img1 from "./service11.jpg";
-import img2 from "./service22.jpg";
+import img1 from "./services111.jpg";
+import img2 from "./services222.jpg"; 
 import img3 from "./service3.jpg";
 import img4 from "./service4.jpg";
 // import img from "../assets/event.avif";
@@ -15,7 +15,7 @@ const [more3,setMore3]=useState(false)
 const [more4,setMore4]=useState(false)
   return (
     <div className="bg-white" id="services" style={{backgroundColor:'white'}}>
-      <div className="text-center mt-[2rem]">
+      <div className="text-center mt-[2rem] max-md:mb-[5rem]">
         <h1
           className="text-3xl uppercase text-[#975d2e]"
           style={{ fontFamily: '"DM Serif Display", serif', fontWeight: 600 }}
@@ -23,7 +23,7 @@ const [more4,setMore4]=useState(false)
           Our services
         </h1>
       </div>
-      <div id="client max-w:[90%] justify-center items-center ">
+      <div id="client max-w:[90%]  justify-center items-center ">
         <div className="md:w-[80%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[80%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -100,7 +100,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="md:hidden md:w-[80%]  mt-[-2rem] sm:rounded-tl-[100px]"
+            className="md:hidden md:w-[100%]  mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img2}
@@ -123,7 +123,7 @@ const [more4,setMore4]=useState(false)
             }}
             className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[1rem] "
           >
-            <div className="text-center flex-wrap font-sans justify-center object-contain ">
+            <div className="text-center  flex-wrap font-sans justify-center object-contain ">
               <h1
                 className="text-[2.3rem] text-[#794d25] font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes", cursive', fontWeight: 700 }}
@@ -166,7 +166,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[110%] mt-[-2rem] rounded-tl-[100px]"
+            className="max-md:hidden w-[150%] mt-[-2rem] rounded-tl-[100px]"
           >
             <img
               src={img2}
@@ -192,12 +192,12 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img3}
               alt="card"
-              className=" md:h-[120%] max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[120%]  max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -322,7 +322,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[80%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="max-md:hidden md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img4}
