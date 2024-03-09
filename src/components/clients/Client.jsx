@@ -18,9 +18,9 @@ export default function Client() {
     <div id="client" className="containers w:[100%] gap-3 md:mx-[2rem]">
       <Swiper navigation={true} modules={[Navigation]} className="">
       <SwiperSlide>
-          <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]">
-              <img src={img2} alt="card" className=" md:h-[100%] w-full" />
+          <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
+            <motion.div className=" md:w-[50%] h-[25rem] mt-[2rem]  mb-[2rem]">
+              <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -34,18 +34,18 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" border-black min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
                   style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 <p
                style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     We hired ''Saaj wedding'' team for our destination wedding
@@ -71,7 +71,7 @@ export default function Client() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]">
+            <motion.div  className=" md:w-[35rem] md:h-[25rem]  mt-[2rem]  mb-[2rem]">
               <img src={img} alt="card" className=" md:h-[100%] w-full" />
             </motion.div>
             <motion.div
@@ -86,18 +86,18 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" border-black min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className=" w-[80%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
                   style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                  className="text-[2rem] md:mt-[1.5rem] tracking-wider font-bold  pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 <p
                    style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     We had the pleasure of working with Saaj wedding as our
@@ -137,7 +137,7 @@ export default function Client() {
         
         <SwiperSlide>
           <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
-            <motion.div className=" md:w-[100%] pt-[2rem] md:pl-[3rem] pb-[2rem]">
+          <motion.div className=" md:w-[35rem] h-[25rem] mt-[2rem]  mb-[2rem]">
               <img src={img3} alt="card" className=" md:h-[100%]" />
             </motion.div>
             <motion.div
@@ -152,19 +152,19 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" border-black min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className=" border-black w-[80%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center relative flex-wrap font-sans justify-center object-cover ">
                 <h1
                     style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                  className="text-[2rem] md:mt-[1.5rem] tracking-wider font-bold  pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 {/* <img src={png} alt=""  className="absolute top-0 w-[4rem] rotate-12 right-[24rem]"/> */}
                 <p
                     style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20]  md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20]  md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     It was so amazing and creative. I would recommend everyone

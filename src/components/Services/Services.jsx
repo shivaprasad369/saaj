@@ -38,12 +38,12 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[95%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[110%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img1}
               alt="card"
-              className=" md:h-[120%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -166,7 +166,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[100%] mt-[-2rem] rounded-tl-[100px]"
+            className="max-md:hidden md:w-[110%] mt-[-2rem] rounded-tl-[100px]"
           >
             <img
               src={img2}
