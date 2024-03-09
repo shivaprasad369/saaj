@@ -38,7 +38,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[110%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img1}
@@ -166,7 +166,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden w-[150%] mt-[-2rem] rounded-tl-[100px]"
+            className="max-md:hidden w-[230%] mt-[-2rem] rounded-tl-[100px]"
           >
             <img
               src={img2}
@@ -192,7 +192,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img3}
@@ -322,7 +322,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="max-md:hidden md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img4}
