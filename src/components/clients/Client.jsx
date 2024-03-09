@@ -23,17 +23,7 @@ export default function Client() {
               <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  ease: "easeIn",
-                  type: "spring",
-                  duration: 1,
-                  delay: 0.7,
-                },
-              }}
+             
               className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
@@ -75,17 +65,7 @@ export default function Client() {
               <img src={img} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  ease: "easeIn",
-                  type: "spring",
-                  duration: 1,
-                  delay: 0.7,
-                },
-              }}
+              
               className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
@@ -127,17 +107,7 @@ export default function Client() {
               <img src={img3} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  ease: "easeIn",
-                  type: "spring",
-                  duration: 1,
-                  delay: 0.7,
-                },
-              }}
+             
               className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">

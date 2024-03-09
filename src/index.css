@@ -8,8 +8,8 @@
     src: url('https://www.fontsaddict.com/fontface/urban-jungle-demo.ttf');
   }
  @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
- body{
-  overflow-x: clip;
- }
+  body{
+  width: fit-content;
+ } 
 
                 

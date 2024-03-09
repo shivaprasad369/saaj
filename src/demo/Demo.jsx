@@ -17,16 +17,16 @@ export default function Demo() {
         <img src={img1} alt="" className='w-[22rem]  m-[6rem] relative  ' />
       </div> */}
 
-      <div className="md:flex  relative z-10 max-[756px]:flex-col  max-[906px]:justify-around  md:justify-around gap-[2rem] max-[756px]:min-[638px]:ml-[20%] mx-[2rem]  max-[380px]:ml-[0%] pt-[3rem]">
+      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[2rem] mx-[2rem] pt-[1rem] md:pt-[3rem]">
         <img
           src={png}
           alt=""
-          className="absolute top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"
+          className="absolute max-md:hidden top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"
         />
         <img
           src={png}
           alt=""
-          className="absolute bottom-[0rem] right-[0rem] w-[12rem] opacity-[0.5]"
+          className="absolute max-md:hidden bottom-[0rem] right-[0rem] w-[12rem] opacity-[0.5]"
         />
         {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div className="">
