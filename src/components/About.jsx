@@ -50,17 +50,17 @@ export default function About() {
                   className="rounded-t-full max-[750px]:hidden hidden"
                 /> */}
               </div>
-              <div className="relative w-full h-fit mt-[3rem] sm:ml-[6rem]">
+              <div className="relative w-full h-fit mt-[5rem] sm:ml-[6rem]">
 <div>
 
               <img
               style={{backgroundColor:'#131010bd'}}
                 src={w1}
                 alt="wedding1"
-                className="relative  bg-[#000000] overflow-hidden md:ml-2  rounded-t-full w-[70%]   md:h-[100%] max-sm:w-[100%] "
+                className="relative max-sm:ml-[5rem] bg-[#000000] overflow-hidden md:ml-2  rounded-t-full w-[70%]   md:h-[100%] max-sm:w-[80%] "
               />
 </div>
-              <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-[-3rem] left-[-3rem] sm:w-[50%] w-[60%]" />
+              <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-[-3rem] left-[0rem] sm:w-[50%] w-[60%]" />
               </div>
             </div>
           </div>
@@ -74,8 +74,8 @@ export default function About() {
             alt="wedding2"
             className="absolute z-9 max-[385px]:hidden md:w-auto w-auto "
           /> */}
-        <div className="relative w-fit h-fit sm:pt-[2rem] sm:mr-[3rem]">
-        <img src={w2} style={{backgroundColor:'#131010bd'}} alt="wedding1" className="mb-3  relative  w-[73%]" /> 
+        <div className="relative w-fit h-fit sm:pt-[2rem] sm:ml-[2rem]">
+        <img src={w2} style={{backgroundColor:'#131010bd'}} alt="wedding1" className="mb-3  relative  w-[75%]" /> 
         <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w11} alt="" className="absolute top-[20%] rounded-t-full w-[50%] h-[60%] right-4" />
 
           
