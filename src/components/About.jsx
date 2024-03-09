@@ -60,7 +60,7 @@ export default function About() {
                 className="relative max-sm:ml-[5rem] bg-[#000000] overflow-hidden md:ml-2  rounded-t-full w-[70%]   md:h-[100%] max-sm:w-[80%] "
               />
 </div>
-              <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-[-3rem] left-[0rem] sm:w-[50%] w-[60%]" />
+              <motion.img whileHover={{scale:1.1,transition:{ease:'easeIn', type:'spring',duration:1}}} src={w22} alt="" className="absolute top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[60%]" />
               </div>
             </div>
           </div>

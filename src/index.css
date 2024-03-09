@@ -9,7 +9,7 @@
   }
  @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
  body{
-  overflow-x: hidden;
+  overflow-x: clip;
  }
 
                 

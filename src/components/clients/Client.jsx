@@ -19,7 +19,7 @@ export default function Client() {
       <Swiper navigation={true} modules={[Navigation]} className="">
       <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[50%] h-[25rem] mt-[2rem]  mb-[2rem]">
+            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -70,9 +70,9 @@ export default function Client() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div  className=" md:w-[35rem] md:h-[25rem]  mt-[2rem]  mb-[2rem]">
-              <img src={img} alt="card" className=" md:h-[100%] w-full" />
+          <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
+            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+              <img src={img} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -86,41 +86,27 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" w-[80%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
                   style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem] md:mt-[1.5rem] tracking-wider font-bold  pb-[1rem] text-[#724a29]"
+                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 <p
-                   style={{   fontFamily: "'Segoe UI', sans-serif"}}
+               style={{   fontFamily: "'Segoe UI', sans-serif"}}
                   className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
-                    We had the pleasure of working with Saaj wedding as our
+                  We had the pleasure of working with Saaj wedding as our
                     wedding planner, and couldn't have asked for a more
                     incredible experience. From the very beginning, they took
                     our vision to heart and transformed it into a reality beyond
-                    {/* our wildest dreams. Their attention to detail was
-                    impeccable, ensuring that every aspect of our wedding day
-                    was flawless. They brought a sense of warmth and personal
-                    connection to our planning journey. */}
-                    {/* All the requests which we have made
-                    and changes we have requested were delivered better than we
-                    could ask for. Planning team were extremely understanding
-                    and helpful, our Indian as well as foreigner guest has loved
-                    the decor and appraised the use of real flowers and event
-                    planning. Sanjay is extremely professional and a person who
-                    delivers more than what he promises. Sanjay has agreed to
-                    most of the last-minute amendments and well-coordinated with
-                    the other vendors to get the event done in fascinating
-                    manner. My family & I would 100% recommend reaching out to
-                    them if you’re planning your special day and looking for a
-                    fairytale wedding planner with a professional team,
-                    especially if you are NRI. */}
+                    {/* felt too. Special shoutout to Sanjay and his team who
+                    hustled day in and out to make ends meet! Mr. Sanjay has
+                    been extremely helpful. */}
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
@@ -128,7 +114,7 @@ export default function Client() {
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                 </div>
                 <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
-                  Niraj & Aishwarya
+                Niraj & Aishwarya
                 </p>
               </div>
             </motion.div>
@@ -136,9 +122,9 @@ export default function Client() {
         </SwiperSlide>
         
         <SwiperSlide>
-          <div className="flex md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9] h-full px-2 ">
-          <motion.div className=" md:w-[35rem] h-[25rem] mt-[2rem]  mb-[2rem]">
-              <img src={img3} alt="card" className=" md:h-[100%]" />
+          <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
+            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+              <img src={img3} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -152,34 +138,32 @@ export default function Client() {
                   delay: 0.7,
                 },
               }}
-              className=" border-black w-[80%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+              className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
-              <div className="text-center relative flex-wrap font-sans justify-center object-cover ">
+              <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
-                    style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[2rem] md:mt-[1.5rem] tracking-wider font-bold  pb-[1rem] text-[#724a29]"
+                  style={{ fontFamily: `"Tinos", serif` }}
+                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
-                {/* <img src={png} alt=""  className="absolute top-0 w-[4rem] rotate-12 right-[24rem]"/> */}
                 <p
-                    style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20]  md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+               style={{   fontFamily: "'Segoe UI', sans-serif"}}
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
-                    It was so amazing and creative. I would recommend everyone
+                  It was so amazing and creative. I would recommend everyone
                     to choose saaj weddings for dream wedding. Abhishek and
                     sanjay both think differently with thier smart work. They
                     work like family with amazing ideas and in good budget.
                    
-                   Really amazing hospitality & decor was as expected. 
-                    {/* Everyone
-                    appreciated it & loved it Sanjay is extremely professional
-                    and a person who delivers more than what he promises. My
-                    family & I would 100% recommend reaching out to them if
-                    you’re planning your special day */}
+                   Really amazing hospitality & decor was as expected.
+                    {/* felt too. Special shoutout to Sanjay and his team who
+                    hustled day in and out to make ends meet! Mr. Sanjay has
+                    been extremely helpful. */}
                   </i>
                 </p>
+                {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
                 <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                 </div>
@@ -190,6 +174,7 @@ export default function Client() {
             </motion.div>
           </div>
         </SwiperSlide>
+      
       </Swiper>
     </div>
   );
