@@ -8,7 +8,7 @@ export default function Footer() {
       style={{ fontFamily: ' "Chakra Petch", sans-serif' }}
       className={"bg justify-around  bg-[#28231e] text-[#aea493]"}
     >
-      <div className="flex flex-1 justify-around w-full max-[952px]:flex-col max-[952px]:mx-[2.5rem] ">
+      <div className="flex flex-1 justify-around w-full max-lg:flex-col max-lg:mx-[2.5rem] ">
         <div
           style={{
             fontFamily: "FedraSansStd-book, sans-serif",
@@ -17,7 +17,7 @@ export default function Footer() {
             fontSize: "16px",
             padding: "0 1.2rem 0 0",
           }}
-          className="flex flex-row gap-10 items-center max-[952px]:text-[18px] max-[952px]:mt-[2rem] "
+          className="flex flex-row gap-10 items-center max-lg:text-[18px] max-lg:mt-[2rem] "
         >
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
@@ -72,7 +72,7 @@ export default function Footer() {
           <img
             src={img}
             alt=""
-            className="w-[2rem] max-[952px]:hidden h-[20rem]"
+            className="w-[2rem] max-lg:hidden h-[20rem]"
           />
         </div>
         <div className="flex flex-col border-0 w-[12rem] mt-[2rem]">
@@ -88,15 +88,15 @@ export default function Footer() {
             Subscribe
           </h1>
           <div>
-            <div className="max-[952px]:flex max-[450px]:flex-col max-[952px]:gap-3  w-[25rem]">
+            <div className="max-lg:flex max-[450px]:flex-col max-lg:gap-3  w-[25rem]">
               <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <img
                   src={yt}
                   alt=""
-                  className="w-[9rem] h-[5rem] max-[952px]:h-[7rem] "
+                  className="w-[9rem] h-[5rem] max-lg:h-[7rem] "
                 />
               </a>
-              <p className="p max-[952px]:w-[12rem] w-[10rem] max-[952px]:h-[7rem]">
+              <p className="p max-lg:w-[12rem] w-[10rem] max-lg:h-[7rem]">
                 Don't miss a moment! Subscribe to our YouTube for exclusive
                 event updates
               </p>

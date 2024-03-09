@@ -31,7 +31,7 @@ export default function Navbar() {
         </div>
         <div className="flex flex-2 items-center justify-center uppercase font-bold ">
           <div
-            className={`flex gap-[1.5rem] p-4 font-110 font-normal max-[952px]:hidden max-[826px]:text-[1rem] text-xl list-none`}
+            className={`flex gap-[1.5rem] p-4 font-110 font-normal max-lg:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
             <a href="/" className="tracking-[0.3rem]">HOME</a>
             <a href="/about/#about" className="tracking-[0.3rem]">About us</a>
@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className=" gap-[3rem] max-[946px]:block hidden max-[945px]:block text-xl list-none "
+            className=" gap-[3rem] max-lg:block lg:hidden max-[945px]:block text-xl list-none "
             onClick={ toggleDrawer("right", true)}
           >
             <ImMenu className="text-white text-[2rem]"/>
