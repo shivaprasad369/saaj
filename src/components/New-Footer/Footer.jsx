@@ -8,7 +8,7 @@ export default function Footer() {
       style={{ fontFamily: ' "Chakra Petch", sans-serif' }}
       className={"bg justify-around  bg-[#28231e] text-[#aea493]"}
     >
-      <div className="flex flex-1 justify-around w-full max-lg:flex-col max-lg:mx-[2.5rem] ">
+      <div className="flex flex-1 w-auto justify-around  max-lg:flex-col max-lg:mx-[2.5rem] ">
         <div
           style={{
             fontFamily: "FedraSansStd-book, sans-serif",
@@ -88,7 +88,7 @@ export default function Footer() {
             Subscribe
           </h1>
           <div>
-            <div className="max-lg:flex max-[450px]:flex-col max-lg:gap-3  w-[25rem]">
+            <div className="max-lg:flex w-auto max-[450px]:flex-col max-lg:gap-3  w-[25rem]">
               <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <img
                   src={yt}
