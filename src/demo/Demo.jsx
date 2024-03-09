@@ -23,14 +23,14 @@ export default function Demo() {
         <img src={png} alt="" className="absolute bottom-[0rem] right-[-2rem] w-[12rem] opacity-[0.5]"/>
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div  className="gap-5 max-[756px]:flex  max-[756px]:flex-col max-[756px]:text-center max-[756px]:justify-center  ">
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.3,ease:'easeInOut', duration:1}}} className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[30rem]  text-center gap-3">
+          <motion.div style={{fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.3,ease:'easeInOut', duration:1}}} className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[30rem]  text-center gap-3">
             <img src={img1} alt=""  className="md:w-[30rem]  max-sm:h-[25rem] sm:h-[25rem]"  />
-            <h1 className="tracking-widest text-[#443417] text-xl"> Alisha & Krunal - Jaipur</h1>
-            <p className="px-3 tracking-wider">
+            <h1  className="tracking-widest text-[#443417] text-xl"> Alisha & Krunal - Jaipur</h1>
+            <p  className="px-3 tracking-wider">
             Love captured in a single frame, forever begins in our embrace.
             </p>
           </motion.div>
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.6,ease:'easeInOut', duration:1}}} className="border-0   max-sm:w-[100%]  pb-[3rem] flex flex-col w-[30rem] text-center gap-3">
+          <motion.div style={{   fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.6,ease:'easeInOut', duration:1}}} className="border-0   max-sm:w-[100%]  pb-[3rem] flex flex-col w-[30rem] text-center gap-3">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img src={img2} alt="" className="md:w-[30rem]  max-sm:h-[25rem] sm:h-[25rem]" />
             <h1 className="tracking-widest text-[#443417] text-xl"> Prachi & Ravneet - Jaipur</h1>
@@ -38,7 +38,7 @@ export default function Demo() {
             Joined hands, shared dreams, endless love—a marital masterpiece unfolds
             </p>
           </motion.div>
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.8,ease:'easeInOut', duration:1}}} className="border-2 max-sm:w-[100%]  pb-[4rem]flex flex-col w-[30rem] text-center gap-3">
+          <motion.div style={{   fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.8,ease:'easeInOut', duration:1}}} className="border-2 max-sm:w-[100%]  pb-[4rem]flex flex-col w-[30rem] text-center gap-3">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img src={img8} alt="" className="md:w-[30rem]  max-sm:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]" />
             <h1 className="tracking-widest text-[#443417] text-xl py-3"> Evelina & basant - Jaipur</h1>
@@ -48,7 +48,7 @@ export default function Demo() {
           </motion.div>
         </div>
         <div className="md:pt-[10rem] pt-[3rem]">
-        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.5,ease:'easeInOut', duration:1}}} className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[30rem] text-center gap-3">
+        <motion.div style={{   fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.5,ease:'easeInOut', duration:1}}} className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[30rem] text-center gap-3">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img src={img7} alt="" className="md:w-[30rem]  max-sm:h-[25rem] sm:h-[25rem]" />
             <h1 className="tracking-widest text-[#443417] text-xl">Rupal & Aditya - Jaipur</h1>
@@ -56,7 +56,7 @@ export default function Demo() {
             In the dance of life, we found our forever rhythm
             </p>
           </motion.div>
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.7,ease:'easeInOut', duration:1}}} className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[23rem] md:w-[30rem] text-center gap-3">
+          <motion.div style={{   fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.7,ease:'easeInOut', duration:1}}} className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[23rem] md:w-[30rem] text-center gap-3">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img src={img5} alt="" className="md:w-[30rem]  max-sm:h-[25rem] sm:h-[25rem]" />
             <h1 className="tracking-widest text-[#443417] text-xl"> Shresth & Sheetal - Jaipur</h1>
@@ -64,7 +64,7 @@ export default function Demo() {
             A union of hearts, captured in the frame of eternity.
             </p>
           </motion.div>
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.9,ease:'easeInOut', duration:1}}}className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[23rem] md:w-[30rem] text-center gap-3">
+          <motion.div style={{   fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.9,ease:'easeInOut', duration:1}}}className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[23rem] md:w-[30rem] text-center gap-3">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img src={img6} alt="" className="md:w-[30rem]  max-sm:h-[25rem] sm:h-[25rem]" />
             <h1 className="tracking-widest text-[#443417] text-xl"> Niraj & Aishwarya - Jaipur</h1>

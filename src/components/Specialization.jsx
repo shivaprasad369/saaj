@@ -29,8 +29,8 @@ export default function Specialization() {
           scale:1,
           transition: { delay: 0.6, ease: "easeInOut", type: "spring " ,duration:0.3},
         }}
-        style={{ fontFamily: "'Segoe UI', sans-serif" }}
-        className="font-bold text-[#534c1b] text-[2rem] pb-[3rem] uppercase tracking-widest"
+        style={{ fontFamily: `"Tinos", serif` }}
+        className="font-bold text-[#534c1b] text-[2rem] pb-[3rem] uppercase tracking-wider"
       >
         Our Specialities
       </motion.h1>

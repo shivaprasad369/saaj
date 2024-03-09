@@ -38,13 +38,13 @@ export default function Client() {
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
-                  className="text-[2rem] md:mt-[3rem] tracking-widest font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                  style={{ fontFamily: `"Tinos", serif` }}
+                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 <p
-                  style={{ fontFamily: `"Mate SC", serif` }}
+               style={{   fontFamily: "'Segoe UI', sans-serif"}}
                   className="text-[#6e4a20] md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -90,13 +90,13 @@ export default function Client() {
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
-                  className="text-[2rem] md:mt-[3rem] tracking-widest font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                  style={{ fontFamily: `"Tinos", serif` }}
+                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 <p
-                  style={{ fontFamily: `"Mate SC", serif` }}
+                   style={{   fontFamily: "'Segoe UI', sans-serif"}}
                   className="text-[#6e4a20] md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -156,14 +156,14 @@ export default function Client() {
             >
               <div className="text-center relative flex-wrap font-sans justify-center object-cover ">
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
-                  className="text-[2rem] md:mt-[3rem] tracking-widest font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
+                    style={{   fontFamily: "'Segoe UI', sans-serif"}}
+                  className="text-[2rem] md:mt-[3rem] tracking-wider font-bold pt-[2rem] pb-[1rem] text-[#724a29]"
                 >
                   What our client says?
                 </h1>
                 {/* <img src={png} alt=""  className="absolute top-0 w-[4rem] rotate-12 right-[24rem]"/> */}
                 <p
-                  style={{ fontFamily: `"Mate SC", serif` }}
+                    style={{   fontFamily: "'Segoe UI', sans-serif"}}
                   className="text-[#6e4a20]  md:mt-[3rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>

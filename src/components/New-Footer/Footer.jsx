@@ -83,7 +83,7 @@ export default function Footer() {
               fontSize: "20px",
               lineHeight: 1.2,
             }}
-            className="text-[#cd6727] mb-[0.8rem]  font-"
+            className="text-[#ffe1b9] mb-[0.8rem]  font-"
           >
             Subscribe
           </h1>
