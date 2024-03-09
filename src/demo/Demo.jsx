@@ -20,7 +20,7 @@ export default function Demo() {
       <div  className="md:flex  relative z-10 max-[756px]:flex-col  max-[906px]:justify-around  md:justify-around min-[906px]:gap-[0.5rem] max-[756px]:min-[638px]:ml-[20%]  max-[380px]:ml-[0%] pt-[3rem]">
 
         <img src={png} alt="" className="absolute top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"/>
-        <img src={png} alt="" className="absolute bottom-[0rem] right-[-2rem] w-[12rem] opacity-[0.5]"/>
+        <img src={png} alt="" className="absolute bottom-[0rem] right-[0rem] w-[12rem] opacity-[0.5]"/>
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div  className="gap-5 max-[756px]:flex  max-[756px]:flex-col max-[756px]:text-center max-[756px]:justify-center  ">
           <motion.div style={{fontFamily: "'Segoe UI', sans-serif"}} initial={{opacity:0}} whileInView={{opacity:1,transition:{type:'spring',delay:0.3,ease:'easeInOut', duration:1}}} className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[30rem]  text-center gap-3">
