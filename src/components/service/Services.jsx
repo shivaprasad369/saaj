@@ -258,7 +258,7 @@ export default function Services() {
               <SwiperSlide className="flex  flex-col ">
                 <img
                   src={img2}
-                  className="max-[412px]:h-[250vh] md:h-[240%] w-[100%]"
+                  className="max-[412px]:h-[250vh] md:h-[70%] w-[100%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}
@@ -272,7 +272,7 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img3}
-                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[240%]"
+                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[70%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}
@@ -286,7 +286,7 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img4}
-                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[240%]"
+                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[70%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}
@@ -306,7 +306,7 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img5}
-                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[240%]"
+                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[70%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}
