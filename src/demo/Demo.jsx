@@ -30,7 +30,6 @@ export default function Demo() {
         />
         {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div className="">
-         
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             initial={{ opacity: 0 }}
