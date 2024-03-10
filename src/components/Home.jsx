@@ -49,11 +49,11 @@ export default function Home() {
     focusOnSelect: true,
     //  infinite: false,
 
-    slidesToShow: 4,
+    slidesToShow: 3.6,
     centerMode: true,
     vertical: true,
     slidesToScroll: 1,
-    speed: 800,
+    speed: 900,
    arrows:false,
 
 
@@ -98,7 +98,7 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                style={ id===0 ? {color:"white"} :{color:"#b19595"} }
+                style={ id===0 ? {color:"white"} :{color:"#816f6f"} }
                   className={`flex flex-col py-8 px-[1rem] text-[#b19595]   ${
                     hero.id === 0
                       ? "bg-[#000000ab]  w-[100%]  text-[#cebebe] text-2xl "
@@ -106,7 +106,7 @@ export default function Home() {
                   }   md:px-[1rem] text-inherit`}
                 >
                   <h1 className="text-xl uppercase">1. Wedding Planners</h1>
-                  <div className={`border-b-2 relative ${
+                  <div className={`border-b-[1.5px] relative ${
                     hero.id === 0 ? 'border-white':'border-gray-500'} border-gray-500` }><span className={`border-b-[3px] h-2 w-[50%]  absolute top-[-6px]  border-white`} ></span> </div>{" "}
                   <p className="text-sm flex-wrap">Transforming dreams into unforgettable wedding memories</p>
                 </div>
@@ -119,7 +119,7 @@ export default function Home() {
                 className="w-[20%]  "
               >
                 <div
-                style={ id===1 ? {color:"white"} :{color:"#978c8c"} }
+                style={ id===1 ? {color:"white"} :{color:"#816f6f"} }
                   className={`flex flex-col py-8 px-[1rem] w-[100%] ${
                     hero.id === 1
                       ? "bg-[#070606ab]  w-[100%]  text-[#d8cbcb] text-2xl "
@@ -128,7 +128,7 @@ export default function Home() {
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
-                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]   border-white`} ></span> </div>{" "}
+                    <div className="border-b-[1.5px relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]   border-white`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -140,7 +140,7 @@ export default function Home() {
                 className=""
               >
                 <div
-                style={ id===2 ? {color:"white"} :{color:"#978c8c"} }
+                style={ id===2 ? {color:"white"} :{color:"#816f6f"} }
                   className={`flex flex-col py-8 px-[1rem] ${
                     hero.id === 2
                       ? "bg-[#070606ab] w-[110%]  text-[#ddd0d0] text-3xl "
@@ -150,7 +150,7 @@ export default function Home() {
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
-                  <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
+                  <div className="border-b-[1.5px relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>
@@ -161,7 +161,7 @@ export default function Home() {
                   }}
                 >
                   <div
-                  style={ id===3 ? {color:"white"} :{color:"#978c8c"} }
+                  style={ id===3 ? {color:"white"} :{color:"#816f6f"} }
                     className={`flex flex-col py-8 px-[1rem] w-full   ${
                       hero.id === 3
                         ? "bg-[#070606ab]  text-[#d8c9c9] text-2xl "
@@ -169,7 +169,7 @@ export default function Home() {
                     }  text-gray-900 text-inherit`}
                   >
                     <h1 className="text-xl uppercase">4. Corporates Events</h1>
-                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[4px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
+                    <div className="border-b-2 relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
                     <p className="text-sm">Import trace for requested module</p>
                   </div>
                 </li>
