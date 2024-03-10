@@ -17,7 +17,7 @@ export default function Demo() {
         <img src={img1} alt="" className='w-[22rem]  m-[6rem] relative  ' />
       </div> */}
 
-      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[2rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
+      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[8rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
         <img
           src={png}
           alt=""
