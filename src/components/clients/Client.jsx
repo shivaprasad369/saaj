@@ -4,7 +4,9 @@ import img2 from "./w8.jpg";
 import img3 from "./gallary5.jpg";
 import { easeIn, motion } from "framer-motion";
 import { Avatar } from "@mui/material";
-
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { GrFormPreviousLink } from "react-icons/gr";
+import { GrFormNextLink } from "react-icons/gr";
 import "swiper/css";
 import "./client.css";
 import "swiper/css/pagination";
@@ -15,8 +17,19 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 export default function Client() {
   return (
-    <div id="client" className="containers w:[100%] gap-3 md:mx-[4rem]">
-      <Swiper navigation={true} modules={[Navigation]} className="">
+    <div id="client" className="relative containers w:[100%] gap-3 md:mx-[4rem]">
+     
+      <div className="swiper-button image-swiper-button-next absolute right-0 top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#19134b] md:right-[-1.6rem]">
+      <GrFormNextLink />
+</div>
+<div className="swiper-button image-swiper-button-prev absolute left-0 md:left-[-1.6rem] top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#19134b] ">
+<GrFormPreviousLink />
+</div>
+      <Swiper navigation={{
+          nextEl: ".image-swiper-button-next",
+          prevEl: ".image-swiper-button-prev",
+          disabledClass: "swiper-button-disabled"
+        }} modules={[Navigation]} className="relative">
       <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
             <motion.div className=" md:w-[70%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
