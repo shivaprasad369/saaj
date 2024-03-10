@@ -29,8 +29,7 @@ export default function Specialization() {
           scale:1,
           transition: { delay: 0.6, ease: "easeInOut", type: "spring " ,duration:0.3},
         }}
-        style={{ fontFamily: `"Tinos", serif` }}
-        className="font-bold text-[#534c1b] text-[2rem] pb-[3rem] uppercase tracking-wider"
+        style={{ fontFamily:`   "Tinos", serif;`}} className="uppercase text-[#7a4927] my-[1rem] md:my-[2rem] tracking-widest text-center font-bold text-[30px]"
       >
         Our Specialities
       </motion.h1>
@@ -59,7 +58,7 @@ export default function Specialization() {
           </div>
           <div className="flex flex-col gap-y-2">
             <h1
-              className="text-md tracking-widest text-[#363634] w-[8rem]"
+              className="text-md tracking-widest md:text-[1.1rem]  max-sm:text-[1rem] w-[8rem]"
               style={{   fontFamily: "'Segoe UI', sans-serif",fontWeight:600
             }}
             >
@@ -90,7 +89,7 @@ export default function Specialization() {
           </div>
           <div>
             <h1
-              className="text-md tracking-widest"
+              className="text-md tracking-widest md:text-[1.1rem]  max-sm:text-[1rem]"
               style={{   fontFamily: "'Segoe UI', sans-serif",fontWeight:600
             }}
             >
@@ -121,7 +120,7 @@ export default function Specialization() {
           </div>
           <div>
             <h1
-              className="text-md tracking-widest"
+              className="text-md tracking-widest md:text-[1.1rem]  max-sm:text-[1rem]"
               style={{   fontFamily: "'Segoe UI', sans-serif",fontWeight:600
             }}
             >
@@ -146,7 +145,7 @@ export default function Specialization() {
           </div>
           <div>
             <h1
-              className="text-md tracking-widest"
+              className="text-md tracking-widest md:text-[1.1rem]  max-sm:text-[1rem]"
               style={{   fontFamily: "'Segoe UI', sans-serif",fontWeight:600
             }}
             >
@@ -171,7 +170,7 @@ export default function Specialization() {
           </div>
           <div>
             <h1
-              className="text-md tracking-widest"
+              className="text-md tracking-widest md:text-[1.1rem]  max-sm:text-[1rem]"
               style={{   fontFamily: "'Segoe UI', sans-serif",fontWeight:600
             }}
             >

@@ -27,15 +27,16 @@ export default function Client() {
               className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
-                <h1
-                  style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
+              <h1
+                  style={{ fontFamily:`"Tinos", serif` }}
+                  className="text-[30px] uppercase tracking-widest font-bold pt-[1rem] pb-[1rem] text-[#7a4927]"
+           
                 >
                   What our client says?
                 </h1>
                 <p
                style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     We hired ''Saaj wedding'' team for our destination wedding
@@ -69,15 +70,16 @@ export default function Client() {
               className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
-                <h1
-                  style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
+              <h1
+                  style={{ fontFamily:`"Tinos", serif` }}
+                  className="text-[30px] uppercase tracking-widest font-bold pt-[1rem] pb-[1rem] text-[#7a4927]"
+           
                 >
                   What our client says?
                 </h1>
                 <p
                style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.3rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   We had the pleasure of working with Saaj wedding as our
@@ -112,14 +114,15 @@ export default function Client() {
             >
               <div className="text-center z-10 relative flex-wrap font-sans justify-center object-cover ">
                 <h1
-                  style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-[2rem]  tracking-wider font-bold pt-[1rem] pb-[1rem] text-[#724a29]"
+                  style={{ fontFamily:`"Tinos", serif` }}
+                  className="text-[30px] uppercase tracking-widest font-bold pt-[1rem] pb-[1rem] text-[#7a4927]"
+           
                 >
                   What our client says?
                 </h1>
                 <p
                style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   It was so amazing and creative. I would recommend everyone

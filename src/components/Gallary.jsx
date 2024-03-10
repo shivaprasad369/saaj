@@ -10,11 +10,12 @@ export default function Gallary() {
   return (
     <div id="gallary" className="justify-center items-center pt-[4rem] relative max-w:[100%]">
       <motion.h1
-        className="uppercase  text-center text-[2rem] tracking-wider font-bold text-[#3b4616] pb-3"
-        style={{ fontFamily: `"Tinos", serif` }}
+        className="uppercase  text-center text-[30px] tracking-widest font-bold text-[#7a4927] pb-3"
+        style={{ fontFamily:`"Tinos", serif` }}
       >
         Gallary
       </motion.h1>
+      
       <div className=" ">
         <div className=" gap-4 items-center">
           {/* {data.map((data, index) => (

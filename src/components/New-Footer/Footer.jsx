@@ -88,7 +88,7 @@ export default function Footer() {
             Subscribe
           </h1>
           <div>
-            <div className="max-lg:flex w-auto max-[450px]:flex-col max-lg:gap-3  w-[25rem]">
+            <div className="max-lg:flex w-auto max-[450px]:flex-col max-lg:gap-3  md:w-[25rem]">
               <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <img
                   src={yt}

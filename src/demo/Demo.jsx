@@ -17,7 +17,7 @@ export default function Demo() {
         <img src={img1} alt="" className='w-[22rem]  m-[6rem] relative  ' />
       </div> */}
 
-      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[8rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
+      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[6rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
         <img
           src={png}
           alt=""
@@ -30,6 +30,7 @@ export default function Demo() {
         />
         {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div className="">
+         
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             initial={{ opacity: 0 }}
@@ -47,13 +48,13 @@ export default function Demo() {
             <img
               src={img1}
               alt=""
-              className="md:w-[100%] max-[950]:w-[100%]  max-sm:h-[25rem] sm:h-[23rem]"
+              className="w-[100%] max-[950]:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
             />
             <h1 className="tracking-widest text-[#443417] text-xl">
               {" "}
               Alisha & Krunal - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               Love captured in a single frame, forever begins in our embrace.
             </p>
           </motion.div>
@@ -75,13 +76,13 @@ export default function Demo() {
             <img
               src={img2}
               alt=""
-              className="md:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
             />
             <h1 className="tracking-widest text-[#443417] text-xl">
               {" "}
               Prachi & Ravneet - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               Joined hands, shared dreams, endless love—a marital masterpiece
               unfolds
             </p>
@@ -110,7 +111,7 @@ export default function Demo() {
               {" "}
               Evelina & basant - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               .Together, we wrote our vows in the book of love
             </p>
           </motion.div>
@@ -139,7 +140,7 @@ export default function Demo() {
             <h1 className="tracking-widest text-[#443417] text-xl">
               Rupal & Aditya - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               In the dance of life, we found our forever rhythm
             </p>
           </motion.div>
@@ -167,7 +168,7 @@ export default function Demo() {
               {" "}
               Shresth & Sheetal - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               A union of hearts, captured in the frame of eternity.
             </p>
           </motion.div>
@@ -195,7 +196,7 @@ export default function Demo() {
               {" "}
               Niraj & Aishwarya - Jaipur
             </h1>
-            <p className="px-3 tracking-wider">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               As husband and wife, our journey begins, intertwined and infinite
             </p>
           </motion.div>

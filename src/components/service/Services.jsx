@@ -69,15 +69,15 @@ export default function Services() {
           justify-center  "
         >
           <h1
-            style={{ fontFamily: `"Tinos", serif` }}
-            className="text-3xl pb-[2rem] text-center font-bold text-[#3f3415] uppercase"
+          
+            style={{ fontFamily:`   "Tinos", serif;`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
           >
             our services
           </h1>
 
           <p
            style={{fontFamily: `'Segoe UI', sans-serif`}}
-            className="text-[#6b601e] text-justify tracking-widest sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+            className="text-[#6b601e] text-justify tracking-widest md:text-[1.2rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by
             Saaj Wedding. Our expertise extends beyond borders, crafting dream
