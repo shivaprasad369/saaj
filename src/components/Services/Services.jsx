@@ -14,7 +14,7 @@ const [more2,setMore2]=useState(false)
 const [more3,setMore3]=useState(false)
 const [more4,setMore4]=useState(false)
   return (
-    <div className="bg-white" id="services" style={{backgroundColor:'white'}}>
+    <div className="bg-white mr-[3%]" id="services" style={{backgroundColor:'white'}}>
       <div className="text-center mt-[2rem] max-md:mb-[5rem]">
         <h1
           className="text-3xl uppercase text-[#975d2e]"
@@ -24,7 +24,7 @@ const [more4,setMore4]=useState(false)
         </h1>
       </div>
       <div id="client max-w:[90%]  justify-center items-center ">
-        <div className="md:w-[80%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[80%] h-full  ">
+        <div className="md:w-[90%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[80%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -38,7 +38,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img1}
@@ -86,7 +86,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[80%] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -166,7 +166,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden w-[230%] mt-[-2rem] rounded-tl-[100px]"
+            className="max-md:hidden w-[170%] mt-[-2rem] rounded-tl-[100px]"
           >
             <img
               src={img2}
@@ -178,7 +178,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[80%]  md:ml-[7%] md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%]  md:ml-[7%] md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -192,7 +192,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className=" md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img3}
@@ -245,7 +245,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[80%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -322,7 +322,7 @@ const [more4,setMore4]=useState(false)
                 delay: 0.5,
               },
             }}
-            className="max-md:hidden md:w-[200%] mt-[-2rem] sm:rounded-tl-[100px]"
+            className="max-md:hidden md:w-[160%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
             <img
               src={img4}

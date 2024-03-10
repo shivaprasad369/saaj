@@ -74,10 +74,10 @@ export default function Services() {
           >
             our services
           </h1>
-
+          
           <p
-           style={{fontFamily: `'Segoe UI', sans-serif`}}
-            className="text-[#6b601e] text-justify tracking-widest md:text-[1.2rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+           style={{fontFamily: `'Segoe UI', sans-serif`,letterpacing:' 0.1em'}}
+            className="text-[#705704] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by
             Saaj Wedding. Our expertise extends beyond borders, crafting dream

@@ -32,7 +32,7 @@ const data1 = [
     id: 3,
     title: "Hyderabad",
     subTitle: "⁠Corporates Events",
-    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
+    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_316665412_560435356092682_2508021726762921812_n.jpg",
   },
 ];
 export default function Home() {
@@ -128,7 +128,7 @@ export default function Home() {
                 >
                 
                     <h1 className="text-xl uppercase">2. Decor and Design</h1>
-                    <div className="border-b-[1.5px relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]   border-white`} ></span> </div>{" "}
+                    <div className="border-b-[1.5px] relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]   border-white`} ></span> </div>{" "}
                     <p className="text-sm">Exquisite decor, stunning designs for weddings</p>
                
                 </div>
@@ -150,7 +150,7 @@ export default function Home() {
                   <h1 className="text-xl uppercase">
                     3. Vendor and Artist Management
                   </h1>
-                  <div className="border-b-[1.5px relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
+                  <div className="border-b-[1.5px] relative border-gray-500" ><span className={`border-b-[3px] h-2 w-[50%] absolute top-[-6px]  border-white`} ></span> </div>{" "}
                   <p className="text-sm">Expertly manage vendors and talented artists</p>
                 </div>
               </li>

@@ -17,11 +17,11 @@ export default function Demo() {
         <img src={img1} alt="" className='w-[22rem]  m-[6rem] relative  ' />
       </div> */}
 
-      <div className="md:flex  relative z-10 max-[756px]:flex-col  justify-around gap-[6rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
+      <div className="md:flex  relative z-10 max-[756px]:flex-col md:ml-[8%]  justify-center gap-[3rem] md:mx-[2rem] pt-[1rem] md:pt-[3rem]">
         <img
           src={png}
           alt=""
-          className="absolute max-md:hidden top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"
+          className="absolute max-md:hidden md:left-[-8%] top-[-8rem] left-0 w-[12rem] opacity-[0.5] rotate-180"
         />
         <img
           src={png}
@@ -42,7 +42,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[100%]  text-center gap-3"
+            className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[80%]  text-center gap-3"
           >
             <img
               src={img1}
@@ -69,7 +69,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className="border-0   max-sm:w-[100%]  pb-[3rem] flex flex-col w-[100%]  text-center gap-3"
+            className="border-0   max-sm:w-[100%]  pb-[3rem] flex flex-col w-[80%]  text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
@@ -98,7 +98,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className=" max-sm:w-[100%]  pb-[4rem]flex flex-col w-[100%] text-center gap-3"
+            className=" max-sm:w-[100%]  pb-[4rem]flex flex-col w-[80%] text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
@@ -128,7 +128,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[100%] text-center gap-3"
+            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
@@ -155,7 +155,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col  md:w-[100%] text-center gap-3"
+            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col  md:w-[90%] text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
@@ -183,7 +183,7 @@ export default function Demo() {
                 duration: 1,
               },
             }}
-            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[100%] text-center gap-3"
+            className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img

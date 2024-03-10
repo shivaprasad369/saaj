@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../../demo/gallary2.jpg";
-import img2 from "./c2.jpg";
-import img3 from "./c3.jpg";
+import img2 from "./w8.jpg";
+import img3 from "./gallary5.jpg";
 import { easeIn, motion } from "framer-motion";
 import { Avatar } from "@mui/material";
 
@@ -15,11 +15,11 @@ import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 export default function Client() {
   return (
-    <div id="client" className="containers w:[100%] gap-3 md:mx-[2rem]">
+    <div id="client" className="containers w:[100%] gap-3 md:mx-[4rem]">
       <Swiper navigation={true} modules={[Navigation]} className="">
       <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className=" md:w-[70%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -35,8 +35,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-               style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
+                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     We hired ''Saaj wedding'' team for our destination wedding
@@ -62,7 +62,7 @@ export default function Client() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className=" md:w-[70%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -77,9 +77,13 @@ export default function Client() {
                 >
                   What our client says?
                 </h1>
+                  {/* <p
+           style={{fontFamily: `'Segoe UI', sans-serif`,letterpacing:' 0.1em'}}
+            className="text-[#705704] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
+          ></p> */}
                 <p
-               style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
+                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   We had the pleasure of working with Saaj wedding as our
@@ -105,7 +109,7 @@ export default function Client() {
         
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[50%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className=" md:w-[70%] w-[100%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img3} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -121,8 +125,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-               style={{   fontFamily: "'Segoe UI', sans-serif"}}
-                  className="text-[#6e4a20] md:mt-[1.5rem] tracking-widest md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
+                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   It was so amazing and creative. I would recommend everyone

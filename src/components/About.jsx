@@ -48,15 +48,15 @@ export default function About() {
           <div className=" ">
             <p
               style={{ fontFamily: `'Segoe UI', sans-serif` }}
-              className="tracking-widest text-justify text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[1rem] max-sm:px-[2rem]   sm:text-[1rem] sm:pl-[3rem]"
+              className="tracking-widest text-justify text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[1rem] max-sm:px-[2rem] sm:pl-[3rem]"
             >
-              <i>
+          
                 Welcome to Saaj Wedding, where we turn your wedding dreams into
                 reality amidst the enchanting backdrop of Jaipur - the Pink
                 City. Immerse yourself in the regal charm and cultural richness
                 of this historical city as we take you on a journey to create
                 timeless memories on your special day
-              </i>
+        
             </p>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function About() {
             style={{ fontFamily: `'Segoe UI', sans-serif` }}
             className=" tracking-widest md:mr-4 text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
           >
-            <i>
+            
               Experience the magic of Jaipur with SAAJ WEDDING which are famous
               for its wedding packages, cultural richness, and regal charm
               converge to create unforgettable celebrations. Let us craft your
@@ -152,7 +152,7 @@ export default function About() {
               reality, we don't just plan weddings.,{" "}
               {more &&
                 "we pour heart and soul into crafting each detail, ensuring your celebration is a testament to our unwavering commitment and hard work."}
-            </i>
+  
           </motion.p>
           <div className="text-center pb-3">
             {/* <button className=" border-2 w-[8rem] text-center font-serif 
