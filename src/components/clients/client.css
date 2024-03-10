@@ -23,4 +23,31 @@
       height: 100%;
       
     }
+   
+      .containers .swiper .swiper-button-next {
+        color: rgb(78, 33, 4);
+        /* display: none; */
+        position: absolute;
+        right: 3px;
+    }
+    .containers .swiper .swiper-button-prev {
+      color: rgb(78, 33, 4);
+      /* display: none; */
+      position: absolute;
+     left: 2px;
+    }
+   
   }
+  .containers .swiper .swiper-button-next {
+    color: rgb(78, 33, 4);
+    /* display: none; */
+    position: absolute;
+  
+    right: -1px;
+}
+.containers .swiper .swiper-button-prev {
+  color: rgb(78, 33, 4);
+  /* display: none; */
+  position: absolute;
+ left: -1px;
+}
