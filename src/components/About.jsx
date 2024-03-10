@@ -18,7 +18,17 @@ export default function About() {
     <div
       id="about"
       className="z-100 relative py-[2rem] pt-[3rem] md:px-[3rem] overflow-hidden flex max-sm:flex-col sm:justify-between  w-[100%] md:gap-[5rem] "
-    >
+      >
+      <img
+        src={png}
+        alt=""
+        className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]"
+      />
+      <img
+        src={png}
+        alt=""
+        className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]"
+      />
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{
@@ -35,16 +45,6 @@ export default function About() {
           >
             ABout US
           </h1>
-          <img
-            src={png}
-            alt=""
-            className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]"
-          />
-          <img
-            src={png}
-            alt=""
-            className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]"
-          />
           <div className=" ">
             <p
               style={{ fontFamily: `'Segoe UI', sans-serif` }}
