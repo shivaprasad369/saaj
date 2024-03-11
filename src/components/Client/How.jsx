@@ -33,7 +33,7 @@ export default function How() {
             </h3>
             <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
               {" "}
-              <span className="absolute md:left-[2rem] md:bottom-[42%] max-md:top-[-2.5rem]">
+              <span className="absolute md:left-[2rem] md:bottom-[42%] max-md:top-[rem]">
                 <i className=" h-[10rem]  width-29">
                   <h1 className="text-[10rem] text-[#c4b48791] font-extrabold">
                     1.

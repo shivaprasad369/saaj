@@ -320,7 +320,7 @@ export default function Why() {
             </CardActionArea>
           </Card>
         </div>
-      <div className="flex flex-col gap-4 ml-4 ">
+      <div className="flex flex-col gap-4 md:ml-4 max-md:p-[1rem] ">
         
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
