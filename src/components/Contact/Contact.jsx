@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { useLocation } from "react-router-dom";
 
-import {  toast } from 'react-toastify';
 
 export default function Contact() {
   const location = useLocation();
@@ -16,6 +16,10 @@ export default function Contact() {
   }, [location]);
   return (
     <div id="contact" className=" md:flex flex-col  gap-5 py-[4rem] md:pl-[5rem]">
+      <Toaster
+ position="top-center"
+ 
+/>
       <div className="flex flex-col gap-4 max-md:justify-center max-md:items-center">
         <div className="flex flex-col flex-wrap px-4 gap-2 mt-[2rem] md:pt-[2rem]">
           <h1
@@ -75,7 +79,7 @@ export default function Contact() {
                <motion.button whileHover={{
                   scale: 1.1,
                   transition: { type: "spring", duration: 0.3, ease: "easeIn" },
-                }} type="button" onClick={()=>{toast("Thank you so much!");alert("Thank you so much")}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                }} type="button" onClick={()=>{toast.success("Thank you so much!")}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                Send
         </motion.button> 
             </form>
