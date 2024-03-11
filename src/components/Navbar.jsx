@@ -5,6 +5,7 @@ import logo from './assets/image/logo.png'
 import { ImMenu } from "react-icons/im";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Navbar() {
   const [state, setState] = useState({

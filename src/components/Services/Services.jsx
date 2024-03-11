@@ -86,7 +86,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] xl:h-[30rem] max-lg:h-full   ">
+        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] h-full   ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }} 
@@ -245,7 +245,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
