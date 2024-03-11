@@ -38,7 +38,7 @@ export default function Navbar() {
             <a href="/services/#services" className="tracking-[0.3rem]">services</a>
             <a href="/why/#why" className="tracking-[0.3rem]">why saaj</a>
 
-            <a href="/gallary" className="tracking-[0.3rem]">Gallary</a>
+            <a href="/gallary" className="tracking-[0.3rem]">Gallery</a>
             <a href="/contact" className="tracking-[0.3rem]">Contact</a>
           </div>
 

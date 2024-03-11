@@ -15,12 +15,12 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function Gallarys() {
   return (
     <div className=' justify-center items-center text-center'>
-   <h1 className='text-center p-3 text-2xl font-semibold text-[#64321b] uppercase'>Gallary</h1>
+   <h1 className='text-center p-3 text-2xl font-semibold text-[#64321b] uppercase'>Gallery</h1>
       <ImageList
       sx={{ width: '100%', height: '100%',padding:4,justifyContent:'center',alignItems:'center'}}
       variant="quilted"
       cols={4}
-      gap={20}
+      gap={15}
       rowHeight={200}
       
     >

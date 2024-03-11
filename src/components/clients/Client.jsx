@@ -19,10 +19,10 @@ export default function Client() {
   return (
     <div id="client" className="relative containers w:[100%] gap-3 md:mx-[4rem]">
      
-      <div className="swiper-button image-swiper-button-next absolute right-0 top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#19134b] md:right-[-1.6rem]">
+      <div className="swiper-button image-swiper-button-next absolute right-0 top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#b9935a] md:right-[-1.6rem]">
       <GrFormNextLink />
 </div>
-<div className="swiper-button image-swiper-button-prev absolute left-0 md:left-[-1.6rem] top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#19134b] ">
+<div className="swiper-button image-swiper-button-prev absolute left-0 md:left-[-1.6rem] top-[50%] text-white border-2 z-30 rounded-full p-3 text-2xl bg-[#b9935a] ">
 <GrFormPreviousLink />
 </div>
       <Swiper navigation={{
@@ -32,7 +32,7 @@ export default function Client() {
         }} modules={[Navigation]} className="relative">
       <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[70%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className=" md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -49,7 +49,7 @@ export default function Client() {
                 </h1>
                 <p
                style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
-                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#705704] md:mt-[1.5rem] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                     We hired ''Saaj wedding'' team for our destination wedding
@@ -75,7 +75,7 @@ export default function Client() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[70%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -96,7 +96,7 @@ export default function Client() {
           ></p> */}
                 <p
                style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
-                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   We had the pleasure of working with Saaj wedding as our
@@ -122,7 +122,7 @@ export default function Client() {
         
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[70%] w-[100%] md:h-[25rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img3} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div
@@ -139,7 +139,7 @@ export default function Client() {
                 </h1>
                 <p
                style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'}}
-                  className="text-[#705704] md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
                   It was so amazing and creative. I would recommend everyone
