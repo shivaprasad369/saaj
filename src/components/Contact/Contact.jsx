@@ -36,19 +36,19 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="border-b-2 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
+                className="border-b-0 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Email"
-                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
+                className="border-b-0 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
               />
               <textarea
                 name="message"
-                rows="7"
+                rows="4"
                 placeholder="Message"
-                className="border-b-2 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
+                className="border-b-0 border-[#201f1f] pt-3 bg-[#e6d4b9] text-black md:w-full px-4"
               ></textarea>
               <motion.button
                 whileHover={{
