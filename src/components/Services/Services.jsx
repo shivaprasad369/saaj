@@ -289,7 +289,7 @@ const [more4,setMore4]=useState(false)
               >
                 corporate events
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}} className="text-[#8d5e31]  sm:text-[1.2rem] tracking-wider md:text-[1rem] text-justify max-sm:text-[1rem]  whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 At Saaj Wedding, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
@@ -299,7 +299,7 @@ const [more4,setMore4]=useState(false)
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}} className="text-[#916235] pb-[2rem] pt-3 tracking-wider md:text-[1rem] text-justify  sm:text-[1.2rem] max-sm:text-[1rem]  whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pt-4 md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Wedding to
