@@ -1,9 +1,19 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Contact() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   return (
-    <div className=" md:flex flex-col  gap-5 py-[4rem] md:pl-[5rem]">
+    <div id="contact" className=" md:flex flex-col  gap-5 py-[4rem] md:pl-[5rem]">
       <div className="flex flex-col gap-4 max-md:justify-center max-md:items-center">
         <div className="flex flex-col flex-wrap px-4 gap-2 mt-[2rem] md:pt-[2rem]">
           <h1

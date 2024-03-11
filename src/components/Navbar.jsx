@@ -35,9 +35,9 @@ export default function Navbar() {
             className={`flex gap-[1.5rem] p-4 font-110 font-normal max-lg:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
             <a href="/" className="tracking-[0.3rem]">HOME</a>
-            <a href="/about/#about" className="tracking-[0.3rem]">About us</a>
-            <a href="/services/#services" className="tracking-[0.3rem]">services</a>
-            <a href="/why/#why" className="tracking-[0.3rem]">why saaj</a>
+            <a href="/about" className="tracking-[0.3rem]">About us</a>
+            <a href="/services" className="tracking-[0.3rem]">services</a>
+            <a href="/why" className="tracking-[0.3rem]">why saaj</a>
 
             <a href="/gallary" className="tracking-[0.3rem]">Gallery</a>
             <a href="/contact" className="tracking-[0.3rem]">Contact</a>

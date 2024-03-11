@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Aboutus from "../About";
 import member from "../assets/member.png";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 export default function About() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const element = document.getElementById('about1');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   return (
-    <div>
-      <Aboutus />
+    <div id="about1">
+      <Aboutus/>
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         whileInView={{

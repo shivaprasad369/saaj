@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../assets/event.avif";
 import img1 from "./services111.jpg";
 import img2 from "./service2222.webp"; 
@@ -7,12 +7,22 @@ import img4 from "./service4.jpg";
 // import img from "../assets/event.avif";
 import { easeIn, motion } from "framer-motion";
 import { Button } from "@mui/material";
+import { useLocation } from "react-router-dom";
 
 export default function Services() {
 const [more1,setMore1]=useState(false)
 const [more2,setMore2]=useState(false)
 const [more3,setMore3]=useState(false)
 const [more4,setMore4]=useState(false)
+
+const location = useLocation();
+
+  useEffect(() => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   return (
     <div className="bg-white mr-[3%]" id="services" style={{backgroundColor:'white'}}>
       <div className="text-center mt-[2rem] max-md:mb-[5rem]">
