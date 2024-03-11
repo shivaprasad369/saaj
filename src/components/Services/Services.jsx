@@ -68,7 +68,7 @@ const [more4,setMore4]=useState(false)
               >
                 wedding planner
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#8f5d25] text-justify md:text-[1rem] tracking-wider  sm:text-[1.1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 Saaj Wedding stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -76,7 +76,7 @@ const [more4,setMore4]=useState(false)
                 allows us to make it uniquely yours.
               </p>
               <div></div>
-              <p className="text-[#8f5d25] text-justify md:text-[1rem] pt-4  pb-[1rem] sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] pt-4 tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
               At Saaj Wedding, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Wedding, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
               </p>
               {/* <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button> */}
