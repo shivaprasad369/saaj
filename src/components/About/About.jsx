@@ -23,81 +23,78 @@ export default function About() {
           >
             About Saaj
           </h1>
-          <p className="border-0 w-[80%] leading-8 text-[#684c2d] text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sequi
-            sapiente quaerat minus provident commodi? Iusto ad tempore,
-            asperiores repellat pariatur, nihil atque doloribus temporibus
-            libero nobis dicta quasi autem!. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Facilis quibusdam in dolore assumenda
-            tenetur deserunt debitis, quidem quos distinctio consequatur
-            doloribus nisi eius corrupti, nemo sit blanditiis totam natus saepe.
+          <p  style={{ fontFamily: `'Segoe UI', sans-serif` }} className="border-0 w-[80%] text-[1.2rem] leading-8 text-[#7c582f] text-justify">
+            At Saaj Weddings, we weave dreams into reality. With a passion for
+            perfection and an eye for elegance, our dedicated team crafts
+            bespoke weddings that reflect your unique love story. Let us
+            transform your vision into a breathtaking celebration, making
+            moments last a lifetime.
           </p>
         </div>
       </motion.div>
-  
-        <div className="flex flex-col py-[4rem]">
-          <div className="flex flex-col justify-center items-center text-center tracking-widest gap-3">
-            <h1
-              className="uppercase text-3xl font-semibold text-[#3f3113]"
-              style={{ fontFamily: ` "Libre Baskerville", serif` }}
-            >
-              Our Team
-            </h1>
-            <span className="text-2xl text-[#4b3419] tracking-widest">
-              <i>The core members at saaj weddings</i>
-            </span>
-          </div>
-          <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-around items-center gap-4  my-[4rem]">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{
-                opacity: 1,
-                scale: 0.9,
-                whileInView: { type: "spring", duration: 2, ease: "easeIn" },
-              }}
-              className="border-0 flex md:flex-col w-[100%] text-center max-md:flex-col-reverse "
-            >
-              <div className="relative border-[1rem] w-[100%] h-[40rem] max-sm:w-[100%] border-[#835d2c]">
-                <img
-                  src={member}
-                  alt=""
-                  className="absolute h-[40rem] w-[100%] bottom-[0rem]"
-                />
-              </div>
-              <div className="text-center md:pt-[5rem] max-md:pb-[5rem] text-xl tracking-widest">
-                <h1 className="text-[#706923]">Rohit Naik</h1>
-                <span>His Position</span>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{
-                opacity: 1,
-                scale: 0.9,
-                whileInView: {
-                  type: "spring",
-                  delay: 0.6,
-                  duration: 2,
-                  ease: "easeIn",
-                },
-              }}
-              className="border-0 w-[100%] text-center "
-            >
-              <div className=" py-[2rem] pb-[5rem] text-xl tracking-widest">
-                <h1 className="text-2xl text-[#776823]">Rohit Naik</h1>
-                <span className="tracking-widest leading-9">His Position</span>
-              </div>
-              <div className="relative border-[1rem] w-[100%] max-md:w-screen h-[40rem] border-[#835d2c] ">
-                <img
-                  src={member}
-                  alt=""
-                  className=" absolute h-[40rem] w-[100%]  bottom-[0rem]"
-                />
-              </div>
-            </motion.div>
-          </div>
+
+      <div className="flex flex-col py-[4rem]">
+        <div className="flex flex-col justify-center items-center text-center tracking-widest gap-3">
+          <h1
+            className="uppercase text-3xl font-semibold text-[#3f3113]"
+            style={{ fontFamily: ` "Libre Baskerville", serif` }}
+          >
+            Our Team
+          </h1>
+          <span style={{ fontFamily: `'Segoe UI', sans-serif` }} className="text-[1.3rem] text-[#4b3419] tracking-widest">
+            <i>The core members at saaj weddings</i>
+          </span>
+        </div>
+        <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-around items-center gap-4  my-[4rem]">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 0.9,
+              whileInView: { type: "spring", duration: 2, ease: "easeIn" },
+            }}
+            className="border-0 flex md:flex-col w-[100%] text-center max-md:flex-col-reverse "
+          >
+            <div className="relative border-[1rem] w-[100%] h-[40rem] max-sm:w-[100%] border-[#835d2c]">
+              <img
+                src={member}
+                alt=""
+                className="absolute h-[40rem] w-[100%] bottom-[0rem]"
+              />
+            </div>
+            <div className="text-center md:pt-[5rem] max-md:pb-[5rem] text-xl tracking-widest">
+              <h1 className="text-[#706923]">Rohit Naik</h1>
+              <span>His Position</span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{
+              opacity: 1,
+              scale: 0.9,
+              whileInView: {
+                type: "spring",
+                delay: 0.6,
+                duration: 2,
+                ease: "easeIn",
+              },
+            }}
+            className="border-0 w-[100%] text-center "
+          >
+            <div className=" py-[2rem] pb-[5rem] text-xl tracking-widest">
+              <h1 className="text-2xl text-[#776823]">Rohit Naik</h1>
+              <span className="tracking-widest leading-9">His Position</span>
+            </div>
+            <div className="relative border-[1rem] w-[100%] max-md:w-screen h-[40rem] border-[#835d2c] ">
+              <img
+                src={member}
+                alt=""
+                className=" absolute h-[40rem] w-[100%]  bottom-[0rem]"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
-   
+    </div>
   );
 }

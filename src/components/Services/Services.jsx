@@ -64,7 +64,7 @@ const [more4,setMore4]=useState(false)
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
               <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
-                style={{ fontFamily: '"Great Vibes"', fontWeight: 700 }}
+                style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 wedding planner
               </h1>
@@ -126,7 +126,7 @@ const [more4,setMore4]=useState(false)
             <div className="text-center  flex-wrap font-sans justify-center object-contain ">
             <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
-                style={{ fontFamily: '"Great Vibes"', fontWeight: 700 }}
+                style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 vendors and artist management
               </h1>
@@ -218,7 +218,7 @@ const [more4,setMore4]=useState(false)
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
             <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
-                style={{ fontFamily: '"Great Vibes"', fontWeight: 700 }}
+                style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 decor and design
               </h1>
@@ -285,7 +285,7 @@ const [more4,setMore4]=useState(false)
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
             <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
-                style={{ fontFamily: '"Great Vibes"', fontWeight: 700 }}
+                style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 corporate events
               </h1>

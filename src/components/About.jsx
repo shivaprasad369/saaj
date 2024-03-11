@@ -40,7 +40,7 @@ export default function About() {
       >
         <div>
           <h1
-            style={{ fontFamily: `"Tinos", serif;` }}
+            style={{ fontFamily: `"Tinos", serif` }}
             className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
           >
             ABout US

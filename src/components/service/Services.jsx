@@ -70,7 +70,7 @@ export default function Services() {
         >
           <h1
           
-            style={{ fontFamily:`   "Tinos", serif;`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
+            style={{ fontFamily:`   "Tinos", serif`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
           >
             our services
           </h1>

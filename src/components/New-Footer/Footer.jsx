@@ -1,23 +1,26 @@
 import React from "react";
 import img from "./flower.avif";
+import logo from "../assets/Saaj logo png3 (1)(1).png";
 import "./Footer.css";
 import yt from "./WhatsApp Image 2024-03-09 at 4.27.33 PM.jpeg";
 export default function Footer() {
   return (
     <div
       style={{ fontFamily: ' "Chakra Petch", sans-serif' }}
-      className={"bg justify-around  bg-[#28231e] text-[#aea493]"}
+      className={" justify-around  bg-[#28231e] text-[#aea493]"}
     >
-      <div className="flex flex-1 w-auto justify-around  max-lg:flex-col max-lg:mx-[2.5rem] ">
+      <div className="flex  flex-1 w-auto justify-around  max-lg:flex-col max-lg:mx-[2.5rem] ">
+       <div className="flex flex-col max-lg:mt-[rem] md:items-center md:mr-[1rem]">
+      <img src={logo} alt="" className="w-[6rem] mt-[2rem] lg:mr-[2rem] md:mb-[2rem]" />
         <div
           style={{
             fontFamily: "FedraSansStd-book, sans-serif",
-            marginInlineStart: "1em",
+           
             lineHeight: "24px",
             fontSize: "16px",
             padding: "0 1.2rem 0 0",
           }}
-          className="flex flex-row gap-10 items-center max-lg:text-[18px] max-lg:mt-[2rem] "
+          className="relative flex flex-row gap-10 max-lg:text-[18px] pt-[3rem] max-lg:mt-[2rem] "
         >
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
@@ -44,6 +47,7 @@ export default function Footer() {
               </span>
             </li>
           </ul>
+          
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
               <span className="border-b-[1px]">
@@ -59,7 +63,7 @@ export default function Footer() {
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
-                <a href="/#client"> Testinomial</a>
+                <a href="/#client"> Testimonial</a>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
@@ -72,8 +76,9 @@ export default function Footer() {
           <img
             src={img}
             alt=""
-            className="w-[2rem] max-lg:hidden h-[20rem]"
+            className=" absolute w-[2rem] left-[15rem] top-[-5rem] max-lg:hidden h-[20rem]"
           />
+        </div>
         </div>
         <div className="flex flex-col border-0 w-[12rem] mt-[2rem]">
           <h1

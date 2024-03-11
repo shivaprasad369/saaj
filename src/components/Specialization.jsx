@@ -29,7 +29,7 @@ export default function Specialization() {
           scale:1,
           transition: { delay: 0.6, ease: "easeInOut", type: "spring " ,duration:0.3},
         }}
-        style={{ fontFamily:`"Tinos", serif;`}} className="uppercase text-[#7a4927] my-[1rem] md:my-[2rem] tracking-widest text-center font-bold text-[30px]"
+        style={{ fontFamily:`"Tinos", serif`}} className="uppercase text-[#7a4927] my-[1rem] md:my-[2rem] tracking-widest text-center font-bold text-[30px]"
       >
         
         Our Specialities
