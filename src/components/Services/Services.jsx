@@ -198,7 +198,7 @@ const [more4,setMore4]=useState(false)
             <img
               src={img3}
               alt="card"
-              className=" md:h-[120%]  max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%]  max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -246,7 +246,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] lg:h-[27rem] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
