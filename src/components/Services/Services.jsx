@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img from "../assets/event.avif";
 import img1 from "./services111.jpg";
-import img2 from "./services222.jpg"; 
+import img2 from "./service2222.webp"; 
 import img3 from "./service3.jpg";
 import img4 from "./service4.jpg";
 // import img from "../assets/event.avif";
@@ -86,7 +86,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] h-full   ">
+        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] rounded-r-3xl lg:h-[29rem]   ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }} 
@@ -121,9 +121,9 @@ const [more4,setMore4]=useState(false)
                 delay: 0.7,
               },
             }}
-            className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[1rem] "
+            className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center  flex-wrap max-[810px]:pb-[1rem] "
           >
-            <div className="text-center  flex-wrap font-sans justify-center object-contain ">
+            <div className="text-center rounded-r-[30px] flex-wrap font-sans justify-center object-contain ">
             <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
@@ -145,10 +145,11 @@ const [more4,setMore4]=useState(false)
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
                 creating a symphony of talents that makes your wedding
-                extraordinary. With Saaj Wedding, you can relax knowing that we
+                extraordinary. 
+              With Saaj Wedding, you can relax knowing that we
                 handle all the details, allowing you to enjoy a flawless
                 celebration filled with the expertise and creativity of the best
-                in the business.
+                in the business. 
               </p>
               {/* <Button onClick={()=>setMore2((more2)=>!more2)} variant="outlined">{more2 ? 'Know less': 'Show more'}</Button> */}
             </div>
@@ -245,7 +246,7 @@ const [more4,setMore4]=useState(false)
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10  md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
