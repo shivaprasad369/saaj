@@ -34,13 +34,13 @@ export default function Navbar() {
           <div
             className={`flex gap-[1.5rem] p-4 font-110 font-normal max-lg:hidden max-[826px]:text-[1rem] text-xl list-none`}
           >
-            <a href="/" className="tracking-[0.3rem]">HOME</a>
-            <a href="/about" className="tracking-[0.3rem]">About us</a>
-            <a href="/services" className="tracking-[0.3rem]">services</a>
-            <a href="/why" className="tracking-[0.3rem]">why saaj</a>
+            <Link to="/" className="tracking-[0.3rem]">HOME</Link>
+            <Link to="/about" className="tracking-[0.3rem]">About us</Link>
+            <Link to="/services" className="tracking-[0.3rem]">services</Link>
+            <Link to="/why" className="tracking-[0.3rem]">why saaj</Link>
 
-            <a href="/gallary" className="tracking-[0.3rem]">Gallery</a>
-            <a href="/contact" className="tracking-[0.3rem]">Contact</a>
+            <Link to="/gallary" className="tracking-[0.3rem]">Gallery</Link>
+            <Link to="/contact" className="tracking-[0.3rem]">Contact</Link>
           </div>
 
           <button
