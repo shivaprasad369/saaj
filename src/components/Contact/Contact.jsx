@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import {  toast } from 'react-toastify';
+
 export default function Contact() {
   const location = useLocation();
 
@@ -60,7 +62,7 @@ export default function Contact() {
                 placeholder="Message"
                 className="border-b-0 border-[#201f1f] pt-3 bg-[#e6d4b9] text-black md:w-full px-4"
               ></textarea>
-              <motion.button
+              {/* <motion.button
                 whileHover={{
                   scale: 1.1,
                   transition: { type: "spring", duration: 0.3, ease: "easeIn" },
@@ -69,7 +71,13 @@ export default function Contact() {
                 className="border-2 h-[3rem] rounded-md max-md:w-[40%] hover:bg-[#8d4e35] hover:text-white justify-center items-center  text-center border-[#643522] text-[#643522]  font-bold  uppercase text-xl tracking-widest"
               >
                 Send
-              </motion.button>
+              </motion.button> */}
+               <motion.button whileHover={{
+                  scale: 1.1,
+                  transition: { type: "spring", duration: 0.3, ease: "easeIn" },
+                }} type="button" onClick={()=>{toast("Thank you so much!");alert("Thank you so much")}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+               Send
+        </motion.button> 
             </form>
           </div>
           <div className="bg-[#9e763b] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14">

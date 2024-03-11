@@ -1,14 +1,16 @@
 import React from "react";
 import img1 from "../components/assets/w1.jpg";
 import img2 from "./gallary3.jpg";
-import img3 from "./gallary3.jpg";
+
 import img7 from "./w4.jpg";
 import img8 from "./w8.jpg";
 import img6 from "./gallary2.jpg";
-import img4 from "./gsllary4.jpg";
+
 import img5 from "./w5.jpg";
 import png from "../components/assets/flower-black-and-white-png-41825.png";
 import { motion } from "framer-motion";
+
+
 export default function Demo() {
   return (
     <div>
@@ -30,6 +32,8 @@ export default function Demo() {
         />
         {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
         <div className="">
+        
+
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             initial={{ opacity: 0 }}
@@ -57,6 +61,9 @@ export default function Demo() {
               Love captured in a single frame, forever begins in our embrace.
             </p>
           </motion.div>
+
+
+
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             initial={{ opacity: 0 }}
@@ -204,3 +211,14 @@ export default function Demo() {
     </div>
   );
 }
+
+
+
+        // Button code
+        // <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        //   Shimmer
+        // </button>
+  
+
+       
+      
