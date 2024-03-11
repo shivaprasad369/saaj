@@ -51,7 +51,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
               <span className="border-b-[1px]">
-                <a href="/gallary">Gallary</a>
+                <a href="/gallary">Gallery</a>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
