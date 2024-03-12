@@ -96,7 +96,7 @@ const location = useLocation();
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] rounded-r-3xl lg:h-[29rem]   ">
+        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] rounded-r-3xl h-full   ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }} 
@@ -256,7 +256,7 @@ const location = useLocation();
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] lg:h-[27rem] h-full  ">
+        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9]  h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}

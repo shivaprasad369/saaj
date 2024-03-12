@@ -3,6 +3,7 @@ import img from "./flower.avif";
 import logo from "../assets/Saaj logo png3 (1)(1).png";
 import "./Footer.css";
 import yt from "./WhatsApp Image 2024-03-09 at 4.27.33 PM.jpeg";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div
@@ -25,19 +26,19 @@ export default function Footer() {
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
               <span className="border-b-[1px]">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[0.5px]">
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
-                <a href="/service"> Services</a>
+                <Link to="/services"> Services</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
@@ -51,25 +52,25 @@ export default function Footer() {
           <ul className="flex flex-col gap-4">
             <li className="hover:text-[#cd6727]">
               <span className="border-b-[1px]">
-                <a href="/gallary">Gallery</a>
+                <Link to="/gallary">Gallery</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[0.5px]">
-                <a href="/why"> Why Saaj</a>
+                <Link to="/why"> Why Saaj</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
-                <a href="/#client"> Testimonial</a>
+                <Link to="/#client"> Testimonial</Link>
               </span>
             </li>
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
-                <a href="/contact"> Contact us</a>
+                <Link to="/contact"> Contact us</Link>
               </span>
             </li>
           </ul>
