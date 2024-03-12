@@ -44,7 +44,7 @@ export default function Footer() {
             <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
-                <a href="/contact"> Contact</a>
+                <Link to="/contact"> Contact</Link>
               </span>
             </li>
           </ul>
