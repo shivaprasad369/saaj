@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import w1 from "./assets/demo/about1.webp";
 import w2 from "./assets/demo/about2.webp";
 
@@ -9,11 +9,71 @@ import { Button } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
 import png from "./assets/pngegg.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 export default function About() {
   const [more, setMore] = useState(false);
   const handleMore = () => {
     setMore((more) => !more);
   };
+  // const [img,setImg]=useState("")
+
+  // const [img2,setImg2]=useState("")
+  // const [img3,setImg3]=useState("")
+  // const [img4,setImg4]=useState("")
+  // async function handleImage(id){
+  //  await axios.get(`http://localhost:8888/${id}`).then((data)=>{
+  //   if(data===null){
+  //     alert("There no image found")
+  //   return false;
+  //   }
+  //   else{
+  //     setImg(data?.data.data?.photo)
+  //     console.log(data?.data.data?.photo)
+  //   }
+  //  })
+  // }
+  // async function handleImage2(id){
+  //   await axios.get(`http://localhost:8888/${id}`).then((data)=>{
+  //    if(data===null){
+  //      alert("There no image found")
+  
+  //    }
+  //    else{
+  //      setImg2(data.data.data?.photo)
+  //      console.log(data.data.data?.photo)
+  //    }
+  //   })
+  //  }
+  //  async function handleImage3(id){
+  //   await axios.get(`http://localhost:8888/${id}`).then((data)=>{
+  //    if(data===null){
+  //      alert("There no image found")
+  
+  //    }
+  //    else{
+  //      setImg3(data.data.data?.photo)
+  //      console.log(data.data.data?.photo)
+  //    }
+  //   })
+  //  }
+  //  async function handleImage4(id){
+  //   await axios.get(`http://localhost:8888/${id}`).then((data)=>{
+  //    if(data===null){
+  //      alert("There no image found")
+  // return false;
+  //    }
+  //    else{
+  //      setImg4(data.data.data?.photo)
+  //      console.log(data.data.data?.photo)
+  //    }
+  //   })
+  // }
+  // useEffect(()=>{
+  //   handleImage2(2)
+  //   handleImage(1)
+  //  handleImage3(3)
+  //  handleImage4(4)
+  // },[img,img2,img3,img4])
   return (
     <div
       id="about"
@@ -79,6 +139,7 @@ export default function About() {
                   <img
                     style={{ backgroundColor: "#131010bd" }}
                     src={w1}
+                    // src={`${img ? img : w1}`}
                     alt="wedding1"
                     className="relative max-sm:ml-[5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2  rounded-t-full w-[70%]   md:h-[100%] max-sm:w-[80%] "
                   />
@@ -89,6 +150,7 @@ export default function About() {
                     transition: { ease: "easeIn", type: "spring", duration: 1 },
                   }}
                   src={w22}
+                  // src={`${img2 ? img2 : w22}`}
                   alt=""
                   className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[60%]"
                 />
@@ -117,8 +179,8 @@ export default function About() {
           <div className="relative">
           <div className="absolute w-[75%] h-full mb-3 bg-[#110c0c80] z-10"/>
           <img
-            src={w2}
-            
+                src={w2}
+            // src={`${img3 ? img3 : w2}`}
             alt="wedding1"
             className="mb-3  relative  w-[75%] z-0"
           />
@@ -129,6 +191,7 @@ export default function About() {
               transition: { ease: "easeIn", type: "spring", duration: 1 },
             }}
             src={w11}
+            // src={`${img4 ? img4 : w11}`}
             alt=""
             className="absolute top-[20%] rounded-t-full w-[50%] z-20 h-[60%] right-4"
           />

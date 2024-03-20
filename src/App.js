@@ -8,13 +8,16 @@ import Cover from "./components/Cover";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Services from './components/Services/Services';
-import Home from './components/Home';
+// import Home from './components/Home';
+import NewHome from './components/NewHome.jsx'
 import Footer from './components/New-Footer/Footer.jsx';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/new.jsx';
 import About from './components/About/About';
 import Demo from './demo/Demo';
 import Gallarys from './components/Gallary/Gallary';
-
+import Blog from './components/BLog/Blog.jsx';
+import Demos from './Admin/Demo.jsx'
+import Admin from './Admin/Admin.jsx';
 
 
 
@@ -24,7 +27,8 @@ function App() {
     <BrowserRouter>
 {/*   
       <Demo/> */}
-    <Home/>
+    {/* <Home/> */}
+    <NewHome/>
     <Routes>
 
     <Route path='/' element={<Cover/>}/>
@@ -33,7 +37,9 @@ function App() {
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/services' element={<Services/>}/>
     <Route path='/gallary' element={<Gallarys/>}/>
-
+    <Route path='/blog' element={<Blog/>}/>
+    <Route path='/admin' element={<Demos/>}/>
+    <Route path='/panel' element={<Admin/>}/>
     </Routes>
     {/* <Footer/> */}
 <Footer/>

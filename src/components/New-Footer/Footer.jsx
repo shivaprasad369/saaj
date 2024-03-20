@@ -11,14 +11,13 @@ export default function Footer() {
       className={" justify-around  bg-[#28231e] text-[#aea493]"}
     >
       <div className="flex  flex-1 w-auto justify-around  max-lg:flex-col max-lg:mx-[2.5rem] ">
-       <div className="flex flex-col max-lg:mt-[rem] md:items-center md:mr-[1rem]">
-      <img src={logo} alt="" className="w-[6rem] mt-[2rem] lg:mr-[2rem] md:mb-[2rem]" />
+       <div className="flex flex-col max-lg:mt-[rem] lg:items-center lg:mr-[1rem]">
+      <img src={logo} alt="" className="w-[8rem] mt-[2rem] lg:mr-[2rem] md:mb-[2rem] items-center" />
         <div
           style={{
-            fontFamily: "FedraSansStd-book, sans-serif",
-           
+            fontFamily: "FedraSansStd-book, sans-serif",      
             lineHeight: "24px",
-            fontSize: "16px",
+            fontSize: "14px",
             padding: "0 1.2rem 0 0",
           }}
           className="relative flex flex-row gap-10 max-lg:text-[18px] pt-[3rem] max-lg:mt-[2rem] "
@@ -86,7 +85,7 @@ export default function Footer() {
             style={{
               fontFamily: "FedraSansStd-A-medium",
               fontWeight: 600,
-              fontSize: "20px",
+              fontSize: "18px",
               lineHeight: 1.2,
             }}
             className="text-[#ffe1b9] mb-[0.8rem]  font-"
@@ -94,7 +93,7 @@ export default function Footer() {
             Subscribe
           </h1>
           <div>
-            <div className="max-lg:flex w-auto max-[450px]:flex-col max-lg:gap-3  md:w-[25rem]">
+            <div style={{fontSize:'16px'}} className="max-lg:flex  w-auto max-[450px]:flex-col max-lg:gap-3  md:w-[25rem]">
               <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <img
                   src={yt}
@@ -102,24 +101,24 @@ export default function Footer() {
                   className="w-[9rem] h-[5rem] max-lg:h-[7rem] "
                 />
               </a>
-              <p className="p max-lg:w-[12rem] w-[10rem] max-lg:h-[7rem]">
+              <p style={{fontSize:'14px'}} className="p max-lg:w-[12rem] w-[10rem] max-lg:h-[7rem]">
                 Don't miss a moment! Subscribe to our YouTube for exclusive
                 event updates
               </p>
             </div>
             <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
-              <button className="border-[1px] mt-[20px] border-[#A29887] w-full h-[3rem] text-center rounded-md">
+              <button style={{fontSize:'14px'}} className="border-[1px] mt-[20px] border-[#A29887] w-full h-[3rem] text-center rounded-md">
                 Subscribe Now
               </button>
             </a>
           </div>
         </div>
         <div className="b-2 w-[13rem] gap-3 mt-[2rem] pb-4">
-          <h1 style={{ fontWeight: 600 }} className="contact ">
+          <h1 style={{ fontWeight: 600,fontSize:'18px' }} className="contact ">
             Contact us
           </h1>
           <div className="text-[16px]">
-            <p className="mb-[2rem]  gap-3">
+            <p className="mb-[2rem]  gap-3"  style={{fontSize:'14px'}}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="float-start "
@@ -135,7 +134,7 @@ export default function Footer() {
               Tonk Rd, near kamal & Co, Jaipur, Rajasthan 302015
             </p>
 
-            <p className="mb-[2rem] ">
+            <p className="mb-[2rem] "  style={{fontSize:'14px'}}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={"w-5 float-start"}
@@ -151,7 +150,7 @@ export default function Footer() {
               +91 97823 40243,
               <br />
             </p>
-            <p>
+            <p  style={{fontSize:'14px'}}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 float-start"
@@ -229,7 +228,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-[1px]  mt-10 border-[#aea493]" />
-      <div className="flex items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#676055] cursor-pointer max-[500]:flex-col">
+      <div style={{fontSize:'14px'}} className="flex items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#676055] cursor-pointer max-[500]:flex-col">
         © 1999 - 2023 Unitechno software development pvt ltd. All Rights
         Reserved.
         <span className="text-white px-2"> |</span> Terms & Conditions

@@ -291,9 +291,9 @@ const location = useLocation();
                 delay: 0.7,
               },
             }}
-            className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
+            className=" border-black  min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
           >
-            <div className="text-center flex-wrap font-sans justify-center object-contain ">
+            <div className="text-center flex-wrap  justify-center object-contain ">
             <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}

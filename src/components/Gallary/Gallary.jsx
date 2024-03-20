@@ -5,6 +5,7 @@ import { itemData } from './data'
 import { ImageList, ImageListItem } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
+import Images from './Images';
 function srcset(image, size, rows = 1, cols = 1) {
     return {
       src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -14,6 +15,15 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
   }
 export default function Gallarys() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   const location = useLocation();
 
   useEffect(() => {
@@ -36,13 +46,17 @@ export default function Gallarys() {
       
 
       {itemData.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+        <>
+        <ImageListItem  key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
             alt={item.title}
             loading="lazy"
           />
-        </ImageListItem>
+          {/* <Images srcset={srcset} image={item.img} rows={item.rows} cols={item.cols} title={item.title}/> */}
+     </ImageListItem>
+        
+       </>
       ))}
       
     </ImageList>

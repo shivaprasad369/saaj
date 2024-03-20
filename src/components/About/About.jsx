@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Aboutus from "../About";
-import member from "../assets/member.png";
+import member1 from "./WhatsApp Image 2024-03-18 at 1.01.51 PM (1).jpeg";
+import member2 from "./WhatsApp Image 2024-03-18 at 1.37.35 PM.jpeg";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
@@ -66,14 +67,14 @@ export default function About() {
           >
             <div className="relative border-[1rem] w-[100%] h-[40rem] max-sm:w-[100%] border-[#835d2c]">
               <img
-                src={member}
+                src={member2}
                 alt=""
-                className="absolute h-[40rem] w-[100%] bottom-[0rem]"
+                className="absolute h-[100%] w-[100%] bottom-[0rem]"
               />
             </div>
             <div className="text-center md:pt-[5rem] max-md:pb-[5rem] text-xl tracking-widest">
-              <h1 className="text-[#706923]">Rohit Naik</h1>
-              <span>His Position</span>
+              <h1 className="text-[#706923]">Varun Sharma</h1>
+              <span>Production Manager </span>
             </div>
           </motion.div>
           <motion.div
@@ -91,14 +92,14 @@ export default function About() {
             className="border-0 w-[100%] text-center "
           >
             <div className=" py-[2rem] pb-[5rem] text-xl tracking-widest">
-              <h1 className="text-2xl text-[#776823]">Rohit Naik</h1>
-              <span className="tracking-widest leading-9">His Position</span>
+              <h1 className="text-2xl text-[#776823]">Mohit Singh</h1>
+              <span className="tracking-widest leading-9">Hospitality & Logistics Manager</span>
             </div>
             <div className="relative border-[1rem] w-[100%] max-md:w-screen h-[40rem] border-[#835d2c] ">
               <img
-                src={member}
+                src={member1}
                 alt=""
-                className=" absolute h-[40rem] w-[100%]  bottom-[0rem]"
+                className=" absolute h-[100%] w-[100%]  bottom-[0rem]"
               />
             </div>
           </motion.div>
