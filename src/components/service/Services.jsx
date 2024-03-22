@@ -20,8 +20,9 @@ import "./styles.css";
 import png from "../assets/—Pngtree—watercolor floral border composition for_4869610.png";
 import png1 from "../assets/pngwing.com(1).png";
 // import required modules
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Autoplay } from "swiper/modules";
 import { easeIn, easeInOut, motion } from "framer-motion";
+
 
 export default function Services() {
   const [index, setIndex] = useState(0);
@@ -80,7 +81,7 @@ export default function Services() {
             className="text-[#705704] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by
-            Saaj Wedding. Our expertise extends beyond borders, crafting dream
+            Saaj Weddings. Our expertise extends beyond borders, crafting dream
             weddings in Beautiful spots. Let us turn your destination dreams
             into a reality, where every detail is infused with our signature
             touch of excellence
@@ -248,9 +249,13 @@ export default function Services() {
             <Swiper
               effect={"cards"}
               grabCursor={true}
-              modules={[EffectCards]}
               className="mySwiper"
-              autoplay={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[EffectCards, Autoplay]}
+           
              
             >
               <SwiperSlide className="flex  flex-col ">
@@ -264,7 +269,7 @@ export default function Services() {
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w1} alt="" width={40} />
-                  destination
+                  destination Wedding
                 </h1>
               
               </SwiperSlide>

@@ -66,17 +66,17 @@ export default function Footer() {
                 <Link to="/#client"> Testimonial</Link>
               </span>
             </li>
-            <li className="hover:text-[#cd6727]">
+            {/* <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
                 <Link to="/contact"> Contact us</Link>
               </span>
-            </li>
+            </li> */}
           </ul>
           <img
             src={img}
             alt=""
-            className=" absolute w-[2rem] left-[15rem] top-[-5rem] max-lg:hidden h-[20rem]"
+            className=" absolute w-[2rem] left-[15rem] top-[-7rem] max-lg:hidden h-[20rem]"
           />
         </div>
         </div>
@@ -131,7 +131,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="pr-2"></span>PN 75, second floor Satnam Honda,
-              Tonk Rd, near kamal & Co, Jaipur, Rajasthan 302015
+              Tonk Rd, near kamal & Co, Jaipur, Rajasthan 302015.
             </p>
 
             <p className="mb-[2rem] "  style={{fontSize:'14px'}}>
@@ -147,7 +147,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="pr-2" />
-              +91 97823 40243,
+              +91 97823 40243
               <br />
             </p>
             <p  style={{fontSize:'14px'}}>
@@ -162,7 +162,7 @@ export default function Footer() {
                 />
               </svg>{" "}
               <span className="pr-2" />
-              info@saajevents.com.
+              info@saajwedding.com
             </p>
           </div>
         </div>
@@ -190,6 +190,7 @@ export default function Footer() {
         <div className="down mt-[2rem] w-[9rem]">
           <h1>Find us on Social Media</h1>
           <div className="flex-wrap gap-4 grid grid-cols-2 my-[2rem]">
+           <a href="https://www.facebook.com/saajweddingsindia/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={30}
@@ -200,6 +201,7 @@ export default function Footer() {
                 d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
               />
             </svg>
+              </a>
             <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -6,6 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import price from "./best-price.png";
+import price1 from "./expert (1).png";
 import React from "react";
 import png from "../assets/pngwing.com(1).png";
 import img from "../assets/why1.jpg";
@@ -388,7 +389,7 @@ export default function Why() {
               </h1>
               <p className=" text-[1.1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
                 {" "}
-                decor transforms venues into enchasddd
+                Unbeatable rates for exceptional quality services
               </p>
             </div>
             <div
@@ -396,16 +397,16 @@ export default function Why() {
               className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[10rem] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]"
             >
               <img
-                src={price}
+                src={price1}
                 alt=""
                 className="h-20 w-20 max-[480px]:w-[4rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
-              <h1 className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem]">
-                Best Price
+              <h1 className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem] capitalize">
+              Expertise
               </h1>
               <p className=" text-[1.1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
                 {" "}
-                decor transforms venues into enchafsfd
+                Decades of seasoned expertise guarantee flawless events.
               </p>
             </div>
           </div>

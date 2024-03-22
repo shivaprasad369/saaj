@@ -60,9 +60,9 @@ export default function Navbar() {
             <Link to="/contact" className="tracking-[0.3rem]">
               Contact
             </Link>
-            <Link to="/blog" className="tracking-[0.3rem]">
+            {/* <Link to="/blog" className="tracking-[0.3rem]">
               Blogs
-            </Link>
+            </Link> */}
           </div>
 
           <button

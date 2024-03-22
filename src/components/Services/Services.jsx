@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import img from "../assets/event.avif";
 import img1 from "./services111.jpg";
 import img2 from "./service2222.webp"; 
-import img3 from "./service3.jpg";
-import img4 from "./service4.jpg";
+import img3 from "./s1.jpg";
+import img4 from "./s4.jpg";
 // import img from "../assets/event.avif";
 import { easeIn, motion } from "framer-motion";
 import { Button } from "@mui/material";
@@ -208,7 +208,7 @@ const location = useLocation();
             <img
               src={img3}
               alt="card"
-              className=" md:h-[110%]  max-sm:h-full sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%] max-md:w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -275,7 +275,7 @@ const location = useLocation();
             <img
               src={img4}
               alt="card"
-              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%] max-md:w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -310,7 +310,7 @@ const location = useLocation();
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pt-4 md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pb-6 pt-4 md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Wedding to

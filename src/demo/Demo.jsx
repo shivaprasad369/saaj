@@ -1,12 +1,12 @@
 import React from "react";
 import img1 from "../components/assets/w1.jpg";
-import img2 from "./gallary3.jpg";
+import img2 from "./prachi.jpg";
 
 import img7 from "./w4.jpg";
 import img8 from "./w8.jpg";
-import img6 from "./gallary2.jpg";
+import img6 from "./w9.jpg";
 
-import img5 from "./w5.jpg";
+import img5 from "./metali.jpg";
 import png from "../components/assets/flower-black-and-white-png-41825.png";
 import { motion } from "framer-motion";
 
@@ -48,6 +48,7 @@ export default function Demo() {
             }}
             className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[80%]  text-center gap-3"
           >
+            <a href="https://drive.google.com/drive/folders/1vw-9kYM9Vy-OHrqN55zOKjKldDxBa2HM?usp=drive_link">
             <img
               src={img1}
               alt=""
@@ -60,6 +61,7 @@ export default function Demo() {
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               Love captured in a single frame, forever begins in our embrace.
             </p>
+            </a>
           </motion.div>
 
 
@@ -79,6 +81,7 @@ export default function Demo() {
             className="border-0   max-sm:w-[100%]  pb-[3rem] flex flex-col w-[80%]  text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
+          <a href="https://drive.google.com/drive/folders/1Vm7Eudzj_G7bWYY6KFyjJ7zyGf23FLc3?usp=drive_link">
             <img
               src={img2}
               alt=""
@@ -86,12 +89,13 @@ export default function Demo() {
             />
             <h1 className="tracking-widest text-[#443417] text-xl">
               {" "}
-              Prachi & Ravneet - Jaipur
+              Anuroopa & Vishal - Jaipur
             </h1>
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               Joined hands, shared dreams, endless love—a marital masterpiece
               unfolds
             </p>
+            </a>
           </motion.div>
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
@@ -107,6 +111,7 @@ export default function Demo() {
             }}
             className=" max-sm:w-[100%]  pb-[4rem]flex flex-col w-[80%] text-center gap-3"
           >
+            <a href="https://drive.google.com/drive/folders/1iH8lcTprnGLjXUvSRII2ujDCy9cLWYrA?usp=drive_link">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
               src={img8}
@@ -118,8 +123,9 @@ export default function Demo() {
               Evelina & basant - Jaipur
             </h1>
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
-              .Together, we wrote our vows in the book of love
+              Together, we wrote our vows in the book of love
             </p>
+            </a>
           </motion.div>
         </div>
         <div className="md:pt-[10rem] pt-[3rem]">
@@ -137,6 +143,7 @@ export default function Demo() {
             }}
             className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
+            <a href="https://drive.google.com/drive/folders/1JnjtC7w50rJVLNpRJit6joNHeesJhF9S?usp=drive_link">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
               src={img7}
@@ -149,6 +156,7 @@ export default function Demo() {
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               In the dance of life, we found our forever rhythm
             </p>
+            </a>
           </motion.div>
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
@@ -165,6 +173,7 @@ export default function Demo() {
             className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col  md:w-[90%] text-center gap-3"
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
+            <a href="https://drive.google.com/drive/folders/1Sz_CmUiKCCdUp-hT2EsAOEzVHM57MUem?usp=drive_link">
             <img
               src={img5}
               alt=""
@@ -172,11 +181,12 @@ export default function Demo() {
             />
             <h1 className="tracking-widest text-[#443417] text-xl">
               {" "}
-              Shresth & Sheetal - Jaipur
+              Mitali & Hari
             </h1>
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               A union of hearts, captured in the frame of eternity.
             </p>
+            </a>
           </motion.div>
           <motion.div
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
@@ -192,6 +202,7 @@ export default function Demo() {
             }}
             className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
+            <a href="https://drive.google.com/drive/folders/13yI5jtkh4lwFsxzoouLZuhDrOtC-sI94?usp=sharing">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <img
               src={img6}
@@ -200,11 +211,12 @@ export default function Demo() {
             />
             <h1 className="tracking-widest text-[#443417] text-xl">
               {" "}
-              Niraj & Aishwarya - Jaipur
+              Prachi & Ravneet - Jaipur
             </h1>
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
               As husband and wife, our journey begins, intertwined and infinite
             </p>
+            </a>
           </motion.div>
         </div>
       </div>

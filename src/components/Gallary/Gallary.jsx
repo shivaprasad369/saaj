@@ -35,6 +35,8 @@ export default function Gallarys() {
   return (
     <div id='gallary' className=' justify-center items-center text-center'>
    <h1 className='text-center p-3 text-2xl font-semibold text-[#64321b] uppercase'>Gallery</h1>
+   <div className='max-md:hidden '>
+    
       <ImageList
       sx={{ width: '100%', height: '100%',padding:4,justifyContent:'center',alignItems:'center'}}
       variant="quilted"
@@ -60,6 +62,21 @@ export default function Gallarys() {
       ))}
       
     </ImageList>
+    </div>
+    <div className='p-2'>
+    <ImageList sx={{ width: '100%', height: 450,gap:4 }} cols={3} gap={5} rowHeight={164}>
+      {itemData.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
+    </div>
 
     </div>
   )

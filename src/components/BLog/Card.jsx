@@ -39,6 +39,7 @@ export default function Cards({img,name,description,title,date,main}) {
      <CardMedia
        component="img"
        height="194"
+       width={"100"}
        image={img}
        alt="Paella dish"
      />
@@ -47,14 +48,14 @@ export default function Cards({img,name,description,title,date,main}) {
        <Typography variant="body2" color="text.secondary">
          {description  ? description.slice(0, 100)+".....": description}
        </Typography>
-       <Button variant="outlined" onClick={handleClickOpen}>
+       <button type="button" className='border-[1px] border-[#aa8746] text-[#723222] text-bold px-3 py-2'  onClick={handleClickOpen}>
        Know more
-      </Button>
+      </button>
      </CardContent>
     
      <CardHeader
        avatar={
-         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+         <Avatar  aria-label="recipe">
            {name}
          </Avatar>
        }

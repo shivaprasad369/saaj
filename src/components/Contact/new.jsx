@@ -13,10 +13,10 @@ export default function Contact() {
     }
   }, [location]);
   return (
-    <div id="contact" className="bg-[#d1dad3d2] z-[-2] relative md:flex max-md:flex-col items-center lg:gap-[10rem] md:gap[5rem]">
+    <div id="contact" className="bg-[#d1dad3d2]  relative md:flex max-md:flex-col items-center lg:gap-[10rem] md:gap[5rem]">
       <div className="md:flex flex-col w-[100%] text-md overflow-hidden max-md:p-[1.5rem]  md:m-[2.5rem] flex-[0.70] flex-wrap  ">
         <div className="gap-3 flex flex-col w-[100%]">
-          <h1 className="text-[3.4rem] font-bold text-[#695726]" style={{ fontFamily: `"Tinos", serif` }}>Contact Me</h1>
+          <h1 className="text-[3.4rem] font-bold text-[#695726]" style={{ fontFamily: `"Tinos", serif` }}>Contact us.</h1>
           <p className=" text-md flex-wrap text-[#413f3f]"  style={{ fontFamily: `'Segoe UI', sans-serif` }}>
             Feel free to contact us any time. <br />
             We will get back to you as soon as
@@ -40,7 +40,7 @@ export default function Contact() {
                 <span>Address</span>
                 <p className="text-xl flex-wrap  overflow-hidden text-[#1b1a1a]"  style={{ fontFamily: `'Segoe UI', sans-serif` }}>
                   PN 75, second floor Satnam Honda, Tonk Rd, near kamal & Co,
-                  Jaipur, Rajasthan 302015
+                  Jaipur, Rajasthan 302015.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Contact() {
               <div>
                 <span>Email</span>
                 <p className="text-xl "   style={{ fontFamily: `'Segoe UI', sans-serif` }}>
-                info@saajevents.com.
+                info@saajwedding.com
                 </p>
               </div>
             </div>
@@ -93,6 +93,7 @@ export default function Contact() {
           <div className="my-4">
             <h1 className="text-md font-bold">Follow on</h1>
             <div className="flex-wrap gap-4 flex my-[2rem]">
+           <a href="https://www.facebook.com/saajweddingsindia/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={25}
@@ -103,6 +104,7 @@ export default function Contact() {
                 d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
               />
             </svg>
+            </a>
             <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,10 +133,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="max-md:p-4 z-2">
+      <div className="relative max-md:p-4 z-30">
       
-         <div className="bg-[#fff] p-5 max-md:w-[100%] shadow-xl rounded-md  z-20">
-        <form className="flex flex-col ">
+         <div className="bg-[#fff] p-5 max-md:w-[100%] shadow-xl rounded-md  z-10">
+       
           <h1 className="text-2xl my-4 font-bold text-[#55411d]" style={{ fontFamily: `"Tinos", serif` }}>
             
             Send Message
@@ -149,6 +151,7 @@ export default function Contact() {
               type="text"
               name="first_name"
               placeholder="First Name"
+              
               className="border-[1px] h-[2rem] p-2 bg-gray-50"
               required
             />
@@ -160,17 +163,18 @@ export default function Contact() {
           </div>
             </div>
           <label className="font-semibold">Email</label>
-          <input type="Email " placeholder="Enter Email Address"  className="border-[1px] mb-4 h-[2rem] p-2 bg-gray-50" />
+          <input type="Email " placeholder="Enter Email Address"  className="border-none mb-4 h-[2rem] p-2 bg-gray-50" />
           <label htmlFor="subject" className="font-semibold"> Subject</label>
-          <input type="text" placeholder="Enter Subject"   className="border-[1px] h-[2rem] p-2 mb-4 bg-gray-50"/>
+          <input type="text" placeholder="Enter Subject"   className="border-none h-[2rem] p-2 mb-4 bg-gray-50 text-white"/>
           <label htmlFor="message " className="font-semibold">Comment or Message</label>
           <textarea rows={3}  className="border-[1px] mb-4  p-2 bg-gray-50"/>
-          <button className="border-[1px] w-fit px-4 shadow-md font-semibold" style={{float:'left'}}>Send Message</button>
+       
+          <button className="border-[1px] w-fit px-4 shadow-md font-semibold" style={{float:'left'}} onClick={()=>alert("thank you somuch for contacting us.")}>Send Message</button>
           </div>
-        </form>
+       
       </div>
-<img src={img} alt=""  className="absolute right-0 w-[30rem] h-full top-0 z-[-1] max-md:hidden"/>
       </div>  
+<img src={img} alt=""  className="absolute right-0 w-[30rem] h-full top-0  max-md:hidden"/>
     </div>
   );
 }
