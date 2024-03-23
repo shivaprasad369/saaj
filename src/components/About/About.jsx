@@ -157,7 +157,7 @@ export default function About() {
               className="h-[100%] w-[100%] bottom-[0rem]"
             />
           </div>
-          <div className="absolute lg:top-[20%] shadow-md md:top-[10%] max-sm:top-[80%] sm:px-[1.3rem] pb-[1rem] sm:top-[10%] max-sm:w-[80%] lg:w-[40%] md:w-[45%]  pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] md:text-xl md:tracking-widest">
+          <div className="absolute lg:top-[20%] shadow-md md:top-[10%] max-sm:top-[80%] sm:px-[1.3rem] pb-[1rem] sm:top-[10%] max-sm:w-[80%] lg:w-[40%] md:w-[45%]  pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[2rem] md:text-xl md:tracking-widest">
             <h1 className="text-[#706923] text-2xl font-extrabold">
               Varun Sharma
             </h1>
