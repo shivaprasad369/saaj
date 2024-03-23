@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../components/assets/w1.jpg";
+import img1 from "./1.jpeg";
 import img2 from "./prachi.jpg";
 
-import img7 from "./w4.jpg";
+import img7 from "./4.jpg";
 import img8 from "./w8.jpg";
-import img6 from "./w9.jpg";
+import img6 from "./6.jpg";
 
 import img5 from "./metali.jpg";
 import png from "../components/assets/flower-black-and-white-png-41825.png";
@@ -52,9 +52,9 @@ export default function Demo() {
             <img
               src={img1}
               alt=""
-              className="w-[100%] max-[950]:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%] max-[950]:w-[100%] shadow-lg shadow-gray-400 max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl">
+            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               {" "}
               Alisha & Krunal - Jaipur
             </h1>
@@ -85,9 +85,9 @@ export default function Demo() {
             <img
               src={img2}
               alt=""
-              className="w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl">
+            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               {" "}
               Anuroopa & Vishal - Jaipur
             </h1>
@@ -116,9 +116,9 @@ export default function Demo() {
             <img
               src={img8}
               alt=""
-              className="w-[100%]   max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl py-3">
+            <h1 className="tracking-widest text-[#443417] text-xl py-3 pt-4">
               {" "}
               Evelina & basant - Jaipur
             </h1>
@@ -144,13 +144,16 @@ export default function Demo() {
             className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
             <a href="https://drive.google.com/drive/folders/1JnjtC7w50rJVLNpRJit6joNHeesJhF9S?usp=drive_link">
-            {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
+            <div className="relative w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]">
+
             <img
               src={img7}
               alt=""
-              className="w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="absolute h-[100%] w-[100%]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl">
+            </div>
+            {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
+            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               Rupal & Aditya - Jaipur
             </h1>
             <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
@@ -177,9 +180,9 @@ export default function Demo() {
             <img
               src={img5}
               alt=""
-              className="md:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="md:w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl">
+            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               {" "}
               Mitali & Hari
             </h1>
@@ -207,9 +210,9 @@ export default function Demo() {
             <img
               src={img6}
               alt=""
-              className="md:w-[100%]  max-sm:h-[25rem] sm:h-[25rem]"
+              className="md:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl">
+            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               {" "}
               Prachi & Ravneet - Jaipur
             </h1>

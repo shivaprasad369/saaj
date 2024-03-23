@@ -58,6 +58,16 @@ export default function Blog() {
     })
    
   ];
+  const handleDelete=async(id)=>{
+    const res = await axios.delete(`http://localhost:8888/api/blog/${id}`)
+  if(res){
+  console.log("Deleted successfully")
+  }else{
+    console.log("not deleted")
+   
+    return false;
+  }
+  }
     // const [image,setImage]=useState("")
     // const [data,setData]=useState({
     //     name:'',
@@ -178,7 +188,7 @@ export default function Blog() {
               <TableCell align="right"><img src={row.photo} className='w-[10rem] h-[5rem]' alt="" /></TableCell>
               <TableCell align="justify">{row.content}</TableCell>
               <TableCell align="right">{row.published_At}</TableCell>
-              <TableCell align="right"><Button variant='outlined'>Delete</Button></TableCell>
+              <TableCell align="right"><Button variant='outlined' onClick={()=>handleDelete(row._id)}>Delete</Button></TableCell>
             </TableRow>
           ))}
         </TableBody>

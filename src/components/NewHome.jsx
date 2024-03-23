@@ -45,7 +45,7 @@ export default function Home() {
   const handleValue = () => {
     var video = document.getElementById('vid');
     setEnable(!enable);
-video.volume=0.5;
+video.volume=0.1;
   };
   const [hero, setHero] = useState({
     id: 0,
@@ -84,7 +84,7 @@ video.volume=0.5;
 
         position: "relative",
       }}
-      className=" max-sm:bg-[#03010170] "
+      className="  "
     >
       <Navbar />
       <img
@@ -92,7 +92,7 @@ video.volume=0.5;
         alt=""
         className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[13rem] max-sm:w-[8rem] "
       />
-      <div className="bg-[#ddd3d300] bg-cover md:h-[100vh]  overflow-hidden object-contain w-[100%] h-[30rem] ">
+      <div className=" bg-cover md:h-[100vh]  overflow-hidden object-contain w-[100%] h-[40rem] ">
         <video
         id="vid"
           className="absolute w-full h-[100%]  object-cover  top-0 left-0 z-[-1] overflow-hidden"

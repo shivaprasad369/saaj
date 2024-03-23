@@ -130,14 +130,13 @@ export default function Footer() {
                   d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
                 />
               </svg>
-              <span className="pr-2"></span>PN 75, second floor Satnam Honda,
-              Tonk Rd, near kamal & Co, Jaipur, Rajasthan 302015.
+              <span className="pr-2"></span>G-13, Balaji Tower IV, Radisson blue hotel, Durgapura Flyover, Tonk Road Jaipur, 302020.
             </p>
 
-            <p className="mb-[2rem] "  style={{fontSize:'14px'}}>
+            <p className="mb-[2rem] flex"  style={{fontSize:'14px'}}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={"w-5 float-start"}
+                className={"w-5 "}
                 w={10}
                 viewBox="0 0 512 512"
               >
@@ -147,7 +146,8 @@ export default function Footer() {
                 />
               </svg>
               <span className="pr-2" />
-              +91 97823 40243
+              +91 97823 40243 <br/>
+              +91 95096 66873
               <br />
             </p>
             <p  style={{fontSize:'14px'}}>

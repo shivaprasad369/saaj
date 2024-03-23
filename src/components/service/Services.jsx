@@ -269,7 +269,7 @@ export default function Services() {
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w1} alt="" width={40} />
-                  destination Wedding
+                   Wedding Planner
                 </h1>
               
               </SwiperSlide>

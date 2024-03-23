@@ -1,8 +1,10 @@
 import { Language } from "@mui/icons-material";
 import { Divider } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import img from '../assets/demo/about1.webp'
 import { useLocation } from "react-router-dom";
+import {toast} from 'react-hot-toast'
+import emailjs from "@emailjs/browser";
 export default function Contact() {
   const location = useLocation();
 
@@ -12,6 +14,51 @@ export default function Contact() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }, [location]);
+  const  [form,setForm]=useState({
+    name:'',
+    email:"",
+    subject:"",
+    message:"",
+    message:"",
+    message:"",
+   
+
+  })
+  const handleSubmit = (event) => {
+    event.preventDefault();
+ console.log(form)
+    emailjs
+      .send(
+        "service_iyftcu9",
+        "template_35t1pae",
+        {
+          from_name: form.name,
+          to_name: "Saaj Weddings",
+          from_email: form.email,
+          to_email: "info@saajwedding.com",
+          message: form.message,
+          number:form.number,
+          day: form.day,
+          guests: form.guests,
+         
+        },
+        "PVqq0KUlSqmgQPJnu"
+      )
+      .then(() => {
+       
+        setForm({ name:'',
+        email:"",
+        number:'',
+        subject:"",
+        message:"",
+        day:"",
+        guests:"",
+       
+    });
+    alert("Thank you so much")
+        toast.success("Thank you so much")
+      });
+  };
   return (
     <div id="contact" className="bg-[#d1dad3d2]  relative md:flex max-md:flex-col items-center lg:gap-[10rem] md:gap[5rem]">
       <div className="md:flex flex-col w-[100%] text-md overflow-hidden max-md:p-[1.5rem]  md:m-[2.5rem] flex-[0.70] flex-wrap  ">
@@ -135,7 +182,7 @@ export default function Contact() {
       </div>
       <div className="relative max-md:p-4 z-30">
       
-         <div className="bg-[#fff] p-5 max-md:w-[100%] shadow-xl rounded-md  z-10">
+         <div className="bg-[#fff] p-5 max-md:w-[100%] md:w-[100%] lg:w-[120%] shadow-xl rounded-md  z-10">
        
           <h1 className="text-2xl my-4 font-bold text-[#55411d]" style={{ fontFamily: `"Tinos", serif` }}>
             
@@ -151,7 +198,8 @@ export default function Contact() {
               type="text"
               name="first_name"
               placeholder="First Name"
-              
+              value={form.name}
+              onChange={(e)=>setForm({...form, name:e.target.value})}
               className="border-[1px] h-[2rem] p-2 bg-gray-50"
               required
             />
@@ -162,14 +210,21 @@ export default function Contact() {
           <span className="text-gray-400">Last</span>
           </div>
             </div>
+            <label className="font-semibold">Number</label>
+          <input type="text" value={form.number} onChange={(e)=>setForm({...form, number:e.target.value})} placeholder="Enter Number"  className="border-none mb-4 h-[2rem] p-2 bg-gray-50" />
           <label className="font-semibold">Email</label>
-          <input type="Email " placeholder="Enter Email Address"  className="border-none mb-4 h-[2rem] p-2 bg-gray-50" />
+          <input type="Email "value={form.email} onChange={(e)=>setForm({...form, email:e.target.value})} placeholder="Enter Email Address"  className="border-none mb-4 h-[2rem] p-2 bg-gray-50" />
           <label htmlFor="subject" className="font-semibold"> Subject</label>
-          <input type="text" placeholder="Enter Subject"   className="border-none h-[2rem] p-2 mb-4 bg-gray-50 text-white"/>
+          <input type="text" value={form.subject} onChange={(e)=>setForm({...form, subject:e.target.value})} placeholder="Enter Subject"   className="border-none h-[2rem] p-2 mb-4 bg-gray-50 "/>
           <label htmlFor="message " className="font-semibold">Comment or Message</label>
-          <textarea rows={3}  className="border-[1px] mb-4  p-2 bg-gray-50"/>
-       
-          <button className="border-[1px] w-fit px-4 shadow-md font-semibold" style={{float:'left'}} onClick={()=>alert("thank you somuch for contacting us.")}>Send Message</button>
+          <textarea rows={2} value={form.message} onChange={(e)=>setForm({...form, message:e.target.value})} className="border-[1px] mb-4  p-2 bg-gray-50"/>
+          <label>Tell me about your special day</label>
+          <textarea rows={1} value={form.day} onChange={(e)=>setForm({...form, day:e.target.value})}  className="border-[1px] mb-4  p-2 bg-gray-50"/>
+          <label>How many guests are joining</label>
+          <textarea rows={1} value={form.guest} onChange={(e)=>setForm({...form, guests:e.target.value})} className="border-[1px] mb-4  p-2 bg-gray-50"/>
+          {/* <textarea rows={3}  className="border-[1px] mb-4  p-2 bg-gray-50"/> */}
+        
+          <button type="submit" className="border-[1px] h-[2.4rem] rounded-md bg-[#b48e47] w-fit px-4 shadow-md font-semibold text-white" style={{float:'left'}} onClick={handleSubmit}>Submit</button>
           </div>
        
       </div>

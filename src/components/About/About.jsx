@@ -55,7 +55,7 @@ export default function About() {
             heritage.
             <br />
             <br />
-            <h4 className="font-extrabold text-2xl">
+            <h4 className="font-bold text-2xl">
               Let's Create Magic Together{" "}
             </h4>
             As you embark on your journey of celebration, let Saaj Weddings be
@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </motion.div>
 
-      <div className="flex flex-col py-[4rem]">
+      <div className="flex flex-col py-[4rem] sm:ml-[8rem] max-sm:pl-2">
         <div className="flex flex-col justify-center items-center text-center tracking-widest gap-3">
           <h1
             className="uppercase text-3xl font-semibold text-[#3f3113]"
@@ -83,7 +83,96 @@ export default function About() {
             <i>The core members at saaj weddings</i>
           </span>
         </div>
-        <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
+        <div className="relative mt-[3rem] ">
+          <div className=" sm:w-[72%]  lg:h-[72rem] sm:h-[70rem] md:h-[70rem] max-sm:h-[30rem] max-sm:w-[96%] ">
+            <img
+              src={founder}
+              alt=""
+              className=" h-[100%] w-[100%] bottom-[0rem]"
+            />
+          </div>
+          <div className="absolute lg:top-[15%] shadow-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] lg:text-xl md:text-md lg:tracking-widest">
+            <h1 className="text-[#706923] text-2xl font-extrabold">
+              Sanjay Gupta - Founder
+            </h1>
+            <span className=" font-semibold">
+              A Visionary in the Art of Celebrations
+            </span>
+            <p className="text-justify p-2 mt-[3rem] md:px-3  text-[#7c582f]">
+              Meet Sanjay Gupta, the visionary founder of Saaj Weddings, a
+              leading event and wedding planning company in Jaipur. With a
+              commitment to delivering end-to-end wedding planning services,
+              Sanjay Gupta has transformed countless dreams into reality,
+              earning the trust and admiration of more than 80+ satisfied
+              clients.
+              <br />
+              <br />
+             <span className="font-semibold">Sanjay Gupta's Journey: From Aspiring CA to Event Planning Maestro </span><br/><br/>
+              Sanjay Gupta's journey in the event planning industry is nothing
+              short of inspirational. After embarking on a path in Chartered
+              Accountancy, Sanjay realized his true passion lay in creating
+              memorable experiences through event planning. With determination
+              and a clear vision, he founded Saaj Weddings, setting a new
+              standard of excellence in the industry. <br />Sanjay Gupta and his
+              dedicated team offer comprehensive end-to-end wedding planning
+              services. From venue selection and decor to vendor coordination
+              and guest management, every aspect of your special day is
+              meticulously planned and executed to perfection, ensuring a
+              seamless and unforgettable experience for you and your guests.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative mt-[3rem] lg:mt-[6rem] max-sm:mt-[60rem]  ">
+          <div className=" sm:w-[70%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+            <img
+              src={member1}
+              alt=""
+              className="  h-[100%]  w-[100%]  bottom-[0rem]"
+            />
+          </div>
+          <div className="absolute sm:px-[1.3rem] shadow-md sm:pb-[1rem] lg:top-[20%] md:top-[5%] max-sm:top-[80%] sm:top-[15%] max-sm:w-[80%] lg:w-[40%] md:w-[45%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] md:text-xl md:tracking-widest">
+            <h1 className="text-[#706923] text-2xl font-extrabold">
+              Mohit Singh
+            </h1>
+            <span className="font-semibold">
+              Hospitality & Logistics Manager
+            </span>
+            <p className="text-justify p-2 mt-[3rem] px-3 text-[#7c582f]">
+              Mr. Mohit Singh is the driving force behind the seamless
+              hospitality and logistics operations at Saaj Weddings, Jaipur's
+              premier wedding planning company. With a wealth of experience and
+              a passion for delivering exceptional guest experiences, Mr. Singh
+              plays a pivotal role in ensuring that every event is executed with
+              precision, professionalism, and a touch of warmth.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative mt-[3rem] max-sm:mb-[20rem] lg:mt-[6rem] max-sm:mt-[30rem] ">
+          <div className=" sm:w-[70%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+            <img
+              src={member2}
+              alt=""
+              className="h-[100%] w-[100%] bottom-[0rem]"
+            />
+          </div>
+          <div className="absolute lg:top-[20%] shadow-md md:top-[10%] max-sm:top-[80%] sm:px-[1.3rem] pb-[1rem] sm:top-[10%] max-sm:w-[80%] lg:w-[40%] md:w-[45%]  pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] md:text-xl md:tracking-widest">
+            <h1 className="text-[#706923] text-2xl font-extrabold">
+              Varun Sharma
+            </h1>
+            <span className="font-semibold">Production Manager</span>
+            <p className="text-justify p-2 mt-[3rem] text-[#7c582f]">
+              As the Production Manager at Saaj Weddings, Mr. Varun Sharma
+              brings unparalleled expertise to the table. His extensive
+              background in event production and design, coupled with a keen eye
+              for detail, allows him to orchestrate events that captivate the
+              senses and leave a lasting impression on clients and guests alike.
+            </p>
+          </div>
+        </div>
+
+        {/* <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
           <div className="flex justify-around items-center">
             <div>
               <motion.div
@@ -95,7 +184,7 @@ export default function About() {
                 }}
                 className="  w-[100%] flex  md:gap-20  max-md:w-[100%] text-center max-md:flex-col-reverse "
               >
-                <div className="relative   border-[1rem] md:w-[150%] h-[30rem] max-sm:w-[100%] border-[#835d2c]">
+                <div className="relative    md:w-[150%] h-[30rem] max-sm:w-[100%] ">
                   <img
                     src={founder}
                     alt=""
@@ -119,9 +208,9 @@ export default function About() {
               </motion.div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
+        {/* <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
           <div className="flex justify-around items-center">
             <div>
               <motion.div
@@ -163,9 +252,9 @@ export default function About() {
               </motion.div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
+        {/* <div className="flex justify-center items-center overflow-hidden w-[100%] mt-[3rem]">
           <div className="flex justify-around items-center">
             <div>
               <motion.div
@@ -199,7 +288,7 @@ export default function About() {
               </motion.div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="grid md:grid-cols-2 max-[948px]:grid-cols-1 justify-around items-center gap-4  my-[4rem]">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
