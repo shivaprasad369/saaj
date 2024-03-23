@@ -28,7 +28,7 @@ export default function Model({image, open1 ,setOpen,title,content}) {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description" >
-            <div className=' m-4 shadow-lg h-[25rem] w-[90%]'>
+            <div className=' m-4 shadow-lg md:h-[25rem] w-[90%]'>
               <img src={image} alt="" className='h-[100%] w-[100%] ' />
             </div>
            { content}
