@@ -124,7 +124,7 @@ export default function About() {
         </div>
 
         <div className="relative mt-[3rem] lg:mt-[6rem] max-sm:mt-[60rem]  ">
-          <div className=" sm:w-[70%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+          <div className=" sm:w-[72%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
             <img
               src={member1}
               alt=""
@@ -150,7 +150,7 @@ export default function About() {
         </div>
 
         <div className="relative mt-[3rem] max-sm:mb-[20rem] lg:mt-[6rem] max-sm:mt-[30rem] ">
-          <div className=" sm:w-[70%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+          <div className=" sm:w-[72%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
             <img
               src={member2}
               alt=""
