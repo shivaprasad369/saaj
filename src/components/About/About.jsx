@@ -40,9 +40,9 @@ export default function About() {
           >
             Saaj Weddings stands as a testament to the belief that every
             celebration deserves to be extraordinary. Nestled in the heart of
-            the vibrant city of Jaipur, Rajasthan, our journey began with a
+            the vibrant city of Jaipur, Rajasthan. Our journey began with a
             deep-rooted passion for perfection and an unwavering commitment to
-            excellence. we have dedicated ourselves to crafting dream weddings
+            excellence. We have dedicated ourselves to crafting dream weddings
             and memorable events that transcend expectations and create lasting
             memories. <br />
             <br />
@@ -91,14 +91,14 @@ export default function About() {
               className=" h-[100%] w-[100%] bottom-[0rem]"
             />
           </div>
-          <div className="absolute lg:top-[15%] shadow-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] lg:text-xl md:text-md lg:tracking-widest">
-            <h1 className="text-[#706923] text-2xl font-extrabold">
+          <div className="absolute lg:top-[15%] shadow-xl rounded-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] lg:text-xl md:text-md lg:tracking-widest">
+            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Sanjay Gupta - Founder
             </h1>
             <span className=" font-semibold">
               A Visionary in the Art of Celebrations
             </span>
-            <p className="text-justify p-2 mt-[3rem] md:px-3  text-[#7c582f]">
+            <p className="text-center p-2 mt-[1rem] md:px-3  text-[#7c582f]">
               Meet Sanjay Gupta, the visionary founder of Saaj Weddings, a
               leading event and wedding planning company in Jaipur. With a
               commitment to delivering end-to-end wedding planning services,
@@ -107,13 +107,13 @@ export default function About() {
               clients.
               <br />
               <br />
-             <span className="font-semibold">Sanjay Gupta's Journey: From Aspiring CA to Event Planning Maestro </span><br/><br/>
+             {/* <span className="font-semibold">Sanjay Gupta's Journey: From Aspiring CA to Event Planning Maestro </span><br/><br/> */}
               Sanjay Gupta's journey in the event planning industry is nothing
               short of inspirational. After embarking on a path in Chartered
               Accountancy, Sanjay realized his true passion lay in creating
               memorable experiences through event planning. With determination
               and a clear vision, he founded Saaj Weddings, setting a new
-              standard of excellence in the industry. <br />Sanjay Gupta and his
+              standard of excellence in the industry. <br /> <br/>Sanjay Gupta and his
               dedicated team offer comprehensive end-to-end wedding planning
               services. From venue selection and decor to vendor coordination
               and guest management, every aspect of your special day is
@@ -131,14 +131,14 @@ export default function About() {
               className="  h-[100%]  w-[100%]  bottom-[0rem]"
             />
           </div>
-          <div className="absolute sm:px-[1.3rem] shadow-md sm:pb-[1rem] lg:top-[20%] md:top-[5%] max-sm:top-[80%] sm:top-[15%] max-sm:w-[80%] lg:w-[40%] md:w-[45%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] md:text-xl md:tracking-widest">
-            <h1 className="text-[#706923] text-2xl font-extrabold">
+          <div className="absolute rounded-md  sm:px-[1.3rem] shadow-xl sm:pb-[1rem] lg:top-[20%] md:top-[5%] max-sm:top-[80%] sm:top-[15%] max-sm:w-[80%] lg:w-[40%] md:w-[45%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] md:text-xl md:tracking-widest">
+          <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Mohit Singh
             </h1>
             <span className="font-semibold">
               Hospitality & Logistics Manager
             </span>
-            <p className="text-justify p-2 mt-[3rem] px-3 text-[#7c582f]">
+            <p className="text-center p-2 mt-[2rem] px-3 text-[#7c582f]">
               Mr. Mohit Singh is the driving force behind the seamless
               hospitality and logistics operations at Saaj Weddings, Jaipur's
               premier wedding planning company. With a wealth of experience and
@@ -157,12 +157,12 @@ export default function About() {
               className="h-[100%] w-[100%] bottom-[0rem]"
             />
           </div>
-          <div className="absolute lg:top-[20%] shadow-md md:top-[10%] max-sm:top-[80%] sm:px-[1.3rem] pb-[1rem] sm:top-[10%] max-sm:w-[80%] lg:w-[40%] md:w-[45%]  pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[2rem] md:text-xl md:tracking-widest">
-            <h1 className="text-[#706923] text-2xl font-extrabold">
+          <div className="absolute lg:top-[20%] shadow-xl rounded-md md:top-[10%] max-sm:top-[80%] sm:px-[1.3rem] pb-[1rem] sm:top-[10%] max-sm:w-[80%] lg:w-[40%] md:w-[45%]  pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[10%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[2rem] md:text-xl md:tracking-widest">
+          <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Varun Sharma
             </h1>
             <span className="font-semibold">Production Manager</span>
-            <p className="text-justify p-2 mt-[3rem] text-[#7c582f]">
+            <p className="text-center p-2 mt-[2rem] text-[#7c582f]">
               As the Production Manager at Saaj Weddings, Mr. Varun Sharma
               brings unparalleled expertise to the table. His extensive
               background in event production and design, coupled with a keen eye

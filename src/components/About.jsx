@@ -3,7 +3,7 @@ import w1 from "./assets/demo/about1.webp";
 import w2 from "./assets/demo/about2.webp";
 
 import w11 from "./assets/demo/aabout1.jpg";
-import w22 from "./assets/demo/aabout2 .jpg";
+import w22 from "./assets/demo/a2.jpg";
 
 import { Button, Skeleton } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
@@ -94,7 +94,7 @@ export default function About() {
         alt=""
         className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]"
       />
-   <motion.div
+      <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{
           x: 0,
@@ -138,7 +138,7 @@ export default function About() {
               <div className="relative w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
                   <div className="absolute w-[70%] max-sm:ml-[5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
-                {/* {img ?  */}
+                  {/* {img ?  */}
                   <img
                     style={{ backgroundColor: "#131010bd" }}
                     src={w1}
@@ -151,9 +151,8 @@ export default function About() {
                      <Skeleton variant="rectangular" width={'100%'}  />
                      </div>
                      } */}
-                  
                 </div>
-               {/* {img2 ? */}
+                {/* {img2 ? */}
                 <motion.img
                   whileHover={{
                     scale: 1.1,
@@ -162,9 +161,9 @@ export default function About() {
                   src={w22}
                   // src={`${img2 ? img2 : w22}`}
                   alt=""
-                  className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[60%]"
+                  className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[60%] h-[15rem]"
                 />
-                 {/* :
+                {/* :
                 <div className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] h-[10rem] sm:w-[50%] w-[60%]">
                    <Skeleton variant="rectangular" width={'100%'}  />
                    </div>
@@ -218,7 +217,7 @@ export default function About() {
             alt=""
             className="absolute top-[20%] rounded-t-full w-[50%] z-20 h-[60%] right-4"
           />
-            {/* :
+          {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
                <Skeleton variant="rectangular" width={'100%'}  />
                </div>
@@ -232,16 +231,16 @@ export default function About() {
               transition: { ease: easeIn, delay: 0.3 },
             }}
             style={{ fontFamily: `'Segoe UI', sans-serif` }}
-            className=" tracking-widest md:mr-4 text-[#705704]  text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-[2rem]"
+            className=" tracking-[0.09em] border-0 h-[20rem] md:mr-4 text-[#705704] whitespace-pre-line  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] text-justify text-md md:py-3 md:w-[100%] lg:w-[108%] mb-3 px-[2rem]"
           >
-            Experience the magic of Jaipur with SAAJ WEDDINGS which are famous
-            for its wedding packages, cultural richness, and regal charm
-            converge to create unforgettable celebrations. Let us craft your
-            dream wedding today. “Meet our passionate team at Saaj Weddings. With
-            dedication and meticulous hard work, we transform dreams into
-            reality, we don't just plan weddings.
-            {more &&
-              "we pour heart and soul into crafting each detail, ensuring your celebration is a testament to our unwavering commitment and hard work."}
+            <div className=" h-[100%] w-[100%] ">
+
+            Discover Jaipur's enchanting magic with SAAJ WEDDINGS, renowned for exquisite wedding packages and cultural richness, crafting unforgettable and regal celebrations that resonate with timeless
+            charm and cultural grandeur. Experience your dream wedding with Saaj
+            Weddings dedicated team who turns dreams into reality through
+            meticulous planning and hard work. Let us create unforgettable
+            memories for your special day.
+            </div>
           </motion.p>
           <div className="text-center pb-3">
             {/* <button className=" border-2 w-[8rem] text-center font-serif 
@@ -270,4 +269,3 @@ export default function About() {
     </div>
   );
 }
-
