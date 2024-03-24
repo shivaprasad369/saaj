@@ -49,10 +49,11 @@ export default function Demo() {
             className="border-0 pb-[3rem] max-sm:w-[100%]  flex flex-col w-[80%]  text-center gap-3"
           >
             <a href="https://drive.google.com/drive/folders/1vw-9kYM9Vy-OHrqN55zOKjKldDxBa2HM?usp=drive_link">
-            <img
+            <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img1}
               alt=""
-              className="w-[100%] max-[950]:w-[100%] shadow-lg shadow-gray-400 max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%]   max-[950]:w-[100%] shadow-lg shadow-gray-400 max-sm:h-[25rem] sm:h-[25rem]"
             />
             <h1 className="tracking-widest text-[#443417] text-xl pt-4">
               {" "}
@@ -82,7 +83,8 @@ export default function Demo() {
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
           <a href="https://drive.google.com/drive/folders/1Vm7Eudzj_G7bWYY6KFyjJ7zyGf23FLc3?usp=drive_link">
-            <img
+          <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img2}
               alt=""
               className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
@@ -113,7 +115,8 @@ export default function Demo() {
           >
             <a href="https://drive.google.com/drive/folders/1iH8lcTprnGLjXUvSRII2ujDCy9cLWYrA?usp=drive_link">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
-            <img
+            <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img8}
               alt=""
               className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
@@ -146,7 +149,8 @@ export default function Demo() {
             <a href="https://drive.google.com/drive/folders/1JnjtC7w50rJVLNpRJit6joNHeesJhF9S?usp=drive_link">
             <div className="relative w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]">
 
-            <img
+            <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img7}
               alt=""
               className="absolute h-[100%] w-[100%]"
@@ -177,7 +181,8 @@ export default function Demo() {
           >
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
             <a href="https://drive.google.com/drive/folders/1Sz_CmUiKCCdUp-hT2EsAOEzVHM57MUem?usp=drive_link">
-            <img
+            <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img5}
               alt=""
               className="md:w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
@@ -207,7 +212,8 @@ export default function Demo() {
           >
             <a href="https://drive.google.com/drive/folders/13yI5jtkh4lwFsxzoouLZuhDrOtC-sI94?usp=sharing">
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
-            <img
+            <motion.img
+            whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img6}
               alt=""
               className="md:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]"

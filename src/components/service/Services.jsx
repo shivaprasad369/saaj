@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import data from "../../constants/images";
-import img2 from "../../components/assets/service2(desti).jpg";
-import img3 from "../../components/assets/service1(decore).jpg";
+import img2 from "./10.jpg";
+import img3 from "./9.jpg";
 import img4 from "../../components/assets/service3(vender).jpg";
-import img5 from "../../components/assets/service4(coopert).jpg";
+import img5 from "./15.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import w1 from "../assets/arch.png";
 import w2 from "../assets/hall.png";
@@ -276,7 +276,7 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img3}
-                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
+                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}
@@ -310,7 +310,7 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img5}
-                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
+                  className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
                 />
                 <h1
                   style={{ fontFamily: ` "Libre Baskerville", serif` }}

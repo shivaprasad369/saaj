@@ -3,7 +3,7 @@ import w1 from "./assets/demo/about1.webp";
 import w2 from "./assets/demo/about2.webp";
 
 import w11 from "./assets/demo/aabout1.jpg";
-import w22 from "./assets/demo/a2.jpg";
+import w22 from "./Ui/13.jpg";
 
 import { Button, Skeleton } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
