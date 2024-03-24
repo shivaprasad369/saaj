@@ -238,8 +238,7 @@ export default function About() {
             Discover Jaipur's enchanting magic with SAAJ WEDDINGS, renowned for exquisite wedding packages and cultural richness, crafting unforgettable and regal celebrations that resonate with timeless
             charm and cultural grandeur. Experience your dream wedding with Saaj
             Weddings dedicated team who turns dreams into reality through
-            meticulous planning and hard work. Let us create unforgettable
-            memories for your special day.
+            meticulous planning and hard work. 
             </div>
           </motion.p>
           <div className="text-center pb-3">

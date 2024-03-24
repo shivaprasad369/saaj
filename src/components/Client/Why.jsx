@@ -370,7 +370,7 @@ export default function Why() {
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             className="flex gap-4"
           >
-            <div className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[10rem] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]">
+            <div className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]">
               {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -382,29 +382,29 @@ export default function Why() {
               <img
                 src={price}
                 alt=""
-                className="h-20 w-20 max-[480px]:w-[4rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="h-20 w-20 max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
-              <h1 className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem]">
+              <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]">
                 Best Price
               </h1>
-              <p className=" text-[1.1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
+              <p className=" md:text-[1.1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.9rem]">
                 {" "}
                 Unbeatable rates for exceptional quality services
               </p>
             </div>
             <div
               style={{ boxShadow: "2rem" }}
-              className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[10rem] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]"
+              className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]"
             >
               <img
                 src={price1}
                 alt=""
-                className="h-20 w-20 max-[480px]:w-[4rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="h-20 w-20 max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
-              <h1 className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem] capitalize">
+              <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem] capitalize">
               Expertise
               </h1>
-              <p className=" text-[1.1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
+              <p className=" md:text-[1.1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.9rem]">
                 {" "}
                 Decades of seasoned expertise guarantee flawless events.
               </p>
