@@ -149,7 +149,7 @@ export default function Client() {
                   className="text-[#705704] md:mt-[1.5rem] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
-                    We hired ''Saaj wedding'' team for our destination wedding
+                    We hired Saaj wedding team for our destination wedding
                     in Jaipur ! Mr. Sanjay executed our dream wedding board with
                     an exceptional team that made everything look effortless.
                     The guests at our wedding were in awe of everything they saw
@@ -160,13 +160,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Evelina & Basant"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Evelina & Basant
                 </p>
               </div>
@@ -254,13 +254,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Anuroopa & Vishal"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Anuroopa & Vishal
                 </p>
               </div>
@@ -300,13 +300,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Vishal Shanbhag"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+            <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Vishal Shanbhag
                 </p>
               </div>
@@ -430,13 +430,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Priyadarshani Jain"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Priyadarshani Jain
                 </p>
               </div>
@@ -511,10 +511,10 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar alt="Shilpi" src="/static/images/avatar/1.jpg" />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">Shilpi</p>
+                </div> */}
+              <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">Shilpi</p>
               </div>
             </motion.div>
           </div>
@@ -553,13 +553,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Alisha Gupta"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+               <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Alisha Gupta
                 </p>
               </div>
@@ -601,13 +601,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Vartika nangai"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Vartika nangai
                 </p>
               </div>
@@ -683,10 +683,10 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar alt="Monal" src="/static/images/avatar/1.jpg" />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">Monal</p>
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">Monal</p>
               </div>
             </motion.div>
           </div>
@@ -770,13 +770,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Shreeya Sharma"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Shreeya Sharma
                 </p>
               </div>
@@ -851,13 +851,13 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar
                     alt="Peeyush Agarwal"
                     src="/static/images/avatar/1.jpg"
                   />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+               <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   Peeyush Agarwal
                 </p>
               </div>
@@ -934,10 +934,10 @@ export default function Client() {
                   </i>
                 </p>
                 {/* <img src={png} alt=""  className="absolute top-0 z-0"/> */}
-                <div className="px-[47%] border-black h-fit pt-5 ">
+                {/* <div className="px-[47%] border-black h-fit pt-5 ">
                   <Avatar alt="Prasashti" src="/static/images/avatar/1.jpg" />
-                </div>
-                <p className="text-[#6b3b1f] pt-2 md:pb-3 font-light">
+                </div> */}
+              <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
                   {" "}
                   Prasashti
                 </p>

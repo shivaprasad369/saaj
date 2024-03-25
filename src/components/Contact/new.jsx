@@ -63,7 +63,7 @@ export default function Contact() {
     <div id="contact" className="bg-[#d1dad3d2]  relative md:flex max-md:flex-col items-center lg:gap-[10rem] md:gap[5rem]">
       <div className="md:flex flex-col w-[100%] text-md overflow-hidden max-md:p-[1.5rem]  md:m-[2.5rem] flex-[0.70] flex-wrap  ">
         <div className="gap-3 flex flex-col w-[100%]">
-          <h1 className="text-[3.4rem] font-bold text-[#695726]" style={{ fontFamily: `"Tinos", serif` }}>Contact us.</h1>
+          <h1 className="text-[3.4rem] font-bold text-[#695726]" style={{ fontFamily: `"Tinos", serif` }}>Get in touch</h1>
           <p className=" text-md flex-wrap text-[#413f3f]"  style={{ fontFamily: `'Segoe UI', sans-serif` }}>
             Feel free to contact us any time. <br />
             We will get back to you as soon as
@@ -108,8 +108,9 @@ export default function Contact() {
               </svg>
               <div>
                 <span>Phone</span>
-                <p className="text-xl">
-                +91 97823 40243
+                <p className="text-xl flex-col">
+                <span>+91 97823 40243</span><br />
+                <span>+91 95096 66873</span>
                 </p>
               </div>
             </div>

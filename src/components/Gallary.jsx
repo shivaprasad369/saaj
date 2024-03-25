@@ -13,7 +13,7 @@ export default function Gallary() {
         className="uppercase  text-center text-[30px] tracking-widest font-bold text-[#7a4927] pb-3"
         style={{ fontFamily:`"Tinos", serif` }}
       >
-        Gallery
+        Our Portfolio
       </motion.h1>
       
       <div className=" ">

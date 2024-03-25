@@ -55,7 +55,7 @@ export default function Navbar() {
             </Link>
 
             <Link to="/gallary" className="tracking-[0.3rem]">
-              Gallery
+              Our Portfolio
             </Link>
             <Link to="/contact" className="tracking-[0.3rem]">
               Contact

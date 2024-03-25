@@ -3,7 +3,7 @@ import data from "../../constants/images";
 import img2 from "./10.jpg";
 import img3 from "./9.jpg";
 import img4 from "../../components/assets/service3(vender).jpg";
-import img5 from "./15.jpg";
+import img5 from "./s4.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import w1 from "../assets/arch.png";
 import w2 from "../assets/hall.png";
@@ -317,7 +317,7 @@ export default function Services() {
                   className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w4} alt="" width={40} />
-                  Corporates Events
+                  Corporate Events
                 </h1>
               </SwiperSlide>
             </Swiper>

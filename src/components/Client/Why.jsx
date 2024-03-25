@@ -387,7 +387,7 @@ export default function Why() {
               <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]">
                 Best Price
               </h1>
-              <p className=" md:text-[1.1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.9rem]">
+              <p className=" md:text-[1.1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
                 {" "}
                 Unbeatable rates for exceptional quality services
               </p>
@@ -404,7 +404,7 @@ export default function Why() {
               <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem] capitalize">
               Expertise
               </h1>
-              <p className=" md:text-[1.1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.9rem]">
+              <p className=" md:text-[1.1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
                 {" "}
                 Decades of seasoned expertise guarantee flawless events.
               </p>

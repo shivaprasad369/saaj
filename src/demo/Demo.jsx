@@ -55,11 +55,12 @@ export default function Demo() {
               alt=""
               className="w-[100%]   max-[950]:w-[100%] shadow-lg shadow-gray-400 max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
+            {/* <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  "></p> */}
+            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
               {" "}
               Alisha & Krunal - Jaipur
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem] text-[#442817] font-semibold max-sm:text-[1rem]">
               Love captured in a single frame, forever begins in our embrace.
             </p>
             </a>
@@ -89,11 +90,12 @@ export default function Demo() {
               alt=""
               className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
+            
+<h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#d41414bd] text-2xl pt-4 font-bold">
               {" "}
               Anuroopa & Vishal - Jaipur
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem] text-[#d41414bd] font-semibold max-sm:text-[1rem]">
               Joined hands, shared dreams, endless love—a marital masterpiece
               unfolds
             </p>
@@ -121,11 +123,11 @@ export default function Demo() {
               alt=""
               className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl py-3 pt-4">
+<h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
               {" "}
               Evelina & basant - Jaipur
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem] text-[#442817] font-semibold max-sm:text-[1rem]">
               Together, we wrote our vows in the book of love
             </p>
             </a>
@@ -157,10 +159,11 @@ export default function Demo() {
             />
             </div>
             {/* <img src={img2} alt=""  className='absolute w-[14rem] h-[17rem] right-[21rem] top-[5rem] z-10  rounded-t-full'/> */}
-            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
+           
+<h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#d41414bd] text-2xl pt-4 font-bold">
               Rupal & Aditya - Jaipur
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem] text-[#d41414bd] font-semibold max-sm:text-[1rem]">
               In the dance of life, we found our forever rhythm
             </p>
             </a>
@@ -187,11 +190,11 @@ export default function Demo() {
               alt=""
               className="md:w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
+           <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
               {" "}
               Mitali & Hari
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem]  text-[#442817]  font-semibold max-sm:text-[1rem]">
               A union of hearts, captured in the frame of eternity.
             </p>
             </a>
@@ -218,11 +221,12 @@ export default function Demo() {
               alt=""
               className="md:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]"
             />
-            <h1 className="tracking-widest text-[#443417] text-xl pt-4">
+            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#d41414bd] text-2xl pt-4 font-bold">
+
               {" "}
               Prachi & Ravneet - Jaipur
             </h1>
-            <p className="px-3 tracking-wider md:text-[1.2rem]  max-sm:text-[1rem]">
+            <p className="px-3 tracking-wider md:text-[1.2rem] text-[#d41414bd] font-semibold max-sm:text-[1rem]">
               As husband and wife, our journey begins, intertwined and infinite
             </p>
             </a>

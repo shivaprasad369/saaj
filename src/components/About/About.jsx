@@ -84,14 +84,14 @@ export default function About() {
           </span>
         </div>
         <div className="relative mt-[3rem] ">
-          <div className=" sm:w-[72%]  lg:h-[70rem] sm:h-[70rem] md:h-[65rem] max-sm:h-[30rem] max-sm:w-[96%] ">
+          <div className=" sm:w-[72%]  lg:h-[65rem] sm:h-[70rem] md:h-[65rem] max-sm:h-[30rem] max-sm:w-[96%] ">
             <img
               src={founder}
               alt=""
               className=" h-[100%] w-[100%] bottom-[0rem]"
             />
           </div>
-          <div className="absolute xl:top-[15%] lg:top-[6%] shadow-xl rounded-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] lg:text-xl md:text-md lg:tracking-widest">
+          <div className="absolute xl:top-[10%] lg:top-[6%] shadow-xl rounded-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[5rem] lg:text-xl md:text-md lg:tracking-widest">
             <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Sanjay Gupta - Founder
             </h1>
@@ -123,8 +123,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="relative mt-[3rem] lg:mt-[6rem] max-sm:mt-[60rem]  ">
-          <div className=" sm:w-[72%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+        <div className="relative mt-[3rem] lg:mt-[6rem] max-sm:mt-[63rem]  ">
+          <div className=" sm:w-[72%]  sm:h-[55rem]  max-sm:h-[25rem] max-sm:w-[95%] ">
             <img
               src={member1}
               alt=""
@@ -149,8 +149,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="relative mt-[3rem] max-sm:mb-[20rem] lg:mt-[6rem] max-sm:mt-[30rem] ">
-          <div className=" sm:w-[72%]  sm:h-[60rem]  max-sm:h-[30rem] max-sm:w-[95%] ">
+        <div className="relative mt-[3rem] max-sm:mb-[20rem] lg:mt-[6rem] max-sm:mt-[33rem] ">
+          <div className=" sm:w-[72%]  sm:h-[55rem]  max-sm:h-[25rem] max-sm:w-[95%] ">
             <img
               src={member2}
               alt=""
