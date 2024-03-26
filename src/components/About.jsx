@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import w1 from "./assets/demo/about1.webp";
-import w2 from "./assets/demo/about2.webp";
+import w1 from "./Ui/a1.jpg";
+import w2 from "./Ui/a2.jpg";
 
-import w11 from "./assets/demo/aabout1.jpg";
-import w22 from "./Ui/13.jpg";
+import w11 from "./Ui/a22.jpg";
+import w22 from "./Ui/a11.jpg";
 
 import { Button, Skeleton } from "@mui/material";
 import { easeIn, motion } from "framer-motion";
@@ -161,7 +161,7 @@ export default function About() {
                   src={w22}
                   // src={`${img2 ? img2 : w22}`}
                   alt=""
-                  className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[60%] h-[15rem]"
+                  className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[65%] h-[15rem]"
                 />
                 {/* :
                 <div className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] h-[10rem] sm:w-[50%] w-[60%]">

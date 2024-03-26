@@ -78,7 +78,7 @@ export default function About() {
           </h1>
           <span
             style={{ fontFamily: `'Segoe UI', sans-serif` }}
-            className="text-[1.3rem] text-[#4b3419] tracking-widest"
+            className="text-[1.3rem] text-[#4b3419] tracking-widest font-semibold"
           >
             <i>The core members at saaj weddings</i>
           </span>
@@ -92,11 +92,11 @@ export default function About() {
             />
           </div>
           <div className="absolute xl:top-[10%] lg:top-[6%] shadow-xl rounded-md pb-4 md:top-[7%] max-sm:top-[80%] sm:px-2 md:px-[1.3rem] sm:top-[5%] max-sm:w-[85%] md:w-[50%] pt-[3rem] max-md:w-[50%] max-sm:right-4 sm:right-[5%]   bg-[#e9e2d9] text-center md:pt-[3rem] max-md:pb-[2rem] lg:text-xl md:text-md lg:tracking-widest">
-            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
-              Sanjay Gupta - Founder
+            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-semibold pb-[1rem]">
+              Sanjay Gupta 
             </h1>
-            <span className=" font-semibold">
-              A Visionary in the Art of Celebrations
+            <span style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-4xl font-semibold">
+            Founder
             </span>
             <p className="text-center p-2 mt-[1rem] md:px-3  text-[#7c582f]">
               Meet Sanjay Gupta, the visionary founder of Saaj Weddings, a

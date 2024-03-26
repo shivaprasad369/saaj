@@ -79,7 +79,7 @@ const location = useLocation();
                 wedding planner
               </h1>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                Saaj Wedding stands proudly as the symbol of excellence among
+                Saaj Weddings stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
                 understand that your big day is special, and our experience
@@ -87,7 +87,7 @@ const location = useLocation();
               </p>
               <div></div>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] pt-4 tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              At Saaj Wedding, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Wedding, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
+              At Saaj Weddings, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Weddings, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
               </p>
               {/* <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button> */}
             </div>
@@ -141,7 +141,7 @@ const location = useLocation();
                 vendors and artist management
               </h1>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                vendors and artist management : At Saaj Wedding, we understand
+               At Saaj Weddings, we understand
                 that the success of any celebration lies in seamless vendor and
                 artist management. Choosing the right vendors and artists is
                 like assembling the perfect team for your dream day. Our
@@ -156,7 +156,7 @@ const location = useLocation();
                 meticulous management ensures everyone works in harmony,
                 creating a symphony of talents that makes your wedding
                 extraordinary. 
-              With Saaj Wedding, you can relax knowing that we
+              With Saaj Weddings, you can relax knowing that we
                 handle all the details, allowing you to enjoy a flawless
                 celebration filled with the expertise and creativity of the best
                 in the business. 
@@ -234,7 +234,7 @@ const location = useLocation();
                 decor and design
               </h1>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] md:text-[1rem] tracking-wider text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                At Saaj Wedding, we know that how a wedding looks and feels is
+                At Saaj Weddings, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
                 – they create the magical atmosphere that makes your day
                 unforgettable. We pay extra attention to every detail, from
@@ -245,7 +245,7 @@ const location = useLocation();
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] pb-[2rem] tracking-wider md:text-[1rem] text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
-                celebrating with you. With Saaj Wedding, you can count on a
+                celebrating with you. With Saaj Weddings, you can count on a
                 perfect mix of creativity and elegance, making your special day
                 as beautiful as your love story.
               </p>
@@ -301,19 +301,19 @@ const location = useLocation();
                 corporate events
               </h1>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-                At Saaj Wedding, we bring our expertise in creating magical
+                At Saaj Weddings, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
                 retreat, or a milestone celebration, we understand the
                 importance of leaving a lasting impression. Our seasoned team at
-                Saaj Wedding meticulously plans and executes corporate events,
+                Saaj Weddings meticulously plans and executes corporate events,
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
               <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pb-6 pt-4 md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
-                arrangements, and guest experience. Trust Saaj Wedding to
+                arrangements, and guest experience. Trust Saaj Weddings to
                 elevate your corporate gatherings, making them not just events
                 but experiences that reflect the excellence of your brand
               </p>
