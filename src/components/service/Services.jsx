@@ -260,7 +260,7 @@ export default function Services() {
              
             >
               <SwiperSlide className="flex  flex-col ">
-             <Link to="/services">
+            
                 <img
                   src={img2}
                   className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
@@ -272,10 +272,10 @@ export default function Services() {
                   <img src={w1} alt="" width={40} />
                    Wedding Planner
                 </h1>
-                </Link>
+              
               </SwiperSlide>
               <SwiperSlide className="flex flex-col">
-              <Link to="/services">
+        
                 <img
                   src={img3}
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
@@ -287,11 +287,9 @@ export default function Services() {
                   <img src={w2} alt="" width={40} />
                   Decor and Design
                 </h1>
-                </Link>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-              <Link to="/services">
                 <img
                   src={img4}
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
@@ -309,11 +307,9 @@ export default function Services() {
 
                   <span className="w-[70%]">Vendor and Artist Management</span>
                 </h1>
-                </Link>
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-              <Link to="/services">
                 <img
                   src={img5}
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
@@ -325,7 +321,6 @@ export default function Services() {
                   <img src={w4} alt="" width={40} />
                   Corporate Events
                 </h1>
-                </Link>
               </SwiperSlide>
             </Swiper>
             {/* {data ? (
