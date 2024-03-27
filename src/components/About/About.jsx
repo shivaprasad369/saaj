@@ -78,12 +78,15 @@ export default function About() {
           </h1>
           <span
             style={{ fontFamily: `'Segoe UI', sans-serif` }}
-            className="text-[1.3rem] text-[#4b3419] tracking-widest font-semibold"
+            className="text-[1.3rem] text-[#4b3419] tracking-widest font-bold"
           >
             <i>The core members at saaj weddings</i>
           </span>
         </div>
-        <div className="relative mt-[3rem] xl:ml-[8rem] max-xl:ml-[2rem] ">
+        <div className="xl:ml-[8rem] max-xl:ml-[2rem]">
+
+       
+        <div className="relative mt-[3rem]  ">
           <div className=" sm:w-[72%]  lg:h-[65rem] sm:h-[70rem] md:h-[65rem] max-sm:h-[30rem] max-sm:w-[96%] ">
             <img
               src={founder}
@@ -340,6 +343,7 @@ export default function About() {
             </div>
           </motion.div>
         </div> */}
+      </div>
       </div>
     </div>
   );
