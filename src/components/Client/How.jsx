@@ -11,7 +11,7 @@ export default function How() {
         {/* <div style={{backgroundImage: `repeating-linear-gradient(red, pink 10%, green 20%)`,position:'absolute',zIndex}}/> */}
         <h1
           style={{ fontFamily: ` "Libre Baskerville", serif` }}
-          className="text-4xl py-[2rem] tracking-widest text-[#473c16]"
+          className="text-4xl py-[2rem] tracking-widest text-[#473c16] uppercase"
         >
           How we work
         </h1>
