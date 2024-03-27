@@ -233,7 +233,7 @@ export default function About() {
               transition: { ease: easeIn, delay: 0.3 },
             }}
             style={{ fontFamily: `'Segoe UI', sans-serif` }}
-            className=" tracking-[0.09em] border-0 h-[20rem] md:mr-4 text-[#705704] whitespace-pre-line  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] text-justify text-md md:py-3 md:w-[100%] lg:w-[108%] mb-3 px-[2rem]"
+            className=" tracking-[0.09em] border-0  md:mr-4 text-[#705704] whitespace-pre-line  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] text-justify text-md md:py-3 md:w-[100%] lg:w-[108%] mb-3 px-[2rem]"
           >
             <div className=" h-[100%] w-[100%] ">
 
