@@ -324,7 +324,10 @@ export default function Why() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
+                  <p style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20]">
+
                   Customized Events
+                  </p>
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
                   Saaj is famous for making weddings unique and ensures each
@@ -355,7 +358,7 @@ export default function Why() {
               
             </div>
             <div  style={{ fontFamily: "'Segoe UI', sans-serif" }} className="flex w-3/4 flex-col justify-center p-2">
-            <h1 className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem]">
+            <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem]">
                 Special Decor
               </h1>
               <p className=" text-[1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
@@ -382,12 +385,12 @@ export default function Why() {
               <img
                 src={price}
                 alt=""
-                className="h-20 w-20 max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="h-15 md:w-[4rem] max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
-              <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]">
+              <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]">
                 Best Price
               </h1>
-              <p className=" md:text-[1.1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
+              <p className=" md:text-[1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
                 {" "}
                 Unbeatable rates for exceptional quality services
               </p>
@@ -399,12 +402,12 @@ export default function Why() {
               <img
                 src={price1}
                 alt=""
-                className="h-20 w-20 max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="h-20 w-[4rem] max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
-              <h1 className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem] capitalize">
+              <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem] capitalize">
               Expertise
               </h1>
-              <p className=" md:text-[1.1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
+              <p className=" md:text-[1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
                 {" "}
                 Decades of seasoned expertise guarantee flawless events.
               </p>

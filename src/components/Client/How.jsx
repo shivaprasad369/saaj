@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../assets/service1(decore).jpg";
-import img2 from "../assets/service3(vender).jpg";
-import img3 from "../assets/service2(desti).jpg";
+import img1 from "../Ui/w1.jpg";
+import img2 from "../Ui/w3.jpg";
+import img3 from "../Ui/w2.jpg";
 import { motion } from "framer-motion";
 
 export default function How() {
