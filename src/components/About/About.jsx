@@ -83,7 +83,7 @@ export default function About() {
             <i>The core members at saaj weddings</i>
           </span>
         </div>
-        <div className="xl:ml-[8rem] max-xl:ml-[2rem]">
+        <div className="xl:ml-[8rem] max-xl:ml-[0.3rem]">
 
        
         <div className="relative mt-[3rem]  ">

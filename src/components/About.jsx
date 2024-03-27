@@ -135,16 +135,16 @@ export default function About() {
                   className="rounded-t-full max-[750px]:hidden hidden"
                 /> */}
               </div>
-              <div className="relative w-full h-fit mt-[5rem] sm:ml-[6rem]">
+              <div className="relative p-3 w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
-                  <div className="absolute w-[75%] max-sm:ml-[5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
+                  <div className="absolute w-[75%] max-sm:ml-[4rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
                   {/* {img ?  */}
                   <img
                     style={{ backgroundColor: "#131010bd" }}
                     src={w1}
                     // src={`${img ? img : w1}`}
                     alt="wedding1"
-                     className="relative max-sm:ml-[5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
+                     className="relative max-sm:ml-[4rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
                     rounded-t-full 
                      w-[75%]   md:h-[100%] max-sm:w-[80%] "
                   />
@@ -163,7 +163,7 @@ export default function About() {
                   src={w22}
                   // src={`${img2 ? img2 : w22}`}
                   alt=""
-                  className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] sm:w-[50%] w-[65%] h-[15rem]"
+                  className="absolute z-20 top-[-3rem] max-sm:left-[1rem] sm:left-[-3rem] sm:w-[50%] max-md:w-[50%] md:w-[55%] md:h-[15rem]"
                 />
                 {/* :
                 <div className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] h-[10rem] sm:w-[50%] w-[60%]">
@@ -193,13 +193,13 @@ export default function About() {
           /> */}
         <div className="relative w-fit h-fit sm:pt-[2rem] sm:ml-[2rem]">
           <div className="relative">
-            <div className="absolute w-[75%] h-full mb-3 bg-[#110c0c80] z-10" />
+            <div className="absolute w-[74%] max-sm:ml-3 h-full mb-3 bg-[#110c0c80] z-10" />
             {/* {img3 ? */}
             <img
               src={w2}
               // src={`${img3 ? img3 : w2}`}
               alt="wedding1"
-              className="mb-3  relative  w-[75%] z-0"
+              className="mb-3  max-sm:ml-3 relative  w-[75%] z-0"
             />
             {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
@@ -217,7 +217,7 @@ export default function About() {
             src={w11}
             // src={`${img4 ? img4 : w11}`}
             alt=""
-            className="absolute top-[20%] rounded-t-full w-[50%] z-20 h-[60%] right-4"
+            className="absolute top-[20%] rounded-t-full w-[50%] z-20 sm:h-[60%] max-sm:h-[55%] right-4"
           />
           {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
