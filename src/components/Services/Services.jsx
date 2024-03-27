@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import img from "../assets/event.avif";
 import img1 from "./services111.jpg";
-import img2 from "./service2222.webp"; 
-import img3 from "./s1.jpg";
+import img2 from "./s1.jpg"; 
+// import img3 from "./s1.jpg";
+import img3 from "./s3.jpg";
+
 import img4 from "./s4.jpg";
 // import img from "../assets/event.avif";
 import { easeIn, motion } from "framer-motion";

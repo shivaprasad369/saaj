@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </motion.div>
 
-      <div className="flex flex-col py-[4rem] xl:ml-[8rem] max-xl:ml-[2rem] max-sm:pl-2">
+      <div className="flex flex-col py-[4rem]  max-sm:pl-2">
         <div className="flex flex-col justify-center items-center text-center tracking-widest gap-3">
           <h1
             className="uppercase text-3xl font-semibold text-[#3f3113]"
@@ -83,7 +83,7 @@ export default function About() {
             <i>The core members at saaj weddings</i>
           </span>
         </div>
-        <div className="relative mt-[3rem] ">
+        <div className="relative mt-[3rem] xl:ml-[8rem] max-xl:ml-[2rem] ">
           <div className=" sm:w-[72%]  lg:h-[65rem] sm:h-[70rem] md:h-[65rem] max-sm:h-[30rem] max-sm:w-[96%] ">
             <img
               src={founder}
