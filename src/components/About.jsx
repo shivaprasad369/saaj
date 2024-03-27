@@ -137,14 +137,16 @@ export default function About() {
               </div>
               <div className="relative w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
-                  <div className="absolute w-[70%] max-sm:ml-[5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
+                  <div className="absolute w-[75%] max-sm:ml-[5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
                   {/* {img ?  */}
                   <img
                     style={{ backgroundColor: "#131010bd" }}
                     src={w1}
                     // src={`${img ? img : w1}`}
                     alt="wedding1"
-                    className="relative max-sm:ml-[5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2  rounded-t-full w-[70%]   md:h-[100%] max-sm:w-[80%] "
+                     className="relative max-sm:ml-[5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
+                    rounded-t-full 
+                     w-[75%]   md:h-[100%] max-sm:w-[80%] "
                   />
                   {/* :
                   <div className="relative max-sm:ml-[5rem] z-0  overflow-hidden md:ml-2  rounded-t-full w-[70%] h-[26rem]  max-sm:w-[80%] ">
