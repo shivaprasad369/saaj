@@ -343,7 +343,7 @@ export default function Why() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex h-48 overflow-hidden hover:bg-[#978e8e35] w-full max-w-md items-center justify-center rounded-lg border border-gray-300 bg-white shadow-2xl"
+            className="flex h-48 overflow-hidden hover:bg-[#978e8e35] w-full max-w-md items-center justify-center rounded-lg border-0 border-gray-300 bg-white shadow-2xl"
           >
             <div className="flex h-full w-1/4 items-center justify-center">
            
@@ -357,8 +357,8 @@ export default function Why() {
               </svg>
               
             </div>
-            <div  style={{ fontFamily: "'Segoe UI', sans-serif" }} className="flex w-3/4 flex-col justify-center p-2">
-            <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold py-2 max-[480px]:text-[1.5rem]">
+            <div  style={{ fontFamily: "'Segoe UI', sans-serif" }} className="flex w-3/4 flex-col justify-center p-2 border-0">
+            <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20]  border-0 font-bold py-2 max-[480px]:text-[1.5rem]">
                 Special Decor
               </h1>
               <p className=" text-[1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
@@ -373,7 +373,7 @@ export default function Why() {
             style={{ fontFamily: "'Segoe UI', sans-serif" }}
             className="flex gap-4"
           >
-            <div className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]">
+            <div className=" h-[93%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]">
               {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -397,7 +397,7 @@ export default function Why() {
             </div>
             <div
               style={{ boxShadow: "2rem" }}
-              className=" h-[100%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]"
+              className=" h-[93%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]"
             >
               <img
                 src={price1}
