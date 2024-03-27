@@ -97,7 +97,7 @@ export default function Gallarys() {
 
   {images.map((data,index)=>(
   <div className=" border-0 text-center shadow-lg shadow-gray-400">
-    <img src={data.img }  onClick={()=>handleClickOpen(data.img)} className=" md:w-[20rem] md:h-[17rem] max-md:w-[10rem] max-md:h-[10rem]"/>
+    <img src={data.img }  onClick={()=>handleClickOpen(data.img)} className=" md:w-[20rem] md:h-[15rem] max-md:w-[10rem] max-md:h-[10rem]"/>
     
   </div>))}
   <React.Fragment>
