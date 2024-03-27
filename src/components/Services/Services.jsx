@@ -55,7 +55,7 @@ const location = useLocation();
             <img
               src={img1}
               alt="card"
-              className=" md:h-[110%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%] md:w-[100%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -80,7 +80,7 @@ const location = useLocation();
               >
                 wedding planner
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 Saaj Weddings stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -88,7 +88,7 @@ const location = useLocation();
                 allows us to make it uniquely yours.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] pt-4 tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] pt-4 tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
               At Saaj Weddings, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Weddings, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
               </p>
               {/* <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button> */}
@@ -142,7 +142,7 @@ const location = useLocation();
               >
                 vendors and artist management
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                At Saaj Weddings, we understand
                 that the success of any celebration lies in seamless vendor and
                 artist management. Choosing the right vendors and artists is
@@ -152,7 +152,7 @@ const location = useLocation();
                 vision and expectations.
               </p>
               <div className="p-2"></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-center  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
               From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
@@ -210,7 +210,7 @@ const location = useLocation();
             <img
               src={img3}
               alt="card"
-              className=" md:h-[110%] max-md:w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
+              className=" md:h-[110%]  w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
             />
           </motion.div>
           <motion.div
@@ -235,7 +235,7 @@ const location = useLocation();
               >
                 decor and design
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] md:text-[1rem] tracking-wider text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] md:text-[1rem] tracking-wider text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 At Saaj Weddings, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
                 – they create the magical atmosphere that makes your day
@@ -244,7 +244,7 @@ const location = useLocation();
                 makes your love story shine.
               </p>
               <div className="p-2"></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] pb-[2rem] tracking-wider md:text-[1rem] text-justify sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] pb-[2rem] tracking-wider md:text-[1rem] text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
                 celebrating with you. With Saaj Weddings, you can count on a
@@ -302,7 +302,7 @@ const location = useLocation();
               >
                 corporate events
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                 At Saaj Weddings, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
@@ -312,7 +312,7 @@ const location = useLocation();
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pb-6 pt-4 md:text-[1rem] tracking-wider text-justify sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] pb-6 pt-4 md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Weddings to
