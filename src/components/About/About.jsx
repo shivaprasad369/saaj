@@ -98,7 +98,7 @@ export default function About() {
             <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-semibold pb-[1rem]">
               Sanjay Gupta 
             </h1>
-            <span style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-4xl font-semibold">
+            <span  className="text-[#53431f] text-3xl font-bold">
             Founder
             </span>
             <p className="text-center p-2 mt-[1rem] md:px-3  text-[#7c582f]">
@@ -138,7 +138,7 @@ export default function About() {
           <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Mohit Singh
             </h1>
-            <span className="font-semibold">
+            <span  className="text-[#53431f] text-2xl font-bold">
               Hospitality & Logistics Manager
             </span>
             <p className="text-center p-2 mt-[2rem] px-3 text-[#7c582f]">
@@ -164,7 +164,7 @@ export default function About() {
           <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#706923] text-5xl font-bold">
               Varun Sharma
             </h1>
-            <span className="font-semibold">Production Manager</span>
+            <span  className="text-[#53431f] text-2xl font-bold">Production Manager</span>
             <p className="text-center p-2 mt-[2rem] text-[#7c582f]">
               As the Production Manager at Saaj Weddings, Mr. Varun Sharma
               brings unparalleled expertise to the table. His extensive
