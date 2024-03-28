@@ -130,7 +130,7 @@ export default function Client() {
       >
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className=" md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className=" md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem] md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img2} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -224,7 +224,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem] md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img3} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -319,7 +319,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] max-md:h-[20rem] max-md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img6} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -401,7 +401,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img7} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -477,7 +477,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] max-md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img8} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -524,7 +524,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] max-md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img12} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -572,7 +572,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img13} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -649,7 +649,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem] md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img11} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -741,7 +741,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img9} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -822,7 +822,7 @@ export default function Client() {
 
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] mt-[2rem] max-md:h-[20rem] md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img14} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">

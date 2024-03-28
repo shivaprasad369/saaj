@@ -201,13 +201,13 @@ export default function Contact() {
               placeholder="First Name"
               value={form.name}
               onChange={(e)=>setForm({...form, name:e.target.value})}
-              className="border-[1px] h-[2rem] p-2 bg-gray-50"
+              className="border-[0px] h-[2rem] p-2 bg-gray-50"
               required
             />
             <span  className="text-gray-400 font-semibold">First</span>
             </div>
           <div className="flex flex-col flex-[0.50] w-[50%]">
-          <input type="text" placeholder="last Name" required  className="border-[1px] h-[2rem] p-2 bg-gray-50"/>
+          <input type="text" placeholder="last Name" required  className="border-[0px] h-[2rem] p-2 bg-gray-50"/>
           <span className="text-gray-400">Last</span>
           </div>
             </div>
@@ -218,11 +218,11 @@ export default function Contact() {
           <label htmlFor="subject" className="font-semibold"> Subject</label>
           <input type="text" value={form.subject} onChange={(e)=>setForm({...form, subject:e.target.value})} placeholder="Enter Subject"   className="border-none h-[2rem] p-2 mb-4 bg-gray-50 "/>
           <label htmlFor="message " className="font-semibold">Comment or Message</label>
-          <textarea rows={2} value={form.message} onChange={(e)=>setForm({...form, message:e.target.value})} className="border-[1px] mb-4  p-2 bg-gray-50"/>
-          <label>Tell me about your special day</label>
-          <textarea rows={1} value={form.day} onChange={(e)=>setForm({...form, day:e.target.value})}  className="border-[1px] mb-4  p-2 bg-gray-50"/>
-          <label>How many guests are joining</label>
-          <textarea rows={1} value={form.guest} onChange={(e)=>setForm({...form, guests:e.target.value})} className="border-[1px] mb-4  p-2 bg-gray-50"/>
+          <textarea rows={2} placeholder="Message" value={form.message} onChange={(e)=>setForm({...form, message:e.target.value})} className="border-[0px] mb-4  p-2 bg-gray-50"/>
+          <label className="font-semibold">Tell me about your special day</label>
+          <textarea rows={1} placeholder="Special day (Ex: Wedding,..)"  value={form.day} onChange={(e)=>setForm({...form, day:e.target.value})}  className="border-[0px] mb-4  p-2 bg-gray-50"/>
+          <label className="font-semibold" >How many guests are joining</label>
+          <textarea rows={1} value={form.guest} placeholder="Number of Guests (Ex: 100,2000,..)"  onChange={(e)=>setForm({...form, guests:e.target.value})} className="border-[0px] mb-4  p-2 bg-gray-50"/>
           {/* <textarea rows={3}  className="border-[1px] mb-4  p-2 bg-gray-50"/> */}
         
           <button type="submit" className="border-[1px] h-[2.4rem] rounded-md bg-[#b48e47] w-fit px-4 shadow-md font-semibold text-white" style={{float:'left'}} onClick={handleSubmit}>Submit</button>

@@ -53,7 +53,7 @@ export default function Demo() {
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img1}
               alt=""
-              className="w-[100%]   max-[950]:w-[100%] shadow-lg shadow-gray-400 max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%]   max-[950]:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[24rem] sm:h-[25rem]"
             />
             {/* <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  "></p> */}
             <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
@@ -88,7 +88,7 @@ export default function Demo() {
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img2}
               alt=""
-              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[24rem] sm:h-[25rem]"
             />
             
 <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#154aadbd] text-2xl pt-4 font-bold">
@@ -121,7 +121,7 @@ export default function Demo() {
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img8}
               alt=""
-              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
+              className="w-[100%] shadow-lg shadow-gray-400   max-sm:h-[24rem] sm:h-[25rem]"
             />
 <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
               {" "}
@@ -149,7 +149,7 @@ export default function Demo() {
             className="border-0 pb-[4rem] max-sm:w-[100%]  flex flex-col w-[90%] text-center gap-3"
           >
             <a href="https://drive.google.com/drive/folders/1JnjtC7w50rJVLNpRJit6joNHeesJhF9S?usp=drive_link">
-            <div className="relative w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]">
+            <div className="relative w-[100%] shadow-lg shadow-gray-400  max-sm:h-[24rem] sm:h-[25rem]">
 
             <motion.img
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
@@ -188,7 +188,7 @@ export default function Demo() {
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img5}
               alt=""
-              className="md:w-[100%] shadow-lg shadow-gray-400   max-sm:h-[25rem] sm:h-[25rem]"
+              className="md:w-[100%] shadow-lg shadow-gray-400   max-sm:h-[24rem] sm:h-[25rem]"
             />
            <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#442817] text-2xl pt-4 font-bold">
               {" "}
@@ -219,7 +219,7 @@ export default function Demo() {
             whileHover={{scale:1.02,transition:{duration:1,type:'spring',ease:'easeInOut'}}}
               src={img6}
               alt=""
-              className="md:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[25rem] sm:h-[25rem]"
+              className="md:w-[100%] shadow-lg shadow-gray-400  max-sm:h-[24rem] sm:h-[25rem]"
             />
             <h1 style={{fontFamily: '"Great Vibes", cursive'}} className="tracking-widest text-[#154aadbd] text-2xl pt-4 font-bold">
 

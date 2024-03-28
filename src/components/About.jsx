@@ -137,14 +137,14 @@ export default function About() {
               </div>
               <div className="relative p-3 w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
-                  <div className="absolute w-[75%] max-sm:ml-[4rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
+                  <div className="absolute w-[75%] max-sm:ml-[5.4rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
                   {/* {img ?  */}
                   <img
                     style={{ backgroundColor: "#131010bd" }}
                     src={w1}
                     // src={`${img ? img : w1}`}
                     alt="wedding1"
-                     className="relative max-sm:ml-[4rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
+                     className="relative max-sm:ml-[5.4rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
                     rounded-t-full 
                      w-[75%]   md:h-[100%] max-sm:w-[80%] "
                   />
@@ -193,13 +193,13 @@ export default function About() {
           /> */}
         <div className="relative w-fit h-fit sm:pt-[2rem] sm:ml-[2rem]">
           <div className="relative">
-            <div className="absolute w-[74%] max-sm:ml-3 h-full mb-3 bg-[#110c0c80] z-10" />
+            <div className="absolute w-[75%] max-sm:ml-3 h-full lg:w-[80%] mb-3 bg-[#110c0c80] z-10" />
             {/* {img3 ? */}
             <img
               src={w2}
               // src={`${img3 ? img3 : w2}`}
               alt="wedding1"
-              className="mb-3  max-sm:ml-3 relative  w-[75%] z-0"
+              className="mb-3  max-sm:ml-3 relative  w-[75%] lg:w-[80%] z-0"
             />
             {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
@@ -217,7 +217,7 @@ export default function About() {
             src={w11}
             // src={`${img4 ? img4 : w11}`}
             alt=""
-            className="absolute top-[20%] rounded-t-full w-[50%] z-20 sm:h-[60%] max-sm:h-[55%] right-4"
+            className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] sm:right-0 md:right-[-6]"
           />
           {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
@@ -261,7 +261,7 @@ export default function About() {
             >
               <Link to={"/about"}>
                 {" "}
-                {!more ? "Know More.." : "Show Less..."}
+                Know more
               </Link>
             </motion.button>
           </div>

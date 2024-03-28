@@ -98,7 +98,7 @@ const location = useLocation();
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] object-contain  md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] rounded-r-3xl  xl:h-[30rem] h-full max-md:h-full   ">
+        <div className="md:w-[90%] object-contain max-sm:mt-[4rem] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] sm:rounded-br-3xl max-sm:rounded-none  xl:h-[30rem] h-full max-md:h-full   ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }} 
@@ -191,7 +191,7 @@ const location = useLocation();
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%]  md:ml-[7%] xl:h-[27rem]  md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
+        <div className="md:w-[90%]  md:ml-[7%] xl:h-[27rem] max-sm:mt-[4rem]  md:rounded-tl-[100px]  md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] md:h-[100%] h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -258,7 +258,7 @@ const location = useLocation();
       </div>
 
       <div id="client max-w:[90%] justify-center items-center ">
-        <div className="md:w-[90%] md:ml-[7%]  md:mb-[10%] flex m-2 mt-10 rounded-r-3xl md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9]  h-full  ">
+        <div className="md:w-[90%] md:ml-[7%] max-sm:mt-[4rem] md:mb-[10%] flex m-2 mt-10 sm:rounded-br-[2.4rem] max-sm:rounded-none md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9]  h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
