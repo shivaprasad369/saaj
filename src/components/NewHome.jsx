@@ -112,9 +112,9 @@ video.volume=0.1;
           onClick={handleValue}
         >
           {enable ?
-          <img src={valume} className="w-[3rem] h-[3rem]" />
+          <img src={valume} className="w-[2.7rem] h-[2.7rem]" />
           : 
-          <img src={valume1} className="w-[3rem] h-[3rem]" />
+          <img src={valume1} className="w-[2.7rem] h-[2.7rem]" />
           }
         </div>
         <div>

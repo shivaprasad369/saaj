@@ -330,9 +330,12 @@ export default function Why() {
                   </p>
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
+                <p className=" md:text-[1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.88rem]">
+
                   Saaj is famous for making weddings unique and ensures each
                   detail reflects the couple's unique style, making celebrations
                   unforgettable and special
+                  </p>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -343,7 +346,7 @@ export default function Why() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex h-48 overflow-hidden hover:bg-[#978e8e35] w-full max-w-md items-center justify-center rounded-lg border-0 border-gray-300 bg-white shadow-2xl"
+            className="flex md:h-48 overflow-hidden sm:h-[100%] hover:bg-[#978e8e35] w-full max-w-md items-center justify-center rounded-lg border-0 border-gray-300 bg-white shadow-2xl"
           >
             <div className="flex h-full w-1/4 items-center justify-center">
            
@@ -351,17 +354,17 @@ export default function Why() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 viewBox="0 0 512 512"
-                className="h-20 w-20 max-[480px]:w-[4rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="sm:h-20 max-sm:h-17 w-[5rem] max-[480px]:w-[4rem]  object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               >
                 <path fill="#fff" d="M256 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM276.8 383.8c1 .1 2.1 .2 3.2 .2c39.8 0 72 32.2 72 72v22.7c0 16.4 16 27.9 31.6 22.8l12.8-4.3c18-6 37.3-6.5 55.6-1.5l19.4 5.3c17.9 4.9 34.4-11.6 29.5-29.5L495.6 452c-5-18.3-4.4-37.6 1.5-55.6l4.3-12.8c5.2-15.5-6.4-31.6-22.8-31.6c-34.6 0-62.7-28.1-62.7-62.7v-32c0-16.4-16-27.9-31.6-22.8l-12.8 4.3c-18 6-37.3 6.5-55.6 1.5l-29.6-8.1c-2.9-.8-5.9-1-8.7-.7c4.2 9.7 5.8 20.8 3.7 32.3L275 298.7c-1.5 8.4-1.4 17 .5 25.3l5.3 23.9c2.8 12.7 1.1 25.2-4 35.9zM127.6 234.5c-15.5-5.2-31.6 6.4-31.6 22.8v32C96 323.9 67.9 352 33.3 352c-16.4 0-27.9 16-22.8 31.6l4.3 12.8c6 18 6.5 37.3 1.5 55.6l-5.3 19.4C6.2 489.4 22.6 505.8 40.5 501L60 495.6c18.3-5 37.6-4.5 55.6 1.5l12.8 4.3c15.5 5.2 31.6-6.4 31.6-22.8v-32c0-34.6 28.1-62.7 62.7-62.7c16.4 0 27.9-16 22.8-31.6l-4.3-12.8c-6-18-6.5-37.3-1.5-55.6l5.3-19.4c4.9-17.9-11.6-34.4-29.5-29.5L196 240.4c-18.3 5-37.6 4.4-55.6-1.5l-12.8-4.3zM384 144a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" />
               </svg>
               
             </div>
-            <div  style={{ fontFamily: "'Segoe UI', sans-serif" }} className="flex w-3/4 flex-col justify-center p-2 border-0">
+            <div  style={{ fontFamily: "'Segoe UI', sans-serif" }} className="flex w-3/4  flex-col justify-center p-2 border-0">
             <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20]  border-0 font-bold py-2 max-[480px]:text-[1.5rem]">
                 Special Decor
               </h1>
-              <p className=" text-[1rem] text-[#684f2a] tracking-wide capitalize max-[480px]:text-[0.7rem]">
+              <p className=" md:text-[1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.88rem]">
                 From unique floral arrangements to personalized themes, our
                 decor transforms venues into enchanting spaces that leave a
                 lasting impression on everyone attending the celebration.
@@ -385,12 +388,12 @@ export default function Why() {
               <img
                 src={price}
                 alt=""
-                className="h-15 md:w-[4rem] max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="sm:h-20 max-sm:h-17 w-[4rem] max-[480px]:w-[4rem]  object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
               <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]">
                 Best Price
               </h1>
-              <p className=" md:text-[1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
+              <p className=" md:text-[1rem] text-[#684f2a] tracking-wide capitalize sm:text-[0.88rem]">
                 {" "}
                 Unbeatable rates for exceptional quality services
               </p>
@@ -402,12 +405,12 @@ export default function Why() {
               <img
                 src={price1}
                 alt=""
-                className="h-20 w-[4rem] max-[480px]:w-[5rem] object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="sm:h-20 max-sm:h-17 w-[4rem] max-[480px]:w-[4rem]  object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
               <h1 style={{ fontFamily:' "Rakkas", serif',fontWeight:700}} className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem] capitalize">
               Expertise
               </h1>
-              <p className=" md:text-[1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.7rem] max-sm:text-[0.88rem]">
+              <p className=" md:text-[1rem] h-[100%] text-[#684f2a] md:tracking-wide capitalize sm:text-[0.88rem]">
                 {" "}
                 Decades of seasoned expertise guarantee flawless events.
               </p>

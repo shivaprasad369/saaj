@@ -59,7 +59,7 @@ export default function Specialization() {
           </div>
           <div className="flex flex-col gap-y-2">
             <h1
-              className="text-md md:text-md  max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]  w-[8rem]"
+              className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]  w-[8rem]"
               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
             }}
             >
@@ -91,7 +91,7 @@ export default function Specialization() {
           </div>
           <div>
           <h1
-              className="text-md md:text-md  max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]"
+              className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]"
               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
             }}
             >
@@ -122,7 +122,7 @@ export default function Specialization() {
           </div>
           <div>
           <h1
-              className="text-md md:text-md  max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]"
+              className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]"
               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
             }}
             >
@@ -147,7 +147,7 @@ export default function Specialization() {
           </div>
           <div>
           <h1
-              className="text-md md:text-md  max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]  "
+              className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]  "
               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
             }}
             >
@@ -172,7 +172,7 @@ export default function Specialization() {
           </div>
           <div>
           <h1
-              className="text-md md:text-md  max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem] "
+              className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem] "
               style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
             }}
             >
