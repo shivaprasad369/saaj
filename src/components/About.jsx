@@ -144,7 +144,7 @@ export default function About() {
                     src={w1}
                     // src={`${img ? img : w1}`}
                     alt="wedding1"
-                     className="relative max-sm:ml-[5.4rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
+                     className="relative max-sm:ml-[4.5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
                     rounded-t-full 
                      w-[75%]   md:h-[100%] max-sm:w-[80%] "
                   />
@@ -217,7 +217,7 @@ export default function About() {
             src={w11}
             // src={`${img4 ? img4 : w11}`}
             alt=""
-            className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] right-0"
+            className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] right-2"
           />
           {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
