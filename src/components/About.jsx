@@ -217,7 +217,7 @@ export default function About() {
             src={w11}
             // src={`${img4 ? img4 : w11}`}
             alt=""
-            className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] sm:right-0 md:right-[-6]"
+            className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] right-0"
           />
           {/* :
             <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
