@@ -18,20 +18,20 @@ export default function How() {
       </div>
       <div className=" sm:w-[90%]">
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{opacity:1,y:0,transition:{type:'tween', ease:"easeInOut" ,duration:1}}}
           className="flex  flex-col  md:flex-row md:items-center md:justify-between rounded-lg border-none border-gray-300 "
         >
           <div className="p-6 relative md:w-2/3 overflow-hidden">
             <h3
-              className="mb-2 overflow-hidden text-3xl font-medium text-[#473c16] tracking-widest"
-              style={{ fontFamily: '"Open Sans", sans-serif', fontWeight: 600 }}
+              className="mb-2 overflow-hidden text-4xl  font-bold text-[#473c16] tracking-widest"
+              style={{fontFamily: '"Great Vibes", cursive', fontWeight: 600}}
+              // style={{ fontFamily: '"Open Sans", sans-serif', fontWeight: 600 }}
             >
               {" "}
-              <i>Events Planning + Design</i>
+              Event Planning + Design
             </h3>
-            <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
+            <p className="text-[#7a4d189f] tracking-[0.15rem] md:text-xl font-semibold">
               {" "}
               <span className="absolute md:left-[2rem] md:bottom-[42%] max-md:top-[rem]">
                 <i className=" h-[10rem]  width-29">
@@ -48,28 +48,33 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-full">
-            <img src={img1} alt="card" className="h-full w-full object-cover" />
+          <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
+              className="h-full shadow-md shadow-black w-full object-cover" 
+             src={img1} alt="card" 
+              />
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{opacity:1,y:0,transition:{type:'tween', ease:"easeInOut" ,duration:1}}}
           className="flex  flex-col  md:flex-row md:items-center md:justify-between rounded-lg border-none p-2 border-gray-300 "
         >
-          <div className="p-6 md:w-1/2 w-full max-md:hidden">
-            <img src={img2} alt="card" className="h-full w-full object-cover" />
+          <div className="p-6 md:w-1/2 w-full max-md:hidden ">
+            <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
+              className="h-full shadow-md shadow-black w-full object-cover" 
+             src={img2} alt="card"
+              />
           </div>
           <div className="p-6 relative md:w-2/3">
-            <h3
-              className="mb-2 overflow-hidden text-3xl font-medium text-[#473c16]  tracking-widest"
-              style={{ fontFamily: '"Open Sans", sans-serif', fontWeight: 600 }}
+          <h3
+              className="mb-2 overflow-hidden text-4xl  font-bold text-[#473c16] tracking-widest"
+              style={{fontFamily: '"Great Vibes", cursive', fontWeight: 600}}
             >
               {" "}
-              <i>Preparation</i>
+              Event Organizer
             </h3>
-            <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
+            <p className="text-[#7a4d189f] tracking-[0.15rem] font-semibold md:text-xl">
               {" "}
               <span className="absolute md:left-[3rem] md:bottom-[40%] max-md:top-0 w-9  ">
                 <i className=" h-[10rem]  width-29">
@@ -87,25 +92,27 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-full md:hidden">
-            <img src={img2} alt="card" className="h-full w-full object-cover" />
+          <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
+              className="h-full shadow-md shadow-black w-full object-cover" 
+            src={img2} alt="card" 
+             />
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{opacity:1,y:0,transition:{type:'tween', ease:"easeInOut" ,duration:1}}}
           className="flex  flex-col mb-[2rem] md:flex-row md:items-center md:justify-between rounded-lg border-none p-2 border-gray-300 "
         >
           <div className="relative p-6 md:w-2/3">
-            <h3
-              className="mb-2 text-3xl overflow-hidden text-[#473c16] tracking-widest"
-              style={{ fontFamily: '"Open Sans", sans-serif', fontWeight: 600 }}
+          <h3
+              className="mb-2 overflow-hidden text-4xl  font-bold text-[#473c16] tracking-widest"
+              style={{fontFamily: '"Great Vibes", cursive', fontWeight: 600}}
             >
               {" "}
-              <i>Execution</i>
+              <i>Event Execution</i>
             </h3>
-            <p className="text-[#7a4d189f] tracking-[0.2rem] md:text-xl">
+            <p className="text-[#7a4d189f] tracking-[0.15rem] font-semibold md:text-xl">
               {" "}
               <span className="absolute  w-9 md:left-[3rem]  max-md:top-0 top-[40%]">
                 <i className=" h-[10rem]  width-29">
@@ -122,7 +129,10 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-[100%]">
-            <img src={img3} alt="card" className="h-full w-full object-cover" />
+          <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
+              className="h-full shadow-md shadow-black w-full object-cover" 
+            src={img3}
+             />
           </div>
         </motion.div>
       </div>
