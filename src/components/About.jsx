@@ -137,7 +137,7 @@ export default function About() {
               </div>
               <div className="relative p-3 w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
-                  <div className="absolute w-[75%] max-sm:ml-[5.4rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
+                  <div className="absolute w-[75%] max-sm:ml-[4.5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
                   {/* {img ?  */}
                   <img
                     style={{ backgroundColor: "#131010bd" }}
