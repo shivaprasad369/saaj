@@ -43,7 +43,7 @@ export default function Team() {
           at the helm.
         </p>
       </div>
-      <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-3 relative mt-[2rem] mx-[10%]">
+      <div className="grid md:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-3 relative mt-[2rem] max-md:mx-1 md:mx-[10%]">
         <div onClick={()=>handleModel(1)} className="lg:h-[20rem] xl:h-[25rem] mb-[5rem] md:h-[22rem] sm:h-[20rem] max-sm:h-[25rem]">
           <div className="border-0 h-[100%] relative">
             <img
