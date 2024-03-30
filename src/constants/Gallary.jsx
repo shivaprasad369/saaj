@@ -1,53 +1,65 @@
 import logo from "../components/assets/slide2.jpeg";
+
+import img1 from "../demo/1.jpeg";
+import img2 from "../demo/prachi.jpg";
+
+import img7 from "../demo/4.jpg";
+import img8 from "../demo/w8.jpg";
+import img6 from "../demo/6.jpg";
+
+import img5 from "../demo/metali.jpg";
+import png from "../components/assets/flower-black-and-white-png-41825.png";
 const data = [
   {
     id: 1,
-    img:  logo ,
+    img:  img1 ,
     style:'',
-    name: "Lokesh & Pranjal - Jodhpur",
+    links:'https://drive.google.com/drive/folders/1vw-9kYM9Vy-OHrqN55zOKjKldDxBa2HM?usp=drive_link',
+    name: "Alisha & Krunal ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Eternal love captured",
   },
   {
     id: 2,
-    img:  logo ,
-   
+    img:  img2 ,
+   links:'https://drive.google.com/drive/folders/1Vm7Eudzj_G7bWYY6KFyjJ7zyGf23FLc3?usp=drive_link',
     style:'',
-    name: "Lokesh & Pranjal - Jodhpur",
+    name: "Anuroopa & Vishal",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Romantic bliss forever",
   },
   {
     id: 3,
-    img: logo ,
-   
-    name: "Lokesh & Pranjal - Jodhpur",
+    img: img8,
+   links:'https://drive.google.com/drive/folders/1iH8lcTprnGLjXUvSRII2ujDCy9cLWYrA?usp=drive_link',
+    name: " Evelina & basant",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Joyous wedding memories",
   },
   {
     id: 4,
-    img:  logo ,
-  
-    name: "Lokesh & Pranjal - Jodhpur",
+    img:  img7 ,
+    links:'https://drive.google.com/drive/folders/1JnjtC7w50rJVLNpRJit6joNHeesJhF9S?usp=drive_link',
+    name: " Rupal & Aditya",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Cherished moments together",
   },
   {
     id: 5,
-    img: logo ,
+    img: img5,
     style:'',
-    name: "Lokesh & Pranjal - Jodhpur",
+    links:'https://drive.google.com/drive/folders/1Sz_CmUiKCCdUp-hT2EsAOEzVHM57MUem?usp=drive_link',
+    name: " Mitali & Hari",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Perfect partnership joy.",
   },
   {
     id: 6,
-    img:  logo ,
-    
-    name: "Lokesh & Pranjal - Jodhpur",
+    img:  img6 ,
+    links:'https://drive.google.com/drive/folders/13yI5jtkh4lwFsxzoouLZuhDrOtC-sI94?usp=sharing',
+    name: "Prachi & Ravneet",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus doloremque itaque mollitia laudantium architecto tempore ad",
+      "Forever love story.",
   }
 ];
 export default data;

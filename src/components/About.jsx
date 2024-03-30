@@ -87,15 +87,16 @@ export default function About() {
       <img
         src={png}
         alt=""
-        className="absolute bottom-0 right-0 rotate- width-20 w-[10rem] opacity-[0.6]"
+        className="absolute bottom-0 right-0  max-sm:w-[5rem]  w-[10rem] opacity-[0.6]"
       />
       <img
         src={png}
         alt=""
-        className="absolute top-0 left-0 rotate-180 width-20 w-[10rem] opacity-[0.6]"
+        className="absolute top-0 left-0 rotate-180  max-sm:w-[5rem] width-20 w-[10rem] opacity-[0.6]"
       />
       <motion.div
         initial={{ x: -100, opacity: 0 }}
+        viewport={{once:true}}
         whileInView={{
           x: 0,
           opacity: 1,
@@ -112,7 +113,7 @@ export default function About() {
           </h1>
           <div className=" ">
             <p
-              style={{ fontFamily: `'Segoe UI', sans-serif` }}
+             style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
               className="tracking-widest text-justify text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[1rem] max-sm:px-[2rem] sm:pl-[3rem]"
             >
               Welcome to Saaj Weddings, where we turn your wedding dreams into
@@ -156,6 +157,7 @@ export default function About() {
                 </div>
                 {/* {img2 ? */}
                 <motion.img
+               
                   whileHover={{
                     scale: 1.1,
                     transition: { ease: "easeIn", type: "spring", duration: 1 },
@@ -177,6 +179,7 @@ export default function About() {
       </motion.div>
       <motion.div
         initial={{ x: 100, opacity: 0 }}
+        viewport={{once:true}}
         whileInView={{
           x: 0,
           opacity: 1,
@@ -210,6 +213,7 @@ export default function About() {
           </div>
           {/* {img4 ? */}
           <motion.img
+
             whileHover={{
               scale: 1.1,
               transition: { ease: "easeIn", type: "spring", duration: 1 },
@@ -228,11 +232,12 @@ export default function About() {
 
         <div className="flex flex-col flex-wrap object-cover ">
           <motion.p
+          viewport={{once:true}}
             whileInView={{
               opacity: 1,
               transition: { ease: easeIn, delay: 0.3 },
             }}
-            style={{ fontFamily: `'Segoe UI', sans-serif` }}
+            style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
             className=" tracking-[0.09em] border-0  md:mr-4 text-[#705704] whitespace-pre-line  sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] text-justify text-md md:py-3 md:w-[100%] lg:w-[108%] mb-3 px-[2rem]"
           >
             <div className=" h-[100%] w-[100%] ">

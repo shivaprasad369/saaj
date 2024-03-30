@@ -123,8 +123,8 @@ export default function Specialization() {
           <div>
           <h1
               className="text-md md:text-md font-semibold max-sm:text-[1rem] text-[#705704] tracking-[0.103em] leading-[1.7rem]"
-              style={{fontFamily: "'Segoe UI', sans-serif",letterSpacing:' 0.1em'
-            }}
+              style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
             >
               Extensive Experience{" "}
             </h1>

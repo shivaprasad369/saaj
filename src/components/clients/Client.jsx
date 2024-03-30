@@ -142,10 +142,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] md:mt-[1.5rem] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -236,10 +234,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -331,10 +327,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -413,10 +407,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -489,10 +481,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -536,10 +526,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -584,10 +572,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -661,10 +647,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                   style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -753,10 +737,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -834,10 +816,8 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
+                   style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>

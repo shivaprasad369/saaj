@@ -8,6 +8,7 @@ import Gallary from './Gallary';
 import Swiper from 'swiper';
 import Slideses from './swipers';
 import Gallarys from './Gallary/Gallary';
+import Footer from './New-Footer/Footer';
 
 export default function Cover() {
   // const [imageIndex,setImageIndex]=useState(1)
@@ -16,7 +17,7 @@ export default function Cover() {
   
   // };
   return (
-    <div className='bg-[#E7E1D9]'>
+    <div className='bg-[#fffefc]'>
        {/* {data?.length && data.map((data,index)=>(
 
 <img src={data.img} alt="homepage" key={data.index} className={` ${data.index===imageIndex ?'block':'hidden'} absolute bg-no-repeat bg-cover w-[100%]  max-[1364px]:h-[75%] max-md:h-[65%] max-[420px]:h-[100%] min-[439px]:max-[730px]:h-[60%] min-[769px]:max-[910px]:h-[80%] max-[914px]:h-[75%]  text-black `}/>
@@ -32,7 +33,7 @@ export default function Cover() {
 
     <Gallary/>
     {/* <Gallarys/> */}
-    
+    <Footer/>
     </div>
   )
 }

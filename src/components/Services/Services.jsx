@@ -345,6 +345,7 @@ const location = useLocation();
           </motion.div>
         </div>
       </div>
+      <div className="max-sm:hidden my-[10%] border-b-[1px] border-gray-200"></div>
     </div>
   );
 }

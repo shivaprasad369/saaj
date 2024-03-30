@@ -11,13 +11,16 @@ import Services from './components/Services/Services';
 // import Home from './components/Home';
 import NewHome from './components/NewHome.jsx'
 import Footer from './components/New-Footer/Footer.jsx';
-import Contact from './components/Contact/new.jsx';
+
 import About from './components/About/About';
 import Demo from './demo/Demo';
 import Gallarys from './components/Gallary/Gallary';
 import Blog from './components/BLog/Blog.jsx';
 import Demos from './Admin/Demo.jsx'
 import Admin from './Admin/Admin.jsx';
+import Navbars from './components/Navbar.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Fnavbars from './components/Footer.jsx';
 
 
 
@@ -28,7 +31,9 @@ function App() {
 {/*   
       <Demo/> */}
     {/* <Home/> */}
+    <Navbars />
     <NewHome/>
+    {/* <Fnavbars/> */}
     <Routes>
 
     <Route path='/' element={<Cover/>}/>
@@ -41,13 +46,13 @@ function App() {
     <Route path='/admin' element={<Demos/>}/>
     <Route path='/panel' element={<Admin/>}/>
     </Routes>
-    {/* <Footer/> */}
-<Footer/>
+    {/* <Fnavbars/> */}
+
     {/* <div className="max-sm:overflow-x-hidden flex-wrap w-[100%] ">
     <Cover/>
     <Why/>
     <How/>
-    <Footer/> */}
+    // <Footer/> */}
     {/* <div>
      <About/>
     </div>

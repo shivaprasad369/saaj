@@ -47,50 +47,6 @@ export default function Gallarys() {
   return (
     <div id='gallary' className=' justify-center items-center text-center h-[100%] bg-[#f7f1e3]'>
    <h1 className='text-center p-5 text-4xl font-bold  text-[#64321b] uppercase' style={{ fontFamily:' "Truculenta", sans-serif'}}> Our Portfolio</h1>
-   {/* <div className='max-md:hidden '>
-    
-      <ImageList
-      sx={{ width: '100%', height: '100%',padding:4,justifyContent:'center',alignItems:'center'}}
-      variant="quilted"
-      cols={4}
-      gap={15}
-      rowHeight={200}
-      
-    >
-      
-
-      {itemData.map((item) => (
-        <>
-        <ImageListItem  key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-          <img
-            {...srcset(item.img, 121, item.rows, item.cols)}
-            alt={item.title}
-            loading="lazy"
-          />
-          {/* <Images srcset={srcset} image={item.img} rows={item.rows} cols={item.cols} title={item.title}/> */}
-     {/* </ImageListItem> */}
-        
-       {/* </> */}
-      {/* ))} */}
-      
-    {/* </ImageList>
-    </div> */}
-    {/* <div className='p-2 md:hidden'>
-    <ImageList sx={{ width: '100%', height: 450,gap:4 }} cols={3} gap={5} rowHeight={164}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-    </div> */}
-
-  
 <div className="justify-center items-center grid md:grid-cols-4 max-md:grid-cols-3 pb-[3rem] lg:mx-[8rem] max-md:p-2 md:gap-4 max-md:gap-2 max-sm:grid-cols-2">
   
 
@@ -125,7 +81,7 @@ export default function Gallarys() {
       </Dialog>
     </React.Fragment>
   </div>
-
+  <div className="max-sm:hidden my-[10%] border-b-[1px] border-gray-200"></div>
     </div>
   )
 }

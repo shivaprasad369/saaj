@@ -1,9 +1,7 @@
-import { motion } from "framer-motion";
-import React from "react";
-import { useEffect } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { Divider } from "@nextui-org/react";
+import React, { useEffect } from "react";
+import image from './contact.png'
 import { useLocation } from "react-router-dom";
-
 
 export default function Contact() {
   const location = useLocation();
@@ -15,177 +13,194 @@ export default function Contact() {
     }
   }, [location]);
   return (
-    <div id="contact" className=" md:flex flex-col  gap-5 py-[4rem] md:pl-[5rem]">
-      <Toaster
- position="top-center"
- 
-/>
-      <div className="flex flex-col gap-4 max-md:justify-center max-md:items-center">
-        <div className="flex flex-col flex-wrap px-4 gap-2 mt-[2rem] md:pt-[2rem]">
-          <h1
-            className="text-4xl font-semibold tracking-widest text-[#462d19] uppercase"
-            style={{ fontFamily: `"Tinos", serif` }}
-          >
-            Contact us
-          </h1>
-          <div
-            style={{
-              fontFamily: "'Segoe UI', sans-serif",
-              letterSpacing: " 0.1em",
-            }}
-            className="text-[1.2rem] tracking-wider text-[#462d19]  "
-          >
-            <p>Feel free to contact us any time.</p>
-            <p>We will get back to you as soon as we can!</p>
+    <>
+    <div id='contact' className="md:flex max-sm:flex-col justify-center  text-center mx-[5%] mt-[3rem]">
+      <div className="border-0 justify-center md:w-[45%] max-md:w-[100%] items-center">
+        <div>
+          <div className="border-0  md:h-[35rem] max-sm:h-full">
+          <img src={image} alt="" className="w-full h-full"/>
           </div>
-        </div>
-        <div className="md:flex max-[910px]:flex-col w-full  justify-between items-center md:py-5 md:gap-14  ">
-          <div className="flex flex-col md:w-5/6 gap-3 max-md:pl-[3rem]">
-            <form
-              style={{
-                fontFamily: "'Segoe UI', sans-serif",
-                letterSpacing: " 0.1em",
-              }}
-              className="flex flex-col mr-[rem] max-md:mr-[4rem] gap-14 pb-5"
-            >
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="border-b-0 border-[#201f1f]  h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
-              />
-              <input
-                type="text"
-                name="email"
-                placeholder="Email"
-                className="border-b-0 border-[#201f1f] h-[3rem] bg-[#e6d4b9] text-black md:w-full px-4"
-              />
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Message"
-                className="border-b-0 border-[#201f1f] pt-3 bg-[#e6d4b9] text-black md:w-full px-4"
-              ></textarea>
-              {/* <motion.button
-                whileHover={{
-                  scale: 1.1,
-                  transition: { type: "spring", duration: 0.3, ease: "easeIn" },
-                }}
-                type="button"
-                className="border-2 h-[3rem] rounded-md max-md:w-[40%] hover:bg-[#8d4e35] hover:text-white justify-center items-center  text-center border-[#643522] text-[#643522]  font-bold  uppercase text-xl tracking-widest"
-              >
-                Send
-              </motion.button> */}
-               <motion.button whileHover={{
-                  scale: 1.1,
-                  transition: { type: "spring", duration: 0.3, ease: "easeIn" },
-                }} type="button" onClick={()=>{toast.success("Thank you so much!")}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-               Send
-        </motion.button> 
-            </form>
-          </div>
-          <div className="bg-[#9e763b] overflow-hidden font-semibold text-white  md:w-screen pt-[2rem] pb-[3.3rem] px-[3rem] flex flex-col rounded-sm gap-14">
-            <div className="md:flex  max-md:flex-col">
-              <div className="flex flex-col rounded-sm gap-14">
-                <h1
-                  style={{ fontFamily: `"Tinos", serif` }}
-                  className="text-3xl tracking-widest  "
-                >
-                  Info
-                </h1>
-                <div
-                  className="flex gap-9 tracking-widest   "
-                  style={{
-                    fontFamily: "'Segoe UI', sans-serif",
-                    letterSpacing: " 0.1em",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={40}
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="#ffffff"
-                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-                    />
-                  </svg>
-                  <p
-                    className=""
-                    style={{
-                      fontFamily: "'Segoe UI', sans-serif",
-                      letterSpacing: " 0.1em",
-                    }}
-                  >
-                    info@saajevents.com.
-                  </p>
-                </div>
-                <div className="flex gap-9 tracking-widest">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={40}
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="#ffffff"
-                      d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
-                    />
-                  </svg>
-                  <div
-                    style={{
-                      fontFamily: "'Segoe UI', sans-serif",
-                      letterSpacing: " 0.1em",
-                    }}
-                  >
-                    <p>+91 97823 40243</p>
-                    
-                  </div>
-                </div>
-                <div className="flex gap-9 tracking-widest">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={35}
-                    viewBox="0 0 384 512"
-                  >
-                    <path
-                      fill="#ffffff"
-                      d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
-                    />
-                  </svg>
-                  <div
-                    style={{
-                      fontFamily: "'Segoe UI', sans-serif",
-                      letterSpacing: " 0.1em",
-                    }}
-                    className="flex-wrap"
-                  >
-                   PN 75, second floor Satnam Honda, Tonk Rd, <br /> near kamal & Co, Jaipur, Rajasthan 302015
-                  </div>
-                </div>
-              </div>
-              {/* <iframe className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
-          title="location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348041.86796211504!2d75.46377668537234!3d15.465287616155509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707211014536!5m2!1sen!2sin"
-            width="350"
-            height="400"
-            // style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> */}
-              {/* <iframe
-                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d56927.89392111595!2d75.78436092886044!3d26.903705516105322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.927036299999997!2d75.8603042!4m5!1s0x396db24ad0000019%3A0x85e5feb42013a2ac!2sPN%2075%2C%20second%20floor%20Satnam%20Honda%2C%20Tonk%20Rd%2C%20near%20kamal%20%26%20Co%2C%20Jaipur%2C%20Rajasthan%20302015!3m2!1d26.8679201!2d75.79697259999999!5e0!3m2!1sen!2sin!4v1709891989758!5m2!1sen!2sin"
-                width="350"
-                height="400"
-                className="max-md:hidden md:pl-[2rem] md:pt-[4rem] pt-4"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe> */}
-            </div>
+          <div className=" gap-5 my-7 flex flex-col">
+            <h4 className="font-semibold">BOOK US</h4>
+            <h6 className="font-semibold">Mail: <span >info@saajwedding.com</span></h6>
+            <h6>Phone: +91 97823 40243 <br />
+                      <span className="ml-10"/> +91 95096 66873</h6>
+            <h6>G-13, Balaji Tower IV, Radisson blue hotel, Durgapura Flyover, Tonk Road Jaipur, 302020.</h6>
+            <h6 className="px-4">
+              Our networks are spotty- We would really appreciate if you could
+              leave a message in case you can’t get through.
+            </h6>
+            <h6 className="font-semibold">LET'S WORK TOGETHER</h6>
+            {/* <h6>info@saajwedding.com</h6> */}
+
+            {/* 
+CAREERS
+We are always hiring! Please leave your details on the link below and we will get in touch if you’re a good fit!
+
+www.devikanarainandcompany.com/joinus */}
           </div>
         </div>
       </div>
+      <div className="">
+        <div className="border-0  md:w-[35rem] max-md:w-[100%] flex flex-col gap-3 ">
+          <form action=" " className="flex flex-col text-start px-5">
+            <label htmlFor="name">
+              Your Name{" "}
+              <span className="text-xs text-gray-500">(required)</span>
+            </label>
+            <div className="flex gap-1 my-2">
+              <div className="w-[50%]">
+                <label htmlFor="First" className="text-xs">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  className="bg-gray-100 w-[100%] h-[2.5rem] border-[1px]  border-gray-500"
+                />
+              </div>
+              <div  className="w-[50%]">
+                <label htmlFor="Last" className="text-xs">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  className="bg-gray-100 h-[2.5rem] border-[1px] w-[100%] border-gray-500"
+                />
+              </div>
+            </div>
+            <label htmlFor="Partners" className="py-2">
+              Partners Name{" "}
+              <span className="text-xs text-gray-500">(required)</span>
+            </label>
+            <input
+              type="text"
+              name="parter"
+              id="partner"
+              required
+              className="bg-gray-100 h-[2.5rem] border-[1px] w-[100%] border-gray-500"
+            />
+            <label htmlFor="email" className="py-2">
+              Email <span className="text-xs text-gray-500">(required)</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="youremail@domain.com"
+              id="email"
+              required
+              className="bg-gray-100 h-[2.5rem] border-[1px] w-full border-gray-500 p-3"
+            />
+            <label htmlFor="Phone" className="py-2 mt-1">
+              Phone <span className="text-xs text-gray-500">(required)</span>
+            </label>
+            <h6 className="text-xs font-thin mb-1">
+              Please specify Area Code. <br />
+              Whatsapp Number is preferred.
+            </h6>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter Phone Number"
+              id="phone"
+              required
+              className="bg-gray-100 h-[2.5rem] border-[1px] w-full border-gray-500 p-3"
+            />
+
+            <div className="mt-[1rem]" />
+            <span className="py-1 text-sm">Section</span>
+            <Divider />
+            <div className="mt-4">
+              <label htmlFor="where" className="font-normal pb-2 ">
+                Where did you hear about us?
+              </label>
+              <div>
+                <input
+                  type="checkbox"
+                  id="friends"
+                  name="friends"
+                  value="Bike"
+                />
+                <label htmlFor="friends" className="text-sm font-thin">
+                  {" "}
+                  A friend
+                </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="Online"
+                  name="Online"
+                  value="Online"
+                />
+                <label htmlFor="Online" className="text-sm font-thin">
+                  {" "}
+                  Online
+                </label>
+                <br />
+                <input type="checkbox" id="Blog" name="Blog " value="Blog" />
+                <label htmlFor="Blog or Magazine" className="text-sm font-thin">
+                  {" "}
+                  Blog or Magazine
+                </label>
+                <br />
+              </div>
+              <label htmlFor="">
+                We love stories! Tell us yours{" "}
+                <span className="text-xs text-gray-500">(required)</span>
+              </label>
+              <br />
+              <textarea
+                name="story"
+                id="story"
+                rows="3"
+                className="bg-gray-100  border-[1px] w-full border-gray-500 p-3"
+              ></textarea>
+              <label htmlFor="" className="pt-3">
+                Tell us about your function.
+                <span className="text-xs text-gray-500">(required)</span>
+              </label>
+
+              <h6 className="font-light text-xs pt-3 pb-1">
+                Dates, number of guests, venues, styles and anything else you'd
+                like to tell us <br />
+                The more details you give us, the easier it is for us to share a
+                quote with you!
+              </h6>
+              <textarea
+                name="function"
+                id="function"
+                rows="3"
+                required
+                className="bg-gray-100  border-[1px] w-full border-gray-500 p-3"
+              ></textarea>
+              <label htmlFor="" className="py-2">
+                How many guests are you expecting?
+                <span className="text-xs text-gray-500">(required)</span>
+              </label>
+              <textarea
+                name="guests"
+                id="guests"
+                rows="3"
+                required
+                className="bg-gray-100  mt-2 border-[1px] w-full border-gray-500 p-3"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              className="bg-[#559e33] hover:bg-gray-800 text-xl text-white py-3 max-sm:mb-[2rem] w-[8rem] rounded mt-[1.5rem]"
+            />
+          </form>
+        </div>
+      </div>
     </div>
+      <div className="my-[10rem] border-b-[1px] max-md:hidden block border-gray-200"></div>
+      {/* <div className="mb-[5rem] border-b-[1px] w-[70%] max-md:hidden block border-gray-400"/> */}
+    </>
   );
 }

@@ -4,7 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Slider from "react-slick";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import valume from "./Ui/volume.png";
 import valume1 from "./Ui/mute.png";
 import { motion, useScroll } from "framer-motion";
@@ -13,32 +13,6 @@ import img from "./assets/Saaj logo png3 (1)(1).png";
 import "./Home.css";
 import video from "../Video/saaj2.mp4";
 import bg from "../Video/bg.jpg";
-// const data1 = [
-//   {
-//     id: 0,
-//     title: "Jodhpur",
-//     subTitle: "Wedding Planners",
-//     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
-//   },
-//   {
-//     id: 1,
-//     title: "Mumbai",
-//     subTitle: "⁠Decor and Design",
-//     img: "https://image.wedmegood.com/resized/800X/uploads/project/277123/1706366948_IMG_8129.JPG",
-//   },
-//   {
-//     id: 2,
-//     title: "Delhi",
-//     subTitle: "⁠Vendor and Artist Management",
-//     img: "https://image.wedmegood.com/resized/800X/uploads/project/277122/1706365881_0032DVK05052.jpg",
-//   },
-//   {
-//     id: 3,
-//     title: "Hyderabad",
-//     subTitle: "⁠Corporates Events",
-//     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_316665412_560435356092682_2508021726762921812_n.jpg",
-//   },
-// ];
 export default function Home() {
   const [id, setId] = useState(0);
   const [enable, setEnable] = useState(false);
@@ -56,7 +30,7 @@ video.volume=0.1;
 
   const settings = {
     focusOnSelect: true,
-    //  infinite: false,
+
 
     slidesToShow: 3.6,
     centerMode: true,
@@ -65,20 +39,12 @@ video.volume=0.1;
     speed: 900,
     arrows: false,
   };
-  //   const handleSetImage = (ind) => {
-  //     setHero(data1[ind]);
-  //     setId(data1[ind].id)
-  //     console.log(hero.id,id);
-  //   };
-
-  // Used to determine which items should be visible. this prevents the "ghosting" animation
 
   return (
     <div
       id="home"
       style={{
-        // backgroundImage: `url(${hero.img})`,
-        // backgroundImage: `url(${bg})`,
+       
         backgroundSize: "cover",
         backgroundPosition: "center",
 
@@ -86,11 +52,11 @@ video.volume=0.1;
       }}
       className="  "
     >
-      <Navbar />
+      
       <img
         src={img}
         alt=""
-        className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[13rem] max-sm:w-[8rem] "
+        className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[10rem] max-sm:w-[8rem] "
       />
       <div className=" bg-cover md:h-[100vh]  overflow-hidden object-contain w-[100%] h-[40rem] ">
         <video

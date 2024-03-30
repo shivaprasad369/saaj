@@ -45,6 +45,7 @@ export default function Services() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
+      viewport={{once:true}}
       whileInView={{
         opacity: 1,
         y: 0,
@@ -56,7 +57,7 @@ export default function Services() {
       <img
         src={png}
         alt=""
-        className="absolute z-10 top-0 left-0 opacity-[0.7] w-[8rem]"
+        className="absolute z-10 top-0 left-0 opacity-[0.7] w-[8rem] max-sm:w-[5rem]"
       />
 
       <div className="grid relative md:grid-cols-2 bg-[#f3ebeb] grid-cols-1 gap-2">
@@ -78,7 +79,8 @@ export default function Services() {
           </h1>
           
           <p
-           style={{fontFamily: `'Segoe UI', sans-serif`,letterpacing:' 0.1em'}}
+              style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
+          
             className="text-[#705704] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by
@@ -103,145 +105,144 @@ export default function Services() {
             transition={{ duration: 2, type: "spring" }}
             className=" container-1 relative border-0  items-center bg-[#f3ebeb] justify-center uppercase text-center"
           >
+         
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-            
-              viewBox="0,0,256,256"
-             
-              className="absolute z-0 opacity-[0.3] bottom-[30%] right-[73%]  w-[10rem]  "
-            >
-              <g
-                fill="none"
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style={{mixBlendMode: "normal"}}
-              >
-                <g transform="scale(5.33333,5.33333)">
-                  <circle
-                    cx="36"
-                    cy="20"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="36"
-                    cy="12"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="36"
-                    cy="36"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="36"
-                    cy="28"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="28"
-                    cy="20"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="28"
-                    cy="12"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="28"
-                    cy="36"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="28"
-                    cy="28"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="20"
-                    cy="20"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="20"
-                    cy="12"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="20"
-                    cy="36"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="20"
-                    cy="28"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="12"
-                    cy="20"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                  <circle
-                    cx="12"
-                    cy="36"
-                    r="3"
-                    fill-opacity="0.6"
-                    fill="#8c5f14"
-                  ></circle>
-                  <circle
-                    cx="12"
-                    cy="28"
-                    r="3"
-                    fill-opacity="0.76863"
-                    fill="#bc8947"
-                  ></circle>
-                </g>
-              </g>
-            </svg>
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0,0,256,256"
+        className="absolute z-[-1] opacity-[0.2] max-sm:w-[5rem] bottom-[30%] right-[73%]  w-[10rem]  "
+      >
+        <g
+          fill="#e0b76b"
+          fill-rule="nonzero"
+          stroke="none"
+          stroke-width="1"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          stroke-dasharray=""
+          stroke-dashoffset="0"
+          font-family="none"
+          font-weight="none"
+          font-size="none"
+          text-anchor="none"
+          style={{ mixBlendMode: "normal" }}
+        >
+          <g transform="scale(5.33333,5.33333)">
+            <circle
+              cx="36"
+              cy="20"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="36"
+              cy="12"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="36"
+              cy="36"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="36"
+              cy="28"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="28"
+              cy="20"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="28"
+              cy="12"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="28"
+              cy="36"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="28"
+              cy="28"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="20"
+              cy="20"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="20"
+              cy="12"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="20"
+              cy="36"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="20"
+              cy="28"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="12"
+              cy="20"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="12"
+              cy="12"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+            <circle
+              cx="12"
+              cy="36"
+              r="3"
+              fill-opacity="0.6"
+              fill="#8c5f14"
+            ></circle>
+            <circle
+              cx="12"
+              cy="28"
+              r="3"
+              fill-opacity="0.76863"
+              fill="#bc8947"
+            ></circle>
+          </g>
+        </g>
+      </svg>
             {/* <img
               src={png1}
               alt=""
@@ -266,7 +267,7 @@ export default function Services() {
                   className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
                 />
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
+           style={{fontFamily:'"Alegreya", serif '}}
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w1} alt="" width={40} />
@@ -295,7 +296,7 @@ export default function Services() {
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
                 />
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
+                  style={{fontFamily:'"Alegreya", serif '}}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.5rem] relative text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img
@@ -315,7 +316,7 @@ export default function Services() {
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
                 />
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
+                  style={{fontFamily:'"Alegreya", serif '}}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w4} alt="" width={40} />

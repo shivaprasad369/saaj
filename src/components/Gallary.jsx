@@ -5,6 +5,7 @@ import data from "../constants/Gallary";
 import { easeInOut, motion } from "framer-motion";
 import Cards from "./Card";
 import Demo from "../demo/Demo";
+import Gallery from "../demo/Gallery";
 
 export default function Gallary() {
   return (
@@ -37,7 +38,8 @@ export default function Gallary() {
               <Cards data={data} key={data?.id} className={"w-full"} />
             </motion.div>
           ))} */}
-          <Demo/>
+          {/* <Demo/> */}
+        <Gallery/>
         </div>
       </div>
     </div>

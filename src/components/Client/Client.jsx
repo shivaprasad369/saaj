@@ -20,7 +20,7 @@ export default function Client() {
         
     <Why/>
     <How/>
-  
+  <div  className='my-[10%] max-sm:hidden border-b-[1px] border-gray-200'/>
     </div>
   )
 }
