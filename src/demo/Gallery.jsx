@@ -10,7 +10,7 @@ export default function Gallery() {
         {data.map((data,index)=>(
          <Tooltip
          content={
-           <div className="px-1 py-2 bg-black text-white m-0 rounded-md">
+           <div className="px-1 py-2 bg-[#a1812a] text-white m-0 rounded-md">
              <div className="text-small font-bold">{data?.name}</div>
              <div className="text-tiny">{data?.description}</div>
            </div>

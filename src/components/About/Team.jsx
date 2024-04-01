@@ -62,7 +62,7 @@ export default function Team() {
             </h1>
           </div>
           <div>
-            <h6 className="tracking-[1px] leading-2 uppercase">
+            <h6 className="tracking-[1px] leading-2 uppercase font-semibold text-[#927f27]">
               {" "}
               FOUNDER & CEO
             </h6>
@@ -86,7 +86,7 @@ export default function Team() {
             </h1>
           </div>
           <div>
-            <h6 className="tracking-[1px] leading-2 uppercase">
+            <h6 className="tracking-[1px] leading-2 uppercase font-semibold text-[#927f27]">
               {" "}
               Hospitality & Logistics Manager
             </h6>
@@ -106,7 +106,7 @@ export default function Team() {
             </h1>
           </div>
           <div>
-            <h6 className="tracking-[1px] leading-2 uppercase">
+            <h6 className="tracking-[1px] leading-2 uppercase font-semibold text-[#927f27]">
               {" "}
               Production Manager
             </h6>

@@ -9,12 +9,24 @@ import {
   NavbarMenuItem,
   Button,
 } from "@nextui-org/react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function Navbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const modelRef = useRef();
+  const onClose = (e) => {
+   
+    if (modelRef.current === e.target) {
+      setIsMenuOpen(false);
+    }
+    if (modelRef.current &&!modelRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+  };
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white  ">
+    <Navbar ref={modelRef} onMenuOpenChange={onClose} className="bg-white  ">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -34,13 +46,14 @@ export default function Navbars() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="/contact" variant="flat">
+          
+          <motion.button whileHover={{scale:1.05,transition:{duration:0.3,type:'tween',ease:'easeIn'}}} className="border-[0px] px-[1.5rem] py-2 rounded-sm bg-[#ebb654] text-white  ">
             <Link
              to={'/contact'}>
 
             Connect
              </Link>
-          </Button>
+          </motion.button>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="md:w-[50%] items-center bg-white">
@@ -82,15 +95,13 @@ export default function Navbars() {
           </p>
         </NavbarMenuItem>
         <NavbarMenuItem className="mt-4">
-          <button type="button" className="bg-pink-400 py-3 px-5 text-white">
+        <motion.button whileHover={{scale:1.05,transition:{duration:0.3,type:'tween',ease:'easeIn'}}} className="border-[0px] px-[1.5rem] py-2 rounded-sm bg-[#ebb654] text-black uppercase font-semibold ">
             <Link
-              className="w-full uppercase text-white"
-              to="/contact"
-              size="lg"
-            >
-              connect
-            </Link>
-          </button>
+             to={'/contact'}>
+
+            Connect
+             </Link>
+          </motion.button>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

@@ -8,12 +8,12 @@ import {
 import price from "./best-price.png";
 import price1 from "./expert (1).png";
 import React from "react";
-import img from "../assets/why1.jpg";
+import img from "./RA_Wedding (336)-min.jpg";
 import { motion } from "framer-motion";
 export default function Why() {
   return (
     <div className="w-full relative h-full justify-center items-center  overflow-hidden flex flex-col gap-3">
-      <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#493915]">
+      <div className="mt-3 gap-3 text-3xl p-4 font-bold uppercase text-[#9e6c32]">
         <h1 style={{ fontFamily: ` "Libre Baskerville", serif` }}>Why Saaj?</h1>
       </div>
       <svg
@@ -324,7 +324,7 @@ export default function Why() {
                 <Typography gutterBottom variant="h5" component="div">
                   <p
                     style={{ fontFamily: `"Tinos", serif` }}
-                    className="text-3xl text-[#612f20] font-semibold"
+                    className="text-3xl text-[#9e6c32] font-semibold"
                   >
                     Customized Events
                   </p>
@@ -332,7 +332,7 @@ export default function Why() {
                 <Typography variant="body1" color="text.secondary">
                   <p
                    style={{fontFamily:'"Alegreya", serif '}}
-                   className=" md:text-[1rem] text-[#684f2a] tracking-wide  sm:text-[0.88rem]">
+                   className=" md:text-[1rem] text-[#946b2e] tracking-wide  sm:text-[0.88rem]">
                     Crafting unique weddings, ensuring every detail reflects the
                     couple's style, making celebrations unforgettable and
                     special.
@@ -368,7 +368,7 @@ export default function Why() {
             >
               <h1
                 style={{ fontFamily: `"Tinos", serif` }}
-                className="text-3xl text-[#612f20]  border-0 font-bold py-2 max-[480px]:text-[1.5rem]"
+                className="text-3xl text-[#9e6c32]  border-0 font-bold py-2 max-[480px]:text-[1.5rem]"
               >
                 Special Decor
               </h1>
@@ -390,11 +390,11 @@ export default function Why() {
               <img
                 src={price}
                 alt=""
-                className="sm:h-20 max-sm:h-17 w-[4rem] max-[480px]:w-[4rem]  object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
+                className="sm:h-19 max-sm:h-17 w-[4rem] max-[480px]:w-[4rem]  object-contain hover:text-white border-[1px] p-3  bg-[#684222] rounded-xl"
               />
               <h1
                  style={{ fontFamily: `"Tinos", serif` }}
-                className="text-3xl text-[#612f20] font-bold md:py-2 max-[480px]:text-[1.5rem]"
+                className="text-3xl text-[#9e6c32] font-bold md:py-2 max-[480px]:text-[1.5rem]"
               >
                 Best Price
               </h1>
@@ -414,7 +414,7 @@ export default function Why() {
               />
               <h1
                  style={{ fontFamily: `"Tinos", serif` }}
-                className="text-3xl text-[#612f20] font-bold md:py-2  max-[480px]:text-[1.5rem] capitalize"
+                className="text-3xl text-[#9e6c32] font-bold md:py-2  max-[480px]:text-[1.5rem] capitalize"
               >
                 Expertise
               </h1>

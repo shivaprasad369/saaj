@@ -73,7 +73,7 @@ useEffect(() => {
                 wedding planner
               </h1>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+               style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 Saaj Weddings stands proudly as the symbol of excellence among
@@ -84,7 +84,7 @@ useEffect(() => {
               </p>
               <div></div>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+               style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold  md:text-[1rem] pt-4 tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 At Saaj Weddings, our passion is to transform your dreams into
@@ -145,7 +145,7 @@ useEffect(() => {
                 vendors and artist management
               </h1>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+               style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 At Saaj Weddings, we understand that the success of any
@@ -157,7 +157,7 @@ useEffect(() => {
               </p>
               <div className="p-2"></div>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 From photographers capturing your cherished moments to caterers
@@ -241,7 +241,7 @@ useEffect(() => {
                 decor and design
               </h1>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#926134] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 At Saaj Weddings, we know that how a wedding looks and feels is
@@ -253,7 +253,7 @@ useEffect(() => {
               </p>
               <div className="p-2"></div>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#926134] font-semibold  pb-[2rem] tracking-wider md:text-[1rem] text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 Our goal is to turn your venue into a dreamy space that brings
@@ -307,13 +307,13 @@ useEffect(() => {
           >
             <div className="text-center flex-wrap  justify-center object-contain ">
               <h1
-                className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
+                className="text-[3rem] text-[#724a24] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 corporate events
               </h1>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 At Saaj Weddings, we bring our expertise in creating magical
@@ -326,7 +326,7 @@ useEffect(() => {
               </p>
               <div></div>
               <p
-                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+               style={{fontFamily:'"Alegreya" serif '}}
                 className="text-[#9c5a33] font-semibold pb-6 pt-4 md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
               >
                 From conceptualization to flawless execution, we focus on every
