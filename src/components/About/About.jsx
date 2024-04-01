@@ -37,8 +37,8 @@ export default function About() {
             About Saaj
           </h1>
           <p
-         style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
-         className="tracking-widest text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[1rem] max-sm:px-[2rem] sm:pl-[3rem]"
+                style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+            className="border-0 w-[80%] text-[1.2rem] leading-8 text-[#705704] text-center"
           >
             Saaj Weddings stands as a testament to the belief that every
             celebration deserves to be extraordinary. Nestled in the heart of
