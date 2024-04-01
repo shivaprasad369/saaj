@@ -60,7 +60,7 @@ export default function How() {
                 transition: {
                   type: "spring",
                   duration: 0.3,
-                  type: "easeInOut",
+                  ease: "easeInOut",
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
@@ -86,7 +86,7 @@ export default function How() {
                 transition: {
                   type: "spring",
                   duration: 0.3,
-                  type: "easeInOut",
+                  ease: "easeInOut",
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
@@ -129,7 +129,7 @@ export default function How() {
                 transition: {
                   type: "spring",
                   duration: 0.3,
-                  type: "easeInOut",
+                  ease: "easeInOut",
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
@@ -182,7 +182,7 @@ export default function How() {
                 transition: {
                   type: "spring",
                   duration: 0.3,
-                  type: "easeInOut",
+                  ease: "easeInOut",
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"

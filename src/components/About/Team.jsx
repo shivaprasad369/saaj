@@ -32,14 +32,11 @@ export default function Team() {
           Our leadership team
         </h2>
         <p
-          className="text-[1rem] leading-1.5 text-inherit text-center text-[#634820]"
-          style={{
-            fontFamily:
-              " Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif",
-          }}
+          className="text-[1rem] leading-1.5 tracking-wider text-inherit text-center text-[#634820]"
+          style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
         >
           {" "}
-          over 100 years of combined experience, we have got a well-seasoned team
+          over 10 years of combined experience, we have got a well-seasoned team
           at the helm.
         </p>
       </div>

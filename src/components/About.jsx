@@ -11,10 +11,7 @@ import png from "./assets/pngegg.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 export default function About() {
-  const [more, setMore] = useState(false);
-  const handleMore = () => {
-    setMore((more) => !more);
-  };
+
   // const [loading, setLoading] = useState(false);
   // const [img, setImg] = useState("");
   // const [img2, setImg2] = useState("");
@@ -262,7 +259,7 @@ export default function About() {
                 transition: { ease: "easeIn", type: "spring", duration: 0.3 },
               }}
               className="border-2 text-xl hover:bg-[#5F3615] hover:border-0 hover:text-white rounded-sm  border-[#5F3615] px-[1.5rem] py-[0.5rem] text-[#5F3615]"
-              onClick={handleMore}
+             
             >
               <Link to={"/about"}>
                 {" "}

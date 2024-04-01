@@ -28,11 +28,11 @@ function Modal({ setShowModel,ids }) {
             <button type="button" className=" absolute text-black float-end top-2 right-5" onClick={() => setShowModel(false)}>
          X
        </button>
-          <div  style={{
+          <div  
+          style={{
             fontWeight: 400,
-            fontFamily:
-              "Charlie Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif",
-          }} className="md:flex max-md:flex-col gap-10">
+            fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+           className="md:flex max-md:flex-col gap-10">
             <div>
               <div className="border-0 relative md:h-[15rem] md:w-[15rem] max-md:h-[15rem] max-[820]:h-[20rem]">
                 <img src={ids[0]?.image} alt="" className="absolute z-10 bottom-0 h-[100%]  w-[100%]" />

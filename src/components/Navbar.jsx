@@ -7,33 +7,18 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Button,
 } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { useRef } from "react";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
-
 export default function Navbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const modelRef = useRef();
-  const onClose = (e) => {
-   
-    if (modelRef.current === e.target) {
-      setIsMenuOpen(false);
-    }
-    if (modelRef.current &&!modelRef.current.contains(e.target)) {
-        setIsMenuOpen(false);
-      }
-  };
   return (
-    <Navbar ref={modelRef} onMenuOpenChange={onClose} className="bg-white  ">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white  ">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className=""
         />
       </NavbarContent>
-
       <NavbarContent className="hidden sm:flex gap-4 tracking-wider" justify="center">
         <NavbarItem>
           <h1
@@ -46,11 +31,9 @@ export default function Navbars() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          
           <motion.button whileHover={{scale:1.05,transition:{duration:0.3,type:'tween',ease:'easeIn'}}} className="border-[0px] px-[1.5rem] py-2 rounded-sm bg-[#ebb654] text-white  ">
             <Link
              to={'/contact'}>
-
             Connect
              </Link>
           </motion.button>
@@ -88,7 +71,9 @@ export default function Navbars() {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem className="mt-4">
-          <p className="text-center">
+          <p
+          style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+           className="text-center tracking-wide">
             Saaj Weddings stands as a testament to the belief that every
             celebration deserves to be extraordinary. Nestled in the heart of
             the vibrant city of Jaipur, Rajasthan.
@@ -98,7 +83,6 @@ export default function Navbars() {
         <motion.button whileHover={{scale:1.05,transition:{duration:0.3,type:'tween',ease:'easeIn'}}} className="border-[0px] px-[1.5rem] py-2 rounded-sm bg-[#ebb654] text-black uppercase font-semibold ">
             <Link
              to={'/contact'}>
-
             Connect
              </Link>
           </motion.button>

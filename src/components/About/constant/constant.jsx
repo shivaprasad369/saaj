@@ -1,5 +1,5 @@
 import img1 from "../../assets/founder-removebg-preview.png";
-import img2 from "../../assets/s1.png";
+import img2 from "../a2.png";
 import img3 from "../../assets/WhatsApp_Image_2024-03-18_at_1.37.35_PM-removebg-preview.png";
 export const data = [
   {
