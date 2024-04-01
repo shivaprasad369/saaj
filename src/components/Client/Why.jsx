@@ -8,7 +8,6 @@ import {
 import price from "./best-price.png";
 import price1 from "./expert (1).png";
 import React from "react";
-import png from "../assets/pngwing.com(1).png";
 import img from "../assets/why1.jpg";
 import { motion } from "framer-motion";
 export default function Why() {
@@ -291,7 +290,6 @@ export default function Why() {
           </g>
         </g>
       </svg>
-      {/* <img src={png} alt="" className="w-[15rem] z-0 absolute left-[5rem] bottom-[20%] opacity-[0.1]"  /> */}
       <motion.div
         initial={{ opacity: 0, scale: 0.4 }}
         whileInView={{

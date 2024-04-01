@@ -12,6 +12,10 @@ export default function Contact() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }, [location]);
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    alert('hello')
+  }
   return (
     <>
     <div id='contact' className="md:flex max-sm:flex-col justify-center  text-center mx-[5%] mt-[3rem]">
@@ -43,7 +47,7 @@ www.devikanarainandcompany.com/joinus */}
       </div>
       <div className="">
         <div className="border-0  md:w-[35rem] max-md:w-[100%] flex flex-col gap-3 ">
-          <form action=" " className="flex flex-col text-start px-5">
+          <form action=" " onSubmit={handleSubmit} className="flex flex-col text-start px-5">
             <label htmlFor="name">
               Your Name{" "}
               <span className="text-xs text-gray-500">(required)</span>
@@ -58,7 +62,7 @@ www.devikanarainandcompany.com/joinus */}
                   name="name"
                   id="name"
                   required
-                  className="bg-gray-100 w-[100%] h-[2.5rem] border-[1px]  border-gray-500"
+                  className="bg-gray-100 p-2 w-[100%] h-[2.5rem] border-[1px]  border-gray-500"
                 />
               </div>
               <div  className="w-[50%]">
@@ -70,7 +74,7 @@ www.devikanarainandcompany.com/joinus */}
                   name="name"
                   id="name"
                   required
-                  className="bg-gray-100 h-[2.5rem] border-[1px] w-[100%] border-gray-500"
+                  className="bg-gray-100 h-[2.5rem] p-2 border-[1px] w-[100%] border-gray-500"
                 />
               </div>
             </div>
@@ -83,7 +87,7 @@ www.devikanarainandcompany.com/joinus */}
               name="parter"
               id="partner"
               required
-              className="bg-gray-100 h-[2.5rem] border-[1px] w-[100%] border-gray-500"
+              className="bg-gray-100 h-[2.5rem] border-[1px] p-2 w-[100%] border-gray-500"
             />
             <label htmlFor="email" className="py-2">
               Email <span className="text-xs text-gray-500">(required)</span>

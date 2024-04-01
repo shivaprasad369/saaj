@@ -1,6 +1,6 @@
 import img1 from './Gallaries/1.jpg'
 import img2 from './Gallaries/2.jpg'
-// import img3 from './Gallaries/3.jpg'
+
 
 import img4 from './Gallaries/4.jpg'
 import img5 from './Gallaries/5.jpg'

@@ -1,12 +1,6 @@
-
 import React from "react";
-import data from "../constants/Gallary";
-
-import { easeInOut, motion } from "framer-motion";
-import Cards from "./Card";
-import Demo from "../demo/Demo";
+import {  motion } from "framer-motion";
 import Gallery from "../demo/Gallery";
-
 export default function Gallary() {
   return (
     <div id="gallary" className="justify-center items-center pt-[4rem] relative max-w:[100%]">
@@ -16,29 +10,8 @@ export default function Gallary() {
       >
         Our Portfolio
       </motion.h1>
-      
       <div className=" ">
         <div className=" gap-4 items-center">
-          {/* {data.map((data, index) => (
-            <motion.div
-            viewport={{once:true}}
-              initial={{ opacity: 0, y: 0 }}
-              whileHover={{ scale: 1, type: "spring" }}
-              whileInView={{
-                opacity: 1,
-                transition: {
-                  ease: easeInOut,
-                  delay: 0.3 * index,
-                  type: "spring",
-                },
-              }}
-              className={`${data.grid} bg-slate-100 p-2 flex-wrap w-[100%] md:w-[70%] md:mt-[10px] ${data.style} `}
-              key={data?.id}
-            >
-              <Cards data={data} key={data?.id} className={"w-full"} />
-            </motion.div>
-          ))} */}
-          {/* <Demo/> */}
         <Gallery/>
         </div>
       </div>

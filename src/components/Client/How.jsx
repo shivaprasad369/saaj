@@ -8,7 +8,6 @@ export default function How() {
   return (
     <div className=" w-full h-full relative overflow-hidden flex flex-col flex-wrap items-center justify-center mt-[1rem] bg-gray-50">
       <div className="text-3xl font-bold mb-8">
-        {/* <div style={{backgroundImage: `repeating-linear-gradient(red, pink 10%, green 20%)`,position:'absolute',zIndex}}/> */}
         <h1
           style={{ fontFamily: ` "Libre Baskerville", serif` }}
           className="text-3xl py-[2rem] tracking-widest text-[#473c16] uppercase"
@@ -26,7 +25,6 @@ export default function How() {
             <h3
               className="mb-2 overflow-hidden text-4xl  font-bold text-[#473c16] tracking-widest"
               style={{fontFamily: '"Great Vibes", cursive', fontWeight: 600}}
-              // style={{ fontFamily: '"Open Sans", sans-serif', fontWeight: 600 }}
             >
               {" "}
               Event Planning + Design
@@ -63,7 +61,7 @@ export default function How() {
           <div className="p-6 md:w-1/2 w-full max-md:hidden ">
             <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
               className="h-full shadow-md shadow-black w-full object-cover" 
-             src={img2} alt="card"
+             src={img2} alt="card2"
               />
           </div>
           <div className="p-6 relative md:w-2/3">
@@ -94,7 +92,7 @@ export default function How() {
           <div className="p-6 md:w-1/2 w-full md:hidden">
           <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
               className="h-full shadow-md shadow-black w-full object-cover" 
-            src={img2} alt="card" 
+            src={img2} alt="card3" 
              />
           </div>
         </motion.div>
@@ -132,6 +130,7 @@ export default function How() {
           <motion.img whileHover={{scale:1.02,transition:{type:'spring',duration:0.3,type:'easeInOut'}}}
               className="h-full shadow-md shadow-black w-full object-cover" 
             src={img3}
+            alt="card4" 
              />
           </div>
         </motion.div>

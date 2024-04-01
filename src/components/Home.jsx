@@ -5,8 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Slider from "react-slick";
 import Navbar from "./Navbar";
-import { motion, useScroll } from "framer-motion";
-import classNames from "classnames";
+import { motion } from "framer-motion";
 import img from './assets/Saaj logo png3 (1)(1).png'
 import './Home.css'
 const data1 = [
@@ -43,30 +42,20 @@ export default function Home() {
     subTitle: "Wedding Planners",
     img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
   });
-  
-
   const settings = {
     focusOnSelect: true,
-    //  infinite: false,
-
     slidesToShow: 3.6,
     centerMode: true,
     vertical: true,
     slidesToScroll: 1,
     speed: 900,
    arrows:false,
-
-
   };
   const handleSetImage = (ind) => {
     setHero(data1[ind]);
     setId(data1[ind].id)
     console.log(hero.id,id);
   };
- 
-
-  // Used to determine which items should be visible. this prevents the "ghosting" animation
-
   return (
     <div
       id="home"
@@ -177,11 +166,8 @@ export default function Home() {
             </Slider>
           </ol>
         </motion.div>
-        {/* max-[762px]:ml-[12rem] max-[640px]:ml-[6rem] max-[536px]:ml-[3rem]  min-[476px]:text-right */}
-
         <div
           className="pr-6 flex flex-col text-inherit  max-[866px]:min-sm:text-xl  "
-          // style={{   fontFamily: "Urban Jungle" }}
         >
           <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,transition:{type:"spring",delay:0.3,duration:1,ease:'easeIn'}}} className=" flex sm:absolute top-[38%] right-0 justify-end flex-col text-center  max-[544px]:text-center sm:pr-4 ">
             <h5 className="sm:ml-[1.5rem] md:hidden text-[0.9rem]  tracking-[0.3rem] text-white sm:text-right overflow-hidden">
@@ -209,7 +195,7 @@ export default function Home() {
                   <FaYoutube />
                 </li>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/saaj_weddings/">
                                   <li>
                   <FaFacebookF />
                 </li>

@@ -1,45 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import Slider from "react-slick";
-// import Navbar from "./Navbar";
+
 import valume from "./Ui/volume.png";
 import valume1 from "./Ui/mute.png";
-import { motion, useScroll } from "framer-motion";
-import classNames from "classnames";
+
 import img from "./assets/Saaj logo png3 (1)(1).png";
 import "./Home.css";
 import video from "../Video/saaj2.mp4";
 import bg from "../Video/bg.jpg";
 export default function Home() {
-  const [id, setId] = useState(0);
+ 
   const [enable, setEnable] = useState(false);
   const handleValue = () => {
     var video = document.getElementById('vid');
     setEnable(!enable);
 video.volume=0.1;
   };
-  const [hero, setHero] = useState({
-    id: 0,
-    title: "Jodhpur",
-    subTitle: "Wedding Planners",
-    img: "https://image.wedmegood.com/resized/800X/uploads/member/97501/1683366572_308587077_502924788510406_3579032554870130889_n.jpg",
-  });
-
-  const settings = {
-    focusOnSelect: true,
-
-
-    slidesToShow: 3.6,
-    centerMode: true,
-    vertical: true,
-    slidesToScroll: 1,
-    speed: 900,
-    arrows: false,
-  };
-
   return (
     <div
       id="home"
@@ -55,7 +34,7 @@ video.volume=0.1;
       
       <img
         src={img}
-        alt=""
+        alt="home"
         className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[10rem] max-sm:w-[8rem] "
       />
       <div className=" bg-cover md:h-[100vh]  overflow-hidden object-contain w-[100%] h-[40rem] ">
@@ -66,10 +45,6 @@ video.volume=0.1;
           autoPlay
           loop
           muted={enable ? false : true}
-   
-          // controls
-          // volume={0.2}
-          
         >
           <source src={video} type="video/mp4" />
         </video>
@@ -78,9 +53,9 @@ video.volume=0.1;
           onClick={handleValue}
         >
           {enable ?
-          <img src={valume} className="w-[2.7rem] h-[2.7rem]" />
+          <img src={valume} alt="home" className="w-[2.7rem] h-[2.7rem]" />
           : 
-          <img src={valume1} className="w-[2.7rem] h-[2.7rem]" />
+          <img src={valume1}  alt="home" className="w-[2.7rem] h-[2.7rem]" />
           }
         </div>
         <div>

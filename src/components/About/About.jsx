@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aboutus from "../About";
 import founder from "./founder.JPG";
-import member1 from "./IMG_9218.JPG";
+import member1 from "./a2.png";
 import member2 from "./WhatsApp Image 2024-03-18 at 1.37.35 PM.jpeg";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";

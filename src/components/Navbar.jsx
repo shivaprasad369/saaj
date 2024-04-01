@@ -7,23 +7,12 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
- 
   Button,
 } from "@nextui-org/react";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function Navbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const menuItems = [
-    "home",
-    "About",
-    "our protfolio",
-    "testinomial",
-    "why saaj",
-    "contact",
-  ];
-
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white  ">
       <NavbarContent>
@@ -31,10 +20,6 @@ export default function Navbars() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className=""
         />
-        {/* <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
-        </NavbarBrand> */}
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4 tracking-wider" justify="center">

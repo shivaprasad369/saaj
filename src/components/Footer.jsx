@@ -15,14 +15,6 @@ import {
 export default function Fnavbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "home",
-    "About",
-    "our protfolio",
-    "testinomial",
-    "why saaj",
-    "contact",
-  ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white sm:hidden max-sm:block  ">

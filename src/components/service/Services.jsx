@@ -9,20 +9,15 @@ import w1 from "../assets/arch.png";
 import w2 from "../assets/hall.png";
 import w3 from "../assets/vendor.png";
 import w4 from "../assets/music.png";
-// Import Swiper styles
-
-// import 'swiper/css';
-// import 'swiper/css/effect-cards';
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "./styles.css";
 
 import png from "../assets/—Pngtree—watercolor floral border composition for_4869610.png";
-import png1 from "../assets/pngwing.com(1).png";
+
 // import required modules
 import { EffectCards, Autoplay } from "swiper/modules";
-import { easeIn, easeInOut, motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import {  motion } from "framer-motion";
 
 
 export default function Services() {
@@ -45,7 +40,7 @@ export default function Services() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
-      viewport={{once:true}}
+      viewport={{ once: true }}
       whileInView={{
         opacity: 1,
         y: 0,
@@ -56,7 +51,7 @@ export default function Services() {
     >
       <img
         src={png}
-        alt=""
+        alt="logo"
         className="absolute z-10 top-0 left-0 opacity-[0.7] w-[8rem] max-sm:w-[5rem]"
       />
 
@@ -72,15 +67,14 @@ export default function Services() {
           justify-center  "
         >
           <h1
-          
-            style={{ fontFamily:`   "Tinos", serif`}} className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
+            style={{ fontFamily: `   "Tinos", serif` }}
+            className="uppercase text-[#7a4927] tracking-widest text-center font-bold text-[30px]"
           >
             our services
           </h1>
-          
+
           <p
-              style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+            style={{ fontFamily: '"Alegreya", serif ', letterpacing: " 0.1em" }}
             className="text-[#705704] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem]  leading-[1.7rem] whitespace-none text-md md:py-3 md:w-[90%] mb-3 px-2"
           >
             Elevate your love story with a destination wedding orchestrated by
@@ -91,12 +85,7 @@ export default function Services() {
           </p>
         </motion.div>
         <motion.div
-          // initial={{ opacity: 0, y: -50 }}
-          // animate={{
-          //   opacity: 1,
-          //   y: 0,
-          //   transition: { ease: easeIn, duration: 1.5, type: "spring" },
-          // }}
+         
           className=" bg-[#f3f3f5]  w-auto "
         >
           <motion.div
@@ -105,144 +94,143 @@ export default function Services() {
             transition={{ duration: 2, type: "spring" }}
             className=" container-1 relative border-0  items-center bg-[#f3ebeb] justify-center uppercase text-center"
           >
-         
             <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0,0,256,256"
-        className="absolute z-[-1] opacity-[0.2] max-sm:w-[5rem] bottom-[30%] right-[73%]  w-[10rem]  "
-      >
-        <g
-          fill="#e0b76b"
-          fill-rule="nonzero"
-          stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
-          style={{ mixBlendMode: "normal" }}
-        >
-          <g transform="scale(5.33333,5.33333)">
-            <circle
-              cx="36"
-              cy="20"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="36"
-              cy="12"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="36"
-              cy="36"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="36"
-              cy="28"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="28"
-              cy="20"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="28"
-              cy="12"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="28"
-              cy="36"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="28"
-              cy="28"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="20"
-              cy="20"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="20"
-              cy="12"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="20"
-              cy="36"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="20"
-              cy="28"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="12"
-              cy="20"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="12"
-              cy="12"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-            <circle
-              cx="12"
-              cy="36"
-              r="3"
-              fill-opacity="0.6"
-              fill="#8c5f14"
-            ></circle>
-            <circle
-              cx="12"
-              cy="28"
-              r="3"
-              fill-opacity="0.76863"
-              fill="#bc8947"
-            ></circle>
-          </g>
-        </g>
-      </svg>
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0,0,256,256"
+              className="absolute border-2 z-[0] opacity-[0.2] max-sm:w-[5rem] bottom-[30%] right-[73%]  w-[10rem]  "
+            >
+              <g
+                fill="#e0b76b"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style={{ mixBlendMode: "normal" }}
+              >
+                <g transform="scale(5.33333,5.33333)">
+                  <circle
+                    cx="36"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="36"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="20"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="20"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="36"
+                    r="3"
+                    fill-opacity="0.6"
+                    fill="#8c5f14"
+                  ></circle>
+                  <circle
+                    cx="12"
+                    cy="28"
+                    r="3"
+                    fill-opacity="0.76863"
+                    fill="#bc8947"
+                  ></circle>
+                </g>
+              </g>
+            </svg>
             {/* <img
               src={png1}
               alt=""
@@ -257,35 +245,32 @@ export default function Services() {
                 disableOnInteraction: false,
               }}
               modules={[EffectCards, Autoplay]}
-           
-             
             >
               <SwiperSlide className="flex  flex-col ">
-            
                 <img
                   src={img2}
+                  alt="icons"
                   className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
                 />
                 <h1
-           style={{fontFamily:'"Alegreya", serif '}}
+                  style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
-                  <img src={w1} alt="" width={40} />
-                   Wedding Planner
+                  <img src={w1} alt="icons" width={40} />
+                  Wedding Planner
                 </h1>
-              
               </SwiperSlide>
               <SwiperSlide className="flex flex-col">
-        
                 <img
                   src={img3}
+                  alt="icons"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
                 />
                 <h1
-                  style={{ fontFamily: ` "Libre Baskerville", serif` }}
+                  style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 flex-wrap tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
-                  <img src={w2} alt="" width={40} />
+                  <img src={w2} alt="icons" width={40} />
                   Decor and Design
                 </h1>
               </SwiperSlide>
@@ -293,15 +278,16 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img4}
+                  alt="sevice"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
                 />
                 <h1
-                  style={{fontFamily:'"Alegreya", serif '}}
+                  style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.5rem] relative text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img
                     src={w3}
-                    alt=""
+                    alt="icons"
                     width={40}
                     className="text-center absolute left-[10%]"
                   />
@@ -313,51 +299,18 @@ export default function Services() {
               <SwiperSlide className="flex flex-col">
                 <img
                   src={img5}
+                  alt="icons"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
                 />
                 <h1
-                  style={{fontFamily:'"Alegreya", serif '}}
+                  style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
-                  <img src={w4} alt="" width={40} />
+                  <img src={w4} alt="icons" width={40} />
                   Corporate Events
                 </h1>
               </SwiperSlide>
             </Swiper>
-            {/* {data ? (
-              data.map((data) => (
-                <motion.div  className="object-contain">
-                  <motion.img
-                      initial={{ bottom: "2rem" }}
-                      whileInView={{ bottom: "0rem" }}
-                      transition={{ duration: 3, type: "spring" }} 
-                    src={data.img}
-                    className={`${
-                      data?.index === index ? "block" : "hidden"
-                    } md:w-[100%] blur-[0.1rem] rounded-md max-md:w-full`}
-                  />
-
-                  <h1
-                    style={{ fontFamily: '"DM Serif Display", serif' }}
-                    className={`text-xl absolute ${
-                      data.index === 3
-                        ? "  text-center"
-                        : " items-center justify-center"
-                    }   font-bold top-0  pt-[20%]  h-full  text-center justify-center items-center w-full `}
-                  >
-                    <div className="relative z-10 md:text-6xl max-md:text-5xl text-[#0a0a0a]">
-
-                    {data?.index === index && data.data}
-                    </div>
-                  </h1>
-                </motion.div>
-              ))
-            ) : (
-              <Skeleton animation="wave" height={600} width="100%" />
-            )}
-            {!data && (
-              <Skeleton animation="wave" height={"100%"} width="100%" />
-            )} */}
           </motion.div>
         </motion.div>
       </div>

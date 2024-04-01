@@ -1,14 +1,9 @@
-import logo from "../components/assets/slide2.jpeg";
-
 import img1 from "../demo/1.jpeg";
 import img2 from "../demo/prachi.jpg";
-
 import img7 from "../demo/4.jpg";
 import img8 from "../demo/w8.jpg";
 import img6 from "../demo/6.jpg";
-
 import img5 from "../demo/metali.jpg";
-import png from "../components/assets/flower-black-and-white-png-41825.png";
 const data = [
   {
     id: 1,

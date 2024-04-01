@@ -1,32 +1,24 @@
-import React, { useEffect, useState } from "react";
-import img from "../assets/event.avif";
+import React, { useEffect} from "react";
 import img1 from "./services111.jpg";
-import img2 from "./s1.jpg"; 
-// import img3 from "./s1.jpg";
+import img2 from "./s1.jpg";
 import img3 from "./s3.jpg";
-
 import img4 from "./s4.jpg";
-// import img from "../assets/event.avif";
-import { easeIn, motion } from "framer-motion";
-import { Button } from "@mui/material";
+import {  motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-
 export default function Services() {
-const [more1,setMore1]=useState(false)
-const [more2,setMore2]=useState(false)
-const [more3,setMore3]=useState(false)
-const [more4,setMore4]=useState(false)
-
-const location = useLocation();
-
-  useEffect(() => {
-    const element = document.getElementById('services');
+  const location = useLocation();
+useEffect(() => {
+    const element = document.getElementById("services");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
   return (
-    <div className="bg-white mr-[3%]" id="services" style={{backgroundColor:'white'}}>
+    <div
+      className="bg-white mr-[3%]"
+      id="services"
+      style={{ backgroundColor: "white" }}
+    >
       <div className="text-center mt-[2rem] max-md:mb-[5rem]">
         <h1
           className="text-3xl uppercase text-[#975d2e]"
@@ -44,7 +36,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
@@ -65,7 +57,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.7,
@@ -80,7 +72,10 @@ const location = useLocation();
               >
                 wedding planner
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
                 Saaj Weddings stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -88,10 +83,17 @@ const location = useLocation();
                 allows us to make it uniquely yours.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold  md:text-[1rem] pt-4 tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              At Saaj Weddings, our passion is to transform your dreams into reality, ensuring that every detail is a reflection of your unique love story. Entrust your special day to Saaj Weddings, where our seasoned expertise meets heartfelt dedication, promising you a celebration that transcends expectations and  becomes an everlasting chapter in your love story.
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold  md:text-[1rem] pt-4 tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
+                At Saaj Weddings, our passion is to transform your dreams into
+                reality, ensuring that every detail is a reflection of your
+                unique love story. Entrust your special day to Saaj Weddings,
+                where our seasoned expertise meets heartfelt dedication,
+                promising you a celebration that transcends expectations and
+                becomes an everlasting chapter in your love story.
               </p>
-              {/* <Button onClick={()=>setMore1((more1)=>!more1)} variant="outlined">{more1 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
         </div>
@@ -101,12 +103,12 @@ const location = useLocation();
         <div className="md:w-[90%] object-contain max-sm:mt-[4rem] md:ml-[7%] md:mb-[10rem] flex m-2 mt-10 md:flex-row max-md:flex-col gap-4 bg-[#E7E1D9] sm:rounded-br-3xl max-sm:rounded-none  xl:h-[30rem] h-full max-md:h-full   ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            viewport={{ once: true }} 
+            viewport={{ once: true }}
             whileInView={{
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
@@ -127,7 +129,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.7,
@@ -136,34 +138,37 @@ const location = useLocation();
             className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center  flex-wrap max-[810px]:pb-[1rem] "
           >
             <div className="text-center rounded-r-[30px] flex-wrap font-sans justify-center object-contain ">
-            <h1
+              <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 vendors and artist management
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-               At Saaj Weddings, we understand
-                that the success of any celebration lies in seamless vendor and
-                artist management. Choosing the right vendors and artists is
-                like assembling the perfect team for your dream day. Our
-                commitment to excellence extends to carefully selecting and
-                managing each vendor and artist, ensuring they align with your
-                vision and expectations.
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
+                At Saaj Weddings, we understand that the success of any
+                celebration lies in seamless vendor and artist management.
+                Choosing the right vendors and artists is like assembling the
+                perfect team for your dream day. Our commitment to excellence
+                extends to carefully selecting and managing each vendor and
+                artist, ensuring they align with your vision and expectations.
               </p>
               <div className="p-2"></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-              From photographers capturing your cherished moments to caterers
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
+                From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
                 meticulous management ensures everyone works in harmony,
                 creating a symphony of talents that makes your wedding
-                extraordinary. 
-              With Saaj Weddings, you can relax knowing that we
+                extraordinary. With Saaj Weddings, you can relax knowing that we
                 handle all the details, allowing you to enjoy a flawless
                 celebration filled with the expertise and creativity of the best
-                in the business. 
+                in the business.
               </p>
-              {/* <Button onClick={()=>setMore2((more2)=>!more2)} variant="outlined">{more2 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
           <motion.div
@@ -173,7 +178,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
@@ -199,7 +204,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
@@ -220,7 +225,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.7,
@@ -229,13 +234,16 @@ const location = useLocation();
             className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
           >
             <div className="text-center flex-wrap font-sans justify-center object-contain ">
-            <h1
+              <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 decor and design
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#926134] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
                 At Saaj Weddings, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
                 – they create the magical atmosphere that makes your day
@@ -244,14 +252,16 @@ const location = useLocation();
                 makes your love story shine.
               </p>
               <div className="p-2"></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#926134] font-semibold  pb-[2rem] tracking-wider md:text-[1rem] text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-               Our goal is to turn your venue into a dreamy space that brings
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#926134] font-semibold  pb-[2rem] tracking-wider md:text-[1rem] text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
+                Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
                 celebrating with you. With Saaj Weddings, you can count on a
                 perfect mix of creativity and elegance, making your special day
                 as beautiful as your love story.
               </p>
-              {/* <Button onClick={()=>setMore3((more3)=>!more3)} variant="outlined">{more3 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
         </div>
@@ -266,7 +276,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
@@ -287,7 +297,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.7,
@@ -296,13 +306,16 @@ const location = useLocation();
             className=" border-black  min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
           >
             <div className="text-center flex-wrap  justify-center object-contain ">
-            <h1
+              <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
                 corporate events
               </h1>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
                 At Saaj Weddings, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
                 business events. Whether it's a product launch, corporate
@@ -312,14 +325,16 @@ const location = useLocation();
                 ensuring a perfect blend of professionalism and creativity.
               </p>
               <div></div>
-              <p style={{fontFamily:"'Segoe UI', sans-serif"}}  className="text-[#9c5a33] font-semibold pb-6 pt-4 md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1">
-               From conceptualization to flawless execution, we focus on every
+              <p
+                style={{ fontFamily: "'Segoe UI', sans-serif" }}
+                className="text-[#9c5a33] font-semibold pb-6 pt-4 md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+              >
+                From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Weddings to
                 elevate your corporate gatherings, making them not just events
                 but experiences that reflect the excellence of your brand
               </p>
-              {/* <Button onClick={()=>setMore4((more4)=>!more4)} variant="outlined">{more4 ? 'Know less': 'Show more'}</Button> */}
             </div>
           </motion.div>
           <motion.div
@@ -329,7 +344,7 @@ const location = useLocation();
               opacity: 1,
               x: 0,
               transition: {
-                ease: easeIn,
+                ease: "easeIn",
                 type: "spring",
                 duration: 1,
                 delay: 0.5,
