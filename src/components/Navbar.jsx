@@ -79,7 +79,12 @@ export default function Navbars() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link className="w-full uppercase" to="/why" size="lg">
-            why Saaj?
+            Why Saaj?
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link className="w-full uppercase" to="/blog" size="lg">
+            Blogs
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem className="mt-4">
