@@ -32,7 +32,7 @@ video.volume=0.1;
       }}
       className="  "
     >
-      <Navbars/>
+      {/* <Navbars/> */}
       {/* <img
         src={img}
         alt="home"
