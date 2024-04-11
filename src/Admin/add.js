@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -6,10 +7,10 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { useState } from 'react';
 import axios from 'axios';
 
 export default function Create() {
+ const [loading,setLoading]= useState(false);
 const [data,setData]=useState({
     name:'',
     published_At:'',
@@ -19,16 +20,24 @@ const [data,setData]=useState({
 
 })
 const handleSubmit=async()=>{
-   
-    try{
-        const res=await axios.post(`https://server-1-vx69.onrender.com/api/blog/`,data)
-        const data1= res;
-        console.log(data1)
-        alert("stored successfully")
+
+        setLoading(()=>true)
+        const res=await axios.post(`https://server-442v.onrender.com/api/blog/`,data)
+        console.log("stored successfully")
+          const data1= data;
+          console.log(data1)
+          alert(res.data.data)
+          setLoading(()=>false)
+          setData("")
+     if(!res){
+
+       setLoading(false)
+       console.log(res.data.data)
         setData("")
-    }catch(error){
-        console.log(error)
-    }
+     }
+        
+        
+   
 }
     const convertToBase64=(e)=>{
         let reader=new FileReader();
@@ -67,8 +76,7 @@ const handleSubmit=async()=>{
             const formData = new FormData(event.currentTarget);
             const formJson = Object.fromEntries(formData.entries());
             const email = formJson.email;
-            console.log(email);
-            console.log(data)
+            console.log(data,loading)
             handleSubmit();
             handleClose();
           },
@@ -93,9 +101,9 @@ const handleSubmit=async()=>{
             autoFocus
             required
             margin="dense"
-            id="name"
-            name="email"
-            label="Email Address"
+            id="date"
+            name="date"
+         
             type="datetime-local"
             fullWidth
             onChange={((e)=>setData({...data,published_At:e.target.value}))}
@@ -120,7 +128,7 @@ const handleSubmit=async()=>{
           </div>
         </DialogContent>
         <DialogActions>
-          <Button type="submit">ADD</Button>
+          <Button type="submit"  >ADD</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
       </Dialog>

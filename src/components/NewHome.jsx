@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 import valume from "./Ui/volume.png";
 import valume1 from "./Ui/mute.png";
 
-import img from "./assets/Saaj logo png3 (1)(1).png";
+
 import "./Home.css";
 import video from "../Video/saaj2.mp4";
 import bg from "../Video/bg.jpg";
@@ -32,11 +32,11 @@ video.volume=0.1;
       className="  "
     >
       
-      <img
+      {/* <img
         src={img}
         alt="home"
         className="absolute sm:top-3 max-sm:top-2 left-3 sm:w-[10rem] max-sm:w-[8rem] "
-      />
+      /> */}
       <div className=" bg-cover md:h-[100vh]  overflow-hidden object-contain w-[100%] h-[40rem] ">
         <video
         id="vid"

@@ -8,7 +8,7 @@ export default function Fetch() {
   const [img3,setImg3]=useState("")
   const [img4,setImg4]=useState("")
   async function handleImage(id){
-   await axios.get(`http://localhost:8888/${id}`).then((data)=>{
+   await axios.get(`https://server-442v.onrender.com/${id}`).then((data)=>{
     if(data===null){
       alert("There no image found")
     return false;

@@ -2,6 +2,9 @@ import { Divider } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import image from './contact.png'
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const location = useLocation();
@@ -12,9 +15,57 @@ export default function Contact() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }, [location]);
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    alert('hello')
+  const  [form,setForm]=useState({
+    name:'',
+    email:"",
+    story:"",
+    hear:"",
+    number:"",
+    functions:'',
+    guests:"",
+   partners:"",
+   
+
+  })
+  const handleSubmit = (event) => {
+    event.preventDefault();
+ console.log(form)
+
+    emailjs.send(
+        "service_iyftcu9",
+        "template_35t1pae",
+        {
+          from_name: form.name,
+          to_name: "Saaj Weddings",
+          from_email: form.email,
+          to_email: "info@saajwedding.com",
+          message:"parters name :-"+form.partners + " About their stories :-" +form.story + "Where did you hear about saaj weddings :- "+form.hear ,
+          number:form.number,
+          day: form.functions,
+          guests: form.guests,
+         
+        },
+        "PVqq0KUlSqmgQPJnu"
+      )
+      .then(() => {
+       
+        setForm({
+        name:'',
+        email:"",
+        number:'',
+        partners:"",
+        functions:"",
+        hear:"",
+        story:"",
+        guests:"",
+       
+    });
+    alert("Thank you so much")
+        toast.success("Thank you so much",{
+          duration: 4000,
+          position: 'top-center',
+         })
+      });
   }
   return (
     <>
@@ -58,8 +109,10 @@ www.devikanarainandcompany.com/joinus */}
                   First Name
                 </label>
                 <input
+                 onChange={(e)=>setForm({...form, name:e.target.value})}
                   type="text"
                   name="name"
+                  value={form.name}
                   id="name"
                   required
                   className="bg-gray-100 p-2 w-[100%] h-[2.5rem] border-[1px]  border-gray-500"
@@ -85,7 +138,9 @@ www.devikanarainandcompany.com/joinus */}
             <input
               type="text"
               name="parter"
+              onChange={(e)=>setForm({...form, partners:e.target.value})}
               id="partner"
+              value={form.partners}
               required
               className="bg-gray-100 h-[2.5rem] border-[1px] p-2 w-[100%] border-gray-500"
             />
@@ -96,8 +151,10 @@ www.devikanarainandcompany.com/joinus */}
               type="email"
               name="email"
               placeholder="youremail@domain.com"
+              onChange={(e)=>setForm({...form, email:e.target.value})}
               id="email"
               required
+              value={form.email}
               className="bg-gray-100 h-[2.5rem] border-[1px] w-full border-gray-500 p-3"
             />
             <label htmlFor="Phone" className="py-2 mt-1">
@@ -110,8 +167,10 @@ www.devikanarainandcompany.com/joinus */}
             <input
               type="tel"
               name="phone"
+              onChange={(e)=>setForm({...form, number:e.target.value})}
               placeholder="Enter Phone Number"
               id="phone"
+              value={form.number}
               required
               className="bg-gray-100 h-[2.5rem] border-[1px] w-full border-gray-500 p-3"
             />
@@ -128,7 +187,8 @@ www.devikanarainandcompany.com/joinus */}
                   type="checkbox"
                   id="friends"
                   name="friends"
-                  value="Bike"
+                  onChange={(e)=>setForm({...form, hear:e.target.value})}
+                  value="friend"
                 />
                 <label htmlFor="friends" className="text-sm font-thin">
                   {" "}
@@ -139,6 +199,7 @@ www.devikanarainandcompany.com/joinus */}
                   type="checkbox"
                   id="Online"
                   name="Online"
+                  onChange={(e)=>setForm({...form, hear:e.target.value})}
                   value="Online"
                 />
                 <label htmlFor="Online" className="text-sm font-thin">
@@ -146,7 +207,7 @@ www.devikanarainandcompany.com/joinus */}
                   Online
                 </label>
                 <br />
-                <input type="checkbox" id="Blog" name="Blog " value="Blog" />
+                <input type="checkbox" id="Blog" name="Blog " onChange={(e)=>setForm({...form, hear:e.target.value})} value="Blog" />
                 <label htmlFor="Blog or Magazine" className="text-sm font-thin">
                   {" "}
                   Blog or Magazine
@@ -161,6 +222,8 @@ www.devikanarainandcompany.com/joinus */}
               <textarea
                 name="story"
                 id="story"
+                value={form.story}
+                onChange={(e)=>setForm({...form, story:e.target.value})}
                 rows="3"
                 className="bg-gray-100  border-[1px] w-full border-gray-500 p-3"
               ></textarea>
@@ -180,6 +243,8 @@ www.devikanarainandcompany.com/joinus */}
                 id="function"
                 rows="3"
                 required
+                value={form.functions}
+                onChange={(e)=>setForm({...form, functions:e.target.value})}
                 className="bg-gray-100  border-[1px] w-full border-gray-500 p-3"
               ></textarea>
               <label htmlFor="" className="py-2">
@@ -190,6 +255,8 @@ www.devikanarainandcompany.com/joinus */}
                 name="guests"
                 id="guests"
                 rows="3"
+                value={form.guests}
+                onChange={(e)=>setForm({...form, guests:e.target.value})}
                 required
                 className="bg-gray-100  mt-2 border-[1px] w-full border-gray-500 p-3"
               ></textarea>

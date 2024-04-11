@@ -1,6 +1,6 @@
 import axios from "axios";
 import Card from "./Card";
-import { data } from "./Data";
+// import { data } from "./Data";
 
 import * as React from "react";
 
@@ -12,37 +12,42 @@ export default function Blog() {
  const [loading,setLoading]= React.useState(false)
     const location = useLocation();
 const [data1,setData1]=React.useState([])
-    React.useEffect(() => {
-      const element = document.getElementById('blog');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, [location]);
-    React.useEffect(()=>{
-      setLoading(true)
-      const handleGetData=async()=>{
-        const res = await axios.get('https://server-1-vx69.onrender.com/api/blog/')
-      if(res){
-          setData1(res.data.data)
-          console.log(res.data.data)
-        setLoading(false)
+  React.useEffect(()=>{
+    const element = document.getElementById('blog');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  },[location])
+    const handleGetData=async()=>{
+      setLoading(()=>true)
+        const res = await axios.get('https://server-442v.onrender.com/api/blog/')
+        if(res){
 
-      }else{
-        console.log("no data")
-        setLoading(false)
-        return false;
-      }
-      }
+            setData1(res.data.data)
+            console.log(res.data.data)
+            setLoading(()=>false)
+            return true;
+        }
+        else{
+          console.log(res.data.data)
+          setLoading(false)
+        }
+        
+    
+
+
+    }
+    React.useEffect(()=>{
+      
       handleGetData();
-    },[data])
+      console.log(data1)
+    },[])
+   
     return (
      
     <div id="blog">
       <h1 className="mt-[3rem] text-center font-bold text-3xl" style={{ fontFamily: `"Tinos", serif` }}>BLOGS</h1>
-      <div className="flex flex-wrap justify-center items-center gap-20 my-[2rem]" style={{ fontFamily: `'Segoe UI', sans-serif` }}>
-    {
-       !loading ? 
-       <>
+      <div className="relative flex flex-wrap justify-center items-center gap-20 my-[2rem]" style={{ fontFamily: `'Segoe UI', sans-serif` }}>
                {data1.map((data, index) => 
         (
           <>
@@ -57,7 +62,8 @@ const [data1,setData1]=React.useState([])
             />
            
           </>
-        ))}</> :  <Skeleton variant="rectangular" width={410} height={498} />}
+        ))}
+        {loading &&  <Skeleton variant="rectangular" width={410} height={498}/>}
         </div> 
     </div>
   );

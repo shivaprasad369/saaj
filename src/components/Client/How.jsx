@@ -1,10 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../Ui/w1.jpg";
 import img2 from "../Ui/w3.jpg";
 import img3 from "../Ui/w2.jpg";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 export default function How() {
+  const [i,setImg]=useState()
+  const [i2,setImg2]=useState()
+
+  const [i3,setImg3]=useState()
+
+  const [loading,setLoading]=useState(false)
+  const [loading1,setLoading1]=useState(false)
+
+  const [loading2,setLoading2]=useState(false)
+
+  const [showModel,setShowModel]= useState(false)
+  async function handleImage(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/why/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage2(id) {
+    try {
+      setLoading1(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/why/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg2(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading1(false);
+    }
+  }
+  async function handleImage3(id) {
+    try {
+      setLoading2(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/why/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg3(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading2(false);
+    }
+  }
+  useEffect(() => {
+    handleImage(1);
+    handleImage2(2);
+    handleImage3(3);
+  }, []);
   return (
     <div className=" w-full h-full relative overflow-hidden flex flex-col flex-wrap items-center justify-center mt-[1rem]">
       <div className="text-3xl font-bold mb-8">
@@ -35,7 +91,7 @@ export default function How() {
             </h3>
 
             <p
-              style={{ fontFamily: '"Alegreya" serif ', fontStyle: "italic" }}
+              style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
               className="text-[#7a4d189f] tracking-[0.15rem] md:text-xl font-semibold"
             >
               {" "}
@@ -54,7 +110,7 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-full">
-            <motion.img
+            {!loading ?<motion.img
               whileHover={{
                 scale: 1.02,
                 transition: {
@@ -64,9 +120,10 @@ export default function How() {
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
-              src={img1}
+              // src={img1}
+              src={i}
               alt="card"
-            />
+            />:<>Loading...</>}
           </div>
         </motion.div>
 
@@ -80,7 +137,7 @@ export default function How() {
           className="flex  flex-col  md:flex-row md:items-center md:justify-between rounded-lg border-none p-2 border-gray-300 "
         >
           <div className="p-6 md:w-1/2 w-full max-md:hidden ">
-            <motion.img
+            {!loading1 ?<motion.img
               whileHover={{
                 scale: 1.02,
                 transition: {
@@ -90,9 +147,10 @@ export default function How() {
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
-              src={img2}
+              // src={img2}
+              src={i2}
               alt="card2"
-            />
+            />:<>Loading...</>}
           </div>
           <div className="p-6 relative md:w-2/3">
             <h3
@@ -103,7 +161,7 @@ export default function How() {
               Event Organizer
             </h3>
             <p
-              style={{ fontFamily: '"Alegreya" serif ', fontStyle: "italic" }}
+             style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
               className="text-[#7a4d189f] tracking-[0.15rem] font-semibold md:text-xl"
             >
               {" "}
@@ -123,7 +181,7 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-full md:hidden">
-            <motion.img
+            {!loading1 ? <motion.img
               whileHover={{
                 scale: 1.02,
                 transition: {
@@ -133,9 +191,9 @@ export default function How() {
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
-              src={img2}
+              src={i2}
               alt="card3"
-            />
+            />:<>Loading</>}
           </div>
         </motion.div>
 
@@ -157,7 +215,7 @@ export default function How() {
               <i>Event Execution</i>
             </h3>
             <p
-              style={{ fontFamily: '"Alegreya" serif ', fontStyle: "italic" }}
+             style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
               className="text-[#7a4d189f] tracking-[0.15rem] font-semibold md:text-xl"
             >
               {" "}
@@ -176,7 +234,7 @@ export default function How() {
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-[100%]">
-            <motion.img
+            {!loading2 ? <motion.img
               whileHover={{
                 scale: 1.02,
                 transition: {
@@ -186,9 +244,10 @@ export default function How() {
                 },
               }}
               className="h-full shadow-md shadow-black w-full object-cover"
-              src={img3}
+              // src={img3}
+              src={i3}
               alt="card4"
-            />
+            />:<>Loading...</>}
           </div>
         </motion.div>
       </div>

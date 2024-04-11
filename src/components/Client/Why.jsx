@@ -323,7 +323,7 @@ export default function Why() {
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   <p
-                    style={{ fontFamily: `"Tinos", serif` }}
+                    style={{ fontFamily: `"Tinos", serif`,fontStyle:'italic' }}
                     className="text-3xl text-[#9e6c32] font-semibold"
                   >
                     Customized Events
@@ -331,7 +331,7 @@ export default function Why() {
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
                   <p
-                   style={{fontFamily:'"Alegreya", serif '}}
+                  style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
                    className=" md:text-[1rem] text-[#946b2e] tracking-wide  sm:text-[0.88rem]">
                     Crafting unique weddings, ensuring every detail reflects the
                     couple's style, making celebrations unforgettable and
@@ -372,7 +372,7 @@ export default function Why() {
               >
                 Special Decor
               </h1>
-              <p  style={{fontFamily:'"Alegreya", serif '}} className=" md:text-[1rem] text-[#684f2a] tracking-wide  sm:text-[0.88rem]">
+              <p   style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}} className=" md:text-[1rem] text-[#684f2a] tracking-wide  sm:text-[0.88rem]">
                 Transforming venues with unique floral arrangements and
                 personalized themes, Saaj's decor creates enchanting spaces that
                 leave a lasting impression on attendees, making every
@@ -382,7 +382,6 @@ export default function Why() {
           </motion.div>
 
           <div
-            style={{ fontFamily: "'Segoe UI', sans-serif" }}
             className="flex gap-4"
           >
             <div className=" h-[93%] max-[480px]:w-[50%] max-[480px]:h-[100%] w-[14rem] shadow-md flex flex-col p-3 bg-white rounded-xl hover:bg-[#978e8e35]">
@@ -398,7 +397,7 @@ export default function Why() {
               >
                 Best Price
               </h1>
-              <p  style={{fontFamily:'"Alegreya", serif '}} className=" md:text-[1rem] text-[#684f2a] tracking-wide  sm:text-[0.88rem]">
+              <p style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}} className=" md:text-[1rem] text-[#684f2a] tracking-wide  sm:text-[0.88rem]">
                 {" "}
                 Exceptional quality services at unbeatable rates.
               </p>
@@ -418,7 +417,7 @@ export default function Why() {
               >
                 Expertise
               </h1>
-              <p  style={{fontFamily:'"Alegreya", serif '}} className=" md:text-[1rem] h-[100%] text-[#684f2a] md:tracking-wide  sm:text-[0.88rem]">
+              <p  style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}} className=" md:text-[1rem] h-[100%] text-[#684f2a] md:tracking-wide  sm:text-[0.88rem]">
                 {" "}
                 Decades of seasoned expertise ensure flawless events.
               </p>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import data from "../../constants/images";
 import img2 from "./10.jpg";
 import img3 from "./9.jpg";
@@ -20,6 +21,7 @@ import { EffectCards, Autoplay } from "swiper/modules";
 import {  motion } from "framer-motion";
 
 
+
 export default function Services() {
   const [index, setIndex] = useState(0);
   const handleNextImage = () => {
@@ -37,6 +39,71 @@ export default function Services() {
     };
   }, [index]);
 
+  const [loading, setLoading] = useState(false);
+  const [i, setImg] = useState("");
+  const [i2, setImg2] = useState("");
+  const [i3, setImg3] = useState("");
+  const [i4, setImg4] = useState("");
+  async function handleImage(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/service/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg(result.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleImage2(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/service/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg2(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage3(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/service/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg3(res.data?.data?.photo);
+    } catch (err) {
+    console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage4(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/service/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg4(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  useEffect(() => {
+    handleImage(1);
+    handleImage2(2);
+    handleImage3(3);
+    handleImage4(4);
+   
+  }, [i,i2,i3,i4]);
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -247,11 +314,12 @@ export default function Services() {
               modules={[EffectCards, Autoplay]}
             >
               <SwiperSlide className="flex  flex-col ">
-                <img
-                  src={img2}
+                 {i ? <img
+                  // src={img2}
+                  src={i}
                   alt="icons"
                   className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
-                />
+                /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -261,11 +329,17 @@ export default function Services() {
                 </h1>
               </SwiperSlide>
               <SwiperSlide className="flex flex-col">
-                <img
+                {/* <img
                   src={img3}
                   alt="icons"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
-                />
+                /> */}
+                     {i2 ? <img
+                  // src={img2}
+                  src={i2}
+                  alt="icons"
+                  className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
+                /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 flex-wrap tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -276,11 +350,17 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img
+                {/* <img
                   src={img4}
                   alt="sevice"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[75%]"
-                />
+                /> */}
+                     {i3 ? <img
+                  // src={img2}
+                  src={i3}
+                  alt="icons"
+                  className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
+                /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.5rem] relative text-[#2e2712] h-full text-center justify-center items-center w-full `}
@@ -297,11 +377,17 @@ export default function Services() {
               </SwiperSlide>
 
               <SwiperSlide className="flex flex-col">
-                <img
+                {/* <img
                   src={img5}
                   alt="icons"
                   className="w-[100%] max-[412px]:h-[250vh]  md:h-[80%]"
-                />
+                /> */}
+                     {i4 ? <img
+                  // src={img2}
+                  src={i4}
+                  alt="icons"
+                  className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
+                /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
                   className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}

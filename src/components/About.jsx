@@ -12,70 +12,70 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 export default function About() {
 
-  // const [loading, setLoading] = useState(false);
-  // const [img, setImg] = useState("");
-  // const [img2, setImg2] = useState("");
-  // const [img3, setImg3] = useState("");
-  // const [img4, setImg4] = useState("");
-  // async function handleImage(id) {
-  //   try {
-  //     setLoading(true);
-  //     const res = await axios.get(`https://server-1-vx69.onrender.com/api/about/${id}`);
-  //     console.log(res.data.data);
-  //     const result = res;
-  //     setImg(result.data?.data?.photo);
-  //   } catch (err) {
-  //     alert(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // }
+  const [loading, setLoading] = useState(false);
+  const [img, setImg] = useState("");
+  const [img2, setImg2] = useState("");
+  const [img3, setImg3] = useState("");
+  const [img4, setImg4] = useState("");
+  async function handleImage(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/about/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg(result.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
 
-  // async function handleImage2(id) {
-  //   try {
-  //     setLoading(true);
-  //     const res = await axios.get(`https://server-1-vx69.onrender.com/api/about/${id}`);
-  //     console.log(res.data.data);
-  //     const result = res;
-  //     setImg2(res.data?.data?.photo);
-  //   } catch (err) {
-  //     alert(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // }
-  // async function handleImage3(id) {
-  //   try {
-  //     setLoading(true);
-  //     const res = await axios.get(`https://server-1-vx69.onrender.com/api/about/${id}`);
-  //     console.log(res.data.data);
-  //     const result = res;
-  //     setImg3(res.data?.data?.photo);
-  //   } catch (err) {
-  //     alert(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // }
-  // async function handleImage4(id) {
-  //   try {
-  //     setLoading(true);
-  //     const res = await axios.get(`https://server-1-vx69.onrender.com/api/about/${id}`);
-  //     console.log(res.data.data);
-  //     const result = res;
-  //     setImg4(res.data?.data?.photo);
-  //   } catch (err) {
-  //     alert(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // }
-  // useEffect(() => {
-  //   handleImage(1);
-  //   handleImage2(2);
-  //   handleImage3(3);
-  //   handleImage4(4);
-  // }, [img, img2, img3, img4]);
+  async function handleImage2(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/about/${id}`);
+      console.log("../image/"+res.data.data.photo);
+      const result = res;
+      setImg2(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage3(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/about/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg3(res.data?.data?.photo);
+    } catch (err) {
+    console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage4(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/about/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg4(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  useEffect(() => {
+    handleImage(1);
+    handleImage2(2);
+    handleImage3(3);
+    handleImage4(4);
+  }, [img, img2, img3, img4]);
   return (
     <div
       id="about"
@@ -136,39 +136,39 @@ export default function About() {
               <div className="relative p-3 w-full h-fit mt-[5rem] sm:ml-[6rem]">
                 <div className="relative">
                   <div className="absolute w-[75%] max-sm:ml-[4.5rem] max-sm:w-[80%] md:ml-2 overflow-hidden rounded-t-full left h-full bg-[#08070777] z-20" />
-                  {/* {img ?  */}
+                  {img ? 
                   <img
                     style={{ backgroundColor: "#131010bd" }}
-                    src={w1}
-                    // src={`${img ? img : w1}`}
+                    // src={w1}
+                    src={img}
                     alt="wedding1"
                      className="relative max-sm:ml-[4.5rem] z-0 bg-[#0c0404] overflow-hidden md:ml-2 
                     rounded-t-full 
                      w-[75%]   md:h-[100%] max-sm:w-[80%] "
                   />
-                  {/* :
+                  :
                   <div className="relative max-sm:ml-[5rem] z-0  overflow-hidden md:ml-2  rounded-t-full w-[70%] h-[26rem]  max-sm:w-[80%] ">
                      <Skeleton variant="rectangular" width={'100%'}  />
                      </div>
-                     } */}
+                     }
                 </div>
-                {/* {img2 ? */}
+                {img2 ?
                 <motion.img
                
                   whileHover={{
                     scale: 1.1,
                     transition: { ease: "easeIn", type: "spring", duration: 1 },
                   }}
-                  src={w22}
-                  // src={`${img2 ? img2 : w22}`}
+                  // src={w22}
+                  src={img2}
                   alt=""
                   className="absolute z-20 top-[-3rem] max-sm:left-[1rem] sm:left-[-3rem] sm:w-[50%] max-md:w-[50%] md:w-[55%] md:h-[15rem]"
                 />
-                {/* :
+                 :
                 <div className="absolute z-20 top-[-3rem] left-[0rem] sm:left-[-3rem] h-[10rem] sm:w-[50%] w-[60%]">
-                   <Skeleton variant="rectangular" width={'100%'}  />
+                   <Skeleton variant="rectangular" width={'100%'} height={"100%"} />
                    </div>
-                   }  */}
+                   }  
               </div>
             </div>
           </div>
@@ -193,41 +193,41 @@ export default function About() {
           /> */}
         <div className="relative w-fit h-fit sm:pt-[2rem] sm:ml-[2rem]">
           <div className="relative">
-            <div className="absolute w-[75%] max-sm:ml-3 h-full lg:w-[80%] mb-3 bg-[#110c0c80] z-10" />
-            {/* {img3 ? */}
+            <div className={`absolute w-[75%] max-sm:ml-3 h-full lg:w-[80%] mb-3 ${img3 &&  "bg-[#110c0c80]"} z-10`} />
+            {img3 ?
             <img
-              src={w2}
-              // src={`${img3 ? img3 : w2}`}
+              // src={w2}
+              src={img3}
               alt="wedding1"
               className="mb-3  max-sm:ml-3 relative  w-[75%] lg:w-[80%] z-0"
             />
-            {/* :
-            <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
-               <Skeleton variant="rectangular" width={'100%'}  />
+            :
+            <div className="mb-3  relative h-[26rem]  w-[26rem] z-0">
+               <Skeleton variant="rectangular" width={'100%'} height={'100%'}  />
                </div>
-               }  */}
+               } 
             {/* {loading &&<p className="absolute top-[20%] rounded-t-full w-[50%] z-20 h-[60%] right-4 text-2xl font-bold">Loading</p>} */}
           </div>
-          {/* {img4 ? */}
+          {img4 ?
           <motion.img
 
             whileHover={{
               scale: 1.1,
               transition: { ease: "easeIn", type: "spring", duration: 1 },
             }}
-            src={w11}
-            // src={`${img4 ? img4 : w11}`}
+            // src={w11}
+            src={img4}
             alt=""
             className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] right-2"
           />
-          {/* :
-            <div className="mb-3  relative h-[26rem]  w-[75%] z-0">
-               <Skeleton variant="rectangular" width={'100%'}  />
+         :
+            <div className="absolute top-[20%] rounded-t-full w-[52%] z-20 sm:h-[60%]  max-sm:h-[55%] right-[-6rem]">
+               <Skeleton variant="rectangular" width={'100%'} height={'100%'}  />
                </div>
-               }  */}
+               } 
         </div>
 
-        <div className="flex flex-col flex-wrap object-cover ">
+        <div className="relative flex flex-col flex-wrap object-cover ">
           <motion.p
           viewport={{once:true}}
             whileInView={{

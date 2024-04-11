@@ -1,18 +1,93 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "./services111.jpg";
 import img2 from "./s1.jpg";
 import img3 from "./s3.jpg";
 import img4 from "./s4.jpg";
-import {  motion } from "framer-motion";
+import { Skeleton } from "@mui/material";
+import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
 export default function Services() {
+  const [i,setImg]=useState()
+  const [i2,setImg2]=useState()
+
+  const [i3,setImg3]=useState()
+  const [i4,setImg4]=useState()
+
+  const [loading,setLoading]=useState(false)
+  const [loading1,setLoading1]=useState(false)
+
+  const [loading2,setLoading2]=useState(false)
+  const [loading3,setLoading3]=useState(false)
+
+  const [showModel,setShowModel]= useState(false)
   const location = useLocation();
-useEffect(() => {
+  useEffect(() => {
     const element = document.getElementById("services");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
+  
+  async function handleImage(id) {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/services/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+  async function handleImage2(id) {
+    try {
+      setLoading1(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/services/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg2(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading1(false);
+    }
+  }
+  async function handleImage3(id) {
+    try {
+      setLoading2(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/services/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg3(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading2(false);
+    }
+  }
+  async function handleImage4(id) {
+    try {
+      setLoading3(true);
+      const res = await axios.get(`https://server-442v.onrender.com/api/services/${id}`);
+      console.log(res.data.data);
+      const result = res;
+      setImg4(res.data?.data?.photo);
+    } catch (err) {
+      console.log(err)
+    } finally {
+      setLoading3(false);
+    }
+  }
+  useEffect(() => {
+    handleImage(1);
+    handleImage2(2);
+    handleImage3(3);
+    handleImage4(4);
+
+  }, []);
   return (
     <div
       className="bg-white mr-[3%]"
@@ -28,7 +103,10 @@ useEffect(() => {
         </h1>
       </div>
       <div id="client max-w:[90%]  justify-center items-center ">
-        <div className="md:w-[90%] md:mt-[6rem] md:mb-[10rem]  md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-xl:flex-col gap-4 bg-[#E7E1D9] xl:h-[27rem] max-md:h-full  ">
+        <div 
+        className="md:w-[90%] md:mt-[6rem] md:mb-[10rem]
+          md:rounded-tl-[100px] md:ml-[7%] flex m-2  md:flex-row max-xl:flex-col gap-4
+           bg-[#E7E1D9] xl:h-[27rem] max-md:h-full  ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             viewport={{ once: true }}
@@ -44,11 +122,11 @@ useEffect(() => {
             }}
             className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
-            <img
-              src={img1}
+            {!loading ? <img
+              src={i}
               alt="card"
               className=" md:h-[110%] md:w-[100%] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
-            />
+            />:<>Loading</>}
           </motion.div>
           <motion.div
             viewport={{ once: true }}
@@ -65,7 +143,7 @@ useEffect(() => {
             }}
             className=" border-black bg-[#E7E1D9] min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
           >
-            <div className="text-center flex-wrap font-sans justify-center object-contain ">
+            <div style={{ fontFamily:'"Alegreya" serif ',fontStyle:'italic' }} className="text-center flex-wrap  justify-center object-contain ">
               <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
@@ -73,9 +151,9 @@ useEffect(() => {
                 wedding planner
               </h1>
               <p
-               style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
-              >
+             style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+              className="tracking-wider text-center text-[#705704] md:text-[1.2rem]   max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[1rem] max-sm:px-[0.5rem] "
+            >
                 Saaj Weddings stands proudly as the symbol of excellence among
                 wedding planners in Jaipur, renowned for our unwavering
                 commitment and years of expertise in crafting dream weddings. We
@@ -84,8 +162,8 @@ useEffect(() => {
               </p>
               <div></div>
               <p
-               style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold  md:text-[1rem] pt-4 tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+               style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+              className="tracking-wider text-center text-[#705704] md:text-[1.2rem] md:mt-3  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 At Saaj Weddings, our passion is to transform your dreams into
                 reality, ensuring that every detail is a reflection of your
@@ -116,11 +194,16 @@ useEffect(() => {
             }}
             className="md:hidden md:w-[100%]  mt-[-2rem] sm:rounded-tl-[100px]"
           >
-            <img
-              src={img2}
+           {!loading1 ? <img
+              // src={img2}
+              src={i2}
               alt="card"
               className=" md:h-[100%] md:w-[100%] sm:rounded-tl-[100px]  sm:rounded-br-[100px]"
-            />
+            />: <div>
+               <div className="relative max-sm:ml-[5rem] z-0  overflow-hidden md:ml-2  rounded-t-full w-[70%] h-[26rem]  max-sm:w-[80%] ">
+                     <Skeleton variant="rectangular" width={'100%'}  />
+                     </div>
+              </div>}
           </motion.div>
           <motion.div
             viewport={{ once: true }}
@@ -137,7 +220,7 @@ useEffect(() => {
             }}
             className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center  flex-wrap max-[810px]:pb-[1rem] "
           >
-            <div className="text-center rounded-r-[30px] flex-wrap font-sans justify-center object-contain ">
+            <div className="text-center rounded-r-[30px] flex-wrap justify-center object-contain ">
               <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
@@ -145,8 +228,8 @@ useEffect(() => {
                 vendors and artist management
               </h1>
               <p
-               style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                  className="tracking-wider text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 At Saaj Weddings, we understand that the success of any
                 celebration lies in seamless vendor and artist management.
@@ -157,8 +240,8 @@ useEffect(() => {
               </p>
               <div className="p-2"></div>
               <p
-                style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center  pb-[1rem] sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                  className="tracking-wider text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 From photographers capturing your cherished moments to caterers
                 delighting taste buds, every vendor plays a crucial role. Our
@@ -186,11 +269,12 @@ useEffect(() => {
             }}
             className="max-md:hidden w-[170%] mt-[-2rem] rounded-tl-[100px]"
           >
-            <img
-              src={img2}
+           {!loading1 ? <img
+              // src={img2}
+              src={i2}
               alt="card"
               className=" md:h-[110%] w-[100%] rounded-tl-[100px] rounded-br-[100px]"
-            />
+            />:<>Loading..</>}
           </motion.div>
         </div>
       </div>
@@ -212,11 +296,12 @@ useEffect(() => {
             }}
             className=" md:w-[150%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
-            <img
-              src={img3}
+           {!loading2 ? <img
+              // src={img3}
+              src={i3}
               alt="card"
               className=" md:h-[110%]  w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
-            />
+            />:<>Loading ..</>}
           </motion.div>
           <motion.div
             viewport={{ once: true }}
@@ -233,7 +318,7 @@ useEffect(() => {
             }}
             className=" border-black pb-2 min-[766px]:w-[150%] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] "
           >
-            <div className="text-center flex-wrap font-sans justify-center object-contain ">
+            <div className="text-center flex-wrap  justify-center object-contain ">
               <h1
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
@@ -241,8 +326,8 @@ useEffect(() => {
                 decor and design
               </h1>
               <p
-                style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#926134] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                 style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                 className="tracking-wider text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 At Saaj Weddings, we know that how a wedding looks and feels is
                 super important. Decor and design are like the fairy tale makers
@@ -253,8 +338,8 @@ useEffect(() => {
               </p>
               <div className="p-2"></div>
               <p
-                style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#926134] font-semibold  pb-[2rem] tracking-wider md:text-[1rem] text-center sm:text-[1.2rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                  style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                  className="tracking-wider text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 Our goal is to turn your venue into a dreamy space that brings
                 out all the happy emotions, not just for you but for everyone
@@ -284,11 +369,12 @@ useEffect(() => {
             }}
             className="md:hidden md:w-[80%] sm:w-full sm:h-full mt-[-2rem] sm:rounded-tl-[100px]"
           >
-            <img
-              src={img4}
+            {!loading3 ? <img
+              // src={img4}
+              src={i4}
               alt="card"
               className=" md:h-[110%] max-md:w-[100%] max-md:h-[23rem] sm:rounded-tl-[100px] sm:rounded-br-[100px]"
-            />
+            />:<>Loading...</>}
           </motion.div>
           <motion.div
             viewport={{ once: true }}
@@ -313,8 +399,8 @@ useEffect(() => {
                 corporate events
               </h1>
               <p
-                style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold  md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                className="tracking-wider text-center text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 At Saaj Weddings, we bring our expertise in creating magical
                 moments to the corporate world, offering a unique touch to your
@@ -326,8 +412,8 @@ useEffect(() => {
               </p>
               <div></div>
               <p
-               style={{fontFamily:'"Alegreya" serif '}}
-                className="text-[#9c5a33] font-semibold pb-6 pt-4 md:text-[1rem] tracking-wider text-center sm:text-[1rem] max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
+                 style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+                 className="tracking-wider text-center md:pb-8 md:mt-3 text-[#705704] md:text-[1.2rem]  max-sm:text-[1rem] leading-[1.6rem] max-sm:py-[0.3rem] max-sm:px-[0.5rem] "
               >
                 From conceptualization to flawless execution, we focus on every
                 detail, including venue selection, thematic decor, audio-visual
@@ -352,11 +438,12 @@ useEffect(() => {
             }}
             className="max-md:hidden md:w-[160%] mt-[-2rem] sm:rounded-tl-[100px]"
           >
-            <img
-              src={img4}
+            {!loading3 ?<img
+              // src={img4}
+              src={i4}
               alt="card"
               className=" md:h-[110%] rounded-tl-[100px] rounded-br-[100px]"
-            />
+            />:<>Loading...</>}
           </motion.div>
         </div>
       </div>
