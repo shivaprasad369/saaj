@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 export default function Navbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-500  ">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#1f1d1d75]  ">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

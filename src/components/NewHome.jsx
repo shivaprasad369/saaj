@@ -11,6 +11,7 @@ import valume1 from "./Ui/mute.png";
 import "./Home.css";
 import video from "../Video/saaj2.mp4";
 import bg from "../Video/bg.jpg";
+import Navbars from "./Navbar";
 export default function Home() {
  
   const [enable, setEnable] = useState(false);
@@ -31,7 +32,7 @@ video.volume=0.1;
       }}
       className="  "
     >
-      
+      <Navbars/>
       {/* <img
         src={img}
         alt="home"

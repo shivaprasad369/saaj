@@ -31,7 +31,7 @@ function App() {
 {/*   
       <Demo/> */}
     {/* <Home/> */}
-    <Navbars />
+    {/* <Navbars /> */}
     <NewHome/>
     {/* <Fnavbars/> */}
     <Routes>
