@@ -230,11 +230,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-[1px]  mt-10 border-[#aea493]" />
-      <div style={{fontSize:'14px'}} className="flex items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#676055] cursor-pointer max-[500]:flex-col">
-        © 1999 - 2023 Unitechno software development pvt ltd. All Rights
-        Reserved.
-        <span className="text-white px-2"> |</span> Terms & Conditions
-        <span className="text-white px-2"> |</span> Privacy Policy
+      <div style={{fontSize:'14px'}} className="flex-wrap items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#c9c6c1] cursor-pointer max-[500]:flex-col">
+      Copyright 2024 Saaj Weddings | All Rights Reserved. | Developed by <a href="https://unitechnocompany.com">UNITECHNO</a>
       </div>
     </div>
   );

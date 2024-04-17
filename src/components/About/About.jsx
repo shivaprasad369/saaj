@@ -6,6 +6,7 @@ import member2 from "./WhatsApp Image 2024-03-18 at 1.37.35 PM.jpeg";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import Team from "./Team";
+import Card from "./Card";
 
 export default function About() {
   const location = useLocation();
@@ -85,8 +86,25 @@ export default function About() {
             <i>The core members at saaj weddings</i>
           </span>
         </div> */}
+         <div>
+        <h2
+          className="text-3xl uppercase tracking-widest font-semibold text-center text-[#53431f]"
+          style={{ fontFamily: ` "Libre Baskerville", serif` }}
+        >
+          Our leadership team
+        </h2>
+        <p
+          className="text-[1rem] leading-1.5 tracking-wider text-inherit text-center text-[#634820]"
+          style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
+        >
+          {" "}
+          over 10 years of combined experience, we have got a well-seasoned team
+          at the helm.
+        </p>
+      </div>
        <div>
-        <Team/>
+        {/* <Team/> */}
+        <Card/>
        </div>
       </div>
     </div>

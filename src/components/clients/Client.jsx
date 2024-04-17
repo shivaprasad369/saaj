@@ -10,8 +10,8 @@ import img11 from "./w9.jpeg";
 import img12 from "./w10.JPG";
 import img13 from "./w11.jpeg";
 import img14 from "./w12.jpeg";
-import {  motion } from "framer-motion";
-import {Chip } from "@mui/material";
+import { motion } from "framer-motion";
+import { Chip } from "@mui/material";
 
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
@@ -28,6 +28,7 @@ import Model from "./Model";
 export default function Client() {
   const [open, setOpen] = React.useState(false);
   const [enable, setEnable] = useState({
+    o: false,
     f: false,
     s: false,
     t: false,
@@ -35,6 +36,18 @@ export default function Client() {
     five: false,
     six: false,
   });
+  const handleClickOpeno = () => {
+    setOpen(true);
+    setEnable({
+      f: false,
+      s: false,
+      t: false,
+      fou: false,
+      five: false,
+      six: false,
+      o: true,
+    });
+  };
   const handleClickOpen = () => {
     setOpen(true);
     setEnable({
@@ -44,6 +57,7 @@ export default function Client() {
       fou: false,
       five: false,
       six: false,
+      o: false,
     });
   };
   const handleClickOpen2 = () => {
@@ -55,6 +69,7 @@ export default function Client() {
       fou: false,
       five: false,
       six: false,
+      o: false,
     });
   };
   const handleClickOpen3 = () => {
@@ -66,6 +81,7 @@ export default function Client() {
       fou: false,
       five: false,
       six: false,
+      o: false,
     });
   };
   const handleClickOpen4 = () => {
@@ -77,6 +93,7 @@ export default function Client() {
       s: false,
       five: false,
       six: false,
+      o: false,
     });
   };
   const handleClickOpen5 = () => {
@@ -88,6 +105,7 @@ export default function Client() {
       fou: false,
       s: false,
       six: false,
+      o: false,
     });
   };
   const handleClickOpen6 = () => {
@@ -99,6 +117,7 @@ export default function Client() {
       fou: false,
       s: false,
       five: false,
+      o: false,
     });
   };
 
@@ -140,21 +159,73 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] md:mt-[1.5rem] text-justify tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
-                    We hired Saaj wedding team for our destination wedding
+                    We hired ''Saaj wedding'' team for our destination wedding
                     in Jaipur ! Mr. Sanjay executed our dream wedding board with
                     an exceptional team that made everything look effortless.
                     The guests at our wedding were in awe of everything they saw
                     around them, and it wasn’t just what they saw but what they
-                  
+                    felt too. Special shoutout to Sanjay and his team who
+                    hustled day in and out to make ends meet!
+                    <span>
+                      <Chip label="More" onClick={handleClickOpeno} />
+                      
+                      {enable.o && !enable.t &&
+                        !enable.fou &&
+                        !enable.five &&
+                        !enable.six &&
+                        !enable.f &&
+                        !enable.s && !enable.six && (
+                        <Model
+                          open1={open}
+                          setOpen={setOpen}
+                          title={"Evelina & Basant"}
+                          image={img2}
+                          content={
+                            <p>
+                              {" "}
+                              We hired ''Saaj wedding'' team for our destination
+                              wedding in Jaipur ! Mr. Sanjay executed our dream
+                              wedding board with an exceptional team that made
+                              everything look effortless. The guests at our
+                              wedding were in awe of everything they saw around
+                              them, and it wasn’t just what they saw but what
+                              they felt too. Special shoutout to Sanjay and his
+                              team who hustled day in and out to make ends meet!
+                              <br /> Mr. Sanjay has been extremely helpful. All
+                              the requests which we have made and changes we
+                              have requested were delivered better than we could
+                              ask for. Planning team were extremely
+                              understanding and helpful, our Indian as well as
+                              foreigner guest has loved the decor and appraised
+                              the use of real flowers and event planning. Sanjay
+                              is extremely professional and a person who
+                              delivers more than what he promises. Sanjay has
+                              agreed to most of the last-minute amendments and
+                              well-coordinated with the other vendors to get the
+                              event done in fascinating manner. <br />
+                              My family & I would 100% recommend reaching out to
+                              them if you’re planning your special day and
+                              looking for a fairytale wedding planner with a
+                              professional team, especially if you are NRI.
+                            </p>
+                          }
+                        />
+                      )}
+                    </span>
                   </i>
                 </p>
-              
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Evelina & Basant
                 </p>
               </div>
@@ -175,8 +246,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -184,10 +257,13 @@ export default function Client() {
                     to choose saaj weddings for dream wedding. Abhishek and
                     sanjay both think differently with thier smart work. They
                     work like family with amazing ideas and in good budget.
-                    Really amazing hospitality & decor was as expected.                   
+                    Really amazing hospitality & decor was as expected.
                   </i>
                 </p>
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Anuroopa & Vishal
                 </p>
               </div>
@@ -196,7 +272,7 @@ export default function Client() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex w-[100%] md:flex-row max-md:flex-col gap-4 bg-[#e7dfdfb9]  h-full px-2 ">
-            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem] max-md:h-[20rem] max-md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
+            <motion.div className="  w-[100%]  md:w-[50%] md:h-[20rem]  max-md:h-[20rem] mt-[2rem]  md:mb-[2rem]  md:ml-[1.5rem] ">
               <img src={img6} alt="card" className="  w-full h-[100%]" />
             </motion.div>
             <motion.div className="   w-[100%] md:mt-[3rem] max-min:w-[90%] max-[810px]:text-[0.8rem] mt-2 px-3 items-center justify-center flex-wrap max-[810px]:pb-[2rem] ">
@@ -208,8 +284,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -222,7 +300,7 @@ export default function Client() {
                     was flawless.
                     <span>
                       <Chip label="More" onClick={handleClickOpen2} />
-                      {!enable.f && (
+                      {!enable.f && !enable.o && (
                         <Model
                           open1={open}
                           setOpen={setOpen}
@@ -238,7 +316,8 @@ export default function Client() {
                               transformed it into a reality beyond our wildest
                               dreams. Their attention to detail was impeccable,
                               ensuring that every aspect of our wedding day was
-                              flawless.<br/> We hired ''Saaj wedding'' team for our
+                              flawless.
+                              <br /> We hired ''Saaj wedding'' team for our
                               destination wedding They brought a sense of warmth
                               and personal connection to our planning journey.
                               They understood our personalities, preferences,
@@ -247,18 +326,21 @@ export default function Client() {
                               wedding planner who will treat your special day
                               with the utmost care and make the journey feel
                               like a true partnership, Saaj wedding is the one
-                              to choose. <br/>Thank you, for making our wedding day a
-                              dream come true!{" "}
+                              to choose. <br />
+                              Thank you, for making our wedding day a dream come
+                              true!{" "}
                             </p>
                           }
                         />
                       )}
                     </span>
-               
                   </i>
                 </p>
-               
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Priyadarshani Jain
                 </p>
               </div>
@@ -280,8 +362,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -294,7 +378,7 @@ export default function Client() {
                     time duration of the call.
                     <span>
                       <Chip label="More" onClick={handleClickOpen} />
-                      {!enable.s && (
+                      {!enable.s && !enable.o &&(
                         <Model
                           open1={open}
                           setOpen={setOpen}
@@ -310,26 +394,31 @@ export default function Client() {
                               planners who are very particular about how much
                               time they are suppose to give to a client however
                               he was always happy to chat as when needed and not
-                              even once he fixed the time duration of the call.<br/>
+                              even once he fixed the time duration of the call.
+                              <br />
                               He delivered what was expected of him and all my
                               family and friends gave so many compliments on the
                               decor, music and his time management was all spot
                               on. So happy to choose @Saaj Weddings to manage my
                               sister's wedding. As my family says " it was a
-                              dream wedding".<br/> I would highly recommend y'all to
-                              reach out to Sanjay for any wedding/ events
-                              queries. Thanks Sanjay and team. You guys are
-                              superstars{" "}
+                              dream wedding".
+                              <br /> I would highly recommend y'all to reach out
+                              to Sanjay for any wedding/ events queries. Thanks
+                              Sanjay and team. You guys are superstars{" "}
                             </p>
                           }
                         />
                       )}
                     </span>
-               
                   </i>
                 </p>
-               
-              <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">Shilpi</p>
+
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
+                  Shilpi
+                </p>
               </div>
             </motion.div>
           </div>
@@ -349,8 +438,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -360,11 +451,13 @@ export default function Client() {
                     process and we were very happy with his final work. We would
                     definitely recommend Saaj weddings for anyone who is
                     planning their wedding!
-                 
                   </i>
                 </p>
-               
-               <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Alisha Gupta
                 </p>
               </div>
@@ -386,8 +479,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -398,11 +493,13 @@ export default function Client() {
                     Definitely recommend this one to everyone who's looking to
                     plan their wedding! Looking forward to working with them in
                     future too
-                  
                   </i>
                 </p>
-               
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Vartika nangai
                 </p>
               </div>
@@ -424,8 +521,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -439,7 +538,7 @@ export default function Client() {
                     <span>
                       <Chip label="More" onClick={handleClickOpen3} />
                       {enable.t &&
-                      !enable.fou &&
+                        !enable.fou &&
                         !enable.five &&
                         !enable.six &&
                         !enable.f &&
@@ -457,9 +556,9 @@ export default function Client() {
                                 December first week. I met Saaj wedding team 10
                                 days before the wedding and was convinced in the
                                 first meeting that they have understood what
-                                work I'm expecting in the wedding. <br/>To my
-                                surprise, when I reached the venue in each of
-                                the event, the decor was simply beyond my
+                                work I'm expecting in the wedding. <br />
+                                To my surprise, when I reached the venue in each
+                                of the event, the decor was simply beyond my
                                 expectations. The team puts in all the efforts
                                 and is very professional and easy to work with.
                                 I would definitely recommend Saaj weddings for
@@ -472,7 +571,12 @@ export default function Client() {
                     </span>
                   </i>
                 </p>
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">Monal</p>
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
+                  Monal
+                </p>
               </div>
             </motion.div>
           </div>
@@ -492,8 +596,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                   style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -527,31 +633,34 @@ export default function Client() {
                                 expectations, where the team of Sadj took
                                 everything to a new level. The guests were not
                                 only just happy but they were so mesmerized by
-                                the hospitality they have been indulged in.<br/> One
-                                of the best things about the team was that they
-                                fulfilled our every last minute demands that too
-                                without any haphazard. The both the presentation
-                                and the authentic taste of the food were
-                                outstanding and they also kept in mind our every
-                                minute details about the whole process of
-                                wedding.<br/> Initially, we were little worried about
+                                the hospitality they have been indulged in.
+                                <br /> One of the best things about the team was
+                                that they fulfilled our every last minute
+                                demands that too without any haphazard. The both
+                                the presentation and the authentic taste of the
+                                food were outstanding and they also kept in mind
+                                our every minute details about the whole process
+                                of wedding.
+                                <br /> Initially, we were little worried about
                                 the decorations as every wedding is nevertheless
                                 same but Saaj put all its efforts to make the
                                 venue grand and unique just the way we wanted to
-                                be. <br/>I am contented with the level of proficiency
-                                and level of expertise they worked in their
-                                arena the level of satisfaction they provided us
-                                with their hard work truly depicted the story of
-                                my brother and his life partner.{" "}
+                                be. <br />I am contented with the level of
+                                proficiency and level of expertise they worked
+                                in their arena the level of satisfaction they
+                                provided us with their hard work truly depicted
+                                the story of my brother and his life partner.{" "}
                               </p>
                             }
                           />
                         )}
                     </span>
-                  
                   </i>
                 </p>
-                <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Shreeya Sharma
                 </p>
               </div>
@@ -573,8 +682,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                    style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -620,7 +731,10 @@ export default function Client() {
                     </span>
                   </i>
                 </p>
-               <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   Peeyush Agarwal
                 </p>
               </div>
@@ -642,8 +756,10 @@ export default function Client() {
                   What our client says?
                 </h1>
                 <p
-                   style={{fontFamily:'"Alegreya", serif ',letterpacing:' 0.1em'}}
-          
+                  style={{
+                    fontFamily: '"Alegreya", serif ',
+                    letterpacing: " 0.1em",
+                  }}
                   className="text-[#705704] text-justify md:mt-[1.5rem] tracking-[0.103em] md:text-[1.203rem]  max-sm:text-[1rem] leading-[1.7rem] whitespace-none text-md px-1"
                 >
                   <i>
@@ -670,20 +786,22 @@ export default function Client() {
                               to Sanjay and his skilled team that transformed
                               our vision into a living reality. We were ensured
                               that the event execution happens in the right
-                              manner and with the best results at all times.<br/>
+                              manner and with the best results at all times.
+                              <br />
                               Everything was perfectly planned from the desired
                               decoration, coordinating and arrangement till the
                               execution of the services. The venue was glitzed
                               up phenomenally by the talented designers giving
                               the guests an extravagant experience. Every theme
                               was flawlessly and beautifully organized as
-                              visioned by the bride and the groom.<br/> The flower
-                              decoration at the haldi, rajasthani theme at the
-                              mehndi, bollywood night theme at the sangeet and
-                              the traditional hindu wedding set up at the
-                              wedding was executed impeccably.<br/> Thank you Saaj
-                              wedding, specially Sanjay for the lifetime of
-                              experience and memories{" "}
+                              visioned by the bride and the groom.
+                              <br /> The flower decoration at the haldi,
+                              rajasthani theme at the mehndi, bollywood night
+                              theme at the sangeet and the traditional hindu
+                              wedding set up at the wedding was executed
+                              impeccably.
+                              <br /> Thank you Saaj wedding, specially Sanjay
+                              for the lifetime of experience and memories{" "}
                             </p>
                           }
                         />
@@ -691,7 +809,10 @@ export default function Client() {
                     </span>
                   </i>
                 </p>
-              <p style={{fontFamily: '"Great Vibes", cursive'}} className="text-[#6b3b1f] font-bold text-4xl pt-6  ">
+                <p
+                  style={{ fontFamily: '"Great Vibes", cursive' }}
+                  className="text-[#6b3b1f] font-bold text-4xl pt-6  "
+                >
                   {" "}
                   Prasashti
                 </p>

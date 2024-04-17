@@ -322,10 +322,10 @@ export default function Services() {
                 /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
-                  className={`text-xl flex gap-3 flex-wrap tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-2 max-sm:text-sm max-sm:px-2 tracking-widest pt-[0.6rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w1} alt="icons" width={40} />
-                  Wedding Planner
+                  Wedding Planning
                 </h1>
               </SwiperSlide>
               <SwiperSlide className="flex flex-col">
@@ -342,7 +342,7 @@ export default function Services() {
                 /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
-                  className={`text-xl flex gap-4 flex-wrap tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-2 max-sm:text-sm max-sm:px-2  tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w2} alt="icons" width={40} />
                   Decor and Design
@@ -361,18 +361,18 @@ export default function Services() {
                   alt="icons"
                   className="max-[412px]:h-[250vh] md:h-[75%] w-[100%]"
                 /> : <h1 className="text-black text-center items-center">Loading</h1>}
-                <h1
+               <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
-                  className={`text-xl flex gap-4 tracking-widest pt-[0.5rem] relative text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-2 px-7 max-sm:text-sm max-sm:px-2  tracking-widest pt-[1rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img
                     src={w3}
                     alt="icons"
                     width={40}
-                    className="text-center absolute left-[10%]"
+                    className=""
                   />
 
-                  <span className="w-[70%]">Vendor and Artist Management</span>
+                Vendor and Artist Management
                 </h1>
               </SwiperSlide>
 
@@ -390,7 +390,7 @@ export default function Services() {
                 /> : <h1 className="text-black text-center items-center">Loading</h1>}
                 <h1
                   style={{ fontFamily: '"Alegreya", serif ' }}
-                  className={`text-xl flex gap-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
+                  className={`text-xl flex gap-2 max-sm:text-sm max-sm:px-4 tracking-widest pt-[0.7rem] text-[#2e2712] h-full text-center justify-center items-center w-full `}
                 >
                   <img src={w4} alt="icons" width={40} />
                   Corporate Events

@@ -148,7 +148,7 @@ export default function Services() {
                 className="text-[3rem] text-[#794d25] leading-17 font-bold pt-[2rem] pb-[1rem] capitalize"
                 style={{ fontFamily: '"Great Vibes"', fontWeight: 400 }}
               >
-                wedding planner
+                wedding planning
               </h1>
               <p
              style={{fontFamily:'"Alegreya", serif ',fontStyle:'italic'}}
