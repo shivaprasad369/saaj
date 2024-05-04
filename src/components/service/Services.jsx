@@ -148,7 +148,7 @@ export default function Services() {
             Saaj Weddings. Our expertise extends beyond borders, crafting dream
             weddings in Beautiful spots. Let us turn your destination dreams
             into a reality, where every detail is infused with our signature
-            touch of excellence
+            touch of excellence.
           </p>
         </motion.div>
         <motion.div

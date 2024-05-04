@@ -74,7 +74,7 @@ export default function Fnavbars() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link className="w-full uppercase" to="/why" size="lg">
-            why Saaj?
+            Why Saaj?
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem className="mt-4">

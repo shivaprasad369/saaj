@@ -172,7 +172,7 @@ export default function Client() {
                     The guests at our wedding were in awe of everything they saw
                     around them, and it wasn’t just what they saw but what they
                     felt too. Special shoutout to Sanjay and his team who
-                    hustled day in and out to make ends meet!
+                    hustled day in and out to make ends meet!.
                     <span>
                       <Chip label="More" onClick={handleClickOpeno} />
                       
@@ -450,7 +450,7 @@ export default function Client() {
                     ideas were incorporated. He was patient during the entire
                     process and we were very happy with his final work. We would
                     definitely recommend Saaj weddings for anyone who is
-                    planning their wedding!
+                    planning their wedding!.
                   </i>
                 </p>
 
@@ -492,7 +492,7 @@ export default function Client() {
                     Sanjay! He is really understanding and very helpful.
                     Definitely recommend this one to everyone who's looking to
                     plan their wedding! Looking forward to working with them in
-                    future too
+                    future too.
                   </i>
                 </p>
 
@@ -694,7 +694,7 @@ export default function Client() {
                     were very anxious on how the actual day would look like, but
                     Sanjay kept giving assurance that all will be fine and he
                     delivered at par with expectations. he is hardworking and
-                    adjusting enough to serve the client needs
+                    adjusting enough to serve the client needs.
                     <span>
                       <Chip label="More" onClick={handleClickOpen5} />
                       {enable.five && !enable.six && !enable.f && !enable.s && (

@@ -419,7 +419,7 @@ export default function Services() {
                 detail, including venue selection, thematic decor, audio-visual
                 arrangements, and guest experience. Trust Saaj Weddings to
                 elevate your corporate gatherings, making them not just events
-                but experiences that reflect the excellence of your brand
+                but experiences that reflect the excellence of your brand.
               </p>
             </div>
           </motion.div>

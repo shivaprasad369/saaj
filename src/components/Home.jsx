@@ -200,9 +200,7 @@ export default function Home() {
                   <FaFacebookF />
                 </li>
                 </a>
-                <li>
-                  <FaTwitter />
-                </li>
+               
               </ul>
             </div>
           </div>

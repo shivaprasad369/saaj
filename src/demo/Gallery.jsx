@@ -44,10 +44,10 @@ export default function Gallery() {
           <div className="border-0 w-[100%] sm:h-[16rem] max-sm:h-[100%] ">
             <img src={data?.photo} alt="" className="h-[100%] w-[100%]" />
           </div>
-          <h1 style={{fontFamily: '"Imperial Script", cursive'}} className="tracking-widest text-[#a18433] text-3xl pt-4 font-light">{data?.name}</h1>
+          <h1 style={{fontFamily:'"Alegreya", serif '}} className="tracking-widest text-[#a18433] text-2xl pt-4 font-light">{data?.name}</h1>
           <p   style={{fontFamily:'"Alegreya", serif ',fontWeight:600 }}
            className="px-3 tracking-wider md:text-[1.2rem] text-[#442817]  max-sm:text-[1rem] h-[5rem]">
-           {data?.desc}
+           {data?.desc}.
           </p>
         </motion.div>
         </a>

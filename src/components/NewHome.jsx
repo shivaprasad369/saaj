@@ -79,9 +79,7 @@ video.volume=0.1;
                   <FaFacebookF />
                 </li>
               </a>
-              <li>
-                <FaTwitter />
-              </li>
+             ,,,,,,,,,,,,,
             </ul>
           </div>
         </div>

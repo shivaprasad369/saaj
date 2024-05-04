@@ -44,7 +44,7 @@ export default function TemporaryDrawer({ state, toggleDrawer }) {
       </Typography>
 
       <Divider />
-      <List>
+      <List sx={{textAlign}}>
         {[
           { text: "home", icon: home },
           { text: "about", icon: about },
@@ -88,7 +88,7 @@ export default function TemporaryDrawer({ state, toggleDrawer }) {
 
   return (
     <div>
-      {["right"].map((anchor) => (
+      {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Drawer
             anchor={anchor}

@@ -68,7 +68,7 @@ export default function Gallarys() {
       >
         Experience the excellence we've delivered! Our portfolio speaks volumes
         about our commitment to quality and customer satisfaction. Discover the
-        creations that have earned us the trust of countless clients
+        creations that have earned us the trust of countless clients.
       </p>
       <div className="justify-center items-center grid md:grid-cols-4 max-md:grid-cols-3 pb-[3rem] lg:mx-[8rem] max-md:p-2 md:gap-4 max-md:gap-2 max-sm:grid-cols-2">
        {!loading ? <>{imgs?.map((data, index) => (

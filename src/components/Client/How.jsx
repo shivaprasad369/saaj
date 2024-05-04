@@ -102,11 +102,11 @@ export default function How() {
                   </h1>
                 </i>
               </span>
-              "Elevate your special day with exquisite decor and timeless design
+              Elevate your special day with exquisite decor and timeless design
               by our expert wedding planners. From elegant centerpieces to
               personalized details, we create a dream ambiance. Trust us to turn
               your wedding into a visually stunning celebration, leaving lasting
-              impressions. Explore our decor and design services today!"
+              impressions. Explore our decor and design services today!.
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-full">
@@ -226,11 +226,11 @@ export default function How() {
                   </h1>
                 </i>
               </span>
-              "Discover unparalleled wedding planning services with our
+              Discover unparalleled wedding planning services with our
               experienced team. From exquisite venues to seamless coordination,
               we ensure your special day is a dream come true. Trust us to
               create timeless memories. Contact our wedding planner experts for
-              a stress-free and enchanting celebration of love."
+              a stress-free and enchanting celebration of love.
             </p>
           </div>
           <div className="p-6 md:w-1/2 w-[100%]">

@@ -11,74 +11,72 @@ export default function Footer() {
       className={" justify-around  bg-[#28231e] text-[#aea493]"}
     >
       <div className="flex  flex-1 w-auto justify-around  max-lg:flex-col max-lg:mx-[2.5rem] ">
-       <div className="flex flex-col max-lg:mt-[rem] lg:items-center lg:mr-[1rem]">
-      <img src={logo} alt="" className="w-[8rem] mt-[2rem] lg:mr-[2rem] md:mb-[2rem] items-center" />
-        <div
-          style={{
-            fontFamily: "FedraSansStd-book, sans-serif",      
-            lineHeight: "24px",
-            fontSize: "14px",
-            padding: "0 1.2rem 0 0",
-          }}
-          className="relative flex flex-row gap-10 max-lg:text-[18px] pt-[3rem] max-lg:mt-[2rem] "
-        >
-          <ul className="flex flex-col gap-4">
-            <li className="hover:text-[#cd6727]">
-              <span className="border-b-[1px]">
-                <Link to="/">Home</Link>
-              </span>
-            </li>
-            <li className="hover:text-[#cd6727]">
-              {" "}
-              <span className="border-b-[0.5px]">
-                <Link to="/about">About</Link>
-              </span>
-            </li>
-            <li className="hover:text-[#cd6727]">
-              {" "}
-              <span className="border-b-[1px]">
-                <Link to="/services"> Services</Link>
-              </span>
-            </li>
-            <li className="hover:text-[#cd6727]">
-              {" "}
-              <span className="border-b-[1px]">
-                <Link to="/contact"> Contact</Link>
-              </span>
-            </li>
-          </ul>
-          
-          <ul className="flex flex-col gap-4">
-            <li className="hover:text-[#cd6727]">
-              <span className="border-b-[1px]">
-                <Link to="/gallary">Our portfolio</Link>
-              </span>
-            </li>
-            <li className="hover:text-[#cd6727]">
-              {" "}
-              <span className="border-b-[0.5px]">
-                <Link to="/why"> Why Saaj</Link>
-              </span>
-            </li>
-            <li className="hover:text-[#cd6727]">
-              {" "}
-              <span className="border-b-[1px]">
-                <Link to="/#client"> Testimonial</Link>
-              </span>
-            </li>
-            {/* <li className="hover:text-[#cd6727]">
+        <div className="flex flex-col max-lg:mt-[rem] lg:items-center lg:mr-[1rem]">
+          <img
+            src={logo}
+            alt=""
+            className="w-[8rem] mt-[2rem] lg:mr-[2rem] md:mb-[2rem] items-center"
+          />
+          <div
+            style={{
+              fontFamily: "FedraSansStd-book, sans-serif",
+              lineHeight: "24px",
+              fontSize: "14px",
+              padding: "0 1.2rem 0 0",
+            }}
+            className="relative flex flex-row gap-10 max-lg:text-[18px] pt-[3rem] max-lg:mt-[2rem] "
+          >
+            <ul className="flex flex-col gap-4">
+              <li className="hover:text-[#cd6727]">
+                <span className="border-b-[1px]">
+                  <Link to="/">Home</Link>
+                </span>
+              </li>
+              <li className="hover:text-[#cd6727]">
+                {" "}
+                <span className="border-b-[0.5px]">
+                  <Link to="/about">About</Link>
+                </span>
+              </li>
+              <li className="hover:text-[#cd6727]">
+                {" "}
+                <span className="border-b-[1px]">
+                  <Link to="/services"> Services</Link>
+                </span>
+              </li>
+            </ul>
+
+            <ul className="flex flex-col gap-4">
+              <li className="hover:text-[#cd6727]">
+                <span className="border-b-[1px]">
+                  <Link to="/gallary">Our portfolio</Link>
+                </span>
+              </li>
+              <li className="hover:text-[#cd6727]">
+                {" "}
+                <span className="border-b-[0.5px]">
+                  <Link to="/why"> Why Saaj?</Link>
+                </span>
+              </li>
+              <li className="hover:text-[#cd6727]">
+                {" "}
+                <span className="border-b-[1px]">
+                  <Link to="/contact"> Contact</Link>
+                </span>
+              </li>
+              {/* <li className="hover:text-[#cd6727]">
               {" "}
               <span className="border-b-[1px]">
                 <Link to="/contact"> Contact us</Link>
               </span>
             </li> */}
-          </ul>
-          <img
-            src={img}
-            alt=""
-            className=" absolute w-[2rem] left-[15rem] top-[-7rem] max-lg:hidden h-[20rem]"
-          />
-        </div>
+            </ul>
+            <img
+              src={img}
+              alt=""
+              className=" absolute w-[2rem] left-[15rem] top-[-7rem] max-lg:hidden h-[20rem]"
+            />
+          </div>
         </div>
         <div className="flex flex-col border-0 w-[12rem] mt-[2rem]">
           <h1
@@ -93,7 +91,10 @@ export default function Footer() {
             Subscribe
           </h1>
           <div>
-            <div style={{fontSize:'16px'}} className="max-lg:flex  w-auto max-[450px]:flex-col max-lg:gap-3  md:w-[25rem]">
+            <div
+              style={{ fontSize: "16px" }}
+              className="max-lg:flex  w-auto max-[450px]:flex-col max-lg:gap-3  md:w-[25rem]"
+            >
               <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
                 <img
                   src={yt}
@@ -101,24 +102,33 @@ export default function Footer() {
                   className="w-[9rem] h-[5rem] max-lg:h-[7rem] "
                 />
               </a>
-              <p style={{fontSize:'14px'}} className="p max-lg:w-[12rem] w-[10rem] max-lg:h-[7rem]">
+              <p
+                style={{ fontSize: "14px" }}
+                className="p max-lg:w-[12rem] w-[10rem] max-lg:h-[7rem]"
+              >
                 Don't miss a moment! Subscribe to our YouTube for exclusive
-                event updates
+                event updates.
               </p>
             </div>
             <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
-              <button style={{fontSize:'14px'}} className="border-[1px] mt-[20px] border-[#A29887] w-full h-[3rem] text-center rounded-md">
+              <button
+                style={{ fontSize: "14px" }}
+                className="border-[1px] mt-[20px] border-[#A29887] w-full h-[3rem] text-center rounded-md"
+              >
                 Subscribe Now
               </button>
             </a>
           </div>
         </div>
         <div className="b-2 w-[13rem] gap-3 mt-[2rem] pb-4">
-          <h1 style={{ fontWeight: 600,fontSize:'18px' }} className="contact ">
+          <h1
+            style={{ fontWeight: 600, fontSize: "18px" }}
+            className="contact "
+          >
             Contact us
           </h1>
           <div className="text-[16px]">
-            <p className="mb-[2rem]  gap-3"  style={{fontSize:'14px'}}>
+            <p className="mb-[2rem]  gap-3" style={{ fontSize: "14px" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="float-start "
@@ -130,10 +140,11 @@ export default function Footer() {
                   d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
                 />
               </svg>
-              <span className="pr-2"></span>G-13, Balaji Tower IV, Radisson blue hotel, Durgapura Flyover, Tonk Road Jaipur, 302020.
+              <span className="pr-2"></span>G-13, Balaji Tower IV, Radisson blue
+              hotel, Durgapura Flyover, Tonk Road Jaipur, 302020.
             </p>
 
-            <p className="mb-[2rem] flex"  style={{fontSize:'14px'}}>
+            <p className="mb-[2rem] flex" style={{ fontSize: "14px" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={"w-5 "}
@@ -146,11 +157,11 @@ export default function Footer() {
                 />
               </svg>
               <span className="pr-2" />
-              +91 97823 40243 <br/>
+              +91 97823 40243 <br />
               +91 95096 66873
               <br />
             </p>
-            <p  style={{fontSize:'14px'}}>
+            <p style={{ fontSize: "14px" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 float-start"
@@ -190,18 +201,18 @@ export default function Footer() {
         <div className="down mt-[2rem] w-[9rem]">
           <h1>Find us on Social Media</h1>
           <div className="flex-wrap gap-4 grid grid-cols-2 my-[2rem]">
-           <a href="https://www.facebook.com/saajweddingsindia/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={30}
-              viewBox="0 0 512 512"
-            >
-              <path
-                fill="#ffffff"
-                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
-              />
-            </svg>
-              </a>
+            <a href="https://www.facebook.com/saajweddingsindia/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={30}
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                />
+              </svg>
+            </a>
             <a href="https://www.youtube.com/channel/UCUXhh0K2BqccrkffVJNJXmA">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -230,8 +241,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-[1px]  mt-10 border-[#aea493]" />
-      <div style={{fontSize:'14px'}} className="flex-wrap items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#c9c6c1] cursor-pointer max-[500]:flex-col">
-      Copyright 2024 Saaj Weddings | All Rights Reserved. | Developed by <a href="https://unitechnocompany.com">UNITECHNO</a>
+      <div
+        style={{ fontSize: "14px" }}
+        className="flex-wrap items-center py-[2rem] ml-[10%] max-[950px]:mr-[5%] text-[#c9c6c1] cursor-pointer max-[500]:flex-col"
+      >
+        Copyright 2024 Saaj Weddings | All Rights Reserved. | Developed by{" "}
+        <a href="https://unitechnocompany.com">UNITECHNO</a>
       </div>
     </div>
   );
