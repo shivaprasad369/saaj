@@ -5,38 +5,32 @@
     height: 100%;
   
 }
-.containers .swiper .swiper-button-next{
-  color:rgb(78, 33, 4)
-}
-.containers .swiper .swiper-button-prev{
-  color:rgb(78, 33, 4)
-}
 @media only screen and (max-width: 984px) {
-    .containers .swiper {
-      width: 100%;
-      height:100%;
-    }
+  .containers .swiper {
+    width: 100%;
+    height:100%;
   }
-  @media only screen and (max-width:756px) {
-    .containers .swiper {
-      width: 100%;
-      height: 100%;
-      
-    }
-   
-      .containers .swiper .swiper-button-next {
-        color: rgb(78, 33, 4);
-        /* display: none; */
-        position: absolute;
-        right: 3px;
-    }
+}
+@media only screen and (max-width:756px) {
+  .containers .swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .containers .swiper .swiper-button-next {
+    color: rgb(78, 33, 4);
+    /* display: none; */
+    position: absolute;
+    right: 3px;
+  }
     .containers .swiper .swiper-button-prev {
       color: rgb(78, 33, 4);
       /* display: none; */
       position: absolute;
-     left: 2px;
+      left: 2px;
     }
-   
+    
   }
   .containers .swiper .swiper-button-next {
     color: rgb(78, 33, 4);
@@ -44,8 +38,8 @@
     position: absolute;
   
     right: -1px;
-}
-.containers .swiper .swiper-button-prev {
+  }
+  .containers .swiper .swiper-button-prev {
   color: rgb(78, 33, 4);
   /* display: none; */
   position: absolute;
@@ -54,7 +48,7 @@
 .swiper-button {
   display: flex;
   position: absolute;
-
+  
   z-index: 10;
   cursor: pointer;
 }
@@ -68,4 +62,10 @@
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+.containers .swiper .swiper-button-next{
+  color:rgb(78, 33, 4)
+}
+.containers .swiper .swiper-button-prev{
+  color:rgb(78, 33, 4)
 }

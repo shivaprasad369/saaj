@@ -79,7 +79,7 @@ video.volume=0.1;
                   <FaFacebookF />
                 </li>
               </a>
-             ,,,,,,,,,,,,,
+          
             </ul>
           </div>
         </div>
